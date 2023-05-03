@@ -53,6 +53,21 @@ def create_stack_bar_chart(df, col_name, title, out_dir):
         os.mkdir("img/")
         plt.savefig("img/" + out_dir + "stacked_bar_plot.png", bbox_inches="tight")
 
+def create_boxplot(df, col_name, ylabel, title, out_dir):
+    fig = df.boxplot(
+        column=[col_name], 
+        by="category",
+        xlabel="Category",
+        ylabel=ylabel
+    ).get_figure()
+    plt.title(title)
+    plt.suptitle("")
+    try:
+        fig.savefig("img/" + out_dir + "_boxplot.png", bbox_inches="tight")
+    except:
+        os.mkdir("img/")
+        fig.savefig("img/" + out_dir + "_boxplot.png", bbox_inches="tight")
+
 def main():
     SMOOTHIE = "Smoothie King/smoothie_king_"
     US_SUBWAY = "Subway USA/subway_usa_"
@@ -86,6 +101,14 @@ def main():
     )
     create_stack_bar_chart(
         smoothie_df, "store_density", "Stacked Bar Chart by Store Density and Category", "store_density_stack"
+    )
+    create_boxplot(
+        smoothie_df, "centerxy_gla_1mi", "Gross leasable area within 1 mile radius", 
+        "Boxplot of Gross Leasable Area within 1 mile by Category", "centerxy_gla_1mi_boxplot"
+    )
+    create_boxplot(
+        smoothie_df, "gdp_10mi", "GDP within 10 mile radius", "Boxplot of GDP within 10 mile radius by Category",
+        "gdp_10mi_boxplot"
     )
 
 if __name__ == "__main__":
