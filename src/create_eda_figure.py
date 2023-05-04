@@ -71,15 +71,25 @@ def create_boxplot(df, col_name, ylabel, title, out_dir):
         fig.savefig("img/" + out_dir + "_boxplot.png", bbox_inches="tight")
 
 def create_scatterplot(df, x_col, y_col, groupby_col, xlab, ylab, title, out_dir):
-    plt.figure(figsize=(9,7))
-    fig, ax = plt.subplots()
-    groups = df.groupby(groupby_col)
-    for name, group in groups:
-        ax.scatter(group[x_col], group[y_col], s=10, alpha=0.5, label=name)
-    ax.legend()
-    ax.set_xlabel(xlab)
-    ax.set_ylabel(ylab)
-    ax.set_title(title)
+    plt.figure(figsize=(10, 10))
+    categories = df[groupby_col].unique().tolist()
+    fig, ax = plt.subplots(4, 2,sharex=True, sharey=True, figsize=(10, 14))
+    fig.add_subplot(111, frameon=False)
+    plt.tick_params(labelcolor='none', which='both', top=False, bottom=False, left=False, right=False)
+    row = col = 0
+    for category in categories:
+        to_plot = df.query("store_density == @category")
+        ax[row, col].scatter(to_plot[x_col], to_plot[y_col], alpha=0.4)
+        ax[row, col].set_ybound(0, 200000000)
+        ax[row, col].set_xbound(0, 1)
+        ax[row, col].set_title(category)
+        plt.xlabel(xlab)
+        plt.ylabel(ylab)
+        plt.suptitle(title)
+        col += 1
+        if col == 2:
+            row += 1
+            col = 0
     try:
         fig.savefig("img/" + out_dir + "_scatterplot.png", bbox_inches="tight")
     except:
