@@ -30,6 +30,7 @@ def create_bar_chart(df, col_name, xlab, title, out_dir):
         plt.savefig("img/" + out_dir + "_bar_plot.png", bbox_inches="tight")
 
 def create_stack_bar_chart(df, col_name, title, out_dir):
+    plt.figure(figsize=(9,7))
     df = df[[col_name, 'category']]
     grouped = df.groupby(['category', col_name]).value_counts()
     pivoted = grouped.unstack(col_name).fillna(0)
@@ -54,6 +55,7 @@ def create_stack_bar_chart(df, col_name, title, out_dir):
         plt.savefig("img/" + out_dir + "stacked_bar_plot.png", bbox_inches="tight")
 
 def create_boxplot(df, col_name, ylabel, title, out_dir):
+    plt.figure(figsize=(9,7))
     fig = df.boxplot(
         column=[col_name], 
         by="category",
@@ -67,6 +69,32 @@ def create_boxplot(df, col_name, ylabel, title, out_dir):
     except:
         os.mkdir("img/")
         fig.savefig("img/" + out_dir + "_boxplot.png", bbox_inches="tight")
+
+def create_scatterplot(df, x_col, y_col, groupby_col, xlab, ylab, title, out_dir):
+    plt.figure(figsize=(10, 10))
+    categories = df[groupby_col].unique().tolist()
+    fig, ax = plt.subplots(4, 2,sharex=True, sharey=True, figsize=(10, 14))
+    fig.add_subplot(111, frameon=False)
+    plt.tick_params(labelcolor='none', which='both', top=False, bottom=False, left=False, right=False)
+    row = col = 0
+    for category in categories:
+        to_plot = df.query("store_density == @category")
+        ax[row, col].scatter(to_plot[x_col], to_plot[y_col], alpha=0.4)
+        ax[row, col].set_ybound(0, 200000000)
+        ax[row, col].set_xbound(0, 1)
+        ax[row, col].set_title(category)
+        plt.xlabel(xlab)
+        plt.ylabel(ylab)
+        plt.suptitle(title)
+        col += 1
+        if col == 2:
+            row += 1
+            col = 0
+    try:
+        fig.savefig("img/" + out_dir + "_scatterplot.png", bbox_inches="tight")
+    except:
+        os.mkdir("img/")
+        fig.savefig("img/" + out_dir + "_scatterplot.png", bbox_inches="tight")
 
 def main():
     SMOOTHIE = "Smoothie King/smoothie_king_"
@@ -109,6 +137,11 @@ def main():
     create_boxplot(
         smoothie_df, "gdp_10mi", "GDP within 10 mile radius", "Boxplot of GDP within 10 mile radius by Category",
         "gdp_10mi_boxplot"
+    )
+    create_scatterplot(
+        subway_us_df, "genz_p_1mi", "spend_dinner_1mi", "store_density", "Gen Z Population Percentage in 1 mile radius",
+        "Amount spent on dinner in 1 mile radius", "Scatter plot of Percent Gen Z Population vs Amount Spent on Dinner",
+        "genz_p_vs_dinner"
     )
 
 if __name__ == "__main__":
