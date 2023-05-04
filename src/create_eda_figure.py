@@ -30,6 +30,7 @@ def create_bar_chart(df, col_name, xlab, title, out_dir):
         plt.savefig("img/" + out_dir + "_bar_plot.png", bbox_inches="tight")
 
 def create_stack_bar_chart(df, col_name, title, out_dir):
+    plt.figure(figsize=(9,7))
     df = df[[col_name, 'category']]
     grouped = df.groupby(['category', col_name]).value_counts()
     pivoted = grouped.unstack(col_name).fillna(0)
@@ -54,6 +55,7 @@ def create_stack_bar_chart(df, col_name, title, out_dir):
         plt.savefig("img/" + out_dir + "stacked_bar_plot.png", bbox_inches="tight")
 
 def create_boxplot(df, col_name, ylabel, title, out_dir):
+    plt.figure(figsize=(9,7))
     fig = df.boxplot(
         column=[col_name], 
         by="category",
@@ -67,6 +69,22 @@ def create_boxplot(df, col_name, ylabel, title, out_dir):
     except:
         os.mkdir("img/")
         fig.savefig("img/" + out_dir + "_boxplot.png", bbox_inches="tight")
+
+def create_scatterplot(df, x_col, y_col, groupby_col, xlab, ylab, title, out_dir):
+    plt.figure(figsize=(9,7))
+    fig, ax = plt.subplots()
+    groups = df.groupby(groupby_col)
+    for name, group in groups:
+        ax.scatter(group[x_col], group[y_col], s=10, alpha=0.5, label=name)
+    ax.legend()
+    ax.set_xlabel(xlab)
+    ax.set_ylabel(ylab)
+    ax.set_title(title)
+    try:
+        fig.savefig("img/" + out_dir + "_scatterplot.png", bbox_inches="tight")
+    except:
+        os.mkdir("img/")
+        fig.savefig("img/" + out_dir + "_scatterplot.png", bbox_inches="tight")
 
 def main():
     SMOOTHIE = "Smoothie King/smoothie_king_"
@@ -109,6 +127,11 @@ def main():
     create_boxplot(
         smoothie_df, "gdp_10mi", "GDP within 10 mile radius", "Boxplot of GDP within 10 mile radius by Category",
         "gdp_10mi_boxplot"
+    )
+    create_scatterplot(
+        subway_us_df, "genz_p_1mi", "spend_dinner_1mi", "store_density", "Gen Z Population Percentage in 1 mile radius",
+        "Amount spent on dinner in 1 mile radius", "Scatter plot of Percent Gen Z Population vs Amount Spent on Dinner",
+        "genz_p_vs_dinner"
     )
 
 if __name__ == "__main__":
