@@ -1,1 +1,4 @@
 data/*
+.DS_Store
+.ipynb_checkpoints
+sitewise_python38_UBC2023.yaml
