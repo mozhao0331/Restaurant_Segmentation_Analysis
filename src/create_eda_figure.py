@@ -18,9 +18,9 @@ def create_bar_chart(df, col_name, xlab, title, out_dir):
     counts = df[col_name].value_counts()
     plt.figure(figsize=(9,7))
     fig = plt.bar(counts.index, counts.values)
-    plt.xlabel(xlab)
-    plt.ylabel("Number of Stores")
-    plt.title(title)
+    plt.xlabel(xlab, fontsize=15)
+    plt.ylabel("Number of Stores", fontsize=15)
+    plt.title(title, fontsize=20)
     plt.xticks(rotation=30)
     plt.bar_label(fig, label_type="edge")
     try:
@@ -44,9 +44,9 @@ def create_stack_bar_chart(df, col_name, title, out_dir):
     # for container in ax.containers:
     #     ax.bar_label(container, labels=[f'{x:.1f}%' for x in container.datavalues])
 
-    ax.set_xlabel('Category')
-    ax.set_ylabel('Percentage')
-    ax.set_title(title)
+    ax.set_xlabel('Category', fontsize=15)
+    ax.set_ylabel('Percentage', fontsize=15)
+    ax.set_title(title, fontsize=20)
     ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
     try:
         plt.savefig("img/" + out_dir + "stacked_bar_plot.png", bbox_inches="tight")
@@ -58,11 +58,13 @@ def create_boxplot(df, col_name, ylabel, title, out_dir):
     plt.figure(figsize=(9,7))
     fig = df.boxplot(
         column=[col_name], 
-        by="category",
-        xlabel="Category",
-        ylabel=ylabel
+        by="category"
+        # xlabel="Category",
+        # ylabel=ylabel
     ).get_figure()
-    plt.title(title)
+    plt.xlabel("Category", fontsize=15)
+    plt.ylabel(ylabel, fontsize=15)
+    plt.title(title, fontsize=20)
     plt.suptitle("")
     try:
         fig.savefig("img/" + out_dir + "_boxplot.png", bbox_inches="tight")
@@ -83,9 +85,9 @@ def create_scatterplot(df, x_col, y_col, groupby_col, xlab, ylab, title, out_dir
         ax[row, col].set_ybound(0, 200000000)
         ax[row, col].set_xbound(0, 1)
         ax[row, col].set_title(category)
-        plt.xlabel(xlab)
-        plt.ylabel(ylab)
-        plt.suptitle(title)
+        plt.xlabel(xlab, fontsize=15)
+        plt.ylabel(ylab, fontsize=15)
+        plt.suptitle(title, fontsize=20)
         col += 1
         if col == 2:
             row += 1
@@ -131,7 +133,7 @@ def main():
         smoothie_df, "store_density", "Stacked Bar Chart by Store Density and Category", "store_density_stack"
     )
     create_boxplot(
-        smoothie_df, "centerxy_gla_1mi", "Gross leasable area within 1 mile radius", 
+        smoothie_df, "centerxy_gla_1mi", "Gross leasable area within\n 1 mile radius", 
         "Boxplot of Gross Leasable Area within 1 mile by Category", "centerxy_gla_1mi_boxplot"
     )
     create_boxplot(
