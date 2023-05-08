@@ -1,0 +1,1822 @@
+store,longitude,latitude,cbsa_name,dma_name,market_size,store_density,censusregion,censusdivision
+1000100,-79.18506,43.77183,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+1004200,-79.390732,43.708531,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+1004300,-79.403146,43.73019,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+1007200,-119.272507,50.261694,,"Vernon, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,North Okanagan
+1007300,-75.70321,45.475094,,"Ottawa - Gatineau, PQ",Medium City (4),Suburban,Quebec / Québec,Gatineau
+1008400,-63.601063,44.659167,,"Halifax, NS",Medium City (4),Light Urban,Atlantic / Atlantique,Halifax
+1010000,-79.705383,43.449082,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Halton
+1010500,-122.866624,49.176758,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1012100,-82.369497,42.960926,,"Sarnia, ON",Small City (5),Light Suburban,Ontario / Ontario,Lambton
+1012600,-113.264031,51.70743,,,Small Community (7),Rural,Prairies / Prairies,Division No.  5
+1013300,-113.932902,51.069617,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+1017600,-84.320028,46.5308,,"Sault Ste. Marie, ON",Small City (5),Light Suburban,Ontario / Ontario,Algoma
+1020800,-97.115187,49.825584,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11
+1025300,-80.955723,43.371334,,"Stratford, ON",Small Town (6),Exurban,Ontario / Ontario,Perth
+1028000,-80.887339,43.042748,,"Ingersoll, ON",Small Town (6),Exurban,Ontario / Ontario,Oxford
+1030000,-79.900148,43.522706,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Halton
+1036200,-114.16915,51.017083,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+1036300,-79.795245,43.729082,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+1045200,-122.801556,49.034396,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1053600,-123.123759,49.155196,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1065300,-114.092253,51.082414,,"Calgary, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No.  6
+1084300,-114.013269,50.977804,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+1084400,-123.102749,49.324,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1088700,-110.653208,50.011387,,"Medicine Hat, AB",Small Town (6),Light Suburban,Prairies / Prairies,Division No.  1
+1096600,-113.540135,53.593098,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+1098500,-122.732603,49.103598,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1098800,-97.152069,49.948831,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11
+1100400,-123.155779,49.235216,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1103200,-78.2694,44.427822,,"Peterborough, ON",Small City (5),Rural,Ontario / Ontario,Peterborough
+1103800,-80.36795,43.697842,,"Centre Wellington, ON",Small Town (6),Exurban,Ontario / Ontario,Wellington
+1104900,-122.958203,50.11549,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Squamish-Lillooet
+1107400,-79.949583,43.266096,,"Hamilton, ON",Large City (3),Exurban,Ontario / Ontario,Hamilton
+1108100,-123.69832,48.777698,,"Duncan, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Cowichan Valley
+1108200,-122.669816,49.075889,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1110900,-66.648687,45.977018,,"Fredericton, NB",Small City (5),Light Suburban,Atlantic / Atlantique,York
+1111100,-82.452687,42.89137,,"Sarnia, ON",Small City (5),Exurban,Ontario / Ontario,Lambton
+1112300,-114.07187,51.031889,,"Calgary, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No.  6
+1114800,-75.907589,45.334832,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+1116200,-54.601504,48.953354,,"Gander, NF",Small Town (6),Exurban,Atlantic / Atlantique,Division No.  6
+1116300,-64.776012,46.088643,,"Moncton, NB",Small City (5),Light Suburban,Atlantic / Atlantique,Westmorland
+1116600,-120.847794,56.243894,,"Fort St. John, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Peace River
+1117900,-66.06109,45.272855,,"Saint John, NB",Small City (5),Light Suburban,Atlantic / Atlantique,Saint John
+1118600,-79.112604,43.819224,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Durham
+1120000,-121.972087,49.142304,,"Chilliwack, BC",Small City (5),Light Suburban,British Columbia / Colombie-Britannique,Fraser Valley
+1124300,-63.65686,44.661635,,"Halifax, NS",Medium City (4),Light Suburban,Atlantic / Atlantique,Halifax
+1124900,-75.64118,45.485353,,"Ottawa - Gatineau, PQ",Medium City (4),Light Suburban,Quebec / Québec,Gatineau
+1125200,-75.717151,45.370642,,"Ottawa - Gatineau, ON",Large Metro (2),Suburban,Ontario / Ontario,Ottawa
+1125700,-80.964303,44.562376,,"Owen Sound, ON",Small Town (6),Exurban,Ontario / Ontario,Grey
+1127000,-60.220276,46.111457,,"Cape Breton, NS",Small City (5),Exurban,Atlantic / Atlantique,Cape Breton
+1127400,-79.602007,43.624349,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Peel
+1127700,-73.826149,45.467596,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,MontrACal
+1128200,-123.156569,49.328521,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1128400,-119.281158,50.700903,,"Salmon Arm, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Columbia-Shuswap
+1128500,-63.26853,45.37252,,"Truro, NS",Small Town (6),Exurban,Atlantic / Atlantique,Colchester
+1129300,-123.37639,48.453188,,"Victoria, BC",Medium City (4),Suburban,British Columbia / Colombie-Britannique,Capital
+1129500,-97.263905,49.886382,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+1129900,-122.494286,49.060139,,"Vancouver, BC",Very Large Metro (1),Exurban,British Columbia / Colombie-Britannique,Greater Vancouver
+1130000,-122.659471,49.163069,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1130900,-79.651038,43.489588,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Halton
+1133700,-123.40054,48.430887,,"Victoria, BC",Medium City (4),Light Urban,British Columbia / Colombie-Britannique,Capital
+1133800,-114.115834,50.953375,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+1135800,-97.074962,49.854851,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+1141600,-123.93298,49.165093,,"Nanaimo, BC",Small City (5),Light Suburban,British Columbia / Colombie-Britannique,Nanaimo
+1141700,-124.044402,49.235237,,"Nanaimo, BC",Small City (5),Light Suburban,British Columbia / Colombie-Britannique,Nanaimo
+1142200,-80.288783,43.354462,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Light Suburban,Ontario / Ontario,Waterloo
+1142500,-122.966128,49.279808,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1144300,-97.298381,49.883507,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+1145500,-112.718592,52.322142,,,Small Community (7),Rural,Prairies / Prairies,Division No.  7
+1147800,-76.681056,45.46918,,,Small Community (7),Exurban,Ontario / Ontario,Renfrew
+1151500,-113.619167,53.505248,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+1156000,-113.425652,53.54085,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+1156100,-73.795954,45.484552,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,MontrACal
+1157500,-75.829926,45.202017,,"Ottawa - Gatineau, ON",Large Metro (2),Rural,Ontario / Ontario,Ottawa
+1157600,-75.537603,45.479601,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+1158500,-113.444097,53.525474,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+1160800,-78.197758,43.972218,,"Cobourg, ON",Small Town (6),Exurban,Ontario / Ontario,Northumberland
+1160900,-78.319877,44.316176,,"Peterborough, ON",Small City (5),Light Suburban,Ontario / Ontario,Peterborough
+1164200,-122.790632,49.162532,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1167500,-123.410828,48.479589,,"Victoria, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Capital
+1167800,-65.509124,45.723088,,,Small Community (7),Rural,Atlantic / Atlantique,Kings
+1169500,-123.140709,49.211101,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1171100,-113.433443,53.459105,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+1171600,-79.570969,44.112129,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,Simcoe
+1171700,-78.850041,43.86929,,"Oshawa, ON",Medium City (4),Suburban,Ontario / Ontario,Durham
+1175000,-117.652775,49.294965,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Central Kootenay
+1175200,-92.826746,49.785883,,,Small Community (7),Exurban,Ontario / Ontario,Kenora
+1176400,-72.589575,46.336161,,"Trois-Rivieres, PQ",Small City (5),Light Suburban,Quebec / Québec,Francheville
+1177700,-67.601355,46.171365,,,Small Community (7),Exurban,Atlantic / Atlantique,Carleton
+1178600,-97.146617,49.865017,,"Winnipeg, MB",Large City (3),Light Urban,Prairies / Prairies,Division No. 11
+1185500,-75.779119,45.32449,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+1185900,-114.163462,51.106051,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+1187700,-123.373503,48.441133,,"Victoria, BC",Medium City (4),Light Urban,British Columbia / Colombie-Britannique,Capital
+1187800,-123.404169,48.649242,,"Victoria, BC",Medium City (4),Exurban,British Columbia / Colombie-Britannique,Capital
+1190700,-123.134198,49.290939,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1193300,-81.621947,42.959332,,"London, ON",Large City (3),Exurban,Ontario / Ontario,Middlesex
+1193600,-79.253182,42.899231,,"St. Catharines - Niagara, ON",Medium City (4),Exurban,Ontario / Ontario,Niagara
+1194700,-79.910003,43.23384,,"Hamilton, ON",Large City (3),Suburban,Ontario / Ontario,Hamilton
+1198000,-97.156641,49.792412,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+1199700,-97.196354,49.943653,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+1199800,-97.164165,49.933807,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11
+1199900,-97.180578,49.8451,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11
+1201600,-77.119523,45.82396,,"Pembroke, ON",Small Town (6),Exurban,Ontario / Ontario,Renfrew
+1203000,-79.026886,48.239641,,"Rouyn-Noranda, PQ",Small Town (6),Exurban,Quebec / Québec,Rouyn-Noranda
+1204700,-80.730268,43.133349,,"Woodstock, ON",Small Town (6),Light Suburban,Ontario / Ontario,Oxford
+1205200,-77.795567,48.104274,,"Val-d'Or, PQ",Small Town (6),Exurban,Quebec / Québec,"La VallACe-de-l'Or"
+1205700,-113.466592,53.591952,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+1208100,-79.892814,43.204751,,"Hamilton, ON",Large City (3),Light Suburban,Ontario / Ontario,Hamilton
+1210000,-113.40414,51.038296,,"Strathmore, AB",Small Town (6),Exurban,Prairies / Prairies,Division No.  5
+1210100,-114.012627,51.06928,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+1212300,-97.15319,49.889836,,"Winnipeg, MB",Large City (3),Light Urban,Prairies / Prairies,Division No. 11
+1213800,-114.060587,50.979159,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+1215400,-123.38811,48.493434,,"Victoria, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Capital
+1218300,-111.42816,56.731598,,"Wood Buffalo, AB",Small Town (6),Light Suburban,Prairies / Prairies,Division No. 16
+1218800,-71.869832,45.40787,,"Sherbrooke, PQ",Medium City (4),Light Suburban,Quebec / Québec,Sherbrooke
+1221700,-113.618276,53.438704,,"Edmonton, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No. 11
+1223200,-113.843286,50.571217,,"High River, AB",Small Town (6),Exurban,Prairies / Prairies,Division No.  6
+1226500,-72.57693,46.354662,,"Trois-Rivieres, PQ",Small City (5),Suburban,Quebec / Québec,Francheville
+1227300,-80.961206,46.522583,,"Greater Sudbury / Grand Sudbury, ON",Small City (5),Light Suburban,Ontario / Ontario,Greater Sudbury / Grand Sudbury
+1235900,-122.849076,49.277002,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1240700,-67.739811,47.048373,,,Small Community (7),Exurban,Atlantic / Atlantique,Victoria
+1242100,-67.274488,45.198848,,,Small Community (7),Rural,Atlantic / Atlantique,Charlotte
+1242200,-76.265217,44.909053,,,Small Community (7),Exurban,Ontario / Ontario,Lanark
+1249800,-105.761167,53.183728,,"Prince Albert, SK",Small Town (6),Exurban,Prairies / Prairies,Division No. 15
+1253100,-124.296575,49.318381,,"Parksville, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Nanaimo
+1254200,-76.569235,44.257924,,"Kingston, ON",Small City (5),Light Suburban,Ontario / Ontario,Frontenac
+1254300,-75.587368,45.449387,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+1256000,-111.897906,50.578871,,"Brooks, AB",Small Town (6),Exurban,Prairies / Prairies,Division No.  2
+1256200,-114.110239,51.794768,,,Small Community (7),Exurban,Prairies / Prairies,Division No.  6
+1258800,-123.519357,49.407262,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Sunshine Coast
+1262700,-75.562677,45.431849,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+1266700,-122.755086,49.271333,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1272300,-74.627469,45.300465,,,Small Community (7),Rural,Ontario / Ontario,"Stormont, Dundas and Glengarry"
+1273100,-73.735506,45.610766,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Laval
+1284200,-80.300478,43.391087,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Light Suburban,Ontario / Ontario,Waterloo
+1286800,-113.46516,53.488695,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+1287900,-71.316112,46.806615,,"Québec, PQ",Large City (3),Suburban,Quebec / Québec,QuACbec
+1289800,-97.092881,49.938919,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11
+1289900,-97.132391,49.863221,,"Winnipeg, MB",Large City (3),Light Urban,Prairies / Prairies,Division No. 11
+1293500,-80.042757,43.629787,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,Halton
+1295900,-123.362205,48.424455,,"Victoria, BC",Medium City (4),Light Urban,British Columbia / Colombie-Britannique,Capital
+1296200,-123.36508,48.427046,,"Victoria, BC",Medium City (4),Light Urban,British Columbia / Colombie-Britannique,Capital
+1296900,-96.684926,49.526797,,"Steinbach, MB",Small Town (6),Exurban,Prairies / Prairies,Division No.  2
+1298800,-122.359381,49.046192,,"Abbotsford - Mission, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Fraser Valley
+1301000,-123.81896,48.995866,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Cowichan Valley
+1301700,-123.122035,49.280497,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1303400,-97.149169,49.822907,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11
+1305700,-113.727329,52.465019,,"Lacombe, AB",Small Town (6),Exurban,Prairies / Prairies,Division No.  8
+1306200,-97.202393,49.857416,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11
+1306500,-64.111499,44.99253,,,Small Community (7),Exurban,Atlantic / Atlantique,Hants
+1307200,-63.541902,44.680442,,"Halifax, NS",Medium City (4),Suburban,Atlantic / Atlantique,Halifax
+1307500,-97.068125,49.928069,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+1307900,-77.283875,45.899915,,"Petawawa, ON",Small Town (6),Exurban,Ontario / Ontario,Renfrew
+1308700,-97.201282,49.890537,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11
+1310300,-76.569329,44.236513,,"Kingston, ON",Small City (5),Light Suburban,Ontario / Ontario,Frontenac
+1310500,-122.919119,49.212376,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1310600,-123.012579,49.281263,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1310700,-123.118911,49.276446,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1311000,-113.517947,53.494316,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+1311600,-123.021333,49.254554,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1311800,-80.235448,43.517013,,"Guelph, ON",Small City (5),Light Suburban,Ontario / Ontario,Wellington
+1314400,-114.09885,51.133404,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+1315000,-123.008741,49.306578,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1315100,-120.271983,50.679754,,"Kamloops, BC",Small City (5),Exurban,British Columbia / Colombie-Britannique,Thompson-Nicola
+1315200,-79.918802,43.257503,,"Hamilton, ON",Large City (3),Suburban,Ontario / Ontario,Hamilton
+1315700,-75.523788,45.460959,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+1317200,-123.068124,49.026849,,"Vancouver, BC",Very Large Metro (1),Exurban,British Columbia / Colombie-Britannique,Greater Vancouver
+1317700,-76.135346,45.136026,,"Carleton Place, ON",Small Town (6),Exurban,Ontario / Ontario,Lanark
+1319100,-71.85676,45.366163,,"Sherbrooke, PQ",Medium City (4),Exurban,Quebec / Québec,Sherbrooke
+1319200,-72.570594,45.643796,,,Small Community (7),Rural,Quebec / Québec,Acton
+1319700,-123.090974,49.22843,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1320200,-73.100249,46.041324,,"Sorel-Tracy, PQ",Small Town (6),Light Suburban,Quebec / Québec,Pierre-De Saurel
+1321400,-113.942128,49.485465,,,Small Community (7),Rural,Prairies / Prairies,Division No.  3
+1322400,-71.292568,46.766128,,"Québec, PQ",Large City (3),Suburban,Quebec / Québec,QuACbec
+1322500,-71.252406,46.844828,,"Québec, PQ",Large City (3),Suburban,Quebec / Québec,QuACbec
+1322900,-79.839807,43.198736,,"Hamilton, ON",Large City (3),Light Suburban,Ontario / Ontario,Hamilton
+1324200,-123.125113,49.284218,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1325400,-113.948693,52.027222,,,Small Community (7),Rural,Prairies / Prairies,Division No.  8
+1325500,-71.917651,45.399202,,"Sherbrooke, PQ",Medium City (4),Light Suburban,Quebec / Québec,Sherbrooke
+1325800,-79.989855,43.215163,,"Hamilton, ON",Large City (3),Exurban,Ontario / Ontario,Hamilton
+1326900,-123.100356,49.274752,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1330200,-122.80055,49.185249,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1330500,-79.868456,43.25689,,"Hamilton, ON",Large City (3),Light Urban,Ontario / Ontario,Hamilton
+1330800,-82.609048,42.051171,,"Leamington, ON",Small Town (6),Exurban,Ontario / Ontario,Essex
+1330900,-78.874388,43.896088,,"Oshawa, ON",Medium City (4),Suburban,Ontario / Ontario,Durham
+1331200,-55.654029,48.944276,,"Grand Falls-Windsor, NF",Small Town (6),Exurban,Atlantic / Atlantique,Division No.  6
+1331500,-73.634035,45.432354,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,MontrACal
+1333500,-84.33547,46.510897,,"Sault Ste. Marie, ON",Small City (5),Light Suburban,Ontario / Ontario,Algoma
+1335400,-78.812268,43.906033,,"Oshawa, ON",Medium City (4),Light Suburban,Ontario / Ontario,Durham
+1336100,-106.694675,52.128935,,"Saskatoon, SK",Medium City (4),Suburban,Prairies / Prairies,Division No. 11
+1337600,-71.250757,46.816124,,"Québec, PQ",Large City (3),Light Urban,Quebec / Québec,QuACbec
+1338100,-82.932574,42.313673,,"Windsor, ON",Medium City (4),Light Suburban,Ontario / Ontario,Essex
+1338400,-82.385674,42.588402,,"Chatham-Kent, ON",Small City (5),Exurban,Ontario / Ontario,Chatham-Kent
+1339200,-82.870598,42.313301,,"Windsor, ON",Medium City (4),Light Suburban,Ontario / Ontario,Essex
+1340700,-81.006774,46.613119,,"Greater Sudbury / Grand Sudbury, ON",Small City (5),Exurban,Ontario / Ontario,Greater Sudbury / Grand Sudbury
+1340800,-123.493472,48.435062,,"Victoria, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Capital
+1341800,-94.488634,49.76608,,"Kenora, ON",Small Town (6),Exurban,Ontario / Ontario,Kenora
+1344700,-114.490306,49.635916,,,Small Community (7),Rural,Prairies / Prairies,Division No. 15
+1346900,-122.963559,49.239251,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1347900,-113.491826,53.541288,,"Edmonton, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No. 11
+1349300,-122.689897,49.229213,,"Vancouver, BC",Very Large Metro (1),Exurban,British Columbia / Colombie-Britannique,Greater Vancouver
+1349400,-113.389517,52.960363,,"Wetaskiwin, AB",Small Town (6),Exurban,Prairies / Prairies,Division No. 11
+1349900,-71.17281,46.793448,,"Québec, PQ",Large City (3),Light Suburban,Quebec / Québec,LACvis
+1352000,-112.144519,49.784505,,,Small Community (7),Exurban,Prairies / Prairies,Division No.  2
+1352600,-71.214737,46.812243,,"Québec, PQ",Large City (3),Light Urban,Quebec / Québec,QuACbec
+1354200,-122.867919,49.031608,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1354700,-79.76064,43.237802,,"Hamilton, ON",Large City (3),Suburban,Ontario / Ontario,Hamilton
+1355100,-73.684721,45.56434,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,Laval
+1355300,-75.625576,45.404649,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+1355600,-79.798751,43.236178,,"Hamilton, ON",Large City (3),Suburban,Ontario / Ontario,Hamilton
+1358600,-114.469967,51.191781,,"Calgary, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No.  6
+1359100,-123.13063,49.279675,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1359200,-123.093101,49.210595,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1361300,-122.602034,49.219921,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1361600,-79.642134,43.652434,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+1364700,-115.756765,49.521345,,"Cranbrook, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,East Kootenay
+1365200,-123.039494,49.337138,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1366600,-79.828483,43.25474,,"Hamilton, ON",Large City (3),Light Urban,Ontario / Ontario,Hamilton
+1366900,-79.890152,44.329543,,,Small Community (7),Exurban,Ontario / Ontario,Simcoe
+1367900,-89.294048,48.381468,,"Thunder Bay, ON",Small City (5),Light Suburban,Ontario / Ontario,Thunder Bay
+1368100,-79.112889,43.114602,,"St. Catharines - Niagara, ON",Medium City (4),Light Suburban,Ontario / Ontario,Niagara
+1372400,-75.66383,45.373503,,"Ottawa - Gatineau, ON",Large Metro (2),Suburban,Ontario / Ontario,Ottawa
+1372500,-123.128882,49.226929,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1373300,-117.709414,49.096969,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Kootenay Boundary
+1374000,-104.618828,50.469789,,"Regina, SK",Medium City (4),Suburban,Prairies / Prairies,Division No.  6
+1375600,-79.251931,43.006264,,"St. Catharines - Niagara, ON",Medium City (4),Light Suburban,Ontario / Ontario,Niagara
+1377000,-61.359012,45.618475,,,Small Community (7),Rural,Atlantic / Atlantique,Inverness
+1379400,-75.91587,45.311653,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+1380300,-77.855963,45.060593,,,Small Community (7),Rural,Ontario / Ontario,Hastings
+1380900,-121.297135,51.640464,,,Small Community (7),Rural,British Columbia / Colombie-Britannique,Cariboo
+1381000,-122.49679,52.980031,,"Quesnel, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Cariboo
+1382600,-123.070183,49.261692,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1383200,-119.592921,49.495961,,"Penticton, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Okanagan-Similkameen
+1384500,-80.444027,43.452308,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Suburban,Ontario / Ontario,Waterloo
+1385500,-122.912664,49.155791,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1388000,-113.302383,49.198561,,,Small Community (7),Rural,Prairies / Prairies,Division No.  3
+1388100,-122.319312,49.132721,,"Abbotsford - Mission, BC",Medium City (4),Exurban,British Columbia / Colombie-Britannique,Fraser Valley
+1390300,-81.00417,46.451735,,"Greater Sudbury / Grand Sudbury, ON",Small City (5),Exurban,Ontario / Ontario,Greater Sudbury / Grand Sudbury
+1390500,-73.665751,45.72501,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Les Moulins
+1390600,-79.413296,43.875852,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+1391100,-123.076808,49.313062,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1392900,-106.634465,52.171162,,"Saskatoon, SK",Medium City (4),Light Suburban,Prairies / Prairies,Division No. 11
+1394800,-79.263765,43.168983,,"St. Catharines - Niagara, ON",Medium City (4),Light Suburban,Ontario / Ontario,Niagara
+1397000,-66.016245,45.311408,,"Saint John, NB",Small City (5),Exurban,Atlantic / Atlantique,Saint John
+1401000,-128.59707,54.51742,,"Terrace, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Kitimat-Stikine
+1407300,-79.239746,43.792545,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+1408000,-78.676279,43.899391,,"Oshawa, ON",Medium City (4),Exurban,Ontario / Ontario,Durham
+1410000,-72.517485,45.896262,,"Drummondville, PQ",Small City (5),Light Suburban,Quebec / Québec,Drummond
+1410100,-71.997307,45.950396,,,Small Community (7),Rural,Quebec / Québec,Arthabaska
+1411900,-79.200115,48.805103,,,Small Community (7),Exurban,Quebec / Québec,Abitibi-Ouest
+1412600,-72.769179,45.210108,,"Cowansville, PQ",Small Town (6),Exurban,Quebec / Québec,Brome-Missisquoi
+1416700,-121.953757,49.169085,,"Chilliwack, BC",Small City (5),Light Suburban,British Columbia / Colombie-Britannique,Fraser Valley
+1417100,-73.327486,45.575189,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,"Marguerite-D'Youville"
+1419100,-73.853471,45.491354,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,MontrACal
+1421400,-75.686277,45.227196,,"Ottawa - Gatineau, ON",Large Metro (2),Exurban,Ontario / Ontario,Ottawa
+1424800,-72.752784,45.414248,,"Granby, PQ",Small City (5),Light Suburban,Quebec / Québec,La Haute-Yamaska
+1426000,-81.175708,43.005918,,"London, ON",Large City (3),Light Suburban,Ontario / Ontario,Middlesex
+1427100,-110.858227,53.34431,,,Small Community (7),Rural,Prairies / Prairies,Division No. 10
+1428000,-96.883363,50.134454,,,Small Community (7),Exurban,Prairies / Prairies,Division No. 13
+1428300,-123.497089,48.448513,,"Victoria, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Capital
+1428600,-96.987595,49.899884,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+1429100,-77.493709,46.097152,,,Small Community (7),Rural,Ontario / Ontario,Renfrew
+1429900,-110.019351,53.278324,,"Lloydminster, AB",Small Town (6),Light Suburban,Prairies / Prairies,Division No. 10
+1430100,-73.412559,45.496305,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Longueuil
+1431400,-71.272163,46.834839,,"Québec, PQ",Large City (3),Suburban,Quebec / Québec,QuACbec
+1431600,-57.431113,49.174571,,,Small Community (7),Exurban,Atlantic / Atlantique,Division No.  5
+1432800,-82.83083,42.182428,,,Small Community (7),Rural,Ontario / Ontario,Essex
+1433000,-122.220087,49.040724,,"Abbotsford - Mission, BC",Medium City (4),Exurban,British Columbia / Colombie-Britannique,Fraser Valley
+1433500,-118.822835,55.176216,,"Grande Prairie, AB",Small Town (6),Light Suburban,Prairies / Prairies,Division No. 19
+1434900,-75.681608,45.426013,,"Ottawa - Gatineau, ON",Large Metro (2),Light Urban,Ontario / Ontario,Ottawa
+1436000,-71.22581,46.803338,,"Québec, PQ",Large City (3),Light Urban,Quebec / Québec,QuACbec
+1437600,-97.176071,49.90706,,"Winnipeg, MB",Large City (3),Light Urban,Prairies / Prairies,Division No. 11
+1438400,-71.890379,45.401102,,"Sherbrooke, PQ",Medium City (4),Light Suburban,Quebec / Québec,Sherbrooke
+1439100,-118.212953,51.010118,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Columbia-Shuswap
+1439200,-79.592903,43.546112,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+1439700,-64.20527,45.814179,,,Small Community (7),Exurban,Atlantic / Atlantique,Cumberland
+1441300,-76.181696,45.234279,,"Carleton Place, ON",Small Town (6),Rural,Ontario / Ontario,Lanark
+1442700,-63.577743,44.671805,,"Halifax, NS",Medium City (4),Light Urban,Atlantic / Atlantique,Halifax
+1444000,-79.251017,43.182578,,"St. Catharines - Niagara, ON",Medium City (4),Suburban,Ontario / Ontario,Niagara
+1445300,-122.789898,49.272861,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1448400,-120.787595,50.112506,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Thompson-Nicola
+1451500,-71.418553,46.855829,,"Québec, PQ",Large City (3),Exurban,Quebec / Québec,QuACbec
+1452700,-71.355146,46.7895,,"Québec, PQ",Large City (3),Light Suburban,Quebec / Québec,QuACbec
+1455800,-81.197004,46.569311,,"Greater Sudbury / Grand Sudbury, ON",Small City (5),Exurban,Ontario / Ontario,Greater Sudbury / Grand Sudbury
+1456000,-71.225427,46.813405,,"Québec, PQ",Large City (3),Light Urban,Quebec / Québec,QuACbec
+1456100,-71.27098,46.729619,,"Québec, PQ",Large City (3),Light Suburban,Quebec / Québec,LACvis
+1457600,-80.39372,43.406699,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Light Suburban,Ontario / Ontario,Waterloo
+1458600,-75.924933,45.349936,,"Ottawa - Gatineau, ON",Large Metro (2),Exurban,Ontario / Ontario,Ottawa
+1459200,-119.405182,50.022605,,"Kelowna, BC",Medium City (4),Rural,British Columbia / Colombie-Britannique,Central Okanagan
+1459300,-123.952372,49.181989,,"Nanaimo, BC",Small City (5),Light Suburban,British Columbia / Colombie-Britannique,Nanaimo
+1459400,-123.119819,49.208592,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1459500,-122.781839,49.261648,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1459900,-123.95123,49.155361,,"Nanaimo, BC",Small City (5),Light Suburban,British Columbia / Colombie-Britannique,Nanaimo
+1460000,-122.672602,49.17683,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1463100,-80.306124,42.846024,,"Norfolk, ON",Small Town (6),Exurban,Ontario / Ontario,Haldimand-Norfolk
+1464300,-75.737502,45.468825,,"Ottawa - Gatineau, PQ",Medium City (4),Light Suburban,Quebec / Québec,Gatineau
+1464600,-77.559188,44.104939,,"Belleville, ON",Small City (5),Exurban,Ontario / Ontario,Hastings
+1464800,-104.573312,50.446885,,"Regina, SK",Medium City (4),Suburban,Prairies / Prairies,Division No.  6
+1464900,-119.459262,49.87712,,"Kelowna, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Central Okanagan
+1465200,-71.239866,48.412124,,"Saguenay, PQ",Small City (5),Exurban,Quebec / Québec,Le Saguenay-et-son-Fjord
+1465300,-78.339289,44.326154,,"Peterborough, ON",Small City (5),Light Suburban,Ontario / Ontario,Peterborough
+1466000,-73.902805,45.561847,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Deux-Montagnes
+1466100,-71.201862,46.880974,,"Québec, PQ",Large City (3),Light Suburban,Quebec / Québec,QuACbec
+1467500,-122.914056,49.223068,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1467700,-81.282646,42.941012,,"London, ON",Large City (3),Light Suburban,Ontario / Ontario,Middlesex
+1470300,-117.290802,56.234747,,,Small Community (7),Exurban,Prairies / Prairies,Division No. 19
+1471000,-78.318965,43.958179,,"Port Hope, ON",Small Town (6),Exurban,Ontario / Ontario,Northumberland
+1472000,-73.63615,45.589112,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+1473900,-123.115737,49.278438,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1475500,-72.973425,45.607241,,"Saint-Hyacinthe, PQ",Small Town (6),Exurban,Quebec / Québec,Les Maskoutains
+1475700,-113.285414,54.718528,,,Small Community (7),Rural,Prairies / Prairies,Division No. 13
+1476600,-114.99315,53.22118,,,Small Community (7),Exurban,Prairies / Prairies,Division No. 11
+1477000,-52.780035,47.550762,,"St. John's, NF",Medium City (4),Light Suburban,Atlantic / Atlantique,Division No.  1
+1480100,-78.120178,48.572203,,,Small Community (7),Exurban,Quebec / Québec,Abitibi
+1480700,-73.267412,45.334962,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Le Haut-Richelieu
+1481100,-73.545571,45.54428,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+1482800,-74.332304,45.656677,,"Lachute, PQ",Small Town (6),Exurban,Quebec / Québec,Argenteuil
+1484200,-114.06798,50.901743,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+1485700,-75.766735,45.460294,,"Ottawa - Gatineau, PQ",Medium City (4),Light Suburban,Quebec / Québec,Gatineau
+1487700,-78.924435,42.905901,,"St. Catharines - Niagara, ON",Medium City (4),Exurban,Ontario / Ontario,Niagara
+1488500,-60.247632,46.210529,,"Cape Breton, NS",Small City (5),Exurban,Atlantic / Atlantique,Cape Breton
+1489500,-77.144548,44.006366,,,Small Community (7),Rural,Ontario / Ontario,Prince Edward
+1491700,-122.892369,49.120384,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1493300,-81.020891,46.476297,,"Greater Sudbury / Grand Sudbury, ON",Small City (5),Light Suburban,Ontario / Ontario,Greater Sudbury / Grand Sudbury
+1496100,-73.496573,45.535378,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Longueuil
+1496300,-114.207276,51.084578,,"Calgary, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No.  6
+1500900,-130.32766,54.311961,,"Prince Rupert, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Skeena-Queen Charlotte
+1503700,-80.515036,43.471045,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Suburban,Ontario / Ontario,Waterloo
+1504200,-72.130904,45.275784,,"Sherbrooke, PQ",Medium City (4),Exurban,Quebec / Québec,MemphrACmagog
+1505000,-110.705913,50.030054,,"Medicine Hat, AB",Small Town (6),Exurban,Prairies / Prairies,Division No.  1
+1507000,-111.277979,53.990906,,,Small Community (7),Exurban,Prairies / Prairies,Division No. 12
+1511500,-81.615258,44.175849,,,Small Community (7),Exurban,Ontario / Ontario,Bruce
+1514000,-112.701263,51.454498,,,Small Community (7),Rural,Prairies / Prairies,Division No.  5
+1519300,-71.05451,48.410009,,"Saguenay, PQ",Small City (5),Light Suburban,Quebec / Québec,Le Saguenay-et-son-Fjord
+1520000,-81.021701,44.153369,,,Small Community (7),Exurban,Ontario / Ontario,Grey
+1520100,-127.167709,54.781778,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Bulkley-Nechako
+1520300,-73.68232,45.514276,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+1520800,-97.939913,49.18836,,"Winkler, MB",Small Town (6),Exurban,Prairies / Prairies,Division No.  3
+1521400,-73.84025,45.647241,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,ThACrA¨se-De Blainville
+1522500,-110.860438,52.842969,,,Small Community (7),Rural,Prairies / Prairies,Division No.  7
+1522600,-79.348718,43.755002,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+1523900,-73.472402,45.487651,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Longueuil
+1526600,-73.345811,45.528658,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Longueuil
+1526700,-81.769238,46.264332,,,Small Community (7),Rural,Ontario / Ontario,Sudbury
+1526800,-75.181253,44.90128,,,Small Community (7),Rural,Ontario / Ontario,"Stormont, Dundas and Glengarry"
+1530100,-73.451996,45.74431,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,"L'Assomption"
+1531800,-73.011545,45.413911,,,Small Community (7),Rural,Quebec / Québec,Rouville
+1532600,-75.868439,45.286248,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+1534900,-121.44428,49.379293,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Fraser Valley
+1536800,-122.955397,49.258412,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1538600,-73.301982,45.453009,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,La VallACe-du-Richelieu
+1538800,-73.50906,45.654287,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,MontrACal
+1542300,-79.78746,43.596242,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,Peel
+1544300,-122.668253,49.111081,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1544900,-123.083585,49.313108,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1545100,-122.338823,49.049382,,"Abbotsford - Mission, BC",Medium City (4),Suburban,British Columbia / Colombie-Britannique,Fraser Valley
+1545200,-122.255659,49.149902,,"Abbotsford - Mission, BC",Medium City (4),Exurban,British Columbia / Colombie-Britannique,Fraser Valley
+1545900,-79.880448,44.14964,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,Simcoe
+1546600,-113.581081,50.023034,,,Small Community (7),Rural,Prairies / Prairies,Division No.  3
+1547200,-79.89549,43.331586,,"Hamilton, ON",Large City (3),Exurban,Ontario / Ontario,Hamilton
+1547600,-79.383693,43.646318,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+1548000,-78.384072,44.384106,,"Peterborough, ON",Small City (5),Rural,Ontario / Ontario,Peterborough
+1548100,-123.372937,48.416343,,"Victoria, BC",Medium City (4),Light Urban,British Columbia / Colombie-Britannique,Capital
+1548400,-122.893177,49.226705,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1549700,-75.686585,45.480864,,"Ottawa - Gatineau, PQ",Medium City (4),Light Suburban,Quebec / Québec,Gatineau
+1554000,-71.94434,46.055364,,"Victoriaville, PQ",Small Town (6),Exurban,Quebec / Québec,Arthabaska
+1554200,-73.995454,45.764705,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,La RiviA¨re-du-Nord
+1555100,-79.026659,43.860206,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Durham
+1555800,-123.041574,49.308244,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1556100,-75.602151,45.48783,,"Ottawa - Gatineau, PQ",Medium City (4),Light Suburban,Quebec / Québec,Gatineau
+1557500,-74.734039,45.030246,,"Cornwall, ON",Small Town (6),Light Suburban,Ontario / Ontario,"Stormont, Dundas and Glengarry"
+1557700,-122.867485,49.143246,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1557800,-79.76938,43.67637,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+1562100,-123.00348,49.267627,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1562900,-71.644283,48.542839,,"Alma, PQ",Small Town (6),Exurban,Quebec / Québec,Lac-Saint-Jean-Est
+1563400,-75.308066,45.268159,,"Ottawa - Gatineau, ON",Large Metro (2),Rural,Ontario / Ontario,Prescott and Russell
+1565300,-97.322894,50.130434,,,Small Community (7),Rural,Prairies / Prairies,Division No. 14
+1565400,-97.085581,49.826307,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+1565500,-98.285191,49.972357,,"Portage la Prairie, MB",Small Town (6),Exurban,Prairies / Prairies,Division No.  9
+1568700,-123.721265,48.379747,,"Victoria, BC",Medium City (4),Exurban,British Columbia / Colombie-Britannique,Capital
+1569900,-123.761468,49.471173,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Sunshine Coast
+1570000,-119.690822,50.813325,,"Kamloops, BC",Small City (5),Rural,British Columbia / Colombie-Britannique,Thompson-Nicola
+1570200,-123.398358,48.448703,,"Victoria, BC",Medium City (4),Suburban,British Columbia / Colombie-Britannique,Capital
+1570300,-122.862385,49.248798,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1570400,-120.333875,50.676066,,"Kamloops, BC",Small City (5),Light Suburban,British Columbia / Colombie-Britannique,Thompson-Nicola
+1572700,-113.549313,53.273341,,"Edmonton, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No. 11
+1574200,-83.107195,42.094367,,"Windsor, ON",Medium City (4),Exurban,Ontario / Ontario,Essex
+1576700,-79.440947,43.678153,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+1576800,-119.550192,49.18301,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Okanagan-Similkameen
+1577000,-81.15023,44.122432,,,Small Community (7),Rural,Ontario / Ontario,Bruce
+1580500,-63.784682,46.390663,,"Summerside, PE",Small Town (6),Exurban,Atlantic / Atlantique,Prince
+1580600,-63.605058,44.698045,,"Halifax, NS",Medium City (4),Suburban,Atlantic / Atlantique,Halifax
+1581000,-62.003486,45.615479,,,Small Community (7),Exurban,Atlantic / Atlantique,Antigonish
+1583600,-80.484344,43.423723,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Suburban,Ontario / Ontario,Waterloo
+1584400,-104.047978,52.845793,,,Small Community (7),Rural,Prairies / Prairies,Division No. 14
+1586100,-102.981167,49.135642,,"Estevan, SK",Small Town (6),Exurban,Prairies / Prairies,Division No.  1
+1587800,-111.942772,51.636956,,,Small Community (7),Rural,Prairies / Prairies,Division No.  4
+1589200,-114.001944,50.950858,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+1589800,-63.501148,44.693832,,"Halifax, NS",Medium City (4),Rural,Atlantic / Atlantique,Halifax
+1590300,-63.616666,44.612994,,"Halifax, NS",Medium City (4),Light Suburban,Atlantic / Atlantique,Halifax
+1590500,-52.808833,47.502234,,"St. John's, NF",Medium City (4),Exurban,Atlantic / Atlantique,Division No.  1
+1591700,-64.802424,46.076423,,"Moncton, NB",Small City (5),Light Suburban,Atlantic / Atlantique,Westmorland
+1594000,-83.060105,42.247827,,"Windsor, ON",Medium City (4),Exurban,Ontario / Ontario,Essex
+1594700,-99.962465,49.833201,,"Brandon, MB",Small Town (6),Light Suburban,Prairies / Prairies,Division No.  7
+1595100,-73.575473,45.510233,,"Montréal, PQ",Very Large Metro (1),Urban,Quebec / Québec,MontrACal
+1597800,-64.568444,45.067092,,"Kentville, NS",Small Town (6),Rural,Atlantic / Atlantique,Kings
+1598900,-71.7276,46.681577,,,Small Community (7),Exurban,Quebec / Québec,Portneuf
+1599300,-79.006257,48.226697,,"Rouyn-Noranda, PQ",Small Town (6),Exurban,Quebec / Québec,Rouyn-Noranda
+1604100,-77.892273,44.433475,,,Small Community (7),Rural,Ontario / Ontario,Peterborough
+1605000,-75.644634,45.378368,,"Ottawa - Gatineau, ON",Large Metro (2),Suburban,Ontario / Ontario,Ottawa
+1606300,-124.010621,54.014206,,,Small Community (7),Rural,British Columbia / Colombie-Britannique,Bulkley-Nechako
+1606700,-72.783847,47.418116,,,Small Community (7),Exurban,Quebec / Québec,La Tuque
+1609100,-52.957856,47.519013,,"St. John's, NF",Medium City (4),Exurban,Atlantic / Atlantique,Division No.  1
+1609900,-77.388587,44.159739,,"Belleville, ON",Small City (5),Light Suburban,Ontario / Ontario,Hastings
+1610300,-113.588139,53.469741,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+1610400,-114.207915,51.125495,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+1612700,-73.818999,45.462149,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,MontrACal
+1613400,-79.669154,44.370827,,"Barrie, ON",Medium City (4),Suburban,Ontario / Ontario,Simcoe
+1614700,-76.160764,44.331129,,,Small Community (7),Exurban,Ontario / Ontario,Leeds and Grenville
+1619000,-113.417224,53.362132,,"Edmonton, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No. 11
+1619300,-81.36532,48.474584,,"Timmins, ON",Small Town (6),Rural,Ontario / Ontario,Cochrane
+1619700,-71.320202,46.770753,,"Québec, PQ",Large City (3),Suburban,Quebec / Québec,QuACbec
+1620100,-74.275016,46.044515,,,Small Community (7),Exurban,Quebec / Québec,Les Laurentides
+1620300,-71.027695,46.446193,,"Sainte-Marie, PQ",Small Town (6),Exurban,Quebec / Québec,La Nouvelle-Beauce
+1621300,-79.394981,43.658674,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+1623600,-79.131267,44.092521,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,Durham
+1623800,-71.349517,46.831215,,"Québec, PQ",Large City (3),Light Suburban,Quebec / Québec,QuACbec
+1631100,-91.914037,50.0985,,,Small Community (7),Rural,Ontario / Ontario,Kenora
+1632800,-71.31816,46.099134,,"Thetford Mines, PQ",Small Town (6),Exurban,Quebec / Québec,Les Appalaches
+1633300,-70.514513,47.445639,,,Small Community (7),Rural,Quebec / Québec,Charlevoix
+1635000,-73.465414,45.756355,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,"L'Assomption"
+1635900,-97.116688,49.938474,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11
+1637700,-114.134536,51.661127,,,Small Community (7),Rural,Prairies / Prairies,Division No.  6
+1642000,-71.196785,46.853385,,"Québec, PQ",Large City (3),Suburban,Quebec / Québec,QuACbec
+1642300,-71.767474,46.215548,,,Small Community (7),Exurban,Quebec / Québec,"L'A‰rable"
+1644900,-73.580176,45.391423,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Roussillon
+1646600,-75.42101,45.557311,,"Ottawa - Gatineau, PQ",Medium City (4),Exurban,Quebec / Québec,Gatineau
+1649300,-79.673927,47.528655,,,Small Community (7),Rural,Ontario / Ontario,Timiskaming
+1649500,-79.701185,43.433881,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Halton
+1651900,-79.998997,44.525042,,"Wasaga Beach, ON",Small Town (6),Exurban,Ontario / Ontario,Simcoe
+1654500,-79.716202,43.583696,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+1654600,-123.090427,49.262664,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1654700,-71.956882,45.402358,,"Sherbrooke, PQ",Medium City (4),Light Suburban,Quebec / Québec,Sherbrooke
+1655500,-79.534928,43.712263,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+1660200,-73.582674,45.49134,,"Montréal, PQ",Very Large Metro (1),Urban,Quebec / Québec,MontrACal
+1660300,-73.422213,45.655937,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,"Marguerite-D'Youville"
+1661600,-71.273387,46.867694,,"Québec, PQ",Large City (3),Suburban,Quebec / Québec,QuACbec
+1662500,-119.115666,53.888813,,,Small Community (7),Rural,Prairies / Prairies,Division No. 18
+1665000,-124.934194,49.688589,,"Courtenay, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Comox Valley
+1667800,-79.548518,43.769547,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+1670700,-79.475605,43.708496,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+1672900,-74.033832,45.406216,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Vaudreuil-Soulanges
+1673800,-96.98918,50.631789,,,Small Community (7),Rural,Prairies / Prairies,Division No. 18
+1674900,-121.945896,49.172889,,"Chilliwack, BC",Small City (5),Exurban,British Columbia / Colombie-Britannique,Fraser Valley
+1675700,-120.509635,49.454849,,,Small Community (7),Rural,British Columbia / Colombie-Britannique,Okanagan-Similkameen
+1677400,-100.051833,51.147774,,,Small Community (7),Exurban,Prairies / Prairies,Division No. 17
+1677500,-73.439312,46.023546,,"Joliette, PQ",Small Town (6),Light Suburban,Quebec / Québec,Joliette
+1678400,-97.311477,49.862434,,"Winnipeg, MB",Large City (3),Exurban,Prairies / Prairies,Division No. 11
+1679700,-72.004338,45.395429,,"Sherbrooke, PQ",Medium City (4),Exurban,Quebec / Québec,Sherbrooke
+1681400,-73.721108,45.349365,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Roussillon
+1682100,-122.906024,49.204443,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1683800,-73.873033,45.574535,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Deux-Montagnes
+1685300,-114.241392,52.639499,,,Small Community (7),Rural,Prairies / Prairies,Division No.  8
+1685400,-82.659862,46.380944,,"Elliot Lake, ON",Small Town (6),Exurban,Ontario / Ontario,Algoma
+1686100,-72.694877,46.612602,,"Shawinigan, PQ",Small Town (6),Exurban,Quebec / Québec,Shawinigan
+1686500,-72.938051,45.62862,,"Saint-Hyacinthe, PQ",Small Town (6),Light Suburban,Quebec / Québec,Les Maskoutains
+1686800,-58.576478,48.550155,,,Small Community (7),Exurban,Atlantic / Atlantique,Division No.  4
+1687400,-73.490817,45.456302,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Longueuil
+1687500,-80.527363,43.502966,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Suburban,Ontario / Ontario,Waterloo
+1690700,-82.201939,42.417457,,"Chatham-Kent, ON",Small City (5),Exurban,Ontario / Ontario,Chatham-Kent
+1694700,-73.786646,45.575901,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Laval
+1697900,-73.608961,45.741213,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Les Moulins
+1699900,-70.93368,47.020378,,,Small Community (7),Exurban,Quebec / Québec,La CA´te-de-BeauprAC
+1701200,-122.811948,49.198179,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1704600,-71.290219,46.711424,,"Québec, PQ",Large City (3),Exurban,Quebec / Québec,LACvis
+1708400,-80.275929,43.56481,,"Guelph, ON",Small City (5),Suburban,Ontario / Ontario,Wellington
+1710500,-75.982298,46.38711,,,Small Community (7),Exurban,Quebec / Québec,La VallACe-de-la-Gatineau
+1711500,-66.678811,48.004055,,"Campbellton, NB",Small Town (6),Exurban,Atlantic / Atlantique,Restigouche
+1712200,-81.033088,49.05928,,,Small Community (7),Rural,Ontario / Ontario,Cochrane
+1713200,-70.154738,47.658285,,,Small Community (7),Rural,Quebec / Québec,Charlevoix-Est
+1714200,-123.115711,49.284329,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1714900,-123.032579,49.237313,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1715400,-123.044988,49.257995,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+1715800,-123.922015,49.130418,,"Nanaimo, BC",Small City (5),Exurban,British Columbia / Colombie-Britannique,Nanaimo
+1718100,-118.975558,50.837453,,,Small Community (7),Rural,British Columbia / Colombie-Britannique,Columbia-Shuswap
+1719100,-80.524937,43.429311,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Suburban,Ontario / Ontario,Waterloo
+1721100,-113.414732,49.721577,,,Small Community (7),Rural,Prairies / Prairies,Division No.  3
+1722700,-122.270744,49.038463,,"Abbotsford - Mission, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Fraser Valley
+1724500,-71.247401,46.802007,,"Québec, PQ",Large City (3),Light Urban,Quebec / Québec,QuACbec
+1727200,-79.378113,43.652169,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+1728100,-52.771096,47.463257,,"St. John's, NF",Medium City (4),Rural,Atlantic / Atlantique,Division No.  1
+1728500,-80.917343,44.574269,,"Owen Sound, ON",Small Town (6),Exurban,Ontario / Ontario,Grey
+1729400,-97.11398,49.89466,,"Winnipeg, MB",Large City (3),Light Urban,Prairies / Prairies,Division No. 11
+1729900,-53.285704,47.57448,,"Bay Roberts, NF",Small Town (6),Exurban,Atlantic / Atlantique,Division No.  1
+1730300,-82.702648,42.292655,,"Windsor, ON",Medium City (4),Exurban,Ontario / Ontario,Essex
+1731300,-55.054449,49.214949,,,Small Community (7),Rural,Atlantic / Atlantique,Division No.  8
+1733200,-75.732129,45.444787,,"Ottawa - Gatineau, PQ",Medium City (4),Light Urban,Quebec / Québec,Gatineau
+1733700,-71.636575,46.537642,,,Small Community (7),Rural,Quebec / Québec,LotbiniA¨re
+1734400,-79.939818,43.228578,,"Hamilton, ON",Large City (3),Light Suburban,Ontario / Ontario,Hamilton
+1735000,-83.0567,42.286241,,"Windsor, ON",Medium City (4),Suburban,Ontario / Ontario,Essex
+1735500,-78.6998,46.31734,,,Small Community (7),Rural,Ontario / Ontario,Nipissing
+1735900,-71.693899,46.747245,,,Small Community (7),Rural,Quebec / Québec,Portneuf
+1739100,-71.440404,46.747485,,"Québec, PQ",Large City (3),Exurban,Quebec / Québec,QuACbec
+1739400,-79.352102,43.785875,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+1740900,-123.093383,49.183886,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1741100,-71.986296,45.37196,,"Sherbrooke, PQ",Medium City (4),Exurban,Quebec / Québec,Sherbrooke
+1743400,-114.084062,50.97917,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+1745600,-73.647733,45.703556,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Les Moulins
+1746300,-71.148652,46.815614,,"Québec, PQ",Large City (3),Light Suburban,Quebec / Québec,LACvis
+1747000,-110.689617,50.050012,,"Medicine Hat, AB",Small Town (6),Light Suburban,Prairies / Prairies,Division No.  1
+1748700,-114.232977,50.687023,,,Small Community (7),Rural,Prairies / Prairies,Division No.  6
+1749000,-113.464739,53.571415,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+1749500,-77.731256,44.043247,,,Small Community (7),Rural,Ontario / Ontario,Northumberland
+1752000,-73.449797,45.478486,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Longueuil
+1754400,-64.910012,47.521997,,,Small Community (7),Exurban,Atlantic / Atlantique,Gloucester
+1755100,-114.120294,50.971968,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+1756200,-71.89946,45.383389,,"Sherbrooke, PQ",Medium City (4),Light Suburban,Quebec / Québec,Sherbrooke
+1759000,-123.360918,48.47073,,"Victoria, BC",Medium City (4),Suburban,British Columbia / Colombie-Britannique,Capital
+1759900,-122.292621,49.048624,,"Abbotsford - Mission, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Fraser Valley
+1761400,-79.29065,43.690434,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+1763000,-79.41694,43.779216,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+1764300,-97.364193,49.354342,,,Small Community (7),Rural,Prairies / Prairies,Division No.  3
+1764600,-63.50619,44.978058,,,Small Community (7),Rural,Atlantic / Atlantique,Hants
+1765800,-79.693768,43.612433,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Peel
+1768800,-97.206216,49.919247,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+1773200,-82.725158,42.036921,,"Leamington, ON",Small Town (6),Exurban,Ontario / Ontario,Essex
+1776100,-104.59634,50.41502,,"Regina, SK",Medium City (4),Suburban,Prairies / Prairies,Division No.  6
+1777000,-104.616792,50.463751,,"Regina, SK",Medium City (4),Suburban,Prairies / Prairies,Division No.  6
+1777500,-80.738726,43.121037,,"Woodstock, ON",Small Town (6),Light Suburban,Ontario / Ontario,Oxford
+1787900,-122.589536,49.215116,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1792200,-110.05145,53.277475,,"Lloydminster, AB",Small Town (6),Exurban,Prairies / Prairies,Division No. 10
+1792300,-69.54768,47.826581,,"Riviere-du-Loup, PQ",Small Town (6),Exurban,Quebec / Québec,RiviA¨re-du-Loup
+1794000,-79.714099,43.486378,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Halton
+1795900,-71.842812,45.410959,,"Sherbrooke, PQ",Medium City (4),Light Suburban,Quebec / Québec,Sherbrooke
+1798900,-71.833712,46.888965,,,Small Community (7),Rural,Quebec / Québec,Portneuf
+1799900,-64.544805,46.218955,,,Small Community (7),Exurban,Atlantic / Atlantique,Westmorland
+1801900,-72.309864,45.488359,,,Small Community (7),Rural,Quebec / Québec,Le Val-Saint-FranA§ois
+1803800,-113.509357,53.453427,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+1804000,-71.873142,45.420884,,"Sherbrooke, PQ",Medium City (4),Light Suburban,Quebec / Québec,Sherbrooke
+1805800,-79.686271,44.334466,,"Barrie, ON",Medium City (4),Light Suburban,Ontario / Ontario,Simcoe
+1806500,-119.140617,50.549758,,,Small Community (7),Rural,British Columbia / Colombie-Britannique,North Okanagan
+1807700,-71.203974,46.726135,,"Québec, PQ",Large City (3),Exurban,Quebec / Québec,LACvis
+1814800,-117.665374,49.325448,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Central Kootenay
+1815800,-71.932398,45.772524,,,Small Community (7),Rural,Quebec / Québec,Les Sources
+1816600,-70.037846,47.36479,,,Small Community (7),Rural,Quebec / Québec,Kamouraska
+1819200,-75.687538,45.401068,,"Ottawa - Gatineau, ON",Large Metro (2),Light Urban,Ontario / Ontario,Ottawa
+1819500,-73.298833,45.356133,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Le Haut-Richelieu
+1821400,-73.199735,46.088259,,,Small Community (7),Exurban,Quebec / Québec,"D'Autray"
+1824200,-114.054886,51.001105,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+1828400,-63.287344,45.368497,,"Truro, NS",Small Town (6),Exurban,Atlantic / Atlantique,Colchester
+1828800,-80.458589,43.466881,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Suburban,Ontario / Ontario,Waterloo
+1829300,-81.304981,43.004892,,"London, ON",Large City (3),Light Suburban,Ontario / Ontario,Middlesex
+1830300,-114.560518,50.951925,,"Calgary, AB",Large Metro (2),Rural,Prairies / Prairies,Division No.  6
+1831000,-123.33446,48.444898,,"Victoria, BC",Medium City (4),Light Urban,British Columbia / Colombie-Britannique,Capital
+1833600,-127.497881,50.721914,,,Small Community (7),Rural,British Columbia / Colombie-Britannique,Mount Waddington
+1835400,-78.510744,45.046011,,,Small Community (7),Rural,Ontario / Ontario,Haliburton
+1836100,-79.207816,45.333087,,,Small Community (7),Exurban,Ontario / Ontario,Muskoka
+1837700,-83.101615,42.23833,,"Windsor, ON",Medium City (4),Exurban,Ontario / Ontario,Essex
+1843100,-113.768619,50.345421,,,Small Community (7),Rural,Prairies / Prairies,Division No.  3
+1846800,-66.390725,50.224509,,"Sept-Îles, PQ",Small Town (6),Exurban,Quebec / Québec,Sept-RiviA¨res--Caniapiscau
+1852700,-72.224812,48.518047,,,Small Community (7),Exurban,Quebec / Québec,Le Domaine-du-Roy
+1858100,-68.199951,48.588362,,,Small Community (7),Rural,Quebec / Québec,La Mitis
+1858300,-124.981259,49.675065,,"Courtenay, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Comox Valley
+1862000,-79.199424,43.123829,,"St. Catharines - Niagara, ON",Medium City (4),Light Suburban,Ontario / Ontario,Niagara
+1868900,-60.379207,53.308499,,,Small Community (7),Rural,Atlantic / Atlantique,Division No. 10
+1870700,-110.246942,52.360525,,,Small Community (7),Rural,Prairies / Prairies,Division No.  7
+1873200,-78.601928,43.940991,,"Oshawa, ON",Medium City (4),Rural,Ontario / Ontario,Durham
+1881100,-121.925946,50.70185,,,Small Community (7),Rural,British Columbia / Colombie-Britannique,Squamish-Lillooet
+1889100,-72.510723,46.364804,,"Trois-Rivieres, PQ",Small City (5),Light Suburban,Quebec / Québec,Francheville
+1897900,-123.137937,49.140175,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1901000,-66.10063,45.251912,,"Saint John, NB",Small City (5),Exurban,Atlantic / Atlantique,Saint John
+1901100,-99.963409,49.885058,,"Brandon, MB",Small Town (6),Exurban,Prairies / Prairies,Division No.  7
+1901300,-75.601082,45.416066,,"Ottawa - Gatineau, ON",Large Metro (2),Suburban,Ontario / Ontario,Ottawa
+1901400,-72.001761,45.570818,,,Small Community (7),Rural,Quebec / Québec,Le Val-Saint-FranA§ois
+1903100,-75.599374,45.331368,,"Ottawa - Gatineau, ON",Large Metro (2),Rural,Ontario / Ontario,Ottawa
+1912800,-79.566812,43.569761,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+1914400,-116.498678,55.432541,,,Small Community (7),Rural,Prairies / Prairies,Division No. 17
+1922100,-75.241957,45.597343,,"Ottawa - Gatineau, PQ",Medium City (4),Rural,Quebec / Québec,Papineau
+1928400,-75.702574,45.405458,,"Ottawa - Gatineau, ON",Large Metro (2),Light Urban,Ontario / Ontario,Ottawa
+1930200,-98.094715,49.192515,,"Winkler, MB",Small Town (6),Rural,Prairies / Prairies,Division No.  3
+1930300,-72.541796,46.341912,,"Trois-Rivieres, PQ",Small City (5),Suburban,Quebec / Québec,Francheville
+1932300,-71.169276,48.405721,,"Saguenay, PQ",Small City (5),Exurban,Quebec / Québec,Le Saguenay-et-son-Fjord
+1932700,-123.182641,49.14862,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+1936600,-57.948496,48.943089,,"Corner Brook, NF",Small Town (6),Exurban,Atlantic / Atlantique,Division No.  5
+1940800,-73.87202,45.666087,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,ThACrA¨se-De Blainville
+1945700,-64.363436,45.091197,,,Small Community (7),Rural,Atlantic / Atlantique,Kings
+1951900,-97.076559,49.882221,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+1954300,-96.508629,50.061563,,,Small Community (7),Rural,Prairies / Prairies,Division No. 12
+1954800,-119.462977,49.030155,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Okanagan-Similkameen
+1955200,-119.308628,50.255906,,"Vernon, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,North Okanagan
+1964100,-63.63278,44.659328,,"Halifax, NS",Medium City (4),Suburban,Atlantic / Atlantique,Halifax
+1964900,-61.44452,45.652102,,,Small Community (7),Rural,Atlantic / Atlantique,Antigonish
+1966300,-62.726746,45.679181,,,Small Community (7),Rural,Atlantic / Atlantique,Pictou
+1969300,-112.621938,49.727154,,"Lethbridge, AB",Small City (5),Rural,Prairies / Prairies,Division No.  2
+1977500,-53.246263,47.726287,,,Small Community (7),Rural,Atlantic / Atlantique,Division No.  1
+1985200,-73.964446,45.390466,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Vaudreuil-Soulanges
+1985900,-105.732079,53.201129,,"Prince Albert, SK",Small Town (6),Exurban,Prairies / Prairies,Division No. 15
+1989900,-79.076973,43.091813,,"St. Catharines - Niagara, ON",Medium City (4),Light Suburban,Ontario / Ontario,Niagara
+1993300,-104.609754,52.859476,,,Small Community (7),Rural,Prairies / Prairies,Division No. 14
+1994800,-73.555478,45.506041,,"Montréal, PQ",Very Large Metro (1),Urban,Quebec / Québec,MontrACal
+2001900,-80.429058,43.677168,,"Centre Wellington, ON",Small Town (6),Exurban,Ontario / Ontario,Wellington
+2007400,-111.844038,52.791397,,,Small Community (7),Rural,Prairies / Prairies,Division No.  7
+2009600,-113.98115,50.998408,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+2010800,-97.997396,49.502153,,,Small Community (7),Rural,Prairies / Prairies,Division No.  3
+2014100,-113.644314,53.796184,,"Edmonton, AB",Large Metro (2),Rural,Prairies / Prairies,Division No. 11
+2021200,-79.725114,43.658174,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+2022800,-74.150156,45.890171,,,Small Community (7),Exurban,Quebec / Québec,"Les Pays-d'en-Haut"
+2025800,-112.662668,49.46449,,,Small Community (7),Rural,Prairies / Prairies,Division No.  2
+2026300,-75.41617,45.585881,,"Ottawa - Gatineau, PQ",Medium City (4),Exurban,Quebec / Québec,Gatineau
+2026500,-123.065512,49.226193,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+2027300,-125.247343,50.033111,,"Campbell River, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Strathcona
+2028700,-76.644368,44.218819,,"Kingston, ON",Small City (5),Exurban,Ontario / Ontario,Lennox and Addington
+2031200,-71.867939,45.396065,,"Sherbrooke, PQ",Medium City (4),Light Suburban,Quebec / Québec,Sherbrooke
+2033200,-123.274633,49.37373,,"Vancouver, BC",Very Large Metro (1),Rural,British Columbia / Colombie-Britannique,Greater Vancouver
+2037600,-72.554799,46.370488,,"Trois-Rivieres, PQ",Small City (5),Light Suburban,Quebec / Québec,Francheville
+2038000,-79.719899,43.677474,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+2039200,-113.606429,53.622022,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+2041600,-79.396854,43.698619,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+2043500,-73.741214,45.544463,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,Laval
+2043900,-72.483864,45.880415,,"Drummondville, PQ",Small City (5),Light Suburban,Quebec / Québec,Drummond
+2045800,-113.498244,53.49626,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+2047400,-75.69012,45.42733,,"Ottawa - Gatineau, ON",Large Metro (2),Light Urban,Ontario / Ontario,Ottawa
+2047700,-78.289676,44.29312,,"Peterborough, ON",Small City (5),Light Suburban,Ontario / Ontario,Peterborough
+2053200,-73.412945,45.838719,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,"L'Assomption"
+2053700,-97.408094,49.876717,,"Winnipeg, MB",Large City (3),Rural,Prairies / Prairies,Division No. 11
+2055100,-102.267335,49.636529,,,Small Community (7),Rural,Prairies / Prairies,Division No.  1
+2059000,-73.626197,45.436497,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+2059200,-114.061938,50.898197,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+2064100,-112.780606,49.694354,,"Lethbridge, AB",Small City (5),Light Suburban,Prairies / Prairies,Division No.  2
+2067900,-72.968099,45.633134,,"Saint-Hyacinthe, PQ",Small Town (6),Light Suburban,Quebec / Québec,Les Maskoutains
+2068000,-73.723636,45.359844,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Roussillon
+2068900,-112.89356,49.692651,,"Lethbridge, AB",Small City (5),Exurban,Prairies / Prairies,Division No.  2
+2069700,-63.282452,44.743522,,"Halifax, NS",Medium City (4),Rural,Atlantic / Atlantique,Halifax
+2075300,-108.452234,54.13185,,,Small Community (7),Exurban,Prairies / Prairies,Division No. 17
+2078100,-79.62724,43.602855,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Peel
+2079700,-65.975276,45.402003,,"Saint John, NB",Small City (5),Exurban,Atlantic / Atlantique,Kings
+2080700,-113.387832,53.597288,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+2081400,-97.066318,49.904111,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+2082500,-82.941852,46.181965,,,Small Community (7),Rural,Ontario / Ontario,Algoma
+2082600,-113.980399,50.717979,,"Okotoks, AB",Small Town (6),Exurban,Prairies / Prairies,Division No.  6
+2083100,-73.766044,45.558578,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Laval
+2083400,-108.299684,52.781048,,"North Battleford, SK",Small Town (6),Exurban,Prairies / Prairies,Division No. 16
+2088800,-73.758489,45.666966,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,ThACrA¨se-De Blainville
+2092700,-76.479225,44.231238,,"Kingston, ON",Small City (5),Suburban,Ontario / Ontario,Frontenac
+2097800,-113.418357,53.444966,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+2104800,-52.714551,47.618193,,"St. John's, NF",Medium City (4),Exurban,Atlantic / Atlantique,Division No.  1
+2106000,-73.866093,45.458889,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,MontrACal
+2108800,-73.442901,46.037572,,"Joliette, PQ",Small Town (6),Light Suburban,Quebec / Québec,Joliette
+2109500,-113.391765,53.474482,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+2113500,-79.701005,44.402593,,"Barrie, ON",Medium City (4),Light Suburban,Ontario / Ontario,Simcoe
+2115900,-113.763989,52.254578,,"Red Deer, AB",Small City (5),Light Suburban,Prairies / Prairies,Division No.  8
+2117200,-74.019436,45.379993,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Vaudreuil-Soulanges
+2123700,-84.773969,47.989861,,,Small Community (7),Light Suburban,Ontario / Ontario,Algoma
+2124400,-81.31121,43.888041,,,Small Community (7),Rural,Ontario / Ontario,Huron
+2125300,-100.927548,49.858532,,,Small Community (7),Rural,Prairies / Prairies,Division No.  6
+2129200,-73.18829,45.561995,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,La VallACe-du-Richelieu
+2130700,-82.969598,42.306925,,"Windsor, ON",Medium City (4),Light Suburban,Ontario / Ontario,Essex
+2136000,-82.947611,42.340235,,"Windsor, ON",Medium City (4),Suburban,Ontario / Ontario,Essex
+2136700,-79.763958,43.72963,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+2140000,-97.153564,49.871109,,"Winnipeg, MB",Large City (3),Light Urban,Prairies / Prairies,Division No. 11
+2148000,-72.946958,46.255818,,,Small Community (7),Rural,Quebec / Québec,MaskinongAC
+2148700,-53.982352,48.162725,,,Small Community (7),Rural,Atlantic / Atlantique,Division No.  7
+2149200,-104.027162,53.353928,,,Small Community (7),Rural,Prairies / Prairies,Division No. 14
+2149800,-73.64334,45.541728,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+2154000,-103.858737,49.661582,,"Weyburn, SK",Small Town (6),Exurban,Prairies / Prairies,Division No.  2
+2154100,-63.612579,44.818127,,"Halifax, NS",Medium City (4),Exurban,Atlantic / Atlantique,Halifax
+2154500,-114.0677,51.154789,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+2155300,-109.149071,51.475494,,,Small Community (7),Rural,Prairies / Prairies,Division No. 13
+2155500,-63.659321,44.760649,,"Halifax, NS",Medium City (4),Exurban,Atlantic / Atlantique,Halifax
+2162200,-74.597634,46.118025,,,Small Community (7),Rural,Quebec / Québec,Les Laurentides
+2165800,-122.1221,52.126124,,"Williams Lake, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Cariboo
+2166000,-71.980701,46.055064,,"Victoriaville, PQ",Small Town (6),Exurban,Quebec / Québec,Arthabaska
+2168100,-75.056401,45.730065,,,Small Community (7),Rural,Quebec / Québec,Papineau
+2169900,-79.378175,43.656478,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+2175200,-80.043215,45.360194,,,Small Community (7),Exurban,Ontario / Ontario,Parry Sound
+2175500,-72.7395,46.559912,,"Shawinigan, PQ",Small Town (6),Exurban,Quebec / Québec,Shawinigan
+2175900,-73.787022,45.465105,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,MontrACal
+2177100,-68.872705,47.673029,,,Small Community (7),Exurban,Quebec / Québec,TACmiscouata
+2178200,-79.371815,44.604645,,"Orillia, ON",Small Town (6),Exurban,Ontario / Ontario,Simcoe
+2178500,-102.804971,50.939149,,,Small Community (7),Rural,Prairies / Prairies,Division No.  5
+2190900,-62.650489,46.170759,,,Small Community (7),Rural,Atlantic / Atlantique,Kings
+2198300,-63.118634,46.259607,,"Charlottetown, PE",Small City (5),Light Suburban,Atlantic / Atlantique,Queens
+2198900,-113.525395,53.541325,,"Edmonton, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No. 11
+2199900,-113.466169,53.561559,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+2200900,-113.971358,50.930566,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+2202900,-73.920505,45.541235,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Deux-Montagnes
+2203200,-72.541919,46.354288,,"Trois-Rivieres, PQ",Small City (5),Suburban,Quebec / Québec,Francheville
+2207900,-63.677399,44.652665,,"Halifax, NS",Medium City (4),Exurban,Atlantic / Atlantique,Halifax
+2216100,-107.78513,50.301007,,"Swift Current, SK",Small Town (6),Exurban,Prairies / Prairies,Division No.  8
+2220000,-73.690802,45.438871,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,MontrACal
+2220300,-73.782655,45.527346,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Laval
+2222100,-73.248194,45.443348,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Rouville
+2224700,-79.726862,43.426672,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Halton
+2226800,-70.886043,48.337674,,"Saguenay, PQ",Small City (5),Exurban,Quebec / Québec,Le Saguenay-et-son-Fjord
+2234700,-66.077094,45.279054,,"Saint John, NB",Small City (5),Light Suburban,Atlantic / Atlantique,Saint John
+2242200,-113.572865,53.597963,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+2244400,-65.832629,45.520039,,"Saint John, NB",Small City (5),Rural,Atlantic / Atlantique,Kings
+2244500,-78.709338,43.907617,,"Oshawa, ON",Medium City (4),Exurban,Ontario / Ontario,Durham
+2247900,-79.262937,43.893799,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+2248600,-79.385644,43.655555,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+2249500,-72.506493,46.273337,,"Trois-Rivieres, PQ",Small City (5),Rural,Quebec / Québec,BACcancour
+2257100,-118.385549,56.065437,,,Small Community (7),Rural,Prairies / Prairies,Division No. 19
+2259400,-123.1686,49.258057,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+2263700,-64.517212,44.380412,,,Small Community (7),Exurban,Atlantic / Atlantique,Lunenburg
+2270000,-73.496418,45.407587,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Roussillon
+2274600,-112.863141,53.018421,,"Camrose, AB",Small Town (6),Exurban,Prairies / Prairies,Division No. 10
+2283200,-113.268234,53.542367,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+2283700,-84.36118,46.537901,,"Sault Ste. Marie, ON",Small City (5),Light Suburban,Ontario / Ontario,Algoma
+2284900,-73.860986,45.645594,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,ThACrA¨se-De Blainville
+2285400,-72.584967,46.417097,,"Trois-Rivieres, PQ",Small City (5),Rural,Quebec / Québec,Francheville
+2287100,-73.29133,45.52877,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,La VallACe-du-Richelieu
+2288500,-81.538904,43.616193,,,Small Community (7),Rural,Ontario / Ontario,Huron
+2294000,-97.193803,49.818023,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+2294400,-72.437891,45.841894,,"Drummondville, PQ",Small City (5),Exurban,Quebec / Québec,Drummond
+2294500,-96.689718,49.545522,,"Steinbach, MB",Small Town (6),Exurban,Prairies / Prairies,Division No.  2
+2296300,-73.501306,45.641078,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,MontrACal
+2296700,-75.64124,45.501958,,"Ottawa - Gatineau, PQ",Medium City (4),Light Suburban,Quebec / Québec,Gatineau
+2297400,-71.202899,46.816431,,"Québec, PQ",Large City (3),Light Urban,Quebec / Québec,QuACbec
+2298300,-79.388819,43.667684,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+2307000,-71.171609,46.888276,,"Québec, PQ",Large City (3),Light Suburban,Quebec / Québec,QuACbec
+2311300,-80.945501,46.50611,,"Greater Sudbury / Grand Sudbury, ON",Small City (5),Light Suburban,Ontario / Ontario,Greater Sudbury / Grand Sudbury
+2313300,-72.04218,45.342333,,"Sherbrooke, PQ",Medium City (4),Exurban,Quebec / Québec,Sherbrooke
+2318900,-70.772612,46.203593,,,Small Community (7),Rural,Quebec / Québec,Robert-Cliche
+2323900,-73.757484,45.861709,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Montcalm
+2324000,-113.616942,53.532437,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+2324200,-73.926138,45.703548,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Mirabel
+2328500,-64.723445,44.045435,,,Small Community (7),Rural,Atlantic / Atlantique,Queens
+2328600,-113.999937,51.013538,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+2330700,-62.642628,45.575852,,"New Glasgow, NS",Small Town (6),Exurban,Atlantic / Atlantique,Pictou
+2333800,-78.963388,43.876227,,"Oshawa, ON",Medium City (4),Light Suburban,Ontario / Ontario,Durham
+2335400,-79.627856,43.571691,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+2343500,-79.821557,43.730544,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Peel
+2344100,-79.290159,43.724993,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+2348800,-55.156709,47.166303,,,Small Community (7),Rural,Atlantic / Atlantique,Division No.  2
+2352000,-81.140805,46.423367,,"Greater Sudbury / Grand Sudbury, ON",Small City (5),Rural,Ontario / Ontario,Greater Sudbury / Grand Sudbury
+2352100,-79.291764,43.763037,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+2352600,-122.702284,49.124826,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+2353800,-75.486749,45.460805,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+2354100,-122.817924,49.248575,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+2354600,-77.39149,44.175685,,"Belleville, ON",Small City (5),Light Suburban,Ontario / Ontario,Hastings
+2357100,-119.818299,49.207227,,,Small Community (7),Rural,British Columbia / Colombie-Britannique,Okanagan-Similkameen
+2362700,-73.45863,45.519471,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Longueuil
+2364000,-79.323905,43.683592,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+2370500,-122.805185,49.104812,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+2377500,-69.515246,47.822794,,"Riviere-du-Loup, PQ",Small Town (6),Exurban,Quebec / Québec,RiviA¨re-du-Loup
+2377600,-66.652069,45.989204,,"Fredericton, NB",Small City (5),Exurban,Atlantic / Atlantique,York
+2380400,-113.956826,50.993901,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+2382100,-64.872003,46.672269,,,Small Community (7),Rural,Atlantic / Atlantique,Kent
+2382400,-78.960683,43.952308,,"Oshawa, ON",Medium City (4),Light Suburban,Ontario / Ontario,Durham
+2383000,-79.742148,43.464175,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Halton
+2385700,-79.738927,43.751209,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+2390900,-79.44662,44.010279,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+2394500,-122.811491,49.278187,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+2395400,-122.946035,49.171926,,"Vancouver, BC",Very Large Metro (1),Exurban,British Columbia / Colombie-Britannique,Greater Vancouver
+2397200,-79.764947,43.58313,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Peel
+2398100,-79.470017,44.00725,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+2400800,-70.698849,46.131384,,"Saint-Georges, PQ",Small Town (6),Exurban,Quebec / Québec,Beauce-Sartigan
+2401100,-71.626962,45.413187,,,Small Community (7),Rural,Quebec / Québec,Le Haut-Saint-FranA§ois
+2405100,-73.700749,46.038434,,,Small Community (7),Exurban,Quebec / Québec,Matawinie
+2408100,-79.809906,43.407485,,"Hamilton, ON",Large City (3),Light Suburban,Ontario / Ontario,Halton
+2409700,-71.948914,45.469641,,"Sherbrooke, PQ",Medium City (4),Rural,Quebec / Québec,Sherbrooke
+2416000,-71.305123,46.790751,,"Québec, PQ",Large City (3),Suburban,Quebec / Québec,QuACbec
+2420900,-80.06439,43.770428,,,Small Community (7),Rural,Ontario / Ontario,Wellington
+2424500,-75.718822,45.275023,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+2426200,-113.51617,53.614946,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+2427000,-75.768397,45.43687,,"Ottawa - Gatineau, PQ",Medium City (4),Suburban,Quebec / Québec,Gatineau
+2431500,-66.786631,45.128469,,,Small Community (7),Rural,Atlantic / Atlantique,Charlotte
+2432800,-114.248861,51.124093,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+2437200,-72.515968,45.343862,,,Small Community (7),Rural,Quebec / Québec,La Haute-Yamaska
+2440400,-75.933887,45.624909,,"Ottawa - Gatineau, PQ",Medium City (4),Rural,Quebec / Québec,"Les Collines-de-l'Outaouais"
+2440600,-73.484786,45.531845,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Longueuil
+2445000,-79.519025,43.631653,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+2448100,-75.675946,45.50287,,"Ottawa - Gatineau, PQ",Medium City (4),Light Suburban,Quebec / Québec,Gatineau
+245100,-79.488604,43.615535,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+245200,-79.38926,43.650152,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+2457100,-63.098995,46.229118,,"Charlottetown, PE",Small City (5),Light Suburban,Atlantic / Atlantique,Queens
+2458300,-79.685616,44.412762,,"Barrie, ON",Medium City (4),Light Suburban,Ontario / Ontario,Simcoe
+2461400,-79.701458,43.222133,,"Hamilton, ON",Large City (3),Light Suburban,Ontario / Ontario,Hamilton
+2462300,-79.070051,43.845378,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Durham
+2462400,-79.019578,43.845788,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Durham
+2462700,-106.658957,52.158453,,"Saskatoon, SK",Medium City (4),Suburban,Prairies / Prairies,Division No. 11
+2467900,-73.572572,45.504748,,"Montréal, PQ",Very Large Metro (1),Urban,Quebec / Québec,MontrACal
+2468800,-73.759648,45.569137,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Laval
+2468900,-73.614332,45.263757,,,Small Community (7),Exurban,Quebec / Québec,Les Jardins-de-Napierville
+2469100,-80.984179,46.52169,,"Greater Sudbury / Grand Sudbury, ON",Small City (5),Light Suburban,Ontario / Ontario,Greater Sudbury / Grand Sudbury
+2474100,-97.146269,49.879581,,"Winnipeg, MB",Large City (3),Light Urban,Prairies / Prairies,Division No. 11
+2479300,-114.094239,51.039797,,"Calgary, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No.  6
+2480600,-113.815119,51.052123,,"Calgary, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No.  6
+2487100,-73.264294,45.310228,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Le Haut-Richelieu
+2487800,-106.598564,52.13756,,"Saskatoon, SK",Medium City (4),Light Suburban,Prairies / Prairies,Division No. 11
+2488200,-107.987292,51.550551,,,Small Community (7),Rural,Prairies / Prairies,Division No. 12
+2493600,-79.35405,43.851287,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+2514600,-73.434473,46.167986,,,Small Community (7),Rural,Quebec / Québec,Matawinie
+2514700,-73.608369,45.427824,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,MontrACal
+2522300,-79.057338,43.854667,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Durham
+2525400,-73.617757,45.723172,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Les Moulins
+2526800,-73.231376,45.297237,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Le Haut-Richelieu
+2529100,-73.567384,45.461456,,"Montréal, PQ",Very Large Metro (1),Urban,Quebec / Québec,MontrACal
+2530700,-71.245762,46.879581,,"Québec, PQ",Large City (3),Light Suburban,Quebec / Québec,QuACbec
+2533800,-124.042536,49.229837,,"Nanaimo, BC",Small City (5),Exurban,British Columbia / Colombie-Britannique,Nanaimo
+2536700,-79.275442,43.74891,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+2540500,-72.727465,45.400014,,"Granby, PQ",Small City (5),Light Suburban,Quebec / Québec,La Haute-Yamaska
+2542700,-79.459941,43.847064,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+2545400,-71.770167,45.445559,,"Sherbrooke, PQ",Medium City (4),Rural,Quebec / Québec,Le Haut-Saint-FranA§ois
+2545500,-72.934019,45.36297,,,Small Community (7),Rural,Quebec / Québec,Rouville
+2546400,-79.420083,43.80292,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+2547600,-75.694163,45.41255,,"Ottawa - Gatineau, ON",Large Metro (2),Light Urban,Ontario / Ontario,Ottawa
+2548600,-79.609644,43.825126,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+2548700,-79.512015,43.855342,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+2548900,-79.558066,43.825216,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+2549400,-73.655363,45.494845,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+2549500,-73.510451,45.71358,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Les Moulins
+2550000,-74.888276,45.556698,,,Small Community (7),Rural,Ontario / Ontario,Prescott and Russell
+2556200,-122.971171,49.31624,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+2557200,-79.393328,43.642855,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+2557300,-75.698129,45.270799,,"Ottawa - Gatineau, ON",Large Metro (2),Exurban,Ontario / Ontario,Ottawa
+2558400,-73.702817,45.580013,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Laval
+2560900,-75.603186,45.383745,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+2562600,-79.629548,43.625875,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Peel
+25700,-79.354914,43.835063,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+2573800,-73.817328,45.768993,,"Montréal, PQ",Very Large Metro (1),Rural,Quebec / Québec,ThACrA¨se-De Blainville
+2575300,-72.71616,45.422021,,"Granby, PQ",Small City (5),Exurban,Quebec / Québec,La Haute-Yamaska
+2575600,-122.989129,49.214128,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+2581700,-73.851897,45.626735,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,ThACrA¨se-De Blainville
+2582600,-122.662925,49.120452,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+2591600,-79.383449,43.639588,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+2596000,-121.95731,49.112,,"Chilliwack, BC",Small City (5),Exurban,British Columbia / Colombie-Britannique,Fraser Valley
+2598500,-79.380745,43.671323,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+2599900,-79.353645,43.794518,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+2603000,-79.683513,43.667712,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+2603500,-113.257892,50.406758,,,Small Community (7),Rural,Prairies / Prairies,Division No.  5
+260400,-79.684283,43.465157,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Halton
+2605900,-97.153437,49.848145,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11
+2611800,-73.654889,45.699115,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Les Moulins
+2611900,-74.137243,45.268841,,"Salaberry-de-Valleyfield, PQ",Small Town (6),Light Suburban,Quebec / Québec,Beauharnois-Salaberry
+2612000,-74.046882,45.288661,,"Salaberry-de-Valleyfield, PQ",Small Town (6),Exurban,Quebec / Québec,Beauharnois-Salaberry
+2612700,-96.842013,49.936654,,"Winnipeg, MB",Large City (3),Rural,Prairies / Prairies,Division No. 12
+2623900,-79.374611,43.770212,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+2626900,-93.415665,48.610599,,,Small Community (7),Exurban,Ontario / Ontario,Rainy River
+2631000,-72.204494,46.57182,,,Small Community (7),Rural,Quebec / Québec,Francheville
+2634100,-122.800559,49.056275,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+2634200,-75.701253,45.486804,,"Ottawa - Gatineau, PQ",Medium City (4),Light Suburban,Quebec / Québec,Gatineau
+2647400,-97.31289,49.883545,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+2653400,-113.403811,53.59888,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+2661200,-73.62184,45.549476,,"Montréal, PQ",Very Large Metro (1),Urban,Quebec / Québec,MontrACal
+2668100,-75.719338,45.424896,,"Ottawa - Gatineau, PQ",Medium City (4),Light Urban,Quebec / Québec,Gatineau
+2674500,-79.554791,43.716146,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+2675300,-79.604451,43.775833,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+2696100,-73.899257,45.536,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Deux-Montagnes
+2698200,-77.244353,48.391052,,,Small Community (7),Rural,Quebec / Québec,"La VallACe-de-l'Or"
+2699400,-73.541702,45.469074,,"Montréal, PQ",Very Large Metro (1),Urban,Quebec / Québec,MontrACal
+2702200,-72.459445,48.655353,,,Small Community (7),Rural,Quebec / Québec,Le Domaine-du-Roy
+2702800,-104.183063,51.764779,,,Small Community (7),Rural,Prairies / Prairies,Division No. 10
+2702900,-82.965402,42.253958,,"Windsor, ON",Medium City (4),Light Suburban,Ontario / Ontario,Essex
+2703700,-73.595631,45.456773,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+2704100,-79.408164,43.843676,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+2705400,-104.547568,50.444165,,"Regina, SK",Medium City (4),Light Suburban,Prairies / Prairies,Division No.  6
+271000,-80.32542,43.397477,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Light Suburban,Ontario / Ontario,Waterloo
+2712500,-73.647884,45.43326,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+2712800,-79.905793,43.262282,,"Hamilton, ON",Large City (3),Suburban,Ontario / Ontario,Hamilton
+2712900,-73.596644,45.54297,,"Montréal, PQ",Very Large Metro (1),Urban,Quebec / Québec,MontrACal
+2714100,-72.473743,45.903147,,"Drummondville, PQ",Small City (5),Exurban,Quebec / Québec,Drummond
+2714200,-79.617036,43.580353,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Peel
+2719800,-89.241563,48.413567,,"Thunder Bay, ON",Small City (5),Light Suburban,Ontario / Ontario,Thunder Bay
+2733900,-77.600836,44.093309,,"Belleville, ON",Small City (5),Exurban,Ontario / Ontario,Hastings
+2736600,-97.113874,49.835601,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11
+2741400,-72.087587,45.023086,,,Small Community (7),Rural,Quebec / Québec,MemphrACmagog
+2741500,-113.111905,53.949927,,"Edmonton, AB",Large Metro (2),Rural,Prairies / Prairies,Division No. 11
+2742600,-53.025677,47.494535,,"St. John's, NF",Medium City (4),Exurban,Atlantic / Atlantique,Division No.  1
+2743100,-73.75084,45.627006,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Laval
+2744000,-64.710289,47.74408,,,Small Community (7),Rural,Atlantic / Atlantique,Gloucester
+2744300,-73.654584,45.538125,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+2744700,-122.788556,53.864225,,"Prince George, BC",Small City (5),Exurban,British Columbia / Colombie-Britannique,Fraser-Fort George
+2750200,-64.72254,46.471283,,,Small Community (7),Rural,Atlantic / Atlantique,Kent
+2751000,-80.317323,43.374417,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Suburban,Ontario / Ontario,Waterloo
+2751500,-108.277334,52.762681,,"North Battleford, SK",Small Town (6),Rural,Prairies / Prairies,Division No. 16
+2761300,-73.91717,45.575425,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Deux-Montagnes
+2767000,-114.086036,50.948391,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+2769200,-82.600076,42.03807,,"Leamington, ON",Small Town (6),Exurban,Ontario / Ontario,Essex
+2771100,-64.735438,45.04269,,,Small Community (7),Rural,Atlantic / Atlantique,Kings
+2785400,-117.632165,49.089833,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Kootenay Boundary
+2787900,-106.635054,52.128517,,"Saskatoon, SK",Medium City (4),Suburban,Prairies / Prairies,Division No. 11
+2791400,-122.844844,49.191356,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+2792400,-65.260747,48.02697,,,Small Community (7),Rural,Quebec / Québec,Bonaventure
+2793300,-72.648411,45.333286,,"Granby, PQ",Small City (5),Exurban,Quebec / Québec,Brome-Missisquoi
+2793500,-74.171586,45.087385,,,Small Community (7),Rural,Quebec / Québec,Le Haut-Saint-Laurent
+2794800,-122.887015,49.263484,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+2797100,-73.608612,45.546,,"Montréal, PQ",Very Large Metro (1),Urban,Quebec / Québec,MontrACal
+2800400,-123.126497,49.279692,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+2802000,-52.860848,47.531317,,"St. John's, NF",Medium City (4),Exurban,Atlantic / Atlantique,Division No.  1
+2803700,-79.740928,43.702681,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+2812200,-113.960088,50.915646,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+2812800,-79.648849,43.602565,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Peel
+2817200,-71.30422,46.109828,,"Thetford Mines, PQ",Small Town (6),Exurban,Quebec / Québec,Les Appalaches
+28200,-82.36,42.979352,,"Sarnia, ON",Small City (5),Light Suburban,Ontario / Ontario,Lambton
+2840700,-73.469538,45.538276,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Longueuil
+2841200,-73.292217,45.333214,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Le Haut-Richelieu
+2844100,-73.970757,45.627408,,"Montréal, PQ",Very Large Metro (1),Rural,Quebec / Québec,Mirabel
+2846500,-56.07626,49.499224,,,Small Community (7),Rural,Atlantic / Atlantique,Division No.  8
+2852300,-97.03762,49.606322,,,Small Community (7),Rural,Prairies / Prairies,Division No.  2
+2856800,-75.928957,45.267113,,"Ottawa - Gatineau, ON",Large Metro (2),Exurban,Ontario / Ontario,Ottawa
+2864100,-79.312233,43.758089,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+2864300,-97.014282,49.969433,,"Winnipeg, MB",Large City (3),Exurban,Prairies / Prairies,Division No. 13
+2864800,-122.779516,49.198574,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+286500,-79.741562,43.591129,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+2870300,-75.691975,45.419555,,"Ottawa - Gatineau, ON",Large Metro (2),Light Urban,Ontario / Ontario,Ottawa
+2886800,-64.790881,46.052541,,"Moncton, NB",Small City (5),Exurban,Atlantic / Atlantique,Albert
+2907900,-122.66734,49.132336,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+291300,-79.889817,43.260844,,"Hamilton, ON",Large City (3),Suburban,Ontario / Ontario,Hamilton
+2922900,-75.740749,45.386098,,"Ottawa - Gatineau, ON",Large Metro (2),Suburban,Ontario / Ontario,Ottawa
+2924700,-78.913197,43.883133,,"Oshawa, ON",Medium City (4),Suburban,Ontario / Ontario,Durham
+2925300,-71.097325,48.404469,,"Saguenay, PQ",Small City (5),Light Suburban,Quebec / Québec,Le Saguenay-et-son-Fjord
+2925800,-73.800669,45.655375,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,ThACrA¨se-De Blainville
+2926300,-73.561139,45.523558,,"Montréal, PQ",Very Large Metro (1),Urban,Quebec / Québec,MontrACal
+2928800,-73.152264,45.427883,,,Small Community (7),Rural,Quebec / Québec,Rouville
+29300,-123.984666,49.185802,,"Nanaimo, BC",Small City (5),Light Suburban,British Columbia / Colombie-Britannique,Nanaimo
+2931500,-73.725293,45.55731,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,Laval
+2932400,-73.273899,45.274053,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Le Haut-Richelieu
+2937200,-79.388713,43.674435,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+2948000,-79.260204,43.196837,,"St. Catharines - Niagara, ON",Medium City (4),Suburban,Ontario / Ontario,Niagara
+2956600,-73.485162,45.569642,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Longueuil
+2960900,-64.236559,44.54626,,,Small Community (7),Rural,Atlantic / Atlantique,Lunenburg
+2961500,-73.535773,45.548395,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+2962700,-73.624479,45.474127,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+2966900,-76.051996,46.093805,,,Small Community (7),Rural,Quebec / Québec,La VallACe-de-la-Gatineau
+2967100,-80.531639,43.826875,,,Small Community (7),Rural,Ontario / Ontario,Wellington
+2968200,-79.769061,43.354326,,"Hamilton, ON",Large City (3),Suburban,Ontario / Ontario,Halton
+2968500,-73.405662,45.187776,,,Small Community (7),Exurban,Quebec / Québec,Les Jardins-de-Napierville
+2971500,-79.743709,43.558341,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+2980300,-73.450878,45.608867,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Longueuil
+2987500,-109.146198,52.435576,,,Small Community (7),Rural,Prairies / Prairies,Division No. 13
+2987800,-81.194937,42.977479,,"London, ON",Large City (3),Suburban,Ontario / Ontario,Middlesex
+2987900,-81.314019,43.017898,,"London, ON",Large City (3),Exurban,Ontario / Ontario,Middlesex
+2988000,-82.178619,42.397029,,"Chatham-Kent, ON",Small City (5),Light Suburban,Ontario / Ontario,Chatham-Kent
+2990600,-83.020064,42.298259,,"Windsor, ON",Medium City (4),Suburban,Ontario / Ontario,Essex
+2991200,-79.125368,44.427712,,,Small Community (7),Rural,Ontario / Ontario,Durham
+3008700,-97.210601,49.902138,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+3008800,-114.212862,51.15072,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+3008900,-114.255102,51.147937,,"Calgary, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No.  6
+3011800,-113.56819,53.453251,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+3014800,-75.495591,45.530384,,"Ottawa - Gatineau, PQ",Medium City (4),Rural,Quebec / Québec,Gatineau
+3017900,-71.308437,46.764905,,"Québec, PQ",Large City (3),Suburban,Quebec / Québec,QuACbec
+3018800,-97.090057,49.958783,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+3020100,-114.110891,50.906092,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+3022300,-73.712709,45.965646,,,Small Community (7),Rural,Quebec / Québec,Montcalm
+3029700,-106.722705,52.1287,,"Saskatoon, SK",Medium City (4),Light Suburban,Prairies / Prairies,Division No. 11
+3031600,-114.122336,51.160795,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+3033500,-79.429759,43.70034,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+3034500,-73.503344,45.378024,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Roussillon
+3034600,-73.306416,45.643203,,"Montréal, PQ",Very Large Metro (1),Rural,Quebec / Québec,"Marguerite-D'Youville"
+3036000,-79.709116,44.188947,,"Barrie, ON",Medium City (4),Rural,Ontario / Ontario,Simcoe
+3045800,-79.293187,43.783689,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+3045900,-79.441146,43.893081,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+3047600,-106.570512,52.147432,,"Saskatoon, SK",Medium City (4),Light Suburban,Prairies / Prairies,Division No. 11
+3061400,-78.174287,43.980247,,"Cobourg, ON",Small Town (6),Exurban,Ontario / Ontario,Northumberland
+3063400,-106.656038,52.11769,,"Saskatoon, SK",Medium City (4),Suburban,Prairies / Prairies,Division No. 11
+3065200,-79.55084,43.806694,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+3068900,-79.325942,43.822536,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+3069000,-79.493383,43.782345,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+3071000,-74.027293,45.796407,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,La RiviA¨re-du-Nord
+3085500,-79.482865,43.630078,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+3091300,-63.586565,44.64031,,"Halifax, NS",Medium City (4),Light Urban,Atlantic / Atlantique,Halifax
+3095800,-63.621243,44.662788,,"Halifax, NS",Medium City (4),Light Urban,Atlantic / Atlantique,Halifax
+3095900,-122.639531,49.163188,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+3098200,-79.10005,43.12038,,"St. Catharines - Niagara, ON",Medium City (4),Light Suburban,Ontario / Ontario,Niagara
+3098500,-123.140612,49.263809,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+3102700,-79.459223,43.654678,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+3103300,-79.395067,43.899144,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,York
+3105200,-63.676792,44.716007,,"Halifax, NS",Medium City (4),Exurban,Atlantic / Atlantique,Halifax
+3105600,-97.057097,49.895195,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+3106900,-63.358726,45.138675,,,Small Community (7),Rural,Atlantic / Atlantique,Colchester
+3108500,-71.362656,45.911356,,,Small Community (7),Rural,Quebec / Québec,Les Appalaches
+3113600,-79.454337,44.610537,,"Orillia, ON",Small Town (6),Exurban,Ontario / Ontario,Simcoe
+3117500,-98.327595,49.975391,,"Portage la Prairie, MB",Small Town (6),Exurban,Prairies / Prairies,Division No.  9
+3121900,-73.745498,45.311526,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Roussillon
+3122800,-119.25233,50.706916,,"Salmon Arm, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Columbia-Shuswap
+3123500,-82.387066,43.005075,,"Sarnia, ON",Small City (5),Light Suburban,Ontario / Ontario,Lambton
+3126700,-72.976862,45.642121,,"Saint-Hyacinthe, PQ",Small Town (6),Exurban,Quebec / Québec,Les Maskoutains
+3128800,-80.748848,42.881606,,"Tillsonburg, ON",Small Town (6),Exurban,Ontario / Ontario,Oxford
+3135100,-74.286536,45.478373,,,Small Community (7),Rural,Quebec / Québec,Vaudreuil-Soulanges
+3141800,-122.947405,49.191257,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+3146800,-123.183924,49.126063,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+3148500,-106.669411,52.285688,,"Saskatoon, SK",Medium City (4),Rural,Prairies / Prairies,Division No. 11
+3157200,-123.323653,48.432192,,"Victoria, BC",Medium City (4),Light Urban,British Columbia / Colombie-Britannique,Capital
+316100,-79.751634,43.696769,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+3165700,-123.467422,48.445997,,"Victoria, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Capital
+3172300,-122.956789,49.218661,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+3183700,-80.016279,43.199091,,"Hamilton, ON",Large City (3),Rural,Ontario / Ontario,Hamilton
+3184400,-65.068924,44.94317,,,Small Community (7),Rural,Atlantic / Atlantique,Annapolis
+3185500,-79.440494,43.755759,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+3187000,-79.663112,43.784292,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Peel
+3188500,-79.534063,43.843071,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+3189700,-79.74841,43.781983,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+3189800,-73.550998,45.382599,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Roussillon
+3190600,-73.628042,45.61726,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,MontrACal
+3192700,-122.781879,53.901253,,"Prince George, BC",Small City (5),Exurban,British Columbia / Colombie-Britannique,Fraser-Fort George
+3194500,-79.429297,43.843476,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+3196800,-119.48142,49.844951,,"Kelowna, BC",Medium City (4),Exurban,British Columbia / Colombie-Britannique,Central Okanagan
+3200700,-123.127328,49.276756,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+3201200,-73.781758,45.689088,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Les Moulins
+3206000,-82.900196,42.313251,,"Windsor, ON",Medium City (4),Light Suburban,Ontario / Ontario,Essex
+3213400,-79.261961,43.156542,,"St. Catharines - Niagara, ON",Medium City (4),Light Suburban,Ontario / Ontario,Niagara
+3214500,-73.649717,45.602408,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Laval
+3217200,-65.850063,48.17666,,,Small Community (7),Rural,Quebec / Québec,Bonaventure
+3218400,-79.248064,43.709639,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+3221500,-79.679409,44.011893,,"Toronto, ON",Very Large Metro (1),Rural,Ontario / Ontario,Simcoe
+3225800,-78.958969,43.916023,,"Oshawa, ON",Medium City (4),Exurban,Ontario / Ontario,Durham
+3229700,-80.34603,43.390346,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Light Suburban,Ontario / Ontario,Waterloo
+3233600,-122.879278,49.203152,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+3234300,-79.418531,43.663388,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+323500,-81.260494,42.960404,,"London, ON",Large City (3),Suburban,Ontario / Ontario,Middlesex
+3239600,-79.748553,43.388529,,"Hamilton, ON",Large City (3),Light Suburban,Ontario / Ontario,Halton
+3243000,-57.6053,49.011399,,"Corner Brook, NF",Small Town (6),Rural,Atlantic / Atlantique,Division No.  5
+3244500,-72.159054,45.268751,,"Sherbrooke, PQ",Medium City (4),Exurban,Quebec / Québec,MemphrACmagog
+3244600,-73.436044,45.442061,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Longueuil
+3252200,-113.787344,52.382142,,,Small Community (7),Exurban,Prairies / Prairies,Division No.  8
+3264100,-105.038601,51.846016,,,Small Community (7),Rural,Prairies / Prairies,Division No. 11
+3271800,-79.538801,43.094813,,,Small Community (7),Rural,Ontario / Ontario,Niagara
+3304100,-79.682198,43.5452,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+3306400,-79.38422,43.804911,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+3308200,-81.230464,42.957435,,"London, ON",Large City (3),Suburban,Ontario / Ontario,Middlesex
+3309400,-80.308328,43.417298,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Light Suburban,Ontario / Ontario,Waterloo
+3311100,-79.316221,43.888775,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+3312100,-80.468681,43.444007,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Suburban,Ontario / Ontario,Waterloo
+3313000,-79.462778,43.731848,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+3315400,-112.810122,49.703631,,"Lethbridge, AB",Small City (5),Light Suburban,Prairies / Prairies,Division No.  2
+3324100,-114.143469,51.020762,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+3327900,-78.926192,43.92366,,"Oshawa, ON",Medium City (4),Light Suburban,Ontario / Ontario,Durham
+3332600,-113.994586,51.06871,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+3337000,-79.473269,43.786251,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+3342100,-74.096417,45.704915,,"Montréal, PQ",Very Large Metro (1),Rural,Quebec / Québec,Mirabel
+3343100,-113.630242,53.655094,,"Edmonton, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No. 11
+3352500,-122.731685,49.119038,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+3366600,-70.525599,46.403553,,,Small Community (7),Rural,Quebec / Québec,Les Etchemins
+3389000,-114.04167,50.978063,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+3391300,-73.64118,45.455074,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+3391500,-79.25752,43.789497,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+3394900,-80.491883,43.488917,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Suburban,Ontario / Ontario,Waterloo
+3401200,-97.075716,49.952996,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+3414400,-97.115162,49.913413,,"Winnipeg, MB",Large City (3),Light Urban,Prairies / Prairies,Division No. 11
+3417900,-73.555497,45.61889,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+3425700,-79.2958,43.709095,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+3430500,-97.155457,49.766372,,"Winnipeg, MB",Large City (3),Exurban,Prairies / Prairies,Division No. 11
+3435800,-79.861768,43.50743,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Halton
+3471900,-114.042003,51.110172,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+3484800,-122.791068,49.042924,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+3502600,-63.781669,46.414628,,"Summerside, PE",Small Town (6),Exurban,Atlantic / Atlantique,Prince
+3505600,-123.100755,49.33693,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+3509400,-79.268067,43.808921,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+3537200,-121.761375,49.237588,,"Chilliwack, BC",Small City (5),Rural,British Columbia / Colombie-Britannique,Fraser Valley
+3552100,-113.213034,53.695291,,"Edmonton, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No. 11
+3555200,-79.267285,43.832387,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+3561100,-82.969537,42.282442,,"Windsor, ON",Medium City (4),Light Suburban,Ontario / Ontario,Essex
+3561400,-97.167053,49.853059,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11
+3566100,-107.799731,50.28361,,"Swift Current, SK",Small Town (6),Exurban,Prairies / Prairies,Division No.  8
+357600,-114.140014,51.037537,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+3581600,-79.589568,43.742669,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+3587200,-97.199983,49.894563,,"Winnipeg, MB",Large City (3),Light Urban,Prairies / Prairies,Division No. 11
+358800,-77.398671,44.186935,,"Belleville, ON",Small City (5),Light Suburban,Ontario / Ontario,Hastings
+3597600,-107.981262,52.06113,,,Small Community (7),Rural,Prairies / Prairies,Division No. 12
+3597900,-79.254008,43.853376,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+361700,-78.715566,44.930346,,,Small Community (7),Rural,Ontario / Ontario,Haliburton
+3622600,-127.084918,50.587648,,,Small Community (7),Rural,British Columbia / Colombie-Britannique,Mount Waddington
+3623000,-79.559116,43.615486,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+3623500,-79.573195,43.653182,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+3627000,-81.212937,42.944204,,"London, ON",Large City (3),Light Suburban,Ontario / Ontario,Middlesex
+3631600,-79.058987,42.885168,,"St. Catharines - Niagara, ON",Medium City (4),Rural,Ontario / Ontario,Niagara
+3634700,-79.868204,43.543822,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Halton
+3636600,-113.519129,53.426395,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+3636700,-113.675565,53.511431,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+3641200,-79.564952,43.195504,,"Hamilton, ON",Large City (3),Exurban,Ontario / Ontario,Niagara
+3648200,-113.838717,52.290349,,"Red Deer, AB",Small City (5),Exurban,Prairies / Prairies,Division No.  8
+3666000,-79.53324,43.796626,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+3666600,-79.441655,43.773203,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+3678500,-79.361971,43.710474,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+3690400,-118.768795,55.171059,,"Grande Prairie, AB",Small Town (6),Exurban,Prairies / Prairies,Division No. 19
+3693500,-113.947734,51.124492,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+3695200,-71.204184,46.593655,,"Québec, PQ",Large City (3),Rural,Quebec / Québec,La Nouvelle-Beauce
+3702700,-97.14154,49.899024,,"Winnipeg, MB",Large City (3),Light Urban,Prairies / Prairies,Division No. 11
+3704300,-119.4308,55.210681,,,Small Community (7),Rural,Prairies / Prairies,Division No. 19
+3704500,-96.900197,50.156612,,,Small Community (7),Exurban,Prairies / Prairies,Division No. 13
+3716900,-123.077435,49.218377,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+3719100,-80.247748,43.54526,,"Guelph, ON",Small City (5),Suburban,Ontario / Ontario,Wellington
+3720200,-113.416089,53.627375,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+3729000,-71.370411,46.766248,,"Québec, PQ",Large City (3),Light Suburban,Quebec / Québec,QuACbec
+3729100,-81.291748,42.912411,,"London, ON",Large City (3),Exurban,Ontario / Ontario,Middlesex
+3739300,-79.875957,43.631849,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,Halton
+3739800,-74.686457,45.058831,,,Small Community (7),Exurban,Ontario / Ontario,"Stormont, Dundas and Glengarry"
+3744700,-63.489984,44.612028,,"Halifax, NS",Medium City (4),Exurban,Atlantic / Atlantique,Halifax
+3749900,-78.944324,43.858767,,"Oshawa, ON",Medium City (4),Light Suburban,Ontario / Ontario,Durham
+3756300,-99.960066,49.86489,,"Brandon, MB",Small Town (6),Exurban,Prairies / Prairies,Division No.  7
+3769100,-119.448867,49.909412,,"Kelowna, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Central Okanagan
+3775200,-75.302455,45.544415,,"Ottawa - Gatineau, ON",Large Metro (2),Exurban,Ontario / Ontario,Prescott and Russell
+3779900,-122.812314,49.061386,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+3784200,-77.384384,44.189791,,"Belleville, ON",Small City (5),Light Suburban,Ontario / Ontario,Hastings
+3793200,-77.548995,44.299833,,"Belleville, ON",Small City (5),Rural,Ontario / Ontario,Hastings
+380000,-113.505591,53.518296,,"Edmonton, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No. 11
+380100,-113.485565,53.517457,,"Edmonton, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No. 11
+380200,-79.303488,43.722809,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+3802100,-79.837405,43.508709,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Halton
+3805200,-93.823157,51.019057,,,Small Community (7),Rural,Ontario / Ontario,Kenora
+3809400,-122.259691,49.04968,,"Abbotsford - Mission, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Fraser Valley
+3809500,-73.552601,45.532834,,"Montréal, PQ",Very Large Metro (1),Urban,Quebec / Québec,MontrACal
+3814500,-78.850563,43.938507,,"Oshawa, ON",Medium City (4),Light Suburban,Ontario / Ontario,Durham
+3819000,-123.717252,48.802166,,"Duncan, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Cowichan Valley
+3821700,-80.076783,44.473136,,"Wasaga Beach, ON",Small Town (6),Exurban,Ontario / Ontario,Simcoe
+3831400,-106.567077,52.098989,,"Saskatoon, SK",Medium City (4),Exurban,Prairies / Prairies,Division No. 11
+383200,-79.441146,43.884137,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+384400,-114.088269,51.067315,,"Calgary, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No.  6
+3844800,-73.976517,45.513879,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Deux-Montagnes
+384500,-114.064969,50.914787,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+3845400,-69.805518,47.527061,,,Small Community (7),Rural,Quebec / Québec,Kamouraska
+384700,-97.143211,49.886696,,"Winnipeg, MB",Large City (3),Light Urban,Prairies / Prairies,Division No. 11
+3848800,-73.57457,45.49955,,"Montréal, PQ",Very Large Metro (1),Urban,Quebec / Québec,MontrACal
+3850300,-120.370608,50.657982,,"Kamloops, BC",Small City (5),Exurban,British Columbia / Colombie-Britannique,Thompson-Nicola
+3858100,-79.786478,43.174794,,"Hamilton, ON",Large City (3),Exurban,Ontario / Ontario,Hamilton
+3858500,-79.509491,43.83572,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+3858900,-122.557565,49.220588,,"Vancouver, BC",Very Large Metro (1),Exurban,British Columbia / Colombie-Britannique,Greater Vancouver
+3859900,-79.295552,43.670846,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+3860000,-79.485721,43.862808,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+3861100,-79.502684,43.697709,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+3862400,-73.5721,45.645789,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,MontrACal
+3865900,-79.267818,43.905083,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+3882600,-79.41391,44.013512,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+3887800,-79.625261,43.773376,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+3887900,-79.62611,43.784717,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+3898100,-123.411494,48.56582,,"Victoria, BC",Medium City (4),Exurban,British Columbia / Colombie-Britannique,Capital
+3898300,-80.126042,43.913637,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,Dufferin
+3903000,-114.04622,50.942173,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+3905500,-78.878706,43.879283,,"Oshawa, ON",Medium City (4),Suburban,Ontario / Ontario,Durham
+3908700,-114.003002,51.269403,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+3908800,-79.478145,43.829547,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+3909000,-71.205577,46.813401,,"Québec, PQ",Large City (3),Light Urban,Quebec / Québec,QuACbec
+391000,-79.903395,43.651071,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,Halton
+3911200,-79.007789,43.853353,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Durham
+3930000,-113.371096,53.478561,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+3931900,-73.214903,45.578439,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,La VallACe-du-Richelieu
+3934500,-113.481573,53.426304,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+3937600,-79.527103,43.773756,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+3961100,-79.465489,43.759761,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+3963100,-71.613694,46.843059,,"Québec, PQ",Large City (3),Rural,Quebec / Québec,La Jacques-Cartier
+3966700,-122.679615,49.115501,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+3967600,-97.180198,49.883709,,"Winnipeg, MB",Large City (3),Light Urban,Prairies / Prairies,Division No. 11
+3971100,-79.597904,43.687007,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+3978600,-123.495141,48.461662,,"Victoria, BC",Medium City (4),Exurban,British Columbia / Colombie-Britannique,Capital
+3986700,-113.504364,53.538682,,"Edmonton, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No. 11
+4002400,-79.922933,43.210136,,"Hamilton, ON",Large City (3),Light Suburban,Ontario / Ontario,Hamilton
+4008500,-123.62268,48.653544,,,Small Community (7),Rural,British Columbia / Colombie-Britannique,Cowichan Valley
+4011000,-80.510587,43.414848,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Suburban,Ontario / Ontario,Waterloo
+4017800,-101.35027,51.227625,,,Small Community (7),Rural,Prairies / Prairies,Division No. 16
+4019700,-122.840232,49.263206,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+4021000,-71.371348,46.888772,,"Québec, PQ",Large City (3),Exurban,Quebec / Québec,QuACbec
+4022200,-94.520742,49.76564,,"Kenora, ON",Small Town (6),Exurban,Ontario / Ontario,Kenora
+4026600,-78.890582,43.911628,,"Oshawa, ON",Medium City (4),Suburban,Ontario / Ontario,Durham
+4027300,-78.895041,43.947619,,"Oshawa, ON",Medium City (4),Light Suburban,Ontario / Ontario,Durham
+4030000,-79.276787,43.956068,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,York
+4031100,-119.614877,49.836169,,"Kelowna, BC",Medium City (4),Exurban,British Columbia / Colombie-Britannique,Central Okanagan
+4031500,-79.373268,43.886413,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+4034000,-114.069516,51.126656,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+4034100,-114.158144,51.156451,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+4036400,-122.644949,49.10275,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+4037600,-122.82877,49.279251,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+4043900,-113.507628,53.541099,,"Edmonton, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No. 11
+4048500,-79.340661,43.773743,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+4049400,-118.847093,55.167355,,"Grande Prairie, AB",Small Town (6),Light Suburban,Prairies / Prairies,Division No. 19
+4049500,-118.8072,55.141238,,"Grande Prairie, AB",Small Town (6),Light Suburban,Prairies / Prairies,Division No. 19
+407800,-76.505992,44.239061,,"Kingston, ON",Small City (5),Suburban,Ontario / Ontario,Frontenac
+4083800,-79.528784,43.648409,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+4090900,-79.562203,43.63459,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+4094200,-79.761028,43.449439,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Halton
+4094300,-122.941901,49.224193,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+410100,-81.250233,42.983748,,"London, ON",Large City (3),Suburban,Ontario / Ontario,Middlesex
+4105400,-79.293225,43.726958,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+4108400,-79.9116,43.318572,,"Hamilton, ON",Large City (3),Exurban,Ontario / Ontario,Hamilton
+4111100,-79.383259,43.642385,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+4115000,-105.514118,50.411388,,"Moose Jaw, SK",Small Town (6),Exurban,Prairies / Prairies,Division No.  7
+4116400,-79.715755,43.760305,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+4132500,-79.480313,43.726816,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+4141200,-97.002964,49.894746,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+415200,-79.639049,43.518971,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Peel
+4160600,-79.606671,43.655163,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Peel
+4162700,-74.702037,45.01889,,"Cornwall, ON",Small Town (6),Light Suburban,Ontario / Ontario,"Stormont, Dundas and Glengarry"
+416400,-83.066766,42.309523,,"Windsor, ON",Medium City (4),Suburban,Ontario / Ontario,Essex
+4168700,-113.443284,53.491336,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+4175000,-107.059105,51.481559,,,Small Community (7),Rural,Prairies / Prairies,Division No. 11
+4178800,-80.789838,46.487714,,"Greater Sudbury / Grand Sudbury, ON",Small City (5),Rural,Ontario / Ontario,Greater Sudbury / Grand Sudbury
+4185300,-79.454193,43.810491,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+4187100,-73.993002,45.383616,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Vaudreuil-Soulanges
+4194000,-79.252798,43.771456,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+4197500,-79.364686,43.655706,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+4199500,-78.319762,44.296537,,"Peterborough, ON",Small City (5),Light Suburban,Ontario / Ontario,Peterborough
+420500,-79.634508,43.716295,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Peel
+4218800,-71.160084,46.791865,,"Québec, PQ",Large City (3),Light Suburban,Quebec / Québec,LACvis
+4229200,-122.780284,49.043235,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+4234900,-105.133247,52.202259,,,Small Community (7),Rural,Prairies / Prairies,Division No. 15
+4235000,-106.678856,52.195186,,"Saskatoon, SK",Medium City (4),Suburban,Prairies / Prairies,Division No. 11
+4236700,-122.768921,53.889846,,"Prince George, BC",Small City (5),Light Suburban,British Columbia / Colombie-Britannique,Fraser-Fort George
+4238800,-80.843035,43.835374,,,Small Community (7),Rural,Ontario / Ontario,Wellington
+4240100,-79.598338,44.108165,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,Simcoe
+4251900,-123.006183,49.231116,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+4259300,-73.901241,45.818652,,,Small Community (7),Rural,Quebec / Québec,La RiviA¨re-du-Nord
+4270000,-114.20761,51.038958,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+4270100,-79.028197,43.898287,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,Durham
+4271200,-120.762759,50.12417,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Thompson-Nicola
+4273900,-79.369568,43.650212,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+4281700,-113.541818,53.616298,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+4282600,-73.40503,45.567512,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Longueuil
+4284000,-76.51975,44.220632,,"Kingston, ON",Small City (5),Suburban,Ontario / Ontario,Frontenac
+428500,-114.0062,51.081028,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+4303500,-106.645904,52.086347,,"Saskatoon, SK",Medium City (4),Light Suburban,Prairies / Prairies,Division No. 11
+431200,-113.812937,52.236621,,"Red Deer, AB",Small City (5),Light Suburban,Prairies / Prairies,Division No.  8
+4314100,-79.644759,43.702251,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+4315100,-122.768902,49.264946,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+4323700,-114.02481,51.291552,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+4324800,-113.975669,50.707351,,"Okotoks, AB",Small Town (6),Exurban,Prairies / Prairies,Division No.  6
+434200,-113.627345,53.533726,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+4342100,-73.696991,45.71893,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Les Moulins
+434900,-83.039357,42.317352,,"Windsor, ON",Medium City (4),Suburban,Ontario / Ontario,Essex
+4353100,-74.054457,45.390867,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Vaudreuil-Soulanges
+4358200,-112.796886,49.727493,,"Lethbridge, AB",Small City (5),Light Suburban,Prairies / Prairies,Division No.  2
+4365600,-76.964534,44.261491,,,Small Community (7),Rural,Ontario / Ontario,Lennox and Addington
+4365700,-123.113714,49.263391,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+4370400,-73.679159,45.537956,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+4378100,-72.71064,45.393635,,"Granby, PQ",Small City (5),Exurban,Quebec / Québec,La Haute-Yamaska
+4379400,-79.149151,43.798111,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Toronto
+4384500,-106.62333,52.084874,,"Saskatoon, SK",Medium City (4),Light Suburban,Prairies / Prairies,Division No. 11
+4392800,-71.216426,46.864254,,"Québec, PQ",Large City (3),Suburban,Quebec / Québec,QuACbec
+439300,-80.446298,43.421233,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Light Suburban,Ontario / Ontario,Waterloo
+4395800,-89.213129,48.441223,,"Thunder Bay, ON",Small City (5),Light Suburban,Ontario / Ontario,Thunder Bay
+4399300,-80.585474,44.597821,,,Small Community (7),Rural,Ontario / Ontario,Grey
+4402300,-113.93441,51.098459,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+4407000,-79.58019,43.713087,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+4413900,-71.24669,46.809564,,"Québec, PQ",Large City (3),Light Urban,Quebec / Québec,QuACbec
+4414100,-79.347645,43.735622,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+4417000,-79.377886,43.648348,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+442200,-79.218918,43.172613,,"St. Catharines - Niagara, ON",Medium City (4),Light Suburban,Ontario / Ontario,Niagara
+4428700,-63.563831,44.699099,,"Halifax, NS",Medium City (4),Light Suburban,Atlantic / Atlantique,Halifax
+4429200,-97.152435,49.815176,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11
+446000,-78.363589,44.27804,,"Peterborough, ON",Small City (5),Light Suburban,Ontario / Ontario,Peterborough
+4471400,-122.845303,49.149055,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+4472000,-114.784557,55.273078,,,Small Community (7),Exurban,Prairies / Prairies,Division No. 17
+4475500,-106.759511,52.125551,,"Saskatoon, SK",Medium City (4),Exurban,Prairies / Prairies,Division No. 11
+448500,-63.128115,46.234743,,"Charlottetown, PE",Small City (5),Light Suburban,Atlantic / Atlantique,Queens
+4487100,-79.663291,44.339858,,"Barrie, ON",Medium City (4),Suburban,Ontario / Ontario,Simcoe
+4488900,-73.635963,45.470844,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+4490200,-110.646497,49.996782,,"Medicine Hat, AB",Small Town (6),Exurban,Prairies / Prairies,Division No.  1
+4491500,-79.445322,44.218383,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,York
+4497900,-113.37962,53.454423,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+4509400,-78.697372,43.927017,,"Oshawa, ON",Medium City (4),Exurban,Ontario / Ontario,Durham
+4513300,-79.705855,43.413092,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Halton
+4517300,-78.284084,43.94937,,"Port Hope, ON",Small Town (6),Exurban,Ontario / Ontario,Northumberland
+4517400,-100.258557,49.621174,,,Small Community (7),Rural,Prairies / Prairies,Division No.  7
+4520900,-73.470225,45.718744,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,"L'Assomption"
+4521100,-73.623895,45.70735,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Les Moulins
+4522700,-77.595446,44.201228,,"Belleville, ON",Small City (5),Rural,Ontario / Ontario,Hastings
+4523100,-79.717286,43.724,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+4524700,-82.25498,43.028022,,"Sarnia, ON",Small City (5),Rural,Ontario / Ontario,Lambton
+4525400,-79.710113,43.858689,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,Peel
+452700,-79.661314,43.570159,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+4531800,-80.262014,43.135511,,"Brantford, ON",Small City (5),Light Suburban,Ontario / Ontario,Brant
+453300,-79.81716,43.339602,,"Hamilton, ON",Large City (3),Suburban,Ontario / Ontario,Halton
+4533400,-78.777009,43.911284,,"Oshawa, ON",Medium City (4),Exurban,Ontario / Ontario,Durham
+4538400,-79.627753,43.6934,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Peel
+4542300,-79.05404,43.06071,,"St. Catharines - Niagara, ON",Medium City (4),Exurban,Ontario / Ontario,Niagara
+455200,-113.548891,53.571303,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+455300,-79.55022,43.788384,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+4560600,-79.639136,43.583847,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Peel
+4562700,-104.648598,50.406151,,"Regina, SK",Medium City (4),Exurban,Prairies / Prairies,Division No.  6
+4564600,-73.933536,45.695964,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Mirabel
+4567400,-79.55707,43.693341,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+457400,-79.518259,43.75617,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+457500,-79.675255,43.527235,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+4587100,-71.237399,46.830122,,"Québec, PQ",Large City (3),Light Urban,Quebec / Québec,QuACbec
+4592600,-79.229506,43.867159,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+4602900,-78.126686,48.14141,,,Small Community (7),Exurban,Quebec / Québec,"La VallACe-de-l'Or"
+4605200,-79.542931,43.751145,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+4615100,-79.472208,43.681822,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+4616700,-79.822533,43.366142,,"Hamilton, ON",Large City (3),Light Suburban,Ontario / Ontario,Halton
+4616800,-79.678822,44.415147,,"Barrie, ON",Medium City (4),Light Suburban,Ontario / Ontario,Simcoe
+4618900,-112.676474,53.367396,,,Small Community (7),Rural,Prairies / Prairies,Division No. 10
+4619500,-113.676484,50.979005,,"Calgary, AB",Large Metro (2),Rural,Prairies / Prairies,Division No.  6
+4620300,-114.099386,51.565859,,,Small Community (7),Rural,Prairies / Prairies,Division No.  6
+4620900,-118.802367,55.226987,,,Small Community (7),Exurban,Prairies / Prairies,Division No. 19
+464500,-114.070505,51.101593,,"Calgary, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No.  6
+4648700,-79.42138,43.649214,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+4651500,-79.230445,43.725551,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+4653300,-121.96309,49.104141,,"Chilliwack, BC",Small City (5),Exurban,British Columbia / Colombie-Britannique,Fraser Valley
+4653600,-80.138164,44.090546,,"Toronto, ON",Very Large Metro (1),Rural,Ontario / Ontario,Dufferin
+4657300,-73.474442,45.409126,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Roussillon
+4657900,-73.472906,45.436828,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Longueuil
+4659100,-113.977453,50.880163,,"Calgary, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No.  6
+4674200,-122.293678,49.03856,,"Abbotsford - Mission, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Fraser Valley
+4674300,-114.089762,51.168263,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+4696000,-122.49211,49.103646,,"Vancouver, BC",Very Large Metro (1),Rural,British Columbia / Colombie-Britannique,Greater Vancouver
+4696200,-79.436554,43.640435,,"Toronto, ON",Very Large Metro (1),Urban,Ontario / Ontario,Toronto
+4696300,-75.594744,45.317946,,"Ottawa - Gatineau, ON",Large Metro (2),Exurban,Ontario / Ontario,Ottawa
+4699800,-104.576134,50.478026,,"Regina, SK",Medium City (4),Suburban,Prairies / Prairies,Division No.  6
+4700900,-97.262279,49.857969,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+4703100,-79.650291,43.527146,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+4713600,-104.666424,50.495325,,"Regina, SK",Medium City (4),Light Suburban,Prairies / Prairies,Division No.  6
+4719200,-122.692176,49.052091,,"Vancouver, BC",Very Large Metro (1),Exurban,British Columbia / Colombie-Britannique,Greater Vancouver
+4719300,-113.998471,51.290609,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+4720800,-114.081305,51.049093,,"Calgary, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No.  6
+473000,-75.696133,45.420697,,"Ottawa - Gatineau, ON",Large Metro (2),Light Urban,Ontario / Ontario,Ottawa
+473100,-75.832434,45.321893,,"Ottawa - Gatineau, ON",Large Metro (2),Exurban,Ontario / Ontario,Ottawa
+473400,-97.222794,49.878993,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11
+4735300,-78.800691,44.6625,,"Kawartha Lakes, ON",Small City (5),Rural,Ontario / Ontario,Kawartha Lakes
+4746000,-71.242635,46.849882,,"Québec, PQ",Large City (3),Suburban,Quebec / Québec,QuACbec
+4750400,-79.368823,44.906092,,,Small Community (7),Exurban,Ontario / Ontario,Muskoka
+4752200,-79.640177,43.214159,,"Hamilton, ON",Large City (3),Exurban,Ontario / Ontario,Hamilton
+4757200,-76.459879,44.255966,,"Kingston, ON",Small City (5),Light Suburban,Ontario / Ontario,Frontenac
+4759800,-79.227356,43.190224,,"St. Catharines - Niagara, ON",Medium City (4),Light Suburban,Ontario / Ontario,Niagara
+4760300,-79.474061,43.690197,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+4762200,-104.606101,50.438775,,"Regina, SK",Medium City (4),Suburban,Prairies / Prairies,Division No.  6
+4763700,-104.671396,50.45558,,"Regina, SK",Medium City (4),Light Suburban,Prairies / Prairies,Division No.  6
+4764300,-71.214289,48.404089,,"Saguenay, PQ",Small City (5),Exurban,Quebec / Québec,Le Saguenay-et-son-Fjord
+4767300,-97.260523,49.875459,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+4768200,-79.426116,43.681864,,"Toronto, ON",Very Large Metro (1),Urban,Ontario / Ontario,Toronto
+4771400,-71.285236,46.879455,,"Québec, PQ",Large City (3),Light Suburban,Quebec / Québec,QuACbec
+4771500,-71.208658,46.894119,,"Québec, PQ",Large City (3),Light Suburban,Quebec / Québec,QuACbec
+4771700,-97.159862,49.88194,,"Winnipeg, MB",Large City (3),Light Urban,Prairies / Prairies,Division No. 11
+478100,-79.224051,43.759321,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+4791300,-80.59284,43.472512,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Exurban,Ontario / Ontario,Waterloo
+4793500,-123.127793,49.277962,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+4795800,-79.215439,43.137113,,"St. Catharines - Niagara, ON",Medium City (4),Light Suburban,Ontario / Ontario,Niagara
+4802600,-81.288666,42.955404,,"London, ON",Large City (3),Suburban,Ontario / Ontario,Middlesex
+4803300,-79.282165,43.773027,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+4811600,-73.519597,45.517168,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,Longueuil
+4813200,-78.848449,43.881329,,"Oshawa, ON",Medium City (4),Suburban,Ontario / Ontario,Durham
+4817500,-109.535844,50.886147,,,Small Community (7),Rural,Prairies / Prairies,Division No.  8
+4819700,-126.64861,54.399275,,,Small Community (7),Rural,British Columbia / Colombie-Britannique,Bulkley-Nechako
+4824400,-73.445447,45.767188,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,"L'Assomption"
+4829300,-73.902324,45.688743,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,ThACrA¨se-De Blainville
+483300,-78.759127,44.3512,,"Kawartha Lakes, ON",Small City (5),Exurban,Ontario / Ontario,Kawartha Lakes
+483400,-82.207131,42.392263,,"Chatham-Kent, ON",Small City (5),Exurban,Ontario / Ontario,Chatham-Kent
+4835600,-108.419502,49.642577,,,Small Community (7),Rural,Prairies / Prairies,Division No.  4
+4840900,-71.216258,46.845311,,"Québec, PQ",Large City (3),Light Urban,Quebec / Québec,QuACbec
+4841200,-79.084204,43.870119,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Durham
+484500,-106.669781,52.144474,,"Saskatoon, SK",Medium City (4),Suburban,Prairies / Prairies,Division No. 11
+4853500,-80.525734,43.47714,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Suburban,Ontario / Ontario,Waterloo
+4855700,-122.916835,49.200618,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+4859800,-103.527173,51.637912,,,Small Community (7),Rural,Prairies / Prairies,Division No. 10
+4859900,-105.760608,53.199908,,"Prince Albert, SK",Small Town (6),Exurban,Prairies / Prairies,Division No. 15
+4861300,-73.534949,45.379315,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Roussillon
+4861400,-81.004761,46.440042,,"Greater Sudbury / Grand Sudbury, ON",Small City (5),Exurban,Ontario / Ontario,Greater Sudbury / Grand Sudbury
+4867400,-79.699361,43.586438,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+4878600,-97.024181,49.910146,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+4885200,-70.6527,46.099592,,"Saint-Georges, PQ",Small Town (6),Exurban,Quebec / Québec,Beauce-Sartigan
+4885800,-75.756535,45.285329,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+4894200,-73.661911,45.507316,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+4903300,-79.55464,43.846154,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+4917700,-73.305075,45.431479,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,La VallACe-du-Richelieu
+491800,-79.661902,43.613781,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Peel
+4930400,-114.070476,51.047901,,"Calgary, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No.  6
+4937800,-117.6115,56.185848,,,Small Community (7),Rural,Prairies / Prairies,Division No. 19
+4942900,-72.580158,45.853929,,"Drummondville, PQ",Small City (5),Rural,Quebec / Québec,Drummond
+4947700,-79.760524,43.686115,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+4948400,-119.587692,49.464788,,"Penticton, BC",Small Town (6),Light Suburban,British Columbia / Colombie-Britannique,Okanagan-Similkameen
+4949600,-123.427316,48.447435,,"Victoria, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Capital
+4952100,-78.814086,43.890576,,"Oshawa, ON",Medium City (4),Light Suburban,Ontario / Ontario,Durham
+496600,-119.428777,49.88378,,"Kelowna, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Central Okanagan
+4977800,-79.073273,43.099908,,"St. Catharines - Niagara, ON",Medium City (4),Light Suburban,Ontario / Ontario,Niagara
+4990100,-104.617554,50.454738,,"Regina, SK",Medium City (4),Suburban,Prairies / Prairies,Division No.  6
+4990200,-104.55874,50.454471,,"Regina, SK",Medium City (4),Suburban,Prairies / Prairies,Division No.  6
+4993200,-78.36729,44.267306,,"Peterborough, ON",Small City (5),Exurban,Ontario / Ontario,Peterborough
+5006400,-79.814198,43.656574,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+5007000,-75.633616,45.029537,,"Ottawa - Gatineau, ON",Large Metro (2),Rural,Ontario / Ontario,Leeds and Grenville
+5009700,-73.297059,45.892861,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,"D'Autray"
+5015000,-79.575721,44.308246,,"Barrie, ON",Medium City (4),Exurban,Ontario / Ontario,Simcoe
+5016900,-75.43558,45.55393,,"Ottawa - Gatineau, PQ",Medium City (4),Exurban,Quebec / Québec,Gatineau
+5017800,-72.783753,45.342989,,"Granby, PQ",Small City (5),Rural,Quebec / Québec,La Haute-Yamaska
+5018600,-64.060553,45.648832,,,Small Community (7),Rural,Atlantic / Atlantique,Cumberland
+5031800,-78.964996,44.093175,,,Small Community (7),Exurban,Ontario / Ontario,Durham
+5032500,-81.431204,42.944392,,"London, ON",Large City (3),Rural,Ontario / Ontario,Middlesex
+5041700,-122.781782,49.158931,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+5047400,-75.672412,45.287156,,"Ottawa - Gatineau, ON",Large Metro (2),Exurban,Ontario / Ontario,Ottawa
+5051000,-123.153999,49.244574,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+5052200,-104.386009,50.445773,,"Regina, SK",Medium City (4),Rural,Prairies / Prairies,Division No.  6
+5067100,-106.648398,52.172657,,"Saskatoon, SK",Medium City (4),Suburban,Prairies / Prairies,Division No. 11
+5072600,-122.824139,49.118857,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+5074700,-82.821601,42.302271,,"Windsor, ON",Medium City (4),Exurban,Ontario / Ontario,Essex
+5074900,-119.495238,49.887117,,"Kelowna, BC",Medium City (4),Suburban,British Columbia / Colombie-Britannique,Central Okanagan
+5076400,-122.981352,49.264083,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+5085400,-115.357442,51.09614,,"Canmore, AB",Small Town (6),Exurban,Prairies / Prairies,Division No. 15
+5087700,-113.489766,53.61954,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+5095200,-76.556314,44.257794,,"Kingston, ON",Small City (5),Light Suburban,Ontario / Ontario,Frontenac
+5095600,-71.14157,46.771487,,"Québec, PQ",Large City (3),Exurban,Quebec / Québec,LACvis
+5100200,-80.554174,43.424882,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Light Suburban,Ontario / Ontario,Waterloo
+5100500,-80.263068,43.170812,,"Brantford, ON",Small City (5),Light Suburban,Ontario / Ontario,Brant
+5100800,-80.878493,43.015084,,"Ingersoll, ON",Small Town (6),Exurban,Ontario / Ontario,Oxford
+5104700,-73.787509,45.58966,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Laval
+5107700,-114.038058,50.875594,,"Calgary, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No.  6
+5108200,-113.817898,52.210066,,,Small Community (7),Rural,Prairies / Prairies,Division No.  8
+5110500,-74.131505,45.949541,,,Small Community (7),Exurban,Quebec / Québec,"Les Pays-d'en-Haut"
+5111700,-110.896914,53.896399,,,Small Community (7),Rural,Prairies / Prairies,Division No. 12
+5115000,-123.085708,49.282673,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+5115100,-123.137838,49.170033,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+5122200,-111.374929,49.867097,,,Small Community (7),Rural,Prairies / Prairies,Division No.  1
+5125400,-80.385054,43.179567,,"Brantford, ON",Small City (5),Exurban,Ontario / Ontario,Brant
+5125500,-82.174842,42.418613,,"Chatham-Kent, ON",Small City (5),Light Suburban,Ontario / Ontario,Chatham-Kent
+513100,-83.009061,42.266174,,"Windsor, ON",Medium City (4),Light Suburban,Ontario / Ontario,Essex
+5141400,-79.487896,43.66778,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+5142500,-79.255009,42.885893,,"St. Catharines - Niagara, ON",Medium City (4),Exurban,Ontario / Ontario,Niagara
+5149100,-121.98077,49.152628,,"Chilliwack, BC",Small City (5),Light Suburban,British Columbia / Colombie-Britannique,Fraser Valley
+5150800,-75.807893,45.41611,,"Ottawa - Gatineau, PQ",Medium City (4),Exurban,Quebec / Québec,Gatineau
+5150900,-71.651501,48.55003,,"Alma, PQ",Small Town (6),Exurban,Quebec / Québec,Lac-Saint-Jean-Est
+5153300,-82.401973,42.983001,,"Sarnia, ON",Small City (5),Light Suburban,Ontario / Ontario,Lambton
+5154400,-79.652508,43.6583,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+5155200,-73.097461,46.030903,,"Sorel-Tracy, PQ",Small Town (6),Exurban,Quebec / Québec,Pierre-De Saurel
+5161600,-71.326066,46.840784,,"Québec, PQ",Large City (3),Light Suburban,Quebec / Québec,QuACbec
+5162300,-81.059003,42.985579,,"London, ON",Large City (3),Rural,Ontario / Ontario,Middlesex
+5164100,-79.055594,42.950053,,"St. Catharines - Niagara, ON",Medium City (4),Rural,Ontario / Ontario,Niagara
+5167200,-80.299049,42.821676,,"Norfolk, ON",Small Town (6),Exurban,Ontario / Ontario,Haldimand-Norfolk
+5168700,-79.335907,43.714191,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+5168800,-122.755463,49.292669,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+5169000,-120.359128,50.698928,,"Kamloops, BC",Small City (5),Light Suburban,British Columbia / Colombie-Britannique,Thompson-Nicola
+5170500,-110.006373,53.253148,,"Lloydminster, AB",Small Town (6),Exurban,Prairies / Prairies,Division No. 10
+5180600,-73.45867,45.541343,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Longueuil
+5181900,-99.476634,50.226737,,,Small Community (7),Rural,Prairies / Prairies,Division No. 15
+5185300,-79.844215,43.356834,,"Hamilton, ON",Large City (3),Light Suburban,Ontario / Ontario,Halton
+5185400,-71.438665,46.566038,,,Small Community (7),Rural,Quebec / Québec,LotbiniA¨re
+5187200,-119.476703,49.885635,,"Kelowna, BC",Medium City (4),Suburban,British Columbia / Colombie-Britannique,Central Okanagan
+5188500,-122.80368,49.296182,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+5190700,-79.486851,43.744081,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+5194600,-79.287021,43.680725,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+5194700,-79.319687,43.673183,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+5196600,-79.204653,43.784079,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+5197800,-122.380486,49.058764,,"Abbotsford - Mission, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Fraser Valley
+5199000,-73.247557,45.32439,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Le Haut-Richelieu
+5199300,-73.598822,45.625892,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,MontrACal
+5202600,-70.479473,46.212713,,,Small Community (7),Rural,Quebec / Québec,Les Etchemins
+5202700,-122.462001,49.056765,,"Vancouver, BC",Very Large Metro (1),Exurban,British Columbia / Colombie-Britannique,Greater Vancouver
+5208900,-113.962438,51.164849,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+5209400,-79.522075,43.929822,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,York
+5209600,-97.064745,49.91134,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11
+5212000,-102.447116,51.211797,,"Yorkton, SK",Small Town (6),Exurban,Prairies / Prairies,Division No.  9
+5213600,-71.300037,46.895239,,"Québec, PQ",Large City (3),Exurban,Quebec / Québec,QuACbec
+5213800,-70.872534,46.303023,,,Small Community (7),Rural,Quebec / Québec,Robert-Cliche
+5223400,-123.040104,49.218961,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+5243700,-116.405317,58.181156,,,Small Community (7),Rural,Prairies / Prairies,Division No. 17
+5244600,-62.673322,45.573919,,"New Glasgow, NS",Small Town (6),Exurban,Atlantic / Atlantique,Pictou
+5249400,-122.292445,49.145614,,"Abbotsford - Mission, BC",Medium City (4),Exurban,British Columbia / Colombie-Britannique,Fraser Valley
+5249900,-79.882723,43.228216,,"Hamilton, ON",Large City (3),Suburban,Ontario / Ontario,Hamilton
+5250400,-72.596995,46.365146,,"Trois-Rivieres, PQ",Small City (5),Light Suburban,Quebec / Québec,Francheville
+5252200,-72.237988,46.103281,,,Small Community (7),Rural,Quebec / Québec,Nicolet-Yamaska
+525400,-79.60361,43.74319,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+5255400,-114.071247,50.879742,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+5260300,-101.661968,50.147607,,,Small Community (7),Rural,Prairies / Prairies,Division No.  5
+5274000,-81.614614,42.949853,,"London, ON",Large City (3),Exurban,Ontario / Ontario,Middlesex
+5275800,-106.662892,52.128925,,"Saskatoon, SK",Medium City (4),Suburban,Prairies / Prairies,Division No. 11
+527800,-123.173793,49.26399,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+5278600,-115.768156,53.618189,,,Small Community (7),Rural,Prairies / Prairies,Division No. 14
+5280100,-78.448121,44.152326,,"Peterborough, ON",Small City (5),Rural,Ontario / Ontario,Peterborough
+5281800,-79.878812,43.491949,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Halton
+5288900,-122.802178,49.133313,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+5289200,-113.396045,53.615174,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+5294400,-79.780617,43.771778,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+5296500,-68.49604,48.457838,,"Rimouski, PQ",Small Town (6),Exurban,Quebec / Québec,Rimouski-Neigette
+5299500,-113.665903,53.523799,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+5302500,-123.115392,49.256091,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+5303100,-79.789098,43.391566,,"Hamilton, ON",Large City (3),Light Suburban,Ontario / Ontario,Halton
+5303900,-71.296706,46.836252,,"Québec, PQ",Large City (3),Suburban,Quebec / Québec,QuACbec
+530800,-79.237971,43.878551,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+5308800,-84.319898,46.547828,,"Sault Ste. Marie, ON",Small City (5),Light Suburban,Ontario / Ontario,Algoma
+5311900,-73.743631,45.558183,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Laval
+5316700,-123.122194,49.177563,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+5316800,-123.354273,48.423585,,"Victoria, BC",Medium City (4),Light Urban,British Columbia / Colombie-Britannique,Capital
+5317900,-80.677854,48.76668,,,Small Community (7),Rural,Ontario / Ontario,Cochrane
+5319500,-74.12867,45.261164,,"Salaberry-de-Valleyfield, PQ",Small Town (6),Exurban,Quebec / Québec,Beauharnois-Salaberry
+5324100,-114.146354,51.168937,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+5325200,-79.75905,43.756039,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+5328500,-113.543634,53.629116,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+5330600,-80.920021,46.522369,,"Greater Sudbury / Grand Sudbury, ON",Small City (5),Exurban,Ontario / Ontario,Greater Sudbury / Grand Sudbury
+5333700,-74.019509,45.75887,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,La RiviA¨re-du-Nord
+534200,-79.70449,44.382509,,"Barrie, ON",Medium City (4),Suburban,Ontario / Ontario,Simcoe
+5345500,-79.691266,43.746009,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+5355300,-79.846223,43.213874,,"Hamilton, ON",Large City (3),Suburban,Ontario / Ontario,Hamilton
+5364200,-79.657975,44.395831,,"Barrie, ON",Medium City (4),Light Suburban,Ontario / Ontario,Simcoe
+536700,-79.320692,43.772679,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+536800,-79.464378,46.332199,,"North Bay, ON",Small Town (6),Light Suburban,Ontario / Ontario,Nipissing
+5373100,-123.105949,49.27042,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+5373200,-113.448587,53.549682,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+5377100,-123.332361,48.47694,,"Victoria, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Capital
+5378500,-75.455693,45.468619,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+5382700,-64.848681,46.122099,,"Moncton, NB",Small City (5),Exurban,Atlantic / Atlantique,Westmorland
+538500,-79.78506,43.703773,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+5388800,-75.942277,45.268464,,"Ottawa - Gatineau, ON",Large Metro (2),Exurban,Ontario / Ontario,Ottawa
+5390100,-73.798118,45.252745,,,Small Community (7),Rural,Quebec / Québec,Beauharnois-Salaberry
+5390200,-73.862621,45.306334,,"Montréal, PQ",Very Large Metro (1),Rural,Quebec / Québec,Beauharnois-Salaberry
+5390600,-79.448358,43.916073,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+5392900,-100.986457,49.269279,,,Small Community (7),Rural,Prairies / Prairies,Division No.  5
+5394200,-73.92063,45.678823,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Mirabel
+5395600,-79.492736,44.102921,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,York
+5395900,-122.265936,49.02736,,"Abbotsford - Mission, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Fraser Valley
+5397700,-73.445381,45.575692,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Longueuil
+5404100,-97.060705,49.886319,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+5409300,-63.547986,44.697788,,"Halifax, NS",Medium City (4),Light Suburban,Atlantic / Atlantique,Halifax
+5420200,-79.2932,43.746302,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+5421300,-79.105315,43.842227,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Durham
+5421400,-79.544716,43.679457,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+5422800,-123.0571,49.262392,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+542300,-79.761739,43.372708,,"Hamilton, ON",Large City (3),Suburban,Ontario / Ontario,Halton
+5431300,-80.737347,43.146609,,"Woodstock, ON",Small Town (6),Exurban,Ontario / Ontario,Oxford
+5438300,-118.770333,55.353303,,,Small Community (7),Rural,Prairies / Prairies,Division No. 19
+5438400,-81.117922,46.552294,,"Greater Sudbury / Grand Sudbury, ON",Small City (5),Rural,Ontario / Ontario,Greater Sudbury / Grand Sudbury
+5447200,-73.72209,45.57163,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Laval
+5449700,-65.682531,47.627194,,"Bathurst, NB",Small Town (6),Exurban,Atlantic / Atlantique,Gloucester
+5450000,-80.312778,43.339903,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Light Suburban,Ontario / Ontario,Waterloo
+5454700,-120.186194,50.66816,,"Kamloops, BC",Small City (5),Rural,British Columbia / Colombie-Britannique,Thompson-Nicola
+5456300,-79.800533,43.327262,,"Hamilton, ON",Large City (3),Suburban,Ontario / Ontario,Halton
+5460900,-79.802381,43.124457,,"Hamilton, ON",Large City (3),Rural,Ontario / Ontario,Hamilton
+5465000,-113.934406,51.059197,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+5466500,-122.738106,49.254451,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+5471100,-81.322851,48.477026,,"Timmins, ON",Small Town (6),Exurban,Ontario / Ontario,Cochrane
+5474800,-113.769039,52.286275,,"Red Deer, AB",Small City (5),Light Suburban,Prairies / Prairies,Division No.  8
+5475200,-123.107811,49.279044,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+547900,-122.659848,49.104465,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+5479500,-71.315269,46.653099,,"Québec, PQ",Large City (3),Exurban,Quebec / Québec,LACvis
+5479800,-113.95732,50.881015,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+5482800,-119.684242,49.603333,,,Small Community (7),Exurban,British Columbia / Colombie-Britannique,Okanagan-Similkameen
+5482900,-119.536019,49.880609,,"Kelowna, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Central Okanagan
+5494700,-97.155383,49.904266,,"Winnipeg, MB",Large City (3),Light Urban,Prairies / Prairies,Division No. 11
+5494800,-97.202763,49.821278,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+5507100,-110.751768,50.070636,,"Medicine Hat, AB",Small Town (6),Exurban,Prairies / Prairies,Division No.  1
+5507500,-79.410142,43.64579,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+5509900,-123.443984,48.575097,,"Victoria, BC",Medium City (4),Exurban,British Columbia / Colombie-Britannique,Capital
+5512300,-79.58644,45.118779,,,Small Community (7),Rural,Ontario / Ontario,Muskoka
+551400,-113.982302,51.037424,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+5518700,-73.48431,45.497674,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Longueuil
+5520300,-113.848722,52.289085,,"Red Deer, AB",Small City (5),Exurban,Prairies / Prairies,Division No.  8
+5528900,-75.870767,45.273715,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+553200,-113.815281,52.304441,,"Red Deer, AB",Small City (5),Light Suburban,Prairies / Prairies,Division No.  8
+5532800,-75.692485,45.333729,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+553500,-122.753157,53.912005,,"Prince George, BC",Small City (5),Light Suburban,British Columbia / Colombie-Britannique,Fraser-Fort George
+5535900,-79.785385,43.337841,,"Hamilton, ON",Large City (3),Suburban,Ontario / Ontario,Halton
+5536400,-73.674143,45.442279,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,MontrACal
+5540700,-122.339696,49.132585,,"Abbotsford - Mission, BC",Medium City (4),Exurban,British Columbia / Colombie-Britannique,Fraser Valley
+5544700,-79.579229,43.611114,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+5552200,-77.580389,44.129764,,"Belleville, ON",Small City (5),Exurban,Ontario / Ontario,Hastings
+5562100,-81.333632,42.96021,,"London, ON",Large City (3),Exurban,Ontario / Ontario,Middlesex
+5563800,-79.823911,43.391118,,"Hamilton, ON",Large City (3),Light Suburban,Ontario / Ontario,Halton
+5567800,-75.716969,45.465411,,"Ottawa - Gatineau, PQ",Medium City (4),Suburban,Quebec / Québec,Gatineau
+5567900,-75.733428,45.43286,,"Ottawa - Gatineau, PQ",Medium City (4),Light Urban,Quebec / Québec,Gatineau
+5570100,-114.098968,50.974159,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+5573200,-76.589406,44.406731,,"Kingston, ON",Small City (5),Rural,Ontario / Ontario,Frontenac
+5574200,-103.023419,49.670138,,,Small Community (7),Rural,Prairies / Prairies,Division No.  1
+5574700,-79.784198,43.575964,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Peel
+5579600,-71.367471,46.982418,,"Québec, PQ",Large City (3),Rural,Quebec / Québec,La Jacques-Cartier
+5583200,-122.888741,49.176356,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+5585900,-81.151374,42.810368,,"London, ON",Large City (3),Exurban,Ontario / Ontario,Elgin
+5586000,-81.204036,42.779415,,"London, ON",Large City (3),Exurban,Ontario / Ontario,Elgin
+5605800,-102.968607,49.145255,,"Estevan, SK",Small Town (6),Exurban,Prairies / Prairies,Division No.  1
+5607800,-122.691589,49.133452,,"Vancouver, BC",Very Large Metro (1),Light Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+5611000,-112.869654,49.654184,,"Lethbridge, AB",Small City (5),Exurban,Prairies / Prairies,Division No.  2
+5611300,-118.818299,55.154444,,"Grande Prairie, AB",Small Town (6),Light Suburban,Prairies / Prairies,Division No. 19
+5613800,-79.369079,43.799097,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+5614200,-73.432779,46.03278,,"Joliette, PQ",Small Town (6),Light Suburban,Quebec / Québec,Joliette
+5614300,-73.458888,45.995255,,"Joliette, PQ",Small Town (6),Exurban,Quebec / Québec,Joliette
+5618600,-79.835946,43.375825,,"Hamilton, ON",Large City (3),Light Suburban,Ontario / Ontario,Halton
+5627600,-79.398293,43.820273,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+5627800,-73.413568,45.791874,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,"L'Assomption"
+5629100,-79.605863,43.735079,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+5633800,-79.771685,43.230315,,"Hamilton, ON",Large City (3),Suburban,Ontario / Ontario,Hamilton
+563400,-123.146029,49.269675,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+5641200,-80.387546,43.711158,,"Centre Wellington, ON",Small Town (6),Exurban,Ontario / Ontario,Wellington
+5647000,-112.685468,54.819969,,,Small Community (7),Rural,Prairies / Prairies,Division No. 13
+5648100,-81.004775,46.500641,,"Greater Sudbury / Grand Sudbury, ON",Small City (5),Exurban,Ontario / Ontario,Greater Sudbury / Grand Sudbury
+5651400,-97.549328,49.102247,,,Small Community (7),Rural,Prairies / Prairies,Division No.  3
+5654400,-71.895583,45.395818,,"Sherbrooke, PQ",Medium City (4),Light Suburban,Quebec / Québec,Sherbrooke
+5654600,-97.116333,49.874391,,"Winnipeg, MB",Large City (3),Light Urban,Prairies / Prairies,Division No. 11
+5657400,-81.201319,42.997127,,"London, ON",Large City (3),Suburban,Ontario / Ontario,Middlesex
+5658700,-79.677713,43.625648,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Peel
+5662400,-79.441085,44.105104,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,York
+566600,-63.304419,45.33276,,"Truro, NS",Small Town (6),Exurban,Atlantic / Atlantique,Colchester
+5670000,-118.769974,55.198923,,"Grande Prairie, AB",Small Town (6),Light Suburban,Prairies / Prairies,Division No. 19
+5671100,-79.810766,43.710155,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+5680300,-113.528871,53.47563,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+56900,-79.381138,43.661251,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+5690000,-122.673605,49.114363,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+5692500,-106.556467,49.877293,,,Small Community (7),Rural,Prairies / Prairies,Division No.  3
+5695600,-79.913701,44.740625,,"Midland, ON",Small Town (6),Exurban,Ontario / Ontario,Simcoe
+5710100,-79.655214,43.480173,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Halton
+5713300,-73.697326,45.482064,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+5714300,-113.994378,51.269379,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+5725300,-122.85536,49.133933,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+5733400,-114.489942,51.193132,,"Calgary, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No.  6
+5734900,-114.472677,51.184903,,"Calgary, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No.  6
+5746000,-73.713227,45.518778,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+5753200,-73.643759,45.551256,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+5758700,-79.053198,43.892236,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Durham
+5759100,-79.018691,43.882596,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Durham
+5763700,-80.966508,43.735998,,,Small Community (7),Exurban,Ontario / Ontario,Perth
+5765300,-97.215855,49.840753,,"Winnipeg, MB",Large City (3),Light Suburban,Prairies / Prairies,Division No. 11
+576700,-79.465354,43.988628,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+579100,-64.451084,45.067739,,"Kentville, NS",Small Town (6),Exurban,Atlantic / Atlantique,Kings
+5796600,-114.030034,51.423435,,"Calgary, AB",Large Metro (2),Rural,Prairies / Prairies,Division No.  6
+5796900,-97.218587,50.909825,,,Small Community (7),Rural,Prairies / Prairies,Division No. 18
+5798300,-82.992776,42.300756,,"Windsor, ON",Medium City (4),Suburban,Ontario / Ontario,Essex
+5801000,-79.369049,43.653735,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+58100,-80.09523,44.418905,,,Small Community (7),Rural,Ontario / Ontario,Simcoe
+5821800,-79.837293,43.246833,,"Hamilton, ON",Large City (3),Light Urban,Ontario / Ontario,Hamilton
+5835000,-80.485017,43.476242,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Suburban,Ontario / Ontario,Waterloo
+5835400,-79.588447,43.624395,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Peel
+5840800,-89.261092,48.385561,,"Thunder Bay, ON",Small City (5),Light Suburban,Ontario / Ontario,Thunder Bay
+5853000,-79.858744,43.487291,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Halton
+5856000,-123.057814,49.241581,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+5856300,-70.655564,45.956279,,,Small Community (7),Rural,Quebec / Québec,Beauce-Sartigan
+5858400,-79.400304,43.657401,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+5863700,-103.785223,50.768541,,,Small Community (7),Rural,Prairies / Prairies,Division No.  6
+5868000,-79.71424,43.747275,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+5868500,-79.758322,43.651172,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+5868700,-78.285782,43.971346,,"Port Hope, ON",Small Town (6),Rural,Ontario / Ontario,Northumberland
+5869500,-123.125332,49.286195,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+5871000,-66.039933,45.283351,,"Saint John, NB",Small City (5),Light Suburban,Atlantic / Atlantique,Saint John
+5871200,-65.943999,45.417878,,"Saint John, NB",Small City (5),Exurban,Atlantic / Atlantique,Kings
+5871500,-79.58229,43.660619,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+587700,-75.638035,45.429705,,"Ottawa - Gatineau, ON",Large Metro (2),Suburban,Ontario / Ontario,Ottawa
+589200,-113.956201,51.063564,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+5895100,-79.740246,43.688135,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+590300,-123.157942,49.154949,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+5905100,-79.653578,43.908037,,"Toronto, ON",Very Large Metro (1),Rural,Ontario / Ontario,York
+5907400,-104.607131,50.484597,,"Regina, SK",Medium City (4),Light Suburban,Prairies / Prairies,Division No.  6
+5908400,-114.032399,51.097331,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+5912300,-79.47524,44.035501,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+592500,-64.733915,46.08494,,"Moncton, NB",Small City (5),Exurban,Atlantic / Atlantique,Westmorland
+5930100,-76.681289,44.797367,,,Small Community (7),Rural,Ontario / Ontario,Frontenac
+5936000,-123.427958,48.467246,,"Victoria, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Capital
+5938300,-114.108467,51.174357,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+5953600,-103.801244,51.948016,,,Small Community (7),Rural,Prairies / Prairies,Division No. 10
+5956800,-123.004132,49.242707,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+5965700,-79.680505,43.49198,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Halton
+5970400,-99.838281,50.247685,,,Small Community (7),Rural,Prairies / Prairies,Division No. 15
+597900,-113.487356,53.498998,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+5980600,-122.440545,52.967297,,"Quesnel, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Cariboo
+5990200,-80.431811,43.394747,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Exurban,Ontario / Ontario,Waterloo
+5994000,-79.200362,43.801074,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+6003000,-79.30883,43.777948,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+6005700,-79.681741,44.33987,,"Barrie, ON",Medium City (4),Suburban,Ontario / Ontario,Simcoe
+6007400,-114.027716,51.271168,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+6011000,-81.308891,42.936474,,"London, ON",Large City (3),Exurban,Ontario / Ontario,Middlesex
+602400,-80.987956,46.489243,,"Greater Sudbury / Grand Sudbury, ON",Small City (5),Light Suburban,Ontario / Ontario,Greater Sudbury / Grand Sudbury
+602700,-114.05466,51.111239,,"Calgary, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No.  6
+6041900,-83.022442,42.287852,,"Windsor, ON",Medium City (4),Suburban,Ontario / Ontario,Essex
+6045100,-73.468152,45.502892,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Longueuil
+6049400,-72.474064,45.862578,,"Drummondville, PQ",Small City (5),Light Suburban,Quebec / Québec,Drummond
+605800,-118.799626,55.185678,,"Grande Prairie, AB",Small Town (6),Rural,Prairies / Prairies,Division No. 19
+6062600,-79.628608,42.907114,,,Small Community (7),Rural,Ontario / Ontario,Haldimand-Norfolk
+6067500,-114.995915,53.589676,,"Edmonton, AB",Large Metro (2),Rural,Prairies / Prairies,Division No. 11
+6081800,-72.950827,45.647364,,"Saint-Hyacinthe, PQ",Small Town (6),Light Suburban,Quebec / Québec,Les Maskoutains
+6085600,-73.419398,45.457747,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,Longueuil
+6087400,-79.473324,44.24251,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,York
+6087600,-79.77038,43.633055,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,Peel
+6089000,-123.101282,49.233291,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+6089100,-109.617377,53.124752,,"Lloydminster, SK",Small Town (6),Rural,Prairies / Prairies,Division No. 17
+6092700,-111.356343,56.71875,,"Wood Buffalo, AB",Small Town (6),Light Suburban,Prairies / Prairies,Division No. 16
+6096200,-81.403419,46.62811,,"Greater Sudbury / Grand Sudbury, ON",Small City (5),Rural,Ontario / Ontario,Greater Sudbury / Grand Sudbury
+6099000,-78.933063,43.867169,,"Oshawa, ON",Medium City (4),Light Suburban,Ontario / Ontario,Durham
+6111400,-104.496605,50.94268,,,Small Community (7),Rural,Prairies / Prairies,Division No.  6
+6113000,-72.535556,46.399503,,"Trois-Rivieres, PQ",Small City (5),Exurban,Quebec / Québec,Francheville
+6115100,-73.623019,45.529523,,"Montréal, PQ",Very Large Metro (1),Urban,Quebec / Québec,MontrACal
+611600,-64.832819,46.109719,,"Moncton, NB",Small City (5),Light Suburban,Atlantic / Atlantique,Westmorland
+6130900,-114.029972,51.153124,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+613300,-112.834676,49.696865,,"Lethbridge, AB",Small City (5),Light Suburban,Prairies / Prairies,Division No.  2
+613700,-79.424655,44.596813,,"Orillia, ON",Small Town (6),Light Suburban,Ontario / Ontario,Simcoe
+613800,-79.887172,44.751713,,"Midland, ON",Small Town (6),Exurban,Ontario / Ontario,Simcoe
+6144200,-105.535138,50.393327,,"Moose Jaw, SK",Small Town (6),Exurban,Prairies / Prairies,Division No.  7
+6147100,-97.045985,49.832702,,"Winnipeg, MB",Large City (3),Exurban,Prairies / Prairies,Division No. 11
+6152300,-73.57634,45.566816,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,MontrACal
+6154000,-66.684683,45.946343,,"Fredericton, NB",Small City (5),Exurban,Atlantic / Atlantique,York
+6160200,-70.678313,46.11644,,"Saint-Georges, PQ",Small Town (6),Exurban,Quebec / Québec,Beauce-Sartigan
+6164500,-113.870061,52.139626,,,Small Community (7),Rural,Prairies / Prairies,Division No.  8
+6170400,-79.523348,43.68563,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+6171600,-113.96115,50.956407,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+6180100,-71.250785,48.402765,,"Saguenay, PQ",Small City (5),Exurban,Quebec / Québec,Le Saguenay-et-son-Fjord
+6181400,-78.868393,43.936235,,"Oshawa, ON",Medium City (4),Light Suburban,Ontario / Ontario,Durham
+6190600,-79.780701,43.665436,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+6199900,-79.617017,44.363386,,"Barrie, ON",Medium City (4),Exurban,Ontario / Ontario,Simcoe
+621200,-79.827898,43.226094,,"Hamilton, ON",Large City (3),Suburban,Ontario / Ontario,Hamilton
+622200,-114.000907,51.2918,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+6222100,-80.298857,43.122791,,"Brantford, ON",Small City (5),Exurban,Ontario / Ontario,Brant
+6237700,-73.698034,45.557961,,"Montréal, PQ",Very Large Metro (1),Light Urban,Quebec / Québec,Laval
+6237900,-80.010528,45.345191,,,Small Community (7),Exurban,Ontario / Ontario,Parry Sound
+6265300,-96.99559,49.712035,,"Winnipeg, MB",Large City (3),Rural,Prairies / Prairies,Division No.  2
+6273100,-81.71308,42.749982,,,Small Community (7),Rural,Ontario / Ontario,Middlesex
+6333600,-82.409099,42.95574,,"Sarnia, ON",Small City (5),Light Suburban,Ontario / Ontario,Lambton
+6336400,-111.430969,56.75358,,"Wood Buffalo, AB",Small Town (6),Light Suburban,Prairies / Prairies,Division No. 16
+6339600,-73.464463,45.455816,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Longueuil
+6340800,-122.842496,49.177606,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+634100,-89.273748,48.421045,,"Thunder Bay, ON",Small City (5),Light Suburban,Ontario / Ontario,Thunder Bay
+6342200,-82.332599,42.984404,,"Sarnia, ON",Small City (5),Exurban,Ontario / Ontario,Lambton
+6345800,-80.762617,43.129424,,"Woodstock, ON",Small Town (6),Light Suburban,Ontario / Ontario,Oxford
+6347100,-81.199981,42.962241,,"London, ON",Large City (3),Light Suburban,Ontario / Ontario,Middlesex
+6347500,-80.415036,43.44259,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Light Suburban,Ontario / Ontario,Waterloo
+6347700,-79.711682,43.598758,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+6351200,-80.415074,43.478804,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Exurban,Ontario / Ontario,Waterloo
+638500,-79.737515,43.668575,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+638900,-81.274115,43.028477,,"London, ON",Large City (3),Light Suburban,Ontario / Ontario,Middlesex
+6395500,-79.723072,44.391242,,"Barrie, ON",Medium City (4),Light Suburban,Ontario / Ontario,Simcoe
+6395600,-113.957187,51.08496,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+6395900,-109.133015,51.91683,,,Small Community (7),Rural,Prairies / Prairies,Division No. 13
+6398700,-96.936116,49.821049,,"Winnipeg, MB",Large City (3),Rural,Prairies / Prairies,Division No. 12
+6401100,-79.62681,43.592339,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Peel
+6403400,-82.91833,42.039859,,,Small Community (7),Rural,Ontario / Ontario,Essex
+6407500,-114.071085,51.04285,,"Calgary, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No.  6
+6416200,-102.429793,51.62966,,,Small Community (7),Rural,Prairies / Prairies,Division No.  9
+6422400,-101.908556,51.565555,,,Small Community (7),Rural,Prairies / Prairies,Division No.  9
+6426100,-79.941285,43.257987,,"Hamilton, ON",Large City (3),Light Suburban,Ontario / Ontario,Hamilton
+6431800,-123.182685,49.171018,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+6459900,-99.97106,49.842467,,"Brandon, MB",Small Town (6),Light Suburban,Prairies / Prairies,Division No.  7
+6465200,-63.282978,45.704936,,"Truro, NS",Small Town (6),Rural,Atlantic / Atlantique,Colchester
+6471700,-75.773143,45.538955,,"Ottawa - Gatineau, PQ",Medium City (4),Exurban,Quebec / Québec,"Les Collines-de-l'Outaouais"
+6473400,-104.4336,50.478119,,"Regina, SK",Medium City (4),Rural,Prairies / Prairies,Division No.  6
+6476600,-79.084942,43.095513,,"St. Catharines - Niagara, ON",Medium City (4),Light Suburban,Ontario / Ontario,Niagara
+648900,-79.879325,43.517207,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Halton
+649500,-114.073135,50.966712,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+6497300,-79.695874,43.483484,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Halton
+6497500,-75.515708,46.549472,,,Small Community (7),Rural,Quebec / Québec,Antoine-Labelle
+6504000,-80.493757,43.451652,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Suburban,Ontario / Ontario,Waterloo
+6509300,-122.936828,49.212915,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+6513300,-80.241599,43.138769,,"Brantford, ON",Small City (5),Light Suburban,Ontario / Ontario,Brant
+652100,-75.893994,45.293074,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+6528000,-114.211432,51.060537,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+6532900,-79.466083,43.665335,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+6537900,-112.450981,50.791176,,"Brooks, AB",Small Town (6),Rural,Prairies / Prairies,Division No.  2
+6539200,-79.3925,43.637755,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+6544500,-113.418848,53.423409,,"Edmonton, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No. 11
+6545300,-112.902344,49.672552,,"Lethbridge, AB",Small City (5),Exurban,Prairies / Prairies,Division No.  2
+6550500,-107.129636,51.925109,,"Saskatoon, SK",Medium City (4),Rural,Prairies / Prairies,Division No. 12
+655600,-79.305039,43.842276,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+655700,-79.38769,43.844499,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,York
+656000,-60.193906,46.136343,,"Cape Breton, NS",Small City (5),Light Suburban,Atlantic / Atlantique,Cape Breton
+6562500,-110.765497,52.00885,,,Small Community (7),Rural,Prairies / Prairies,Division No.  4
+6584500,-97.230929,50.080058,,,Small Community (7),Rural,Prairies / Prairies,Division No. 14
+6585000,-113.909316,51.039292,,"Calgary, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No.  6
+658600,-75.645272,45.354912,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+658800,-123.108456,49.282408,,"Vancouver, BC",Very Large Metro (1),Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+658900,-120.361056,50.695582,,"Kamloops, BC",Small City (5),Light Suburban,British Columbia / Colombie-Britannique,Thompson-Nicola
+660000,-80.227761,44.502175,,"Collingwood, ON",Small Town (6),Exurban,Ontario / Ontario,Simcoe
+6616100,-97.26561,49.69102,,"Winnipeg, MB",Large City (3),Rural,Prairies / Prairies,Division No. 10
+662200,-119.26719,50.276343,,"Vernon, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,North Okanagan
+6630600,-114.076067,52.303342,,"Sylvan Lake, AB",Small Town (6),Exurban,Prairies / Prairies,Division No.  8
+664600,-79.729243,43.872291,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,Peel
+664700,-79.444611,43.792446,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+664800,-123.029344,49.231854,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+6652100,-52.734439,47.555089,,"St. John's, NF",Medium City (4),Suburban,Atlantic / Atlantique,Division No.  1
+6660400,-79.326894,43.760348,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+6665900,-122.761265,49.241867,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+6683600,-73.557366,45.493724,,"Montréal, PQ",Very Large Metro (1),Urban,Quebec / Québec,MontrACal
+673800,-79.481082,44.054199,,"Toronto, ON",Very Large Metro (1),Light Suburban,Ontario / Ontario,York
+6749800,-113.941206,50.898353,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+6757800,-113.536454,53.406953,,"Edmonton, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No. 11
+6757900,-113.565993,53.411433,,"Edmonton, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No. 11
+676100,-123.0783,49.090437,,"Vancouver, BC",Very Large Metro (1),Exurban,British Columbia / Colombie-Britannique,Greater Vancouver
+6761000,-73.758436,45.529106,,"Montréal, PQ",Very Large Metro (1),Suburban,Quebec / Québec,Laval
+6772700,-79.699683,43.782503,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+6776200,-124.966496,49.711504,,"Courtenay, BC",Small Town (6),Exurban,British Columbia / Colombie-Britannique,Comox Valley
+6814000,-75.78244,45.269518,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+6815600,-106.553424,52.132473,,"Saskatoon, SK",Medium City (4),Exurban,Prairies / Prairies,Division No. 11
+6828300,-119.390544,49.951694,,"Kelowna, BC",Medium City (4),Exurban,British Columbia / Colombie-Britannique,Central Okanagan
+6844700,-80.312545,43.358658,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Light Suburban,Ontario / Ontario,Waterloo
+6854600,-113.574784,53.434592,,"Edmonton, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No. 11
+686200,-63.545834,44.648076,,"Halifax, NS",Medium City (4),Light Urban,Atlantic / Atlantique,Halifax
+686400,-113.516617,53.545856,,"Edmonton, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No. 11
+6878000,-79.861863,44.578134,,"Barrie, ON",Medium City (4),Rural,Ontario / Ontario,Simcoe
+68800,-114.10998,51.023813,,"Calgary, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No.  6
+6888000,-73.346741,45.5783,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,"Marguerite-D'Youville"
+6898900,-114.469072,51.161572,,"Calgary, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No.  6
+6911300,-123.087173,49.04058,,"Vancouver, BC",Very Large Metro (1),Exurban,British Columbia / Colombie-Britannique,Greater Vancouver
+691500,-79.70677,43.734755,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Peel
+6991000,-96.985203,49.444547,,,Small Community (7),Rural,Prairies / Prairies,Division No.  2
+699400,-113.203452,53.700978,,"Edmonton, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No. 11
+700000,-79.576651,43.691327,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+7015600,-79.915978,46.365731,,,Small Community (7),Exurban,Ontario / Ontario,Nipissing
+702400,-75.836947,45.398662,,"Ottawa - Gatineau, PQ",Medium City (4),Light Suburban,Quebec / Québec,Gatineau
+702500,-81.251336,42.99564,,"London, ON",Large City (3),Suburban,Ontario / Ontario,Middlesex
+7047200,-113.884419,53.563929,,"Edmonton, AB",Large Metro (2),Exurban,Prairies / Prairies,Division No. 11
+7051900,-80.568806,43.468377,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Light Suburban,Ontario / Ontario,Waterloo
+7063800,-82.967317,42.261561,,"Windsor, ON",Medium City (4),Light Suburban,Ontario / Ontario,Essex
+7065100,-114.191764,51.034623,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+709700,-64.525312,44.370362,,,Small Community (7),Exurban,Atlantic / Atlantique,Lunenburg
+7112600,-113.806024,53.265401,,"Edmonton, AB",Large Metro (2),Rural,Prairies / Prairies,Division No. 11
+711300,-81.220221,42.931195,,"London, ON",Large City (3),Light Suburban,Ontario / Ontario,Middlesex
+712200,-79.321794,45.043349,,,Small Community (7),Exurban,Ontario / Ontario,Muskoka
+7125200,-73.380224,45.476089,,"Montréal, PQ",Very Large Metro (1),Exurban,Quebec / Québec,Longueuil
+714300,-74.755428,45.030829,,"Cornwall, ON",Small Town (6),Exurban,Ontario / Ontario,"Stormont, Dundas and Glengarry"
+714400,-114.025376,50.929978,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+716800,-114.067387,50.998371,,"Calgary, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No.  6
+721300,-79.268938,43.706811,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+725900,-81.29284,42.98297,,"London, ON",Large City (3),Suburban,Ontario / Ontario,Middlesex
+726000,-79.426912,43.638857,,"Toronto, ON",Very Large Metro (1),Super Urban,Ontario / Ontario,Toronto
+734100,-79.418519,43.68293,,"Toronto, ON",Very Large Metro (1),Urban,Ontario / Ontario,Toronto
+737600,-81.178988,42.779189,,"London, ON",Large City (3),Exurban,Ontario / Ontario,Elgin
+741100,-81.396281,44.425886,,,Small Community (7),Exurban,Ontario / Ontario,Bruce
+741200,-122.784027,53.917239,,"Prince George, BC",Small City (5),Light Suburban,British Columbia / Colombie-Britannique,Fraser-Fort George
+741700,-123.331804,48.461807,,"Victoria, BC",Medium City (4),Suburban,British Columbia / Colombie-Britannique,Capital
+742000,-78.877838,43.929165,,"Oshawa, ON",Medium City (4),Light Suburban,Ontario / Ontario,Durham
+750300,-80.526272,43.484545,,"Kitchener - Cambridge - Waterloo, ON",Large City (3),Suburban,Ontario / Ontario,Waterloo
+750900,-79.262172,43.968411,,"Toronto, ON",Very Large Metro (1),Exurban,Ontario / Ontario,York
+753600,-113.485283,53.472318,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+761700,-79.518713,43.598147,,"Toronto, ON",Very Large Metro (1),Suburban,Ontario / Ontario,Toronto
+761800,-75.747795,45.268009,,"Ottawa - Gatineau, ON",Large Metro (2),Light Suburban,Ontario / Ontario,Ottawa
+764600,-113.417919,53.59136,,"Edmonton, AB",Large Metro (2),Suburban,Prairies / Prairies,Division No. 11
+764700,-122.319198,49.054815,,"Abbotsford - Mission, BC",Medium City (4),Suburban,British Columbia / Colombie-Britannique,Fraser Valley
+765300,-118.778855,55.158985,,"Grande Prairie, AB",Small Town (6),Light Suburban,Prairies / Prairies,Division No. 19
+765400,-122.997854,49.22811,,"Vancouver, BC",Very Large Metro (1),Light Urban,British Columbia / Colombie-Britannique,Greater Vancouver
+766000,-79.318727,43.741674,,"Toronto, ON",Very Large Metro (1),Light Urban,Ontario / Ontario,Toronto
+766200,-123.072099,49.320888,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+766500,-122.887634,49.160897,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+769000,-79.097312,43.089948,,"St. Catharines - Niagara, ON",Medium City (4),Light Suburban,Ontario / Ontario,Niagara
+770000,-74.009509,45.793738,,"Montréal, PQ",Very Large Metro (1),Light Suburban,Quebec / Québec,La RiviA¨re-du-Nord
+775200,-122.841288,49.133742,,"Vancouver, BC",Very Large Metro (1),Suburban,British Columbia / Colombie-Britannique,Greater Vancouver
+775300,-80.280892,43.539886,,"Guelph, ON",Small City (5),Suburban,Ontario / Ontario,Wellington
+775700,-119.583847,49.480299,,"Penticton, BC",Small Town (6),Light Suburban,British Columbia / Colombie-Britannique,Okanagan-Similkameen
+776400,-120.352282,50.667106,,"Kamloops, BC",Small City (5),Light Suburban,British Columbia / Colombie-Britannique,Thompson-Nicola
+779900,-122.784912,53.987718,,"Prince George, BC",Small City (5),Rural,British Columbia / Colombie-Britannique,Fraser-Fort George
+789900,-112.80125,49.676382,,"Lethbridge, AB",Small City (5),Light Suburban,Prairies / Prairies,Division No.  2
+792300,-82.377288,42.984665,,"Sarnia, ON",Small City (5),Light Suburban,Ontario / Ontario,Lambton
+793400,-119.38769,49.888738,,"Kelowna, BC",Medium City (4),Light Suburban,British Columbia / Colombie-Britannique,Central Okanagan
+793500,-119.49085,49.863156,,"Kelowna, BC",Medium City (4),Suburban,British Columbia / Colombie-Britannique,Central Okanagan
+794600,-113.98996,51.076286,,"Calgary, AB",Large Metro (2),Light Suburban,Prairies / Prairies,Division No.  6
+796200,-114.054632,51.059548,,"Calgary, AB",Large Metro (2),Light Urban,Prairies / Prairies,Division No.  6
+799100,-97.106522,49.857703,,"Winnipeg, MB",Large City (3),Suburban,Prairies / Prairies,Division No. 11

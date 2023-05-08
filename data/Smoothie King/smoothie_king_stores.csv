@@ -1,0 +1,797 @@
+store,longitude,latitude,category,cbsa_name,dma_name,state_name,market_size,store_density
+SK 1504,-97.650392,30.519353,SHOPPING,"Austin-Round Rock, TX","Austin, TX",Texas,Large Metro (2),Light Suburban
+SK 0057,-88.17115,30.672501,SHOPPING,"Mobile, AL","Mobile et al, AL-FL",Alabama,Medium City (4),Light Suburban
+SK 1415,-90.535722,38.78425,HOME,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Light Suburban
+SK 1231,-80.1347,26.100737,TRAVEL,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Suburban
+SK 1535,-96.856651,32.996408,WORK,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1518,-95.171603,29.807303,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1118,-96.805196,33.148555,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1462,-82.794855,27.840922,HOME,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1023,-87.555301,33.211029,TRAVEL,"Tuscaloosa, AL","Birmingham et al, AL",Alabama,Medium City (4),Light Suburban
+SK 1109,-89.80216,35.090647,SHOPPING,"Memphis, TN-MS-AR","Memphis, TN",Tennessee,Large Metro (2),Exurban
+SK 0193,-97.742711,30.28796,TRAVEL,"Austin-Round Rock, TX","Austin, TX",Texas,Large Metro (2),Suburban
+SK 0953,-78.960877,35.917939,HOME,"Durham-Chapel Hill, NC","Raleigh et al, NC",North Carolina,Large City (3),Exurban
+SK 0311,-97.43592,37.69465,WORK,"Wichita, KS","Wichita et al, KS",Kansas,Large City (3),Light Suburban
+SK 0015,-90.112829,29.946288,OTHER,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Suburban
+SK 1293,-82.24196,27.892305,HOME,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Exurban
+SK 0045,-84.428803,33.84799,OTHER,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Light Suburban
+SK 0525,-94.723031,31.310104,SHOPPING,"Lufkin, TX","Tyler-Longview et al, TX",Texas,Small City (5),Exurban
+SK 1397,-81.139557,35.261964,SHOPPING,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Exurban
+SK 0153,-97.360821,32.706799,OTHER,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1155,-95.410881,29.803133,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Suburban
+SK 1523,-93.704653,32.529096,WORK,"Shreveport-Bossier City, LA","Shreveport, LA",Louisiana,Medium City (4),Exurban
+SK 1766,-96.447397,32.748826,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 1215,-79.805843,36.068315,OTHER,"Greensboro-High Point, NC","Greensboro et al, NC",North Carolina,Large City (3),Light Suburban
+SK 1237,-80.286882,26.006711,SHOPPING,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1362,-88.075422,41.935931,WORK,"Chicago et al, IL-IN-WI","Chicago, IL",Illinois,Very Large Metro (1),Light Suburban
+SK 0024,-95.498431,29.987088,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1708,-84.230247,32.072957,WORK,"Americus, GA","Columbus, GA (Opelika, AL)",Georgia,Small Town (6),Rural
+SK 1495,-89.931216,38.571948,WORK,"St. Louis, MO-IL","St. Louis, MO",Illinois,Very Large Metro (1),Exurban
+SK 0030,-95.418878,29.723323,OTHER,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Urban
+SK 0890,-77.416704,39.378345,OTHER,"Washington et al, DC-VA-MD-WV","Washington, DC (Hagerstown, MD)",Maryland,Very Large Metro (1),Light Suburban
+SK 0169,-95.504237,29.851197,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1099,-95.085471,29.468798,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 0520,-89.582139,40.680598,OTHER,"Peoria, IL","Peoria-Bloomington, IL",Illinois,Medium City (4),Light Suburban
+SK 1765,-82.898082,42.496706,HOME,"Detroit-Warren-Dearborn, MI","Detroit, MI",Michigan,Very Large Metro (1),Light Suburban
+SK 1506,-84.234189,33.94937,WORK,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Light Suburban
+SK 1196,-90.335535,38.627246,OTHER,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Suburban
+SK 1427,-89.759383,30.268591,SHOPPING,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Exurban
+SK 1159,-82.506041,27.892901,WORK,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1686,-90.762376,29.63042,SHOPPING,"Houma-Thibodaux, LA","New Orleans, LA",Louisiana,Medium City (4),Exurban
+SK 0762,-83.93784,33.880323,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 0683,-84.094349,33.829896,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1388,-84.656534,34.030019,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1265,-95.413664,29.693261,OTHER,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Suburban
+SK 1863,-111.616564,33.381922,HOME,"Phoenix-Mesa-Scottsdale, AZ","Phoenix (Prescott), AZ",Arizona,Very Large Metro (1),Exurban
+SK 1287,-96.990876,32.921292,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Suburban
+SK 0402,-85.495643,32.579553,TRAVEL,"Auburn-Opelika, AL","Columbus, GA (Opelika, AL)",Alabama,Small City (5),Exurban
+SK 1838,-104.723421,38.894114,SHOPPING,"Colorado Springs, CO","Colorado Sprgs et al, CO",Colorado,Large City (3),Light Suburban
+SK 1203,-95.636035,29.900371,WORK,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1213,-82.837787,34.691206,TRAVEL,"Greenville-Anderson-Mauldin, SC","Greenville et al, SC-NC",South Carolina,Large City (3),Exurban
+SK 0471,-92.652416,32.536697,WORK,"Ruston, LA","Monroe-El Dorado, LA-AR",Louisiana,Small Town (6),Exurban
+SK 1352,-96.750557,32.86281,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Suburban
+SK 1178,-96.844065,33.15345,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0020,-89.960771,29.950211,HOME,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Exurban
+SK 1585,-105.02522,40.52385,SHOPPING,"Fort Collins, CO","Denver, CO",Colorado,Medium City (4),Exurban
+SK 1429,-83.227129,33.082301,HOME,"Milledgeville, GA","Macon, GA",Georgia,Small Town (6),Exurban
+SK 1247,-72.837435,41.275701,HOME,"New Haven-Milford, CT","Hartford & New Haven, CT",Connecticut,Large City (3),Exurban
+SK 1888,-72.721346,41.664739,SHOPPING,"Hartford-West Hartford et al, CT","Hartford & New Haven, CT",Connecticut,Large Metro (2),Exurban
+SK 1728,-95.643543,29.736254,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1101,-97.479333,32.764604,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Rural
+SK 1017,-84.173209,34.153206,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 0470,-94.652685,31.625536,WORK,"Nacogdoches, TX","Tyler-Longview et al, TX",Texas,Small Town (6),Exurban
+SK 1475,-87.279967,36.511504,SHOPPING,"Clarksville, TN-KY","Nashville, TN",Tennessee,Medium City (4),Rural
+SK 1129,-80.206381,26.369954,HOME,"Miami-Fort Lauderdale et al, FL","W. Palm Beach et al, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1210,-90.2583,38.638673,HOME,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Suburban
+SK 0022,-90.092231,30.393305,SHOPPING,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Exurban
+SK 1652,-97.46617,32.676341,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 1821,-96.846489,33.025166,WORK,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1834,-95.190465,29.508917,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 0947,-90.446211,30.437399,HOME,"Hammond, LA","New Orleans, LA",Louisiana,Small City (5),Rural
+SK 0504,-83.983903,35.942358,WORK,"Knoxville, TN","Knoxville, TN",Tennessee,Large City (3),Exurban
+SK 0104,-91.083707,30.4315,WORK,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Light Suburban
+SK 0848,-80.84506,35.202756,OTHER,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Suburban
+SK 1814,-95.687153,29.564517,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1773,-85.588896,42.228229,SHOPPING,"Kalamazoo-Portage, MI","Grand Rapids et al, MI",Michigan,Medium City (4),Exurban
+SK 1234,-96.846982,32.825604,WORK,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Suburban
+SK 1123,-80.136746,26.362263,HOME,"Miami-Fort Lauderdale et al, FL","W. Palm Beach et al, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1199,-90.58703,38.791784,OTHER,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Exurban
+SK 1174,-95.116057,29.664335,WORK,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0507,-96.465122,32.899263,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 1522,-85.168122,41.178751,HOME,"Fort Wayne, IN","Ft. Wayne, IN",Indiana,Medium City (4),Exurban
+SK 1632,-81.209357,34.003762,WORK,"Columbia, SC","Columbia, SC",South Carolina,Large City (3),Exurban
+SK 1529,-89.951646,38.795193,SHOPPING,"St. Louis, MO-IL","St. Louis, MO",Illinois,Very Large Metro (1),Exurban
+SK 0002,-90.184673,30.005858,OTHER,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Suburban
+SK 1038,-74.496006,40.617133,WORK,"New York-Newark et al, NY-NJ-PA","New York, NY",New Jersey,Very Large Metro (1),Exurban
+SK 1148,-74.670824,40.574616,HOME,"New York-Newark et al, NY-NJ-PA","New York, NY",New Jersey,Very Large Metro (1),Exurban
+SK 1499,-76.79239,34.735557,SHOPPING,"Morehead City, NC","Greenville et al, NC",North Carolina,Small Town (6),Rural
+SK 1463,-81.297766,28.985178,HOME,"Deltona-Daytona Beach et al, FL","Orlando et al, FL",Florida,Large City (3),Exurban
+SK 1692,-86.113934,40.000882,HOME,"Indianapolis-Carmel-Anderson, IN","Indianapolis, IN",Indiana,Large Metro (2),Exurban
+SK 1785,-75.009129,40.153622,WORK,"Philadelphia et al, PA-NJ-DE-MD","Philadelphia, PA",Pennsylvania,Very Large Metro (1),Exurban
+SK 1175,-90.584894,38.605201,HOME,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Exurban
+SK 0907,-79.220651,37.397796,WORK,"Lynchburg, VA","Roanoke-Lynchburg, VA",Virginia,Medium City (4),Exurban
+SK 0572,-90.147463,32.435784,SHOPPING,"Jackson, MS","Jackson, MS",Mississippi,Large City (3),Exurban
+SK 0566,-89.68099,30.520607,OTHER,"Picayune, MS","New Orleans, LA",Mississippi,Small Town (6),Rural
+SK 0360,-81.957445,28.002224,WORK,"Lakeland-Winter Haven, FL","Tampa et al, FL",Florida,Large City (3),Exurban
+SK 1787,-90.17041,38.919025,HOME,"St. Louis, MO-IL","St. Louis, MO",Illinois,Very Large Metro (1),Exurban
+SK 0792,-97.09785,32.877627,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 1558,-96.890551,32.983951,WORK,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1274,-80.110387,40.365163,HOME,"Pittsburgh, PA","Pittsburgh, PA",Pennsylvania,Large Metro (2),Exurban
+SK 1505,-86.013155,39.957578,SHOPPING,"Indianapolis-Carmel-Anderson, IN","Indianapolis, IN",Indiana,Large Metro (2),Exurban
+SK 1206,-93.798222,32.409342,OTHER,"Shreveport-Bossier City, LA","Shreveport, LA",Louisiana,Medium City (4),Exurban
+SK 1526,-94.14911,36.122919,WORK,"Fayetteville et al, AR-MO","Ft. Smith et al, AR",Arkansas,Large City (3),Exurban
+SK 1735,-79.132143,33.438264,TRAVEL,"Georgetown, SC","Charleston, SC",South Carolina,Small Town (6),Rural
+SK 1440,-84.968446,32.507333,WORK,"Columbus, GA-AL","Columbus, GA (Opelika, AL)",Georgia,Medium City (4),Light Suburban
+SK 1606,-83.745068,33.943708,WORK,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Rural
+SK 0968,-77.021212,38.8987,HOME,"Washington et al, DC-VA-MD-WV","Washington, DC (Hagerstown, MD)",District of Columbia,Very Large Metro (1),Urban
+SK 1137,-80.659795,35.08126,SHOPPING,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Exurban
+SK 0731,-86.167866,32.358635,HOME,"Montgomery, AL","Montgomery-Selma, AL",Alabama,Medium City (4),Exurban
+SK 0977,-73.617434,40.748259,WORK,"New York-Newark et al, NY-NJ-PA","New York, NY",New York,Very Large Metro (1),Suburban
+SK 0404,-96.806435,33.102492,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Suburban
+SK 1269,-76.789892,38.899522,OTHER,"Washington et al, DC-VA-MD-WV","Washington, DC (Hagerstown, MD)",Maryland,Very Large Metro (1),Exurban
+SK 1877,-82.822509,40.089345,WORK,"Columbus, OH","Columbus, OH",Ohio,Large Metro (2),Exurban
+SK 1691,-84.275254,33.550809,WORK,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 0641,-89.381606,31.322494,SHOPPING,"Hattiesburg, MS","Hattiesburg-Laurel, MS",Mississippi,Small City (5),Exurban
+SK 0109,-95.390938,29.74449,OTHER,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Urban
+SK 1067,-115.265725,36.144289,WORK,"Las Vegas-Henderson-Paradise, NV","Las Vegas, NV",Nevada,Large Metro (2),Light Suburban
+SK 0000,-90.220627,30.005984,HOME,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Light Suburban
+SK 1704,-97.096239,32.760689,WORK,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0432,-97.331262,32.539909,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 1267,-94.639108,38.916234,HOME,"Kansas City, MO-KS","Kansas City, MO-KS",Kansas,Large Metro (2),Light Suburban
+SK 1276,-95.366687,29.557883,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1645,-95.798221,29.784404,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0912,-84.598041,33.397151,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 0091,-95.605332,29.769648,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Suburban
+SK 0011,-90.3629,29.986318,HOME,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Rural
+SK 1058,-90.175967,32.330125,OTHER,"Jackson, MS","Jackson, MS",Mississippi,Large City (3),Light Suburban
+SK 1153,-94.648603,39.209271,HOME,"Kansas City, MO-KS","Kansas City, MO-KS",Missouri,Large Metro (2),Exurban
+SK 1793,-83.772415,42.975327,SHOPPING,"Flint, MI","Flint-Saginaw et al, MI",Michigan,Medium City (4),Exurban
+SK 1540,-94.440536,39.24441,HOME,"Kansas City, MO-KS","Kansas City, MO-KS",Missouri,Large Metro (2),Exurban
+SK 0217,-90.19536,29.97704,OTHER,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Suburban
+SK 1614,-80.973164,35.167034,SHOPPING,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Exurban
+SK 0801,-82.317496,27.938451,OTHER,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1737,-85.073201,33.545414,WORK,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Rural
+SK 0898,-85.132074,41.118825,SHOPPING,"Fort Wayne, IN","Ft. Wayne, IN",Indiana,Medium City (4),Light Suburban
+SK 0435,-77.06252,38.864721,SHOPPING,"Washington et al, DC-VA-MD-WV","Washington, DC (Hagerstown, MD)",Virginia,Very Large Metro (1),Light Urban
+SK 0163,-96.317609,30.613381,TRAVEL,"College Station-Bryan, TX","Waco-Temple-Bryan, TX",Texas,Medium City (4),Light Suburban
+SK 0124,-95.562963,29.737242,WORK,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Suburban
+SK 1658,-95.307594,38.971961,HOME,"Lawrence, KS","Kansas City, MO-KS",Kansas,Small City (5),Exurban
+SK 1855,-83.18314,42.517517,OTHER,"Detroit-Warren-Dearborn, MI","Detroit, MI",Michigan,Very Large Metro (1),Light Suburban
+SK 0677,-81.330735,28.802766,SHOPPING,"Orlando-Kissimmee-Sanford, FL","Orlando et al, FL",Florida,Very Large Metro (1),Exurban
+SK 1403,-96.84176,32.41529,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 0499,-80.398522,25.685319,HOME,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1603,-81.483396,31.204876,WORK,"Brunswick, GA","Jacksonville, FL",Georgia,Small City (5),Exurban
+SK 1900,-87.336118,41.42463,HOME,"Chicago et al, IL-IN-WI","Chicago, IL",Indiana,Very Large Metro (1),Exurban
+SK 0523,-95.527634,30.021394,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1200,-84.307921,30.448678,TRAVEL,"Tallahassee, FL","Tallahassee et al, FL-GA",Florida,Medium City (4),Suburban
+SK 1285,-90.788565,38.762949,HOME,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Exurban
+SK 0716,-85.654536,38.253051,WORK,"Louisville et al, KY-IN","Louisville, KY",Kentucky,Large Metro (2),Light Suburban
+SK 1021,-92.111859,32.523303,WORK,"Monroe, LA","Monroe-El Dorado, LA-AR",Louisiana,Small City (5),Exurban
+SK 1447,-77.642949,38.816776,HOME,"Washington et al, DC-VA-MD-WV","Washington, DC (Hagerstown, MD)",Virginia,Very Large Metro (1),Rural
+SK 1990,-74.312942,40.687128,WORK,"New York-Newark et al, NY-NJ-PA","New York, NY",New Jersey,Very Large Metro (1),Light Suburban
+SK 1637,-104.992909,39.958939,SHOPPING,"Denver-Aurora-Lakewood, CO","Denver, CO",Colorado,Very Large Metro (1),Exurban
+SK 1807,-88.125324,41.700935,OTHER,"Chicago et al, IL-IN-WI","Chicago, IL",Illinois,Very Large Metro (1),Exurban
+SK 1154,-75.533578,39.883126,SHOPPING,"Philadelphia et al, PA-NJ-DE-MD","Philadelphia, PA",Pennsylvania,Very Large Metro (1),Exurban
+SK 1527,-90.34166,38.794913,HOME,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Exurban
+SK 1322,-86.592367,36.21538,HOME,"Nashville-Davidson et al, TN","Nashville, TN",Tennessee,Large Metro (2),Exurban
+SK 1252,-97.48439,35.637476,OTHER,"Oklahoma City, OK","Oklahoma City, OK",Oklahoma,Large Metro (2),Light Suburban
+SK 1964,-95.769341,29.816631,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0337,-80.739851,35.31745,WORK,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Light Suburban
+SK 0634,-82.577489,28.080439,HOME,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Exurban
+SK 0981,-95.391085,29.5809,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1029,-84.348738,33.758246,OTHER,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Suburban
+SK 0685,-91.139062,30.444739,WORK,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Light Suburban
+SK 1489,-80.875196,34.123919,SHOPPING,"Columbia, SC","Columbia, SC",South Carolina,Large City (3),Exurban
+SK 1454,-85.430303,32.608527,TRAVEL,"Auburn-Opelika, AL","Columbus, GA (Opelika, AL)",Alabama,Small City (5),Exurban
+SK 1510,-105.001813,39.549194,HOME,"Denver-Aurora-Lakewood, CO","Denver, CO",Colorado,Very Large Metro (1),Light Suburban
+SK 1537,-96.787468,32.845847,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Suburban
+SK 0761,-76.820233,39.188323,HOME,"Baltimore-Columbia-Towson, MD","Baltimore, MD",Maryland,Very Large Metro (1),Light Suburban
+SK 0949,-94.215323,30.254638,HOME,"Beaumont-Port Arthur, TX","Beaumont-Port Arthur, TX",Texas,Medium City (4),Rural
+SK 0795,-84.501678,33.654869,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1097,-86.80228,35.956992,SHOPPING,"Nashville-Davidson et al, TN","Nashville, TN",Tennessee,Large Metro (2),Exurban
+SK 0282,-86.849822,36.124532,HOME,"Nashville-Davidson et al, TN","Nashville, TN",Tennessee,Large Metro (2),Light Suburban
+SK 1544,-73.97007,40.693012,OTHER,"New York-Newark et al, NY-NJ-PA","New York, NY",New York,Very Large Metro (1),Super Urban
+SK 1139,-80.203372,26.121485,OTHER,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1666,-76.373653,39.561123,HOME,"Baltimore-Columbia-Towson, MD","Baltimore, MD",Maryland,Very Large Metro (1),Exurban
+SK 1069,-94.170612,30.07709,HOME,"Beaumont-Port Arthur, TX","Beaumont-Port Arthur, TX",Texas,Medium City (4),Exurban
+SK 0397,-97.243795,37.741258,SHOPPING,"Wichita, KS","Wichita et al, KS",Kansas,Large City (3),Exurban
+SK 0557,-91.943435,30.141503,WORK,"Lafayette, LA","Lafayette, LA",Louisiana,Medium City (4),Rural
+SK 1659,-88.146781,41.771462,OTHER,"Chicago et al, IL-IN-WI","Chicago, IL",Illinois,Very Large Metro (1),Light Suburban
+SK 1893,-98.231986,26.190135,SHOPPING,"McAllen-Edinburg-Mission, TX","Harlingen et al, TX",Texas,Large City (3),Light Suburban
+SK 1667,-86.351147,30.376276,TRAVEL,"Crestview et al, FL","Panama City, FL",Florida,Medium City (4),Exurban
+SK 1770,-84.476997,39.085043,HOME,"Cincinnati, OH-KY-IN","Cincinnati, OH",Kentucky,Large Metro (2),Light Suburban
+SK 1320,-85.167599,34.259769,WORK,"Rome, GA","Atlanta, GA",Georgia,Small City (5),Exurban
+SK 1262,-94.198134,36.336016,OTHER,"Fayetteville et al, AR-MO","Ft. Smith et al, AR",Arkansas,Large City (3),Exurban
+SK 0962,-80.188637,25.795296,OTHER,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Urban
+SK 1844,-74.071515,41.50008,SHOPPING,"New York-Newark et al, NY-NJ-PA","New York, NY",New York,Very Large Metro (1),Exurban
+SK 0155,-95.631618,30.083967,WORK,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Rural
+SK 1062,-80.147394,25.943332,SHOPPING,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Suburban
+SK 0679,-82.732085,28.020176,HOME,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Light Suburban
+SK 0882,-73.856734,41.003471,OTHER,"New York-Newark et al, NY-NJ-PA","New York, NY",New York,Very Large Metro (1),Exurban
+SK 1899,-81.243646,28.362499,SHOPPING,"Orlando-Kissimmee-Sanford, FL","Orlando et al, FL",Florida,Very Large Metro (1),Exurban
+SK 1549,-98.454319,29.351013,HOME,"San Antonio-New Braunfels, TX","San Antonio, TX",Texas,Very Large Metro (1),Exurban
+SK 0293,-102.107895,32.024169,WORK,"Midland, TX","Odessa-Midland, TX",Texas,Small City (5),Light Suburban
+SK 1579,-81.773648,26.452508,OTHER,"Cape Coral-Fort Myers, FL","Ft. Myers-Naples, FL",Florida,Large City (3),Exurban
+SK 0481,-84.326012,39.273321,WORK,"Cincinnati, OH-KY-IN","Cincinnati, OH",Ohio,Large Metro (2),Exurban
+SK 0855,-80.366428,25.701421,HOME,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1561,-81.101254,35.221884,HOME,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Exurban
+SK 1106,-96.649651,40.813066,SHOPPING,"Lincoln, NE","Lincoln et al, NE",Nebraska,Medium City (4),Light Suburban
+SK 1709,-83.782944,42.28081,WORK,"Ann Arbor, MI","Detroit, MI",Michigan,Medium City (4),Light Suburban
+SK 1421,-96.193813,41.24822,WORK,"Omaha-Council Bluffs, NE-IA","Omaha, NE",Nebraska,Large City (3),Exurban
+SK 1589,-94.271914,39.019486,SHOPPING,"Kansas City, MO-KS","Kansas City, MO-KS",Missouri,Large Metro (2),Exurban
+SK 1134,-89.935956,34.956674,SHOPPING,"Memphis, TN-MS-AR","Memphis, TN",Mississippi,Large Metro (2),Rural
+SK 1192,-82.369746,28.127642,HOME,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Exurban
+SK 0744,-82.531052,27.298984,HOME,"North Port-Sarasota et al, FL","Tampa et al, FL",Florida,Large City (3),Light Suburban
+SK 0016,-93.218963,30.179711,OTHER,"Lake Charles, LA","Lake Charles, LA",Louisiana,Medium City (4),Exurban
+SK 1519,-76.856223,39.093818,HOME,"Washington et al, DC-VA-MD-WV","Washington, DC (Hagerstown, MD)",Maryland,Very Large Metro (1),Exurban
+SK 1556,-86.827238,35.915456,TRAVEL,"Nashville-Davidson et al, TN","Nashville, TN",Tennessee,Large Metro (2),Light Suburban
+SK 1133,-95.168225,29.997288,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1673,-86.946157,34.784043,OTHER,"Huntsville, AL","Huntsville et al, AL",Alabama,Large City (3),Exurban
+SK 1468,-96.931817,33.020369,OTHER,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1448,-83.881568,33.831929,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Rural
+SK 0933,-83.149427,39.985334,SHOPPING,"Columbus, OH","Columbus, OH",Ohio,Large Metro (2),Light Suburban
+SK 0009,-89.775456,30.284424,SHOPPING,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Exurban
+SK 1382,-81.172669,34.089709,HOME,"Columbia, SC","Columbia, SC",South Carolina,Large City (3),Exurban
+SK 0463,-80.72937,35.144921,SHOPPING,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Exurban
+SK 1054,-74.941475,40.230542,HOME,"Philadelphia et al, PA-NJ-DE-MD","Philadelphia, PA",Pennsylvania,Very Large Metro (1),Exurban
+SK 0625,-90.620219,38.669008,WORK,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Exurban
+SK 1836,-96.857908,32.603891,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 0657,-86.791781,36.025893,TRAVEL,"Nashville-Davidson et al, TN","Nashville, TN",Tennessee,Large Metro (2),Exurban
+SK 1216,-95.250527,29.932218,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 0092,-84.37365,33.846814,TRAVEL,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Suburban
+SK 1521,-96.608991,39.191847,OTHER,"Manhattan, KS","Topeka, KS",Kansas,Small City (5),Exurban
+SK 0576,-97.095147,33.192535,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0538,-97.241659,32.934733,OTHER,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 1917,-81.2688,41.706802,HOME,"Cleveland-Elyria, OH","Cleveland et al, OH",Ohio,Large Metro (2),Exurban
+SK 1775,-90.372594,38.438792,HOME,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Exurban
+SK 1228,-80.137218,26.189326,TRAVEL,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Suburban
+SK 1435,-86.740651,36.200401,HOME,"Nashville-Davidson et al, TN","Nashville, TN",Tennessee,Large Metro (2),Exurban
+SK 1259,-95.745154,29.663604,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1053,-104.800883,38.795306,OTHER,"Colorado Springs, CO","Colorado Sprgs et al, CO",Colorado,Large City (3),Exurban
+SK 1684,-77.011548,38.900424,OTHER,"Washington et al, DC-VA-MD-WV","Washington, DC (Hagerstown, MD)",District of Columbia,Very Large Metro (1),Urban
+SK 1257,-90.040191,30.419669,WORK,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Rural
+SK 1408,-88.245167,40.092823,TRAVEL,"Champaign-Urbana, IL","Champaign et al, IL",Illinois,Medium City (4),Suburban
+SK 0448,-88.853859,35.680838,SHOPPING,"Jackson, TN","Jackson, TN",Tennessee,Small City (5),Exurban
+SK 0343,-91.115849,30.356069,OTHER,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Exurban
+SK 1204,-80.346266,25.769595,SHOPPING,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Suburban
+SK 0970,-84.124651,33.945261,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Light Suburban
+SK 1186,-96.886202,33.065851,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1555,-81.505896,41.147731,HOME,"Akron, OH","Cleveland et al, OH",Ohio,Large City (3),Exurban
+SK 1486,-85.060591,35.082682,HOME,"Chattanooga, TN-GA","Chattanooga, TN",Tennessee,Large City (3),Rural
+SK 1328,-93.35894,30.228146,WORK,"Lake Charles, LA","Lake Charles, LA",Louisiana,Medium City (4),Rural
+SK 0913,-84.417834,33.658413,WORK,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Light Suburban
+SK 1065,-93.987332,29.97614,WORK,"Beaumont-Port Arthur, TX","Beaumont-Port Arthur, TX",Texas,Medium City (4),Exurban
+SK 1742,-86.341941,39.949888,WORK,"Indianapolis-Carmel-Anderson, IN","Indianapolis, IN",Indiana,Large Metro (2),Rural
+SK 1357,-80.833487,35.148301,SHOPPING,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Light Suburban
+SK 0025,-90.016351,29.921666,HOME,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Light Suburban
+SK 1636,-99.759932,32.431881,TRAVEL,"Abilene, TX","Abilene-Sweetwater, TX",Texas,Small City (5),Light Suburban
+SK 1249,-77.452497,38.740155,SHOPPING,"Washington et al, DC-VA-MD-WV","Washington, DC (Hagerstown, MD)",Virginia,Very Large Metro (1),Exurban
+SK 1416,-81.387639,31.160878,WORK,"Brunswick, GA","Jacksonville, FL",Georgia,Small City (5),Rural
+SK 0529,-95.278287,32.316667,WORK,"Tyler, TX","Tyler-Longview et al, TX",Texas,Medium City (4),Light Suburban
+SK 0540,-95.150572,29.650738,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1334,-97.800656,30.273303,WORK,"Austin-Round Rock, TX","Austin, TX",Texas,Large Metro (2),Light Suburban
+SK 1179,-73.0066,41.261944,HOME,"New Haven-Milford, CT","Hartford & New Haven, CT",Connecticut,Large City (3),Exurban
+SK 1472,-80.250851,26.26156,HOME,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 0941,-80.456616,25.685021,HOME,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1240,-84.312428,33.85807,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Suburban
+SK 0800,-91.2187,30.420696,WORK,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Exurban
+SK 1552,-84.469634,33.585209,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 0251,-80.780242,35.098068,WORK,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Exurban
+SK 1481,-96.120178,41.294564,HOME,"Omaha-Council Bluffs, NE-IA","Omaha, NE",Nebraska,Large City (3),Light Suburban
+SK 1547,-104.87604,39.414253,SHOPPING,"Denver-Aurora-Lakewood, CO","Denver, CO",Colorado,Very Large Metro (1),Exurban
+SK 1307,-80.814129,35.333713,SHOPPING,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Exurban
+SK 1434,-96.112723,33.095948,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Rural
+SK 0838,-98.665186,29.548526,HOME,"San Antonio-New Braunfels, TX","San Antonio, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1152,-91.025238,30.349341,WORK,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Exurban
+SK 1575,-95.13877,29.540155,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 2005,-76.602544,39.404722,OTHER,"Baltimore-Columbia-Towson, MD","Baltimore, MD",Maryland,Very Large Metro (1),Light Suburban
+SK 1332,-97.596178,30.466512,HOME,"Austin-Round Rock, TX","Austin, TX",Texas,Large Metro (2),Exurban
+SK 0847,-84.430216,39.325304,OTHER,"Cincinnati, OH-KY-IN","Cincinnati, OH",Ohio,Large Metro (2),Exurban
+SK 1037,-84.213978,39.635164,SHOPPING,"Dayton, OH","Dayton, OH",Ohio,Large City (3),Exurban
+SK 1465,-90.916034,30.460742,HOME,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Rural
+SK 1554,-96.656796,33.21791,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 0492,-85.239296,35.123792,SHOPPING,"Chattanooga, TN-GA","Chattanooga, TN",Tennessee,Large City (3),Exurban
+SK 0046,-90.357928,29.909712,SHOPPING,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Rural
+SK 1551,-90.515051,38.82113,OTHER,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Exurban
+SK 0604,-82.426196,27.078656,TRAVEL,"North Port-Sarasota et al, FL","Tampa et al, FL",Florida,Large City (3),Exurban
+SK 0328,-85.510046,36.136788,WORK,"Cookeville, TN","Nashville, TN",Tennessee,Small City (5),Exurban
+SK 1173,-76.737086,38.945465,HOME,"Washington et al, DC-VA-MD-WV","Washington, DC (Hagerstown, MD)",Maryland,Very Large Metro (1),Exurban
+SK 0894,-82.362735,34.840919,WORK,"Greenville-Anderson-Mauldin, SC","Greenville et al, SC-NC",South Carolina,Large City (3),Light Suburban
+SK 1669,-97.581379,30.50504,OTHER,"Austin-Round Rock, TX","Austin, TX",Texas,Large Metro (2),Exurban
+SK 0688,-81.6207,30.19773,HOME,"Jacksonville, FL","Jacksonville, FL",Florida,Large Metro (2),Light Suburban
+SK 1389,-93.783591,41.560267,TRAVEL,"Des Moines-West Des Moines, IA","Des Moines-Ames, IA",Iowa,Large City (3),Exurban
+SK 1312,-84.534772,33.883117,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1359,-92.208449,38.582184,WORK,"Jefferson City, MO","Columbia et al, MO",Missouri,Small City (5),Exurban
+SK 1090,-84.06084,39.772211,WORK,"Dayton, OH","Dayton, OH",Ohio,Large City (3),Exurban
+SK 1156,-95.555043,30.112626,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1597,-97.85643,30.009078,HOME,"Austin-Round Rock, TX","Austin, TX",Texas,Large Metro (2),Exurban
+SK 1485,-97.719582,31.089568,HOME,"Killeen-Temple, TX","Waco-Temple-Bryan, TX",Texas,Medium City (4),Light Suburban
+SK 1031,-80.162245,25.893099,HOME,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Suburban
+SK 1929,-97.237982,32.848092,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0821,-81.863179,26.597644,SHOPPING,"Cape Coral-Fort Myers, FL","Ft. Myers-Naples, FL",Florida,Large City (3),Light Suburban
+SK 1048,-84.266608,34.087686,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Light Suburban
+SK 1907,-86.564669,30.737857,HOME,"Crestview et al, FL","Mobile et al, AL-FL",Florida,Medium City (4),Exurban
+SK 1019,-83.017829,40.132395,WORK,"Columbus, OH","Columbus, OH",Ohio,Large Metro (2),Light Suburban
+SK 1347,-96.615154,32.810367,OTHER,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1345,-84.052828,34.040914,WORK,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1801,-92.107861,30.243003,SHOPPING,"Lafayette, LA","Lafayette, LA",Louisiana,Medium City (4),Rural
+SK 1707,-95.062191,29.889651,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Rural
+SK 0449,-84.95052,32.545404,HOME,"Columbus, GA-AL","Columbus, GA (Opelika, AL)",Georgia,Medium City (4),Exurban
+SK 1433,-96.50884,33.17551,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Rural
+SK 1084,-80.330953,25.91261,HOME,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Suburban
+SK 0346,-90.957026,30.469684,HOME,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Rural
+SK 1201,-88.975586,30.402703,OTHER,"Gulfport-Biloxi-Pascagoula, MS","Biloxi-Gulfport, MS",Mississippi,Medium City (4),Exurban
+SK 1466,-84.689216,33.409023,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Rural
+SK 1127,-80.117222,26.166982,SHOPPING,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Suburban
+SK 1092,-80.352459,25.81117,OTHER,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Suburban
+SK 1700,-92.428066,34.802879,WORK,"Little Rock et al, AR","Little Rock et al, AR",Arkansas,Large City (3),Exurban
+SK 1618,-84.526938,39.337509,WORK,"Cincinnati, OH-KY-IN","Cincinnati, OH",Ohio,Large Metro (2),Exurban
+SK 0891,-95.067324,29.537737,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0858,-84.448747,33.476773,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 0495,-89.792002,30.248097,HOME,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Exurban
+SK 1438,-82.526828,35.514892,HOME,"Asheville, NC","Greenville et al, SC-NC",North Carolina,Medium City (4),Exurban
+SK 0268,-90.521909,38.593708,HOME,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Exurban
+SK 1918,-88.198631,41.536372,HOME,"Chicago et al, IL-IN-WI","Chicago, IL",Illinois,Very Large Metro (1),Exurban
+SK 1214,-99.47402,27.609608,HOME,"Laredo, TX","Laredo, TX",Texas,Medium City (4),Exurban
+SK 1386,-89.733213,39.75802,WORK,"Springfield, IL","Champaign et al, IL",Illinois,Medium City (4),Exurban
+SK 0289,-76.324688,39.541157,HOME,"Baltimore-Columbia-Towson, MD","Baltimore, MD",Maryland,Very Large Metro (1),Exurban
+SK 1392,-80.357864,26.008324,HOME,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1587,-78.959772,35.962986,SHOPPING,"Durham-Chapel Hill, NC","Raleigh et al, NC",North Carolina,Large City (3),Exurban
+SK 1302,-81.04308,34.959019,SHOPPING,"Charlotte-Concord et al, NC-SC","Charlotte, NC",South Carolina,Very Large Metro (1),Exurban
+SK 1113,-94.466842,39.243764,HOME,"Kansas City, MO-KS","Kansas City, MO-KS",Missouri,Large Metro (2),Exurban
+SK 0630,-80.425389,25.76048,HOME,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1363,-81.334103,35.749088,WORK,"Hickory-Lenoir-Morganton, NC","Charlotte, NC",North Carolina,Medium City (4),Exurban
+SK 1641,-95.190332,29.664634,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1377,-98.331848,29.563289,SHOPPING,"San Antonio-New Braunfels, TX","San Antonio, TX",Texas,Very Large Metro (1),Exurban
+SK 0868,-82.967286,40.14307,TRAVEL,"Columbus, OH","Columbus, OH",Ohio,Large Metro (2),Light Suburban
+SK 1243,-90.52271,30.726918,HOME,"Hammond, LA","New Orleans, LA",Louisiana,Small City (5),Rural
+SK 1108,-93.709051,32.560045,SHOPPING,"Shreveport-Bossier City, LA","Shreveport, LA",Louisiana,Medium City (4),Rural
+SK 0063,-89.344768,31.325322,TRAVEL,"Hattiesburg, MS","Hattiesburg-Laurel, MS",Mississippi,Small City (5),Exurban
+SK 0772,-93.096878,31.754013,WORK,"Natchitoches, LA","Shreveport, LA",Louisiana,Small Town (6),Exurban
+SK 1729,-95.768196,29.690326,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1901,-89.917704,35.148539,SHOPPING,"Memphis, TN-MS-AR","Memphis, TN",Tennessee,Large Metro (2),Light Suburban
+SK 0335,-95.300102,32.300793,SHOPPING,"Tyler, TX","Tyler-Longview et al, TX",Texas,Medium City (4),Light Suburban
+SK 1056,-84.375135,39.380561,SHOPPING,"Cincinnati, OH-KY-IN","Cincinnati, OH",Ohio,Large Metro (2),Exurban
+SK 1342,-89.673624,40.775052,SHOPPING,"Peoria, IL","Peoria-Bloomington, IL",Illinois,Medium City (4),Rural
+SK 0291,-84.064107,35.922739,SHOPPING,"Knoxville, TN","Knoxville, TN",Tennessee,Large City (3),Exurban
+SK 1422,-97.680968,30.560933,OTHER,"Austin-Round Rock, TX","Austin, TX",Texas,Large Metro (2),Exurban
+SK 1680,-74.303304,40.362616,HOME,"New York-Newark et al, NY-NJ-PA","New York, NY",New Jersey,Very Large Metro (1),Exurban
+SK 1229,-97.819593,30.524919,HOME,"Austin-Round Rock, TX","Austin, TX",Texas,Large Metro (2),Exurban
+SK 0072,-86.787926,33.481586,WORK,"Birmingham-Hoover, AL","Birmingham et al, AL",Alabama,Large Metro (2),Suburban
+SK 1020,-89.552343,37.307808,WORK,"Cape Girardeau, MO-IL","Paducah et al, KY-MO-IL",Missouri,Small City (5),Exurban
+SK 1727,-74.313816,40.631995,WORK,"New York-Newark et al, NY-NJ-PA","New York, NY",New Jersey,Very Large Metro (1),Light Suburban
+SK 0120,-95.447196,30.127144,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1360,-86.798007,33.506329,OTHER,"Birmingham-Hoover, AL","Birmingham et al, AL",Alabama,Large Metro (2),Suburban
+SK 1706,-97.531079,35.609915,OTHER,"Oklahoma City, OK","Oklahoma City, OK",Oklahoma,Large Metro (2),Light Suburban
+SK 1639,-82.760384,27.87079,HOME,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1656,-82.702239,27.839693,SHOPPING,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1400,-89.099219,30.441637,SHOPPING,"Gulfport-Biloxi-Pascagoula, MS","Biloxi-Gulfport, MS",Mississippi,Medium City (4),Exurban
+SK 1190,-84.526876,33.805263,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1640,-95.53328,29.537217,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1022,-90.457413,30.483056,WORK,"Hammond, LA","New Orleans, LA",Louisiana,Small City (5),Exurban
+SK 1534,-77.032181,38.916789,OTHER,"Washington et al, DC-VA-MD-WV","Washington, DC (Hagerstown, MD)",District of Columbia,Very Large Metro (1),Urban
+SK 0140,-95.441022,29.733807,WORK,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Suburban
+SK 1163,-96.964724,32.884411,WORK,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Suburban
+SK 0655,-82.862282,40.053804,OTHER,"Columbus, OH","Columbus, OH",Ohio,Large Metro (2),Exurban
+SK 0708,-84.342779,33.572938,WORK,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1075,-90.098861,29.975748,OTHER,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Suburban
+SK 0498,-82.078556,33.48712,HOME,"Augusta-Richmond County, GA-SC","Augusta-Aiken, GA-SC",Georgia,Large City (3),Exurban
+SK 1177,-84.380191,33.782145,OTHER,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Light Urban
+SK 0510,-80.231671,26.087009,WORK,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 0455,-95.644366,29.679042,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0056,-95.604195,29.592352,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0745,-85.876072,30.216401,TRAVEL,"Panama City, FL","Panama City, FL",Florida,Small City (5),Rural
+SK 1379,-86.51209,36.189558,OTHER,"Nashville-Davidson et al, TN","Nashville, TN",Tennessee,Large Metro (2),Rural
+SK 0417,-97.200033,32.824185,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1430,-86.7191,34.691326,WORK,"Huntsville, AL","Huntsville et al, AL",Alabama,Large City (3),Exurban
+SK 1643,-98.444428,29.489292,SHOPPING,"San Antonio-New Braunfels, TX","San Antonio, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0863,-87.885628,30.52032,HOME,"Daphne-Fairhope-Foley, AL","Mobile et al, AL-FL",Alabama,Medium City (4),Rural
+SK 1912,-82.828648,39.980549,WORK,"Columbus, OH","Columbus, OH",Ohio,Large Metro (2),Light Suburban
+SK 1385,-83.658451,32.552791,HOME,"Warner Robins, GA","Macon, GA",Georgia,Medium City (4),Rural
+SK 1288,-95.573224,30.056282,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1507,-80.646777,35.319733,HOME,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Rural
+SK 0547,-97.066912,33.035912,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1333,-88.192164,30.640709,HOME,"Mobile, AL","Mobile et al, AL-FL",Alabama,Medium City (4),Exurban
+SK 0083,-91.051109,30.41824,WORK,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Light Suburban
+SK 1488,-75.578112,39.968336,OTHER,"Philadelphia et al, PA-NJ-DE-MD","Philadelphia, PA",Pennsylvania,Very Large Metro (1),Light Suburban
+SK 1675,-89.665301,35.268108,HOME,"Memphis, TN-MS-AR","Memphis, TN",Tennessee,Large Metro (2),Rural
+SK 0944,-82.5997,27.496022,WORK,"North Port-Sarasota et al, FL","Tampa et al, FL",Florida,Large City (3),Light Suburban
+SK 0281,-96.78861,33.027456,OTHER,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Suburban
+SK 1826,-83.702678,32.615677,HOME,"Warner Robins, GA","Macon, GA",Georgia,Medium City (4),Exurban
+SK 1238,-80.325231,25.796443,WORK,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Suburban
+SK 1261,-96.734289,33.175013,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 1940,-81.379675,41.65107,SHOPPING,"Cleveland-Elyria, OH","Cleveland et al, OH",Ohio,Large Metro (2),Exurban
+SK 1777,-82.463258,27.339477,TRAVEL,"North Port-Sarasota et al, FL","Tampa et al, FL",Florida,Large City (3),Exurban
+SK 0642,-89.043874,30.393323,WORK,"Gulfport-Biloxi-Pascagoula, MS","Biloxi-Gulfport, MS",Mississippi,Medium City (4),Exurban
+SK 1818,-95.75684,29.545022,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 0699,-82.784566,39.928668,HOME,"Columbus, OH","Columbus, OH",Ohio,Large Metro (2),Exurban
+SK 1959,-87.975252,41.775617,HOME,"Chicago et al, IL-IN-WI","Chicago, IL",Illinois,Very Large Metro (1),Light Suburban
+SK 1365,-86.736372,33.429365,OTHER,"Birmingham-Hoover, AL","Birmingham et al, AL",Alabama,Large Metro (2),Exurban
+SK 1079,-90.326667,32.333717,TRAVEL,"Jackson, MS","Jackson, MS",Mississippi,Large City (3),Rural
+SK 1674,-89.764004,35.205293,HOME,"Memphis, TN-MS-AR","Memphis, TN",Tennessee,Large Metro (2),Exurban
+SK 1590,-94.367901,39.047804,HOME,"Kansas City, MO-KS","Kansas City, MO-KS",Missouri,Large Metro (2),Exurban
+SK 1670,-91.344476,39.935433,WORK,"Quincy, IL-MO","Quincy et al, IL-MO-IA",Illinois,Small Town (6),Exurban
+SK 1171,-90.024862,32.283146,WORK,"Jackson, MS","Jackson, MS",Mississippi,Large City (3),Exurban
+SK 0681,-84.624809,33.867163,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1314,-97.654796,31.074787,SHOPPING,"Killeen-Temple, TX","Waco-Temple-Bryan, TX",Texas,Medium City (4),Exurban
+SK 0313,-95.457358,30.16922,WORK,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1117,-88.116009,30.689209,WORK,"Mobile, AL","Mobile et al, AL-FL",Alabama,Medium City (4),Light Suburban
+SK 0101,-96.802317,32.91002,OTHER,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Suburban
+SK 0443,-77.874515,34.233083,SHOPPING,"Wilmington, NC","Wilmington, NC",North Carolina,Medium City (4),Light Suburban
+SK 1842,-97.086884,33.071513,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 0725,-80.85746,35.442828,HOME,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Exurban
+SK 1251,-80.971152,34.020428,WORK,"Columbia, SC","Columbia, SC",South Carolina,Large City (3),Light Suburban
+SK 0759,-80.416837,25.713628,HOME,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 0922,-81.092919,32.030252,WORK,"Savannah, GA","Savannah, GA",Georgia,Medium City (4),Light Suburban
+SK 0609,-87.469265,41.469148,SHOPPING,"Chicago et al, IL-IN-WI","Chicago, IL",Indiana,Very Large Metro (1),Exurban
+SK 0995,-96.646393,32.963125,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1950,-87.634077,41.567346,SHOPPING,"Chicago et al, IL-IN-WI","Chicago, IL",Illinois,Very Large Metro (1),Exurban
+SK 0433,-89.829387,35.05058,SHOPPING,"Memphis, TN-MS-AR","Memphis, TN",Tennessee,Large Metro (2),Light Suburban
+SK 1460,-96.974714,28.811512,WORK,"Victoria, TX","Victoria, TX",Texas,Small City (5),Exurban
+SK 1930,-87.523753,33.197426,WORK,"Tuscaloosa, AL","Birmingham et al, AL",Alabama,Medium City (4),Light Suburban
+SK 1578,-81.45486,41.519696,SHOPPING,"Cleveland-Elyria, OH","Cleveland et al, OH",Ohio,Large Metro (2),Exurban
+SK 1047,-90.407401,38.575076,WORK,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Exurban
+SK 0180,-90.081569,30.449949,OTHER,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Exurban
+SK 0400,-94.668303,38.884538,SHOPPING,"Kansas City, MO-KS","Kansas City, MO-KS",Kansas,Large Metro (2),Light Suburban
+SK 1291,-95.335589,32.278512,HOME,"Tyler, TX","Tyler-Longview et al, TX",Texas,Medium City (4),Exurban
+SK 0768,-92.156353,32.517492,WORK,"Monroe, LA","Monroe-El Dorado, LA-AR",Louisiana,Small City (5),Exurban
+SK 1660,-95.471293,29.706157,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Suburban
+SK 0553,-90.984642,30.334978,WORK,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Rural
+SK 1744,-81.390911,30.012477,HOME,"Jacksonville, FL","Jacksonville, FL",Florida,Large Metro (2),Rural
+SK 1009,-93.659165,32.455139,TRAVEL,"Shreveport-Bossier City, LA","Shreveport, LA",Louisiana,Medium City (4),Rural
+SK 1568,-80.733346,35.372501,HOME,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Exurban
+SK 1687,-97.084875,32.928509,WORK,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0486,-93.721576,32.442957,WORK,"Shreveport-Bossier City, LA","Shreveport, LA",Louisiana,Medium City (4),Exurban
+SK 1446,-83.039449,39.988923,HOME,"Columbus, OH","Columbus, OH",Ohio,Large Metro (2),Suburban
+SK 1230,-80.296544,25.867062,WORK,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Suburban
+SK 0837,-82.469916,28.177768,HOME,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Exurban
+SK 1107,-90.142341,29.962796,WORK,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Suburban
+SK 0648,-94.167792,30.117645,SHOPPING,"Beaumont-Port Arthur, TX","Beaumont-Port Arthur, TX",Texas,Medium City (4),Exurban
+SK 1621,-84.508142,33.722933,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 0485,-90.134106,30.453826,TRAVEL,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Exurban
+SK 0031,-90.000327,30.041162,SHOPPING,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Light Suburban
+SK 1928,-83.94662,30.853511,OTHER,"Thomasville, GA","Tallahassee et al, FL-GA",Georgia,Small Town (6),Rural
+SK 1346,-83.161561,40.10457,OTHER,"Columbus, OH","Columbus, OH",Ohio,Large Metro (2),Light Suburban
+SK 1254,-97.619724,35.462625,WORK,"Oklahoma City, OK","Oklahoma City, OK",Oklahoma,Large Metro (2),Exurban
+SK 1014,-82.55832,34.824891,HOME,"Greenville-Anderson-Mauldin, SC","Greenville et al, SC-NC",South Carolina,Large City (3),Rural
+SK 1070,-90.148624,32.356399,SHOPPING,"Jackson, MS","Jackson, MS",Mississippi,Large City (3),Exurban
+SK 0146,-87.913424,30.646134,OTHER,"Daphne-Fairhope-Foley, AL","Mobile et al, AL-FL",Alabama,Medium City (4),Exurban
+SK 1338,-85.434046,31.255012,WORK,"Dothan, AL","Dothan, AL",Alabama,Small City (5),Exurban
+SK 1616,-97.114298,32.72088,OTHER,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Suburban
+SK 1576,-85.46545,31.238785,TRAVEL,"Dothan, AL","Dothan, AL",Alabama,Small City (5),Rural
+SK 0023,-90.097136,29.872065,SHOPPING,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Light Suburban
+SK 1634,-91.012483,38.539273,SHOPPING,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Rural
+SK 1567,-82.643428,27.865775,HOME,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1296,-80.769022,35.343219,SHOPPING,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Exurban
+SK 1318,-111.961451,33.48857,SHOPPING,"Phoenix-Mesa-Scottsdale, AZ","Phoenix (Prescott), AZ",Arizona,Very Large Metro (1),Light Suburban
+SK 1711,-80.653287,35.122264,HOME,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Exurban
+SK 1856,-88.01824,41.597158,WORK,"Chicago et al, IL-IN-WI","Chicago, IL",Illinois,Very Large Metro (1),Exurban
+SK 1078,-91.813259,29.991539,SHOPPING,"Lafayette, LA","Lafayette, LA",Louisiana,Medium City (4),Exurban
+SK 1361,-87.860826,30.656143,OTHER,"Daphne-Fairhope-Foley, AL","Mobile et al, AL-FL",Alabama,Medium City (4),Rural
+SK 1850,-74.945279,40.01815,SHOPPING,"Philadelphia et al, PA-NJ-DE-MD","Philadelphia, PA",New Jersey,Very Large Metro (1),Exurban
+SK 1627,-97.360887,32.751936,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Suburban
+SK 1311,-89.984417,38.590436,SHOPPING,"St. Louis, MO-IL","St. Louis, MO",Illinois,Very Large Metro (1),Exurban
+SK 0411,-89.9889,29.858057,OTHER,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Rural
+SK 1138,-81.637419,30.481481,TRAVEL,"Jacksonville, FL","Jacksonville, FL",Florida,Large Metro (2),Exurban
+SK 0556,-92.050977,30.159306,SHOPPING,"Lafayette, LA","Lafayette, LA",Louisiana,Medium City (4),Light Suburban
+SK 0359,-90.058074,29.889718,SHOPPING,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Light Suburban
+SK 1721,-110.869852,32.221144,SHOPPING,"Tucson, AZ","Tucson (Sierra Vista), AZ",Arizona,Large Metro (2),Light Suburban
+SK 1423,-110.954792,32.186844,OTHER,"Tucson, AZ","Tucson (Sierra Vista), AZ",Arizona,Large Metro (2),Suburban
+SK 0033,-95.468564,29.731867,WORK,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Suburban
+SK 0068,-86.464646,30.38626,TRAVEL,"Crestview et al, FL","Mobile et al, AL-FL",Florida,Medium City (4),Exurban
+SK 0791,-83.856034,34.298646,SHOPPING,"Gainesville, GA","Atlanta, GA",Georgia,Medium City (4),Light Suburban
+SK 1676,-84.141565,35.893429,OTHER,"Knoxville, TN","Knoxville, TN",Tennessee,Large City (3),Exurban
+SK 1367,-82.005783,34.934822,WORK,"Spartanburg, SC","Greenville et al, SC-NC",South Carolina,Medium City (4),Exurban
+SK 1244,-94.726647,39.015089,HOME,"Kansas City, MO-KS","Kansas City, MO-KS",Kansas,Large Metro (2),Exurban
+SK 0518,-90.552784,29.69423,WORK,"Houma-Thibodaux, LA","New Orleans, LA",Louisiana,Medium City (4),Rural
+SK 1874,-106.216173,31.780497,HOME,"El Paso, TX","El Paso et al, TX-NM",Texas,Large City (3),Exurban
+SK 0324,-84.350857,33.993902,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Light Suburban
+SK 0827,-95.269613,30.004387,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 0094,-90.067275,32.337974,SHOPPING,"Jackson, MS","Jackson, MS",Mississippi,Large City (3),Rural
+SK 1470,-88.936505,37.730568,WORK,"Carbondale-Marion, IL","Paducah et al, KY-MO-IL",Illinois,Small City (5),Rural
+SK 1080,-91.061941,30.390339,WORK,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Light Suburban
+SK 0552,-91.025527,30.544493,HOME,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Rural
+SK 0434,-81.527751,30.259708,SHOPPING,"Jacksonville, FL","Jacksonville, FL",Florida,Large Metro (2),Light Suburban
+SK 1565,-94.801864,38.853018,WORK,"Kansas City, MO-KS","Kansas City, MO-KS",Kansas,Large Metro (2),Exurban
+SK 1355,-96.767147,33.002251,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0824,-81.896604,26.55603,OTHER,"Cape Coral-Fort Myers, FL","Ft. Myers-Naples, FL",Florida,Large City (3),Light Suburban
+SK 1115,-77.388083,34.774044,SHOPPING,"Jacksonville, NC","Greenville et al, NC",North Carolina,Medium City (4),Exurban
+SK 1082,-90.049234,29.914909,SHOPPING,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Suburban
+SK 1612,-89.662054,39.803624,WORK,"Springfield, IL","Champaign et al, IL",Illinois,Medium City (4),Light Suburban
+SK 1654,-85.992278,39.853719,HOME,"Indianapolis-Carmel-Anderson, IN","Indianapolis, IN",Indiana,Large Metro (2),Exurban
+SK 1525,-89.863475,35.101916,WORK,"Memphis, TN-MS-AR","Memphis, TN",Tennessee,Large Metro (2),Light Suburban
+SK 0831,-89.73188,35.048568,SHOPPING,"Memphis, TN-MS-AR","Memphis, TN",Tennessee,Large Metro (2),Rural
+SK 0032,-90.736846,29.593548,WORK,"Houma-Thibodaux, LA","New Orleans, LA",Louisiana,Medium City (4),Exurban
+SK 1395,-97.965823,30.345716,OTHER,"Austin-Round Rock, TX","Austin, TX",Texas,Large Metro (2),Rural
+SK 1508,-95.586659,30.014652,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 0028,-90.4954,30.074096,SHOPPING,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Exurban
+SK 1198,-98.732581,29.780818,WORK,"San Antonio-New Braunfels, TX","San Antonio, TX",Texas,Very Large Metro (1),Rural
+SK 0353,-86.821279,35.945421,WORK,"Nashville-Davidson et al, TN","Nashville, TN",Tennessee,Large Metro (2),Exurban
+SK 0452,-84.312098,39.072194,HOME,"Cincinnati, OH-KY-IN","Cincinnati, OH",Ohio,Large Metro (2),Exurban
+SK 0865,-82.37175,29.627011,OTHER,"Gainesville, FL","Gainesville, FL",Florida,Medium City (4),Light Suburban
+SK 1183,-88.705183,32.408592,WORK,"Meridian, MS","Meridian, MS",Mississippi,Small City (5),Exurban
+SK 1136,-95.434385,30.052151,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1778,-83.33382,42.368099,SHOPPING,"Detroit-Warren-Dearborn, MI","Detroit, MI",Michigan,Very Large Metro (1),Light Suburban
+SK 0592,-97.318492,32.861642,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0952,-74.648703,40.495326,HOME,"New York-Newark et al, NY-NJ-PA","New York, NY",New Jersey,Very Large Metro (1),Exurban
+SK 1705,-89.953757,38.516536,HOME,"St. Louis, MO-IL","St. Louis, MO",Illinois,Very Large Metro (1),Exurban
+SK 1011,-86.561933,35.978081,OTHER,"Nashville-Davidson et al, TN","Nashville, TN",Tennessee,Large Metro (2),Exurban
+SK 1812,-88.202203,41.63618,HOME,"Chicago et al, IL-IN-WI","Chicago, IL",Illinois,Very Large Metro (1),Exurban
+SK 0581,-97.394392,27.690201,HOME,"Corpus Christi, TX","Corpus Christi, TX",Texas,Medium City (4),Light Suburban
+SK 0007,-90.031207,29.892215,HOME,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Light Suburban
+SK 1277,-80.671113,28.145331,HOME,"Palm Bay-Melbourne et al, FL","Orlando et al, FL",Florida,Large City (3),Exurban
+SK 1664,-80.153641,26.317399,HOME,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 0779,-94.607679,38.967866,WORK,"Kansas City, MO-KS","Kansas City, MO-KS",Missouri,Large Metro (2),Light Suburban
+SK 0238,-81.324106,29.867835,WORK,"Jacksonville, FL","Jacksonville, FL",Florida,Large Metro (2),Exurban
+SK 0770,-94.729365,32.539453,SHOPPING,"Longview, TX","Tyler-Longview et al, TX",Texas,Medium City (4),Exurban
+SK 0115,-83.386013,33.939618,HOME,"Athens-Clarke County, GA","Atlanta, GA",Georgia,Medium City (4),Light Suburban
+SK 1952,-87.803252,41.850739,WORK,"Chicago et al, IL-IN-WI","Chicago, IL",Illinois,Very Large Metro (1),Suburban
+SK 1085,-80.323806,25.664461,HOME,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1493,-96.28248,30.584935,OTHER,"College Station-Bryan, TX","Waco-Temple-Bryan, TX",Texas,Medium City (4),Rural
+SK 1399,-97.79277,30.165877,HOME,"Austin-Round Rock, TX","Austin, TX",Texas,Large Metro (2),Exurban
+SK 0711,-88.226203,30.67562,SHOPPING,"Mobile, AL","Mobile et al, AL-FL",Alabama,Medium City (4),Exurban
+SK 1797,-98.161406,29.714161,HOME,"San Antonio-New Braunfels, TX","San Antonio, TX",Texas,Very Large Metro (1),Rural
+SK 0777,-82.636924,28.191749,WORK,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Exurban
+SK 1341,-98.574261,29.503294,WORK,"San Antonio-New Braunfels, TX","San Antonio, TX",Texas,Very Large Metro (1),Suburban
+SK 0010,-90.138891,30.002352,SHOPPING,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Suburban
+SK 0505,-95.551682,30.720575,OTHER,"Huntsville, TX","Houston, TX",Texas,Small City (5),Exurban
+SK 1528,-73.91133,41.596077,HOME,"New York-Newark et al, NY-NJ-PA","New York, NY",New York,Very Large Metro (1),Rural
+SK 0753,-83.987427,34.068047,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1923,-88.822255,33.454553,WORK,"Starkville, MS","Columbus et al, MS",Mississippi,Small Town (6),Exurban
+SK 0053,-90.134884,32.398641,SHOPPING,"Jackson, MS","Jackson, MS",Mississippi,Large City (3),Exurban
+SK 0880,-80.366475,25.754667,OTHER,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Suburban
+SK 1820,-83.866751,33.602764,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 0751,-98.476532,29.611313,OTHER,"San Antonio-New Braunfels, TX","San Antonio, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1273,-77.335499,38.674762,HOME,"Washington et al, DC-VA-MD-WV","Washington, DC (Hagerstown, MD)",Virginia,Very Large Metro (1),Exurban
+SK 0969,-81.453669,30.321159,SHOPPING,"Jacksonville, FL","Jacksonville, FL",Florida,Large Metro (2),Exurban
+SK 1939,-96.99427,32.97365,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0826,-86.798045,36.189645,TRAVEL,"Nashville-Davidson et al, TN","Nashville, TN",Tennessee,Large Metro (2),Suburban
+SK 1327,-95.385703,30.109051,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 0363,-97.681759,30.483341,SHOPPING,"Austin-Round Rock, TX","Austin, TX",Texas,Large Metro (2),Light Suburban
+SK 1304,-86.467073,30.516642,WORK,"Crestview et al, FL","Mobile et al, AL-FL",Florida,Medium City (4),Rural
+SK 0850,-84.454641,33.901855,OTHER,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Suburban
+SK 1498,-82.638263,27.785526,OTHER,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1595,-85.312092,35.035685,WORK,"Chattanooga, TN-GA","Chattanooga, TN",Tennessee,Large City (3),Light Suburban
+SK 0100,-84.369061,33.797458,OTHER,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Suburban
+SK 1944,-88.02353,42.140019,SHOPPING,"Chicago et al, IL-IN-WI","Chicago, IL",Illinois,Very Large Metro (1),Exurban
+SK 0271,-96.722974,32.976083,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1712,-73.989731,41.978621,HOME,"Kingston, NY","New York, NY",New York,Small City (5),Rural
+SK 1509,-98.449651,29.516656,WORK,"San Antonio-New Braunfels, TX","San Antonio, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0040,-95.603356,29.735633,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Suburban
+SK 1289,-97.124667,31.551782,TRAVEL,"Waco, TX","Waco-Temple-Bryan, TX",Texas,Medium City (4),Light Suburban
+SK 0608,-84.477378,34.04196,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 0253,-81.453756,30.287124,HOME,"Jacksonville, FL","Jacksonville, FL",Florida,Large Metro (2),Exurban
+SK 0738,-97.840568,30.222402,SHOPPING,"Austin-Round Rock, TX","Austin, TX",Texas,Large Metro (2),Exurban
+SK 0302,-94.724547,38.884556,OTHER,"Kansas City, MO-KS","Kansas City, MO-KS",Kansas,Large Metro (2),Light Suburban
+SK 0808,-80.985898,35.102627,HOME,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Exurban
+SK 0896,-95.688779,29.972573,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1514,-93.599811,41.747391,HOME,"Des Moines-West Des Moines, IA","Des Moines-Ames, IA",Iowa,Large City (3),Exurban
+SK 1491,-94.81579,39.80235,SHOPPING,"St. Joseph, MO-KS","St. Joseph, MO",Missouri,Small City (5),Exurban
+SK 0059,-82.397167,28.053839,WORK,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1650,-96.704104,32.832878,OTHER,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1769,-98.393297,29.510681,SHOPPING,"San Antonio-New Braunfels, TX","San Antonio, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1089,-90.112174,30.021281,HOME,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Light Suburban
+SK 1490,-88.564864,39.142047,TRAVEL,"Effingham, IL","Champaign et al, IL",Illinois,Small Town (6),Rural
+SK 0219,-97.110638,32.938416,WORK,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1432,-84.21417,33.513759,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 0184,-84.552634,34.10869,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1125,-80.211997,25.7875,WORK,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Urban
+SK 1161,-90.697919,38.794108,HOME,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Exurban
+SK 0441,-84.256112,33.845491,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Light Suburban
+SK 0615,-88.279301,40.112135,WORK,"Champaign-Urbana, IL","Champaign et al, IL",Illinois,Medium City (4),Light Suburban
+SK 0889,-82.43118,27.434102,HOME,"North Port-Sarasota et al, FL","Tampa et al, FL",Florida,Large City (3),Rural
+SK 1846,-83.078076,40.581716,SHOPPING,"Marion, OH","Columbus, OH",Ohio,Small Town (6),Exurban
+SK 1782,-80.091892,26.306979,SHOPPING,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 0174,-84.56645,34.012938,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Light Suburban
+SK 0561,-82.518945,27.944543,HOME,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Suburban
+SK 1250,-90.956486,30.560235,HOME,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Rural
+SK 0003,-90.183948,29.958406,WORK,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Light Suburban
+SK 0269,-95.459841,29.687921,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Suburban
+SK 1805,-82.199085,33.481135,TRAVEL,"Augusta-Richmond County, GA-SC","Augusta-Aiken, GA-SC",Georgia,Large City (3),Rural
+SK 1873,-86.15798,39.60694,HOME,"Indianapolis-Carmel-Anderson, IN","Indianapolis, IN",Indiana,Large Metro (2),Exurban
+SK 1353,-112.07327,33.47975,WORK,"Phoenix-Mesa-Scottsdale, AZ","Phoenix (Prescott), AZ",Arizona,Very Large Metro (1),Suburban
+SK 1441,-84.760729,33.724333,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1326,-90.448935,38.505895,HOME,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Exurban
+SK 1093,-75.319014,39.973339,HOME,"Philadelphia et al, PA-NJ-DE-MD","Philadelphia, PA",Pennsylvania,Very Large Metro (1),Light Suburban
+SK 1337,-94.98126,29.796248,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1436,-97.372214,27.713395,HOME,"Corpus Christi, TX","Corpus Christi, TX",Texas,Medium City (4),Light Suburban
+SK 1452,-89.356594,30.313986,WORK,"Gulfport-Biloxi-Pascagoula, MS","New Orleans, LA",Mississippi,Medium City (4),Rural
+SK 1502,-96.937418,32.59365,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 0258,-78.502956,38.049923,OTHER,"Charlottesville, VA","Charlottesville, VA",Virginia,Medium City (4),Light Suburban
+SK 2003,-76.751372,39.979948,HOME,"York-Hanover, PA","Harrisburg et al, PA",Pennsylvania,Medium City (4),Light Suburban
+SK 0071,-81.210606,28.596574,TRAVEL,"Orlando-Kissimmee-Sanford, FL","Orlando et al, FL",Florida,Very Large Metro (1),Light Suburban
+SK 0414,-85.794747,38.350592,HOME,"Louisville et al, KY-IN","Louisville, KY",Indiana,Large Metro (2),Exurban
+SK 1693,-84.091781,33.997585,WORK,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1316,-81.788772,26.27165,TRAVEL,"Naples-Immokalee et al, FL","Ft. Myers-Naples, FL",Florida,Medium City (4),Exurban
+SK 0564,-101.896173,33.577597,OTHER,"Lubbock, TX","Lubbock, TX",Texas,Medium City (4),Light Suburban
+SK 0811,-80.804608,35.034716,HOME,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Exurban
+SK 1909,-74.983434,39.85348,OTHER,"Philadelphia et al, PA-NJ-DE-MD","Philadelphia, PA",New Jersey,Very Large Metro (1),Exurban
+SK 1181,-96.051776,41.235005,WORK,"Omaha-Council Bluffs, NE-IA","Omaha, NE",Nebraska,Large City (3),Light Suburban
+SK 1280,-97.105889,33.143872,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 1217,-76.547532,39.077176,SHOPPING,"Baltimore-Columbia-Towson, MD","Baltimore, MD",Maryland,Very Large Metro (1),Exurban
+SK 0326,-97.388192,32.727411,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1780,-82.516263,36.545546,WORK,"Kingsport-Bristol-Bristol, TN-VA","Tri-Cities, TN-VA",Tennessee,Medium City (4),Exurban
+SK 1444,-97.258085,32.894368,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0817,-84.357329,34.081381,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 0070,-95.567562,29.983108,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1260,-96.888515,33.171203,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1114,-90.155222,32.221442,WORK,"Jackson, MS","Jackson, MS",Mississippi,Large City (3),Rural
+SK 1207,-86.399373,35.789601,OTHER,"Nashville-Davidson et al, TN","Nashville, TN",Tennessee,Large Metro (2),Rural
+SK 1461,-97.675123,30.400408,OTHER,"Austin-Round Rock, TX","Austin, TX",Texas,Large Metro (2),Light Suburban
+SK 0577,-90.923058,30.211341,WORK,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Exurban
+SK 1350,-97.241496,37.547831,HOME,"Wichita, KS","Wichita et al, KS",Kansas,Large City (3),Rural
+SK 1653,-86.108779,40.043513,TRAVEL,"Indianapolis-Carmel-Anderson, IN","Indianapolis, IN",Indiana,Large Metro (2),Exurban
+SK 1157,-84.331627,33.828072,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Suburban
+SK 0987,-90.110423,32.460728,SHOPPING,"Jackson, MS","Jackson, MS",Mississippi,Large City (3),Exurban
+SK 1932,-84.016442,33.922603,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 0797,-89.794228,35.173696,SHOPPING,"Memphis, TN-MS-AR","Memphis, TN",Tennessee,Large Metro (2),Exurban
+SK 1141,-108.158322,36.751704,SHOPPING,"Farmington, NM","Albuquerque-Santa Fe, NM",New Mexico,Small City (5),Exurban
+SK 1305,-86.021587,39.927727,SHOPPING,"Indianapolis-Carmel-Anderson, IN","Indianapolis, IN",Indiana,Large Metro (2),Light Suburban
+SK 1516,-87.317176,41.470261,SHOPPING,"Chicago et al, IL-IN-WI","Chicago, IL",Indiana,Very Large Metro (1),Exurban
+SK 0617,-89.995134,35.134272,HOME,"Memphis, TN-MS-AR","Memphis, TN",Tennessee,Large Metro (2),Light Suburban
+SK 0484,-85.15737,35.02819,SHOPPING,"Chattanooga, TN-GA","Chattanooga, TN",Tennessee,Large City (3),Exurban
+SK 1419,-93.29552,37.134406,TRAVEL,"Springfield, MO","Springfield, MO",Missouri,Medium City (4),Exurban
+SK 1617,-94.149097,36.282681,OTHER,"Fayetteville et al, AR-MO","Ft. Smith et al, AR",Arkansas,Large City (3),Exurban
+SK 1501,-72.123141,41.341322,HOME,"Norwich-New London, CT","Hartford & New Haven, CT",Connecticut,Medium City (4),Exurban
+SK 1189,-97.329008,37.685826,WORK,"Wichita, KS","Wichita et al, KS",Kansas,Large City (3),Light Suburban
+SK 0943,-80.293307,25.940757,HOME,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1911,-91.151925,30.421131,WORK,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Light Suburban
+SK 0332,-81.068133,29.193225,OTHER,"Deltona-Daytona Beach et al, FL","Orlando et al, FL",Florida,Large City (3),Exurban
+SK 1622,-94.478587,37.066067,WORK,"Joplin, MO","Joplin-Pittsburg, MO-KS",Missouri,Small City (5),Exurban
+SK 1378,-81.768557,32.410973,TRAVEL,"Statesboro, GA","Savannah, GA",Georgia,Small City (5),Exurban
+SK 0959,-90.47237,31.246332,SHOPPING,"McComb, MS","Jackson, MS",Mississippi,Small Town (6),Rural
+SK 1802,-95.488311,30.041131,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1571,-92.323772,38.951816,TRAVEL,"Columbia, MO","Columbia et al, MO",Missouri,Small City (5),Light Suburban
+SK 0386,-96.977156,33.002768,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1945,-89.523226,43.096477,WORK,"Madison, WI","Madison, WI",Wisconsin,Large City (3),Rural
+SK 0226,-96.839703,32.938616,WORK,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Suburban
+SK 1301,-94.662538,39.022614,WORK,"Kansas City, MO-KS","Kansas City, MO-KS",Kansas,Large Metro (2),Light Suburban
+SK 1088,-95.715426,29.942251,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1371,-77.369708,35.587982,SHOPPING,"Greenville, NC","Greenville et al, NC",North Carolina,Small City (5),Light Suburban
+SK 1511,-76.545808,38.979946,SHOPPING,"Baltimore-Columbia-Towson, MD","Baltimore, MD",Maryland,Very Large Metro (1),Light Suburban
+SK 1948,-88.01209,41.809176,WORK,"Chicago et al, IL-IN-WI","Chicago, IL",Illinois,Very Large Metro (1),Light Suburban
+SK 0116,-95.64485,29.876809,WORK,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1761,-83.205427,42.281112,WORK,"Detroit-Warren-Dearborn, MI","Detroit, MI",Michigan,Very Large Metro (1),Light Suburban
+SK 0252,-96.831998,33.045792,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0719,-97.314733,32.91302,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1275,-97.059866,32.82309,WORK,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0878,-84.423768,33.979836,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1218,-97.941989,29.884532,OTHER,"Austin-Round Rock, TX","Austin, TX",Texas,Large Metro (2),Light Suburban
+SK 0004,-90.053477,30.028187,HOME,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Light Suburban
+SK 1146,-90.68844,29.576592,TRAVEL,"Houma-Thibodaux, LA","New Orleans, LA",Louisiana,Medium City (4),Exurban
+SK 0292,-90.150882,29.975525,OTHER,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Suburban
+SK 0513,-84.871774,35.183853,SHOPPING,"Cleveland, TN","Chattanooga, TN",Tennessee,Small City (5),Exurban
+SK 1570,-80.932678,35.144095,SHOPPING,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Light Suburban
+SK 1076,-82.263319,34.820804,SHOPPING,"Greenville-Anderson-Mauldin, SC","Greenville et al, SC-NC",South Carolina,Large City (3),Exurban
+SK 1310,-95.396945,29.770696,OTHER,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Urban
+SK 0973,-74.110808,40.398916,SHOPPING,"New York-Newark et al, NY-NJ-PA","New York, NY",New Jersey,Very Large Metro (1),Exurban
+SK 1747,-76.182404,39.521156,HOME,"Baltimore-Columbia-Towson, MD","Baltimore, MD",Maryland,Very Large Metro (1),Exurban
+SK 1300,-97.43203,32.752887,WORK,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 1417,-86.127778,39.95882,OTHER,"Indianapolis-Carmel-Anderson, IN","Indianapolis, IN",Indiana,Large Metro (2),Light Suburban
+SK 1668,-82.254245,34.902438,HOME,"Greenville-Anderson-Mauldin, SC","Greenville et al, SC-NC",South Carolina,Large City (3),Exurban
+SK 1497,-97.183516,32.856917,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1459,-90.679424,35.820777,WORK,"Jonesboro, AR","Jonesboro, AR",Arkansas,Small City (5),Exurban
+SK 1120,-80.258488,25.750953,OTHER,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Suburban
+SK 1564,-82.453538,27.297612,SHOPPING,"North Port-Sarasota et al, FL","Tampa et al, FL",Florida,Large City (3),Exurban
+SK 0387,-95.681639,29.601322,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 0196,-81.680501,30.311945,WORK,"Jacksonville, FL","Jacksonville, FL",Florida,Large Metro (2),Suburban
+SK 1110,-79.825191,36.103191,WORK,"Greensboro-High Point, NC","Greensboro et al, NC",North Carolina,Large City (3),Light Suburban
+SK 1071,-97.331138,32.733808,WORK,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Suburban
+SK 0900,-76.591273,38.547997,HOME,"Washington et al, DC-VA-MD-WV","Washington, DC (Hagerstown, MD)",Maryland,Very Large Metro (1),Rural
+SK 1607,-90.817987,29.801259,HOME,"Houma-Thibodaux, LA","New Orleans, LA",Louisiana,Medium City (4),Exurban
+SK 1309,-84.591307,33.999146,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1450,-82.338674,29.67355,HOME,"Gainesville, FL","Gainesville, FL",Florida,Medium City (4),Light Suburban
+SK 1885,-83.286007,42.501766,OTHER,"Detroit-Warren-Dearborn, MI","Detroit, MI",Michigan,Very Large Metro (1),Light Suburban
+SK 1033,-83.075487,39.840442,HOME,"Columbus, OH","Columbus, OH",Ohio,Large Metro (2),Exurban
+SK 1242,-94.662489,39.246684,SHOPPING,"Kansas City, MO-KS","Kansas City, MO-KS",Missouri,Large Metro (2),Exurban
+SK 1985,-94.415832,39.045005,HOME,"Kansas City, MO-KS","Kansas City, MO-KS",Missouri,Large Metro (2),Exurban
+SK 1631,-97.2824,33.025718,OTHER,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Rural
+SK 1202,-90.878598,38.819016,OTHER,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Exurban
+SK 1904,-87.950867,41.512934,HOME,"Chicago et al, IL-IN-WI","Chicago, IL",Illinois,Very Large Metro (1),Exurban
+SK 1563,-81.713324,35.751437,SHOPPING,"Hickory-Lenoir-Morganton, NC","Charlotte, NC",North Carolina,Medium City (4),Rural
+SK 1543,-111.04536,32.321257,SHOPPING,"Tucson, AZ","Tucson (Sierra Vista), AZ",Arizona,Large Metro (2),Exurban
+SK 0861,-90.635921,38.74443,HOME,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Exurban
+SK 0079,-80.30029,25.69421,HOME,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1642,-76.947357,39.402602,HOME,"Baltimore-Columbia-Towson, MD","Baltimore, MD",Maryland,Very Large Metro (1),Rural
+SK 1128,-96.807193,32.812695,OTHER,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Urban
+SK 0497,-81.440415,40.850589,HOME,"Canton-Massillon, OH","Cleveland et al, OH",Ohio,Medium City (4),Exurban
+SK 0365,-95.406293,29.944164,WORK,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1539,-77.244337,38.929676,SHOPPING,"Washington et al, DC-VA-MD-WV","Washington, DC (Hagerstown, MD)",Virginia,Very Large Metro (1),Suburban
+SK 0909,-90.864302,30.480705,HOME,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Rural
+SK 1263,-80.262783,26.045754,OTHER,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1748,-94.727322,38.957331,SHOPPING,"Kansas City, MO-KS","Kansas City, MO-KS",Kansas,Large Metro (2),Suburban
+SK 1690,-86.654091,30.41693,SHOPPING,"Crestview et al, FL","Mobile et al, AL-FL",Florida,Medium City (4),Exurban
+SK 0548,-91.144407,30.648355,SHOPPING,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Rural
+SK 0774,-83.713809,32.926492,SHOPPING,"Macon-Bibb County, GA","Macon, GA",Georgia,Medium City (4),Rural
+SK 0106,-89.726636,30.289008,HOME,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Exurban
+SK 1740,-95.721293,29.864282,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1299,-96.594653,33.011771,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 1541,-97.744188,30.391055,SHOPPING,"Austin-Round Rock, TX","Austin, TX",Texas,Large Metro (2),Suburban
+SK 0334,-90.46412,38.676877,HOME,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Light Suburban
+SK 0133,-84.016214,33.869782,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 0587,-80.288297,26.133516,HOME,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Light Suburban
+SK 1303,-84.317659,34.021192,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Light Suburban
+SK 0357,-97.414077,32.679223,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1168,-89.914132,35.215385,SHOPPING,"Memphis, TN-MS-AR","Memphis, TN",Tennessee,Large Metro (2),Exurban
+SK 1188,-86.17752,41.727892,SHOPPING,"South Bend-Mishawaka, IN-MI","South Bend-Elkhart, IN",Indiana,Medium City (4),Exurban
+SK 1439,-84.946329,32.478714,WORK,"Columbus, GA-AL","Columbus, GA (Opelika, AL)",Georgia,Medium City (4),Light Suburban
+SK 1420,-79.961064,39.650873,TRAVEL,"Morgantown, WV","Pittsburgh, PA",West Virginia,Small City (5),Light Suburban
+SK 1387,-80.272998,27.247871,SHOPPING,"Port St. Lucie, FL","W. Palm Beach et al, FL",Florida,Large City (3),Exurban
+SK 1077,-84.01516,33.631845,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1786,-89.190433,37.731564,SHOPPING,"Carbondale-Marion, IL","Paducah et al, KY-MO-IL",Illinois,Small City (5),Exurban
+SK 1373,-87.117208,30.603812,HOME,"Pensacola-Ferry Pass-Brent, FL","Mobile et al, AL-FL",Florida,Large City (3),Rural
+SK 0825,-86.742649,36.040469,SHOPPING,"Nashville-Davidson et al, TN","Nashville, TN",Tennessee,Large Metro (2),Exurban
+SK 1016,-95.443565,30.017272,OTHER,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1104,-90.063581,30.364188,HOME,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Exurban
+SK 1119,-88.952503,40.509747,HOME,"Bloomington, IL","Peoria-Bloomington, IL",Illinois,Small City (5),Light Suburban
+SK 1915,-95.181394,30.04638,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 0250,-96.769897,32.836256,OTHER,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Suburban
+SK 0014,-90.183231,29.994912,OTHER,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Suburban
+SK 1025,-80.669039,35.41561,WORK,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Exurban
+SK 1150,-82.508408,27.390291,HOME,"North Port-Sarasota et al, FL","Tampa et al, FL",Florida,Large City (3),Exurban
+SK 1160,-88.901832,30.457597,SHOPPING,"Gulfport-Biloxi-Pascagoula, MS","Biloxi-Gulfport, MS",Mississippi,Medium City (4),Exurban
+SK 1733,-96.572503,32.907089,WORK,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 1583,-90.36295,38.610531,HOME,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Light Suburban
+SK 1557,-86.319728,36.212227,SHOPPING,"Nashville-Davidson et al, TN","Nashville, TN",Tennessee,Large Metro (2),Exurban
+SK 1212,-90.489243,38.775739,OTHER,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Light Suburban
+SK 0058,-82.504095,28.097047,SHOPPING,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Exurban
+SK 1169,-95.467595,29.789303,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1340,-111.754588,33.37999,SHOPPING,"Phoenix-Mesa-Scottsdale, AZ","Phoenix (Prescott), AZ",Arizona,Very Large Metro (1),Light Suburban
+SK 0296,-90.268757,30.022031,HOME,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Exurban
+SK 1852,-106.56888,31.886951,HOME,"El Paso, TX","El Paso et al, TX-NM",Texas,Large City (3),Exurban
+SK 1546,-87.851146,41.541175,OTHER,"Chicago et al, IL-IN-WI","Chicago, IL",Illinois,Very Large Metro (1),Exurban
+SK 0006,-90.23913,30.029433,OTHER,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Light Suburban
+SK 1804,-94.210767,36.175508,WORK,"Fayetteville et al, AR-MO","Ft. Smith et al, AR",Arkansas,Large City (3),Exurban
+SK 0629,-81.121858,32.001678,WORK,"Savannah, GA","Savannah, GA",Georgia,Medium City (4),Exurban
+SK 0280,-82.48241,27.937548,TRAVEL,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Suburban
+SK 1239,-96.821593,32.851426,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1781,-94.847017,29.831064,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Rural
+SK 1095,-90.035431,38.535227,HOME,"St. Louis, MO-IL","St. Louis, MO",Illinois,Very Large Metro (1),Exurban
+SK 1219,-95.58448,29.932725,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 0501,-78.814025,35.807553,SHOPPING,"Raleigh, NC","Raleigh et al, NC",North Carolina,Large Metro (2),Light Suburban
+SK 0488,-80.849246,35.171642,SHOPPING,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Light Suburban
+SK 1105,-91.153612,30.521096,OTHER,"Baton Rouge, LA","Baton Rouge, LA",Louisiana,Large City (3),Exurban
+SK 1662,-78.794472,35.663716,HOME,"Raleigh, NC","Raleigh et al, NC",North Carolina,Large Metro (2),Rural
+SK 0860,-84.407845,33.78226,OTHER,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Light Urban
+SK 1479,-84.173864,33.925925,WORK,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Light Suburban
+SK 1176,-80.978755,35.038982,SHOPPING,"Charlotte-Concord et al, NC-SC","Charlotte, NC",South Carolina,Very Large Metro (1),Exurban
+SK 1572,-85.249994,34.953128,SHOPPING,"Chattanooga, TN-GA","Chattanooga, TN",Georgia,Large City (3),Exurban
+SK 0265,-95.488398,29.738184,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Suburban
+SK 1044,-86.428692,35.858685,SHOPPING,"Nashville-Davidson et al, TN","Nashville, TN",Tennessee,Large Metro (2),Exurban
+SK 1073,-76.675446,39.975199,HOME,"York-Hanover, PA","Harrisburg et al, PA",Pennsylvania,Medium City (4),Light Suburban
+SK 0718,-84.227144,33.681309,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 0241,-85.708961,38.231671,OTHER,"Louisville et al, KY-IN","Louisville, KY",Kentucky,Large Metro (2),Suburban
+SK 1390,-89.14769,31.699685,WORK,"Laurel, MS","Hattiesburg-Laurel, MS",Mississippi,Small City (5),Exurban
+SK 1000,-82.730326,27.785795,HOME,"Tampa-St. Petersburg et al, FL","Tampa et al, FL",Florida,Very Large Metro (1),Light Suburban
+SK 0086,-95.752245,29.77017,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1854,-83.18135,42.191029,HOME,"Detroit-Warren-Dearborn, MI","Detroit, MI",Michigan,Very Large Metro (1),Light Suburban
+SK 0399,-86.370012,35.855616,HOME,"Nashville-Davidson et al, TN","Nashville, TN",Tennessee,Large Metro (2),Exurban
+SK 1469,-93.851958,41.601759,HOME,"Des Moines-West Des Moines, IA","Des Moines-Ames, IA",Iowa,Large City (3),Exurban
+SK 1319,-86.469653,36.961059,TRAVEL,"Bowling Green, KY","Bowling Green, KY",Kentucky,Small City (5),Exurban
+SK 1867,-83.918646,34.07834,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 0986,-84.419003,34.175394,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Rural
+SK 1409,-92.012073,30.108835,HOME,"Lafayette, LA","Lafayette, LA",Louisiana,Medium City (4),Rural
+SK 1482,-86.423445,36.948537,SHOPPING,"Bowling Green, KY","Bowling Green, KY",Kentucky,Small City (5),Exurban
+SK 0502,-82.169167,29.165042,SHOPPING,"Ocala, FL","Orlando et al, FL",Florida,Medium City (4),Exurban
+SK 1457,-74.541953,40.52913,WORK,"New York-Newark et al, NY-NJ-PA","New York, NY",New Jersey,Very Large Metro (1),Exurban
+SK 1719,-84.425438,39.158007,HOME,"Cincinnati, OH-KY-IN","Cincinnati, OH",Ohio,Large Metro (2),Light Suburban
+SK 1484,-82.506238,27.444764,SHOPPING,"North Port-Sarasota et al, FL","Tampa et al, FL",Florida,Large City (3),Exurban
+SK 0596,-96.638335,33.172293,SHOPPING,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1500,-95.465358,29.049046,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1358,-78.643108,35.836265,SHOPPING,"Raleigh, NC","Raleigh et al, NC",North Carolina,Large Metro (2),Light Suburban
+SK 1701,-75.492714,40.646614,HOME,"Allentown-Bethlehem et al, PA-NJ","Philadelphia, PA",Pennsylvania,Large City (3),Exurban
+SK 0300,-90.160183,30.004239,HOME,"New Orleans-Metairie, LA","New Orleans, LA",Louisiana,Large Metro (2),Suburban
+SK 1455,-96.957674,32.906337,WORK,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Suburban
+SK 1772,-83.337938,42.426492,SHOPPING,"Detroit-Warren-Dearborn, MI","Detroit, MI",Michigan,Very Large Metro (1),Light Suburban
+SK 1839,-79.149957,35.464268,SHOPPING,"Sanford, NC","Raleigh et al, NC",North Carolina,Small Town (6),Exurban
+SK 1613,-80.863954,35.407146,SHOPPING,"Charlotte-Concord et al, NC-SC","Charlotte, NC",North Carolina,Very Large Metro (1),Exurban
+SK 0606,-86.683156,34.74652,SHOPPING,"Huntsville, AL","Huntsville et al, AL",Alabama,Large City (3),Exurban
+SK 1364,-80.055242,40.620885,OTHER,"Pittsburgh, PA","Pittsburgh, PA",Pennsylvania,Large Metro (2),Exurban
+SK 1410,-80.012052,32.805513,HOME,"Charleston-North Charleston, SC","Charleston, SC",South Carolina,Large City (3),Exurban
+SK 1246,-84.260282,34.067972,SHOPPING,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Light Suburban
+SK 0733,-92.480882,31.276786,WORK,"Alexandria, LA","Alexandria, LA",Louisiana,Small City (5),Exurban
+SK 0509,-84.172448,33.698396,HOME,"Atlanta-Sandy Springs et al, GA","Atlanta, GA",Georgia,Very Large Metro (1),Exurban
+SK 1245,-96.023008,41.162413,WORK,"Omaha-Council Bluffs, NE-IA","Omaha, NE",Nebraska,Large City (3),Exurban
+SK 1789,-95.031645,29.651369,WORK,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1657,-76.757751,39.313273,SHOPPING,"Baltimore-Columbia-Towson, MD","Baltimore, MD",Maryland,Very Large Metro (1),Light Suburban
+SK 1383,-80.125832,33.105244,HOME,"Charleston-North Charleston, SC","Charleston, SC",South Carolina,Large City (3),Rural
+SK 1941,-79.751845,34.156634,WORK,"Florence, SC","Myrtle Beach et al, SC",South Carolina,Medium City (4),Rural
+SK 1258,-98.637835,29.446152,SHOPPING,"San Antonio-New Braunfels, TX","San Antonio, TX",Texas,Very Large Metro (1),Light Suburban
+SK 1024,-92.40798,31.36913,HOME,"Alexandria, LA","Alexandria, LA",Louisiana,Small City (5),Rural
+SK 0042,-80.140702,25.788139,WORK,"Miami-Fort Lauderdale et al, FL","Miami-Ft. Lauderdale, FL",Florida,Very Large Metro (1),Suburban
+SK 0758,-89.564024,34.363132,SHOPPING,"Oxford, MS","Memphis, TN",Mississippi,Small Town (6),Exurban
+SK 0256,-87.208784,30.481878,HOME,"Pensacola-Ferry Pass-Brent, FL","Mobile et al, AL-FL",Florida,Large City (3),Light Suburban
+SK 1339,-95.562327,29.564095,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1942,-84.295915,30.47474,HOME,"Tallahassee, FL","Tallahassee et al, FL-GA",Florida,Medium City (4),Light Suburban
+SK 1122,-96.824649,32.953395,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Suburban
+SK 1051,-97.19545,32.904704,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 1833,-85.213188,41.060691,OTHER,"Fort Wayne, IN","Ft. Wayne, IN",Indiana,Medium City (4),Exurban
+SK 0741,-95.382634,29.775814,HOME,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Light Urban
+SK 1824,-87.852558,41.606288,SHOPPING,"Chicago et al, IL-IN-WI","Chicago, IL",Illinois,Very Large Metro (1),Exurban
+SK 1827,-90.428064,38.751985,SHOPPING,"St. Louis, MO-IL","St. Louis, MO",Missouri,Very Large Metro (1),Exurban
+SK 1208,-81.252401,32.13951,SHOPPING,"Savannah, GA","Savannah, GA",Georgia,Medium City (4),Rural
+SK 1536,-96.872596,32.647809,HOME,"Dallas-Fort Worth-Arlington, TX","Dallas-Ft. Worth, TX",Texas,Very Large Metro (1),Exurban
+SK 1886,-105.077634,40.564695,OTHER,"Fort Collins, CO","Denver, CO",Colorado,Medium City (4),Light Suburban
+SK 0162,-95.478001,30.316531,SHOPPING,"Houston-The Woodlands et al, TX","Houston, TX",Texas,Very Large Metro (1),Exurban
+SK 1449,-78.968258,35.064994,SHOPPING,"Fayetteville, NC","Raleigh et al, NC",North Carolina,Medium City (4),Exurban
+SK 1351,-98.60557,29.6166,HOME,"San Antonio-New Braunfels, TX","San Antonio, TX",Texas,Very Large Metro (1),Exurban
