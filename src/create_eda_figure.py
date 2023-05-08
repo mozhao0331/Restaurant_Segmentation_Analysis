@@ -39,14 +39,11 @@ def create_stack_bar_chart(df, col_name, title, out_dir):
     fig, ax = plt.subplots()
     pivoted.plot(kind='bar', stacked=True, ax=ax)
 
-    # add text
-    # for container in ax.containers:
-    #     ax.bar_label(container, labels=[f'{x:.1f}%' for x in container.datavalues])
-
     ax.set_xlabel('Category')
     ax.set_ylabel('Percentage')
     ax.set_title(title)
-    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+    plt.xticks(rotation=30)
+    ax.legend(loc='lower center', bbox_to_anchor=(0.5, -0.5), ncol=3)
     try:
         plt.savefig("img/" + out_dir + "stacked_bar_plot.png", bbox_inches="tight")
     except:
@@ -97,10 +94,10 @@ def main():
         subway_can_df, "store_density", "Store Density", "Subway Canada Store Density Bar Chart", "subway_canada_store_density"
     )
     create_stack_bar_chart(
-        smoothie_df, "market_size", "Stacked Bar Chart by Market Size and Category", "market_size_stack"
+        smoothie_df, "market_size", "Smoothie King Stacked Bar Chart by Market Size and Category", "market_size_stack"
     )
     create_stack_bar_chart(
-        smoothie_df, "store_density", "Stacked Bar Chart by Store Density and Category", "store_density_stack"
+        smoothie_df, "store_density", "Smoothie King Stacked Bar Chart by Store Density and Category", "store_density_stack"
     )
     create_boxplot(
         smoothie_df, "centerxy_gla_1mi", "Gross leasable area within 1 mile radius", 
