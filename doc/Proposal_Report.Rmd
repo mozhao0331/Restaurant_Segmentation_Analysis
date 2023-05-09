@@ -55,7 +55,7 @@ We received five datasets for three popular chain restaurants: Smoothie King, Su
 
 To enhance the understanding of the behavior of the data, we select some significant features and create visualizations to depict their distribution across categories.
 
-## Data Science Techniques
+\newpage
 
 ```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "Figure 1. The proportion of people who do not default is greater."}
 knitr::include_graphics("../img/smoothie_category_bar_plot.png")
@@ -85,6 +85,10 @@ knitr::include_graphics("../img/subway_canada_store_density_bar_plot.png")
 knitr::include_graphics("../img/subway_canada_market_size_bar_plot.png")
 ```
 
+\newpage
+
+## Data Science Techniques
+
 Based on the data described above with the important insights highlighted from some important features, along with the problems to be resolved for each restaurant chain which were mentioned in the *Introduction* section, the initial approaches and the corresponding evaluation metrics to be used are as followings:
 
 1.  
@@ -110,3 +114,18 @@ To interpret the results and empirically validate the clusters, a potential appr
 For Subway Canada, the corresponding dataset has relatively fewer features (a few hundreds of features combined with similar information as mentioned above for Smoothie King, for approximately 1800 stores in Canada) compared to the other 2 restaurant chains. We will take a similar approach to Subway US and evaluate the result.
 
 If the performance is not ideal, consider removing the PCA step and run clustering again to evaluate the result again with the Silhouette Coefficient score and check Google Maps.
+
+\newpage
+
+## Timeline
+
+| Schedule                 |                                        | Objective                                                                                                                                                      |
+|--------------------------|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Week 1 (5/1 - 5/7)**   | EDA & Proposal                         | Understand the problem, perform initial EDA on the dataset, and propose potential models and approaches to each objective.                                     |
+| **Week 2 (5/8 - 5/14)**  | Feature Selection                      | Explore a variety of methods to determine the most important features for each of the three datasets.                                                          |
+| **Week 3 (5/15 - 5/21)** | Supervised Model                       | Train and test a supervised classification model on the labeled dataset, as well as a list of the most important features as major indicators.                 |
+| **Week 4 (5/22 - 5/28)** | Unsupervised Model (part I)            | Train an unsupervised clustering model on one of the unlabeled datasets and apply several potential evaluation metrics.                                        |
+| **Week 5 (5/29 - 6/4)**  | Unsupervised Model (part II)           | Train an unsupervised clustering model on one of the unlabeled datasets and apply several potential evaluation metrics.                                        |
+| **Week 6 (6/5 - 6/11)**  | Models Tuning & Parameter Optimization | Perform parameter tuning and optimization on the three models.                                                                                                 |
+| **Week 7 (6/12 - 6/18)** | Final Presentation                     | Present the final models as well as the list of important indicators from the list of features. Address potential directions and approaches for further study. |
+| **Week 8 (6/19 - 6/28)** | Final Product & Reflection             | Draft submission for the final product and report and iterate on feedback before final submission.                                                             |
