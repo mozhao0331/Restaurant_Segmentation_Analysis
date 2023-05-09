@@ -1,18 +1,21 @@
 #name: sitewise_python38_analytics
 name: capstone2023-env
 channels:
+  # - conda-forge
+  - pytorch
+  - anaconda
   - defaults
 dependencies:
-  - ca-certificates=2023.01.10=haa95532_0
-  - libffi=3.4.2=hd77b12b_6
-  - openssl=1.1.1t=h2bbff1b_0
-  - pip=23.0.1=py38haa95532_0
-  - python=3.8.16=h6244533_3
-  - setuptools=66.0.0=py38haa95532_0
-  - sqlite=3.41.2=h2bbff1b_0
-  - vc=14.2=h21ff451_1
-  - vs2015_runtime=14.27.29016=h5e58377_2
-  - wheel=0.38.4=py38haa95532_0
+  - ca-certificates=2023.01.10 # =haa95532_0
+  - libffi=3.4.2 # =hd77b12b_6
+  - openssl=1.1.1t # =h2bbff1b_0
+  - pip=23.0.1 # =py38haa95532_0
+  - python=3.8.16 # =h6244533_3
+  - setuptools=66.0.0 # =py38haa95532_0
+  - sqlite=3.41.2 # =h2bbff1b_0
+  # - vc=14.2 # =h21ff451_1
+  # - vs2015_runtime # =14.27.29016=h5e58377_2
+  - wheel=0.38.4 # =py38haa95532_0
   - pip:
     - aiobotocore==2.5.0
     - aiohttp==3.8.4
