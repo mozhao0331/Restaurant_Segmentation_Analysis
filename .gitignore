@@ -1,4 +1,5 @@
 .DS_Store
+.Rhistory
 .ipynb_checkpoints
 sitewise_python38_UBC2023.yaml
 /data/Variable Dictionary.xlsx
