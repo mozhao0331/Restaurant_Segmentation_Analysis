@@ -1,7 +1,7 @@
 #name: sitewise_python38_analytics
 name: capstone2023-env
 channels:
-  # - conda-forge
+  - conda-forge
   - pytorch
   - anaconda
   - defaults
@@ -50,9 +50,9 @@ dependencies:
     - munch==2.5.0
     - numpy==1.23.4
     - packaging==23.1
-    - pandas==1.2.4
+    - pandas==1.2.4 # pip/conda issue - conflicts
     - psutil==5.9.4
-    - psycopg2-binary==2.9.2
+    - psycopg2-binary==2.9.2 # pip issue/conda to 2.9.3
     - pygeos==0.14
     - pyproj==3.5.0
     - python-dateutil==2.8.2
@@ -61,7 +61,7 @@ dependencies:
     - rtree==1.0.1
     - s3fs==2021.4.0
     - s3transfer==0.6.0
-    - scikit-learn==0.23.2
+    - scikit-learn==0.23.2 # pip issue/conda solved
     - scipy==1.10.1
     - shapely==2.0.1
     - six==1.16.0
@@ -71,7 +71,7 @@ dependencies:
     - urllib3==1.26.15
     - werkzeug==2.3.3
     - wrapt==1.15.0
-    - xgboost==1.5.2
+    - xgboost==1.5.2 # pip issue / conda to 1.7.3
     - xlrd==1.2.0
     - yarl==1.9.2
     - zipp==3.15.0
