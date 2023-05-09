@@ -55,7 +55,7 @@ We received five datasets for three popular chain restaurants: Smoothie King, Su
 
 To enhance the understanding of the behavior of the data, we select some significant features and create visualizations to depict their distribution across categories.
 
-## Data Science Techniques
+\newpage
 
 ```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "Figure 1. The proportion of people who do not default is greater."}
 knitr::include_graphics("../img/smoothie_category_bar_plot.png")
@@ -84,6 +84,10 @@ knitr::include_graphics("../img/subway_canada_store_density_bar_plot.png")
 ```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "Figure 7. Very Large Metro has the highest count with 577 stores, and the other categories have similar counts."}
 knitr::include_graphics("../img/subway_canada_market_size_bar_plot.png")
 ```
+
+\newpage
+
+## Data Science Techniques
 
 Based on the data described above with the important insights highlighted from some important features, along with the problems to be resolved for each restaurant chain which were mentioned in the *Introduction* section, the initial approaches and the corresponding evaluation metrics to be used are as followings:
 
