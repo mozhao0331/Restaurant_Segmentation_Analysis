@@ -57,31 +57,31 @@ To enhance the understanding of the behavior of the data, we select some signifi
 
 \newpage
 
-```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "Figure 1. The proportion of people who do not default is greater."}
+```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "The proportion of people who do not default is greater."}
 knitr::include_graphics("../img/smoothie_category_bar_plot.png")
 ```
 
-```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "Figure 2. The highest portion among categories are “Very Large Metro”. “Home” has a high percentage of “Very Large Metro”. “Travel” has a high percentage of “Small City”."}
+```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "The highest portion among categories are “Very Large Metro”. “Home” has a high percentage of “Very Large Metro”. “Travel” has a high percentage of “Small City”."}
 knitr::include_graphics("../img/market_size_stackstacked_bar_plot.png")
 ```
 
-```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "Figure 3. Most of the stores are located in “Exurban” and “Light Suburban”."}
+```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "Most of the stores are located in “Exurban” and “Light Suburban”."}
 knitr::include_graphics("../img/market_size_stackstacked_bar_plot.png")
 ```
 
-```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "Figure 4. Rural has the highest count."}
+```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "Rural has the highest count."}
 knitr::include_graphics("../img/subway_us_store_density_bar_plot.png")
 ```
 
-```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "Figure 5. Very Large Metro has the highest count with 5190 stores, and other categories have similar counts."}
+```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "Very Large Metro has the highest count with 5190 stores, and other categories have similar counts."}
 knitr::include_graphics("../img/subway_us_market_size_bar_plot.png")
 ```
 
-```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "Figure 6. The most common market size is Very Large Metro with 577 stores."}
+```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "The most common market size is Very Large Metro with 577 stores."}
 knitr::include_graphics("../img/subway_canada_store_density_bar_plot.png")
 ```
 
-```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "Figure 7. Very Large Metro has the highest count with 577 stores, and the other categories have similar counts."}
+```{r out.width = '100%', out.height = '100%', fig.align='center', fig.cap = "Very Large Metro has the highest count with 577 stores, and the other categories have similar counts."}
 knitr::include_graphics("../img/subway_canada_market_size_bar_plot.png")
 ```
 
