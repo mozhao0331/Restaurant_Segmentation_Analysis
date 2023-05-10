@@ -2,7 +2,8 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
-DIR = "../data/"
+# DIR = "../data/"
+DIR = "data/"
 
 def merge_df(restaurant):
     demographic = pd.read_csv(DIR + restaurant + "demographic_variables.csv")
@@ -100,6 +101,7 @@ def create_scatterplot(df, x_col, y_col, groupby_col, xlab, ylab, title, out_dir
         fig.savefig("../img/" + out_dir + "_scatterplot.png", bbox_inches="tight")
 
 def main():
+    print('######## Create EDA Figures ########')
     SMOOTHIE = "Smoothie King/smoothie_king_"
     US_SUBWAY = "Subway USA/subway_usa_"
     CAN_SUBWAY = "Subway CAN/subway_can_"
