@@ -6,7 +6,7 @@ all: doc/Proposal_Report.pdf
 
 # Use Create EDA plots
 # Save generated images in img folder (no dependency)
-python src/create_eda_figure.py
+	python src/create_eda_figure.py
 
 # Render final report
 doc/Proposal_Report.pdf: doc/Proposal_Report.Rmd img/smoothie_category_bar_plot.png img/market_size_stackstacked_bar_plot.png img/market_size_stackstacked_bar_plot.png img/subway_us_store_density_bar_plot.png img/subway_us_market_size_bar_plot.png img/subway_canada_store_density_bar_plot.png img/subway_canada_market_size_bar_plot.png
