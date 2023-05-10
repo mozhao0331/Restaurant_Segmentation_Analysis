@@ -25,10 +25,10 @@ def create_bar_chart(df, col_name, xlab, title, out_dir):
     plt.xticks(rotation=30)
     plt.bar_label(fig, label_type="edge")
     try:
-        plt.savefig("../img/" + out_dir + "_bar_plot.png", bbox_inches="tight")
+        plt.savefig("img/" + out_dir + "_bar_plot.png", bbox_inches="tight")
     except:
-        os.mkdir("../img/")
-        plt.savefig("../img/" + out_dir + "_bar_plot.png", bbox_inches="tight")
+        os.mkdir("img/")
+        plt.savefig("img/" + out_dir + "_bar_plot.png", bbox_inches="tight")
 
 def create_stack_bar_chart(df, col_name, title, out_dir):
     plt.figure(figsize=(9,7))
@@ -51,10 +51,10 @@ def create_stack_bar_chart(df, col_name, title, out_dir):
     plt.xticks(rotation=30)
     ax.legend(loc='lower center', bbox_to_anchor=(0.5, -0.5), ncol=3)
     try:
-        plt.savefig("../img/" + out_dir + "stacked_bar_plot.png", bbox_inches="tight")
+        plt.savefig("img/" + out_dir + "stacked_bar_plot.png", bbox_inches="tight")
     except:
-        os.mkdir("../img/")
-        plt.savefig("../img/" + out_dir + "stacked_bar_plot.png", bbox_inches="tight")
+        os.mkdir("img/")
+        plt.savefig("img/" + out_dir + "stacked_bar_plot.png", bbox_inches="tight")
 
 def create_boxplot(df, col_name, ylabel, title, out_dir):
     plt.figure(figsize=(9,7))
@@ -69,10 +69,10 @@ def create_boxplot(df, col_name, ylabel, title, out_dir):
     plt.title(title, fontsize=20)
     plt.suptitle("")
     try:
-        fig.savefig("../img/" + out_dir + "_boxplot.png", bbox_inches="tight")
+        fig.savefig("img/" + out_dir + "_boxplot.png", bbox_inches="tight")
     except:
-        os.mkdir("../img/")
-        fig.savefig("../img/" + out_dir + "_boxplot.png", bbox_inches="tight")
+        os.mkdir("img/")
+        fig.savefig("img/" + out_dir + "_boxplot.png", bbox_inches="tight")
 
 def create_scatterplot(df, x_col, y_col, groupby_col, xlab, ylab, title, out_dir):
     plt.figure(figsize=(10, 10))
@@ -95,10 +95,10 @@ def create_scatterplot(df, x_col, y_col, groupby_col, xlab, ylab, title, out_dir
             row += 1
             col = 0
     try:
-        fig.savefig("../img/" + out_dir + "_scatterplot.png", bbox_inches="tight")
+        fig.savefig("img/" + out_dir + "_scatterplot.png", bbox_inches="tight")
     except:
-        os.mkdir("../img/")
-        fig.savefig("../img/" + out_dir + "_scatterplot.png", bbox_inches="tight")
+        os.mkdir("img/")
+        fig.savefig("img/" + out_dir + "_scatterplot.png", bbox_inches="tight")
 
 def main():
     print('######## Create EDA Figures ########')
