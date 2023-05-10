@@ -1,6 +1,6 @@
 # Sitewise Analytics Restaurant Segmentation Proposal Report Pipeline
 # author: UBC MDS Cohort7 DSCI591 Sitewise Analytics Restaurant Segmentation Group
-# date: 2023=05-12
+# date: 2023-05-12
 
 all: doc/Proposal_Report.pdf
 
