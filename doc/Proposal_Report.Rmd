@@ -99,7 +99,7 @@ Based on the data described above with the important insights highlighted from s
     With the data and the supervised classification objective, we propose to start with a Logistic Regression model as our baseline. We will also explore other models such as a simple Random Forest Tree regression model, as well as an LGBMClassifier as it effectively trains high-dimensional datasets and usually leads to relatively high accuracy for the multi-class problems.
 
     With the labeled data, the models will be evaluated by its accuracy score, with the target being 80% accuracy as outlined by Sitewise. The score would indicate if the model is capable of detecting the most important traffic driving factor to a store. The result can be interpreted with SHAP (SHapley Additive exPlanations) plots where we can visualize which features drive the decision of a particular category assignment for a certain store.
-    
+
 ```{r out.width = '90%', fig.align='center', fig.cap = "Flow chart of Smoothie King"}
 knitr::include_graphics("../img/smoothie_flow_chart.png")
 ```
@@ -117,20 +117,13 @@ knitr::include_graphics("../img/smoothie_flow_chart.png")
 3.  For Subway Canada, we will take a similar approach to Subway US and evaluate the result.
 
     If the performance is not ideal, consider removing the PCA step and run clustering again to evaluate the result again with the same procedure performed on the Subway US model.
-    
+
 ```{r out.width = '90%', fig.align='center', fig.cap = "Flow chart of Subway US and Canada"}
 knitr::include_graphics("../img/subway_flow_chart.png")
 ```
 
 ## Timeline
 
-| Schedule                 |                                        | Objective                                                                                                                                                      |
-|----------------|----------------|-----------------------------------------|
-| **Week 1 (5/1)**   | EDA & Proposal                         | Understand the problem, perform initial EDA on the dataset, and propose potential models and approaches to each objective.                                     |
-| **Week 2 (5/8)**  | Feature Selection                      | Explore a variety of methods to determine the most important features for each of the three datasets.                                                          |
-| **Week 3 (5/15)** | Supervised Model                       | Train and test a supervised classification model on the labeled dataset, as well as a list of the most important features as major indicators.                 |
-| **Week 4 (5/22)** | Unsupervised Model (part I)            | Train an unsupervised clustering model on one of the unlabeled datasets and apply several potential evaluation metrics.                                        |
-| **Week 5 (5/29)**  | Unsupervised Model (part II)           | Train an unsupervised clustering model on one of the unlabeled datasets and apply several potential evaluation metrics.                                        |
-| **Week 6 (6/5)**  | Models Tuning & Parameter Optimization | Perform parameter tuning and optimization on the three models.                                                                                                 |
-| **Week 7 (6/12)** | Final Presentation                     | Present the final models as well as the list of important indicators from the list of features. Address potential directions and approaches for further study. |
-| **Week 8 (6/19)** | Final Product & Reflection             | Draft submission for the final product and report and iterate on feedback before final submission.                                                             |
+```{r out.width = '90%', fig.align='center'}
+knitr::include_graphics("../img/timeline.png")
+```
