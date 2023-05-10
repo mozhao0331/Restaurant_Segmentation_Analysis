@@ -69,7 +69,7 @@ knitr::include_graphics("../img/market_size_stackstacked_bar_plot.png")
 ```
 
 ```{r out.width = '80%', fig.align='center', fig.cap = "Most of the stores are located in “Exurban” and “Light Suburban”."}
-knitr::include_graphics("../img/market_size_stackstacked_bar_plot.png")
+knitr::include_graphics("../img/store_density_stackstacked_bar_plot.png")
 ```
 
 ```{r out.width = '70%', fig.align='center', fig.cap = "Rural has the highest count."}
