@@ -20,15 +20,15 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Executive Summary
 
-The Restaurant Segmentation Analysis project aims to use machine learning methods to determine factors that drive traffic to a particular location and identify clusters of similar store locations. In the following proposal, we will first highlight the problem and fundamental goals of the project, then discuss the data science techniques that we will employ to tackle the problem, and conclude with a rough timeline of the project.
+The Restaurant Segmentation Analysis project, in collaboration with Sitewise Analytics, a SaaS company specializing in building a strategic real estate road map for restaurant owners, aims to identify key factors driving traffic to a specific store location and recognize patterns among similar locations. The project will serve as a preliminary step to help elevate site selection and marketing plans for the customers.
 
 ## Introduction
 
-Restaurants seeking to open new stores in a region need to make marketing plans according to the major customer group, whether it is office workers downtown or students in a neighbourhood. Therefore, restaurant franchise owners need to know the factors that drive traffic to a location, such as the surrounding population demographic and consumer behaviour in the region, as well as trade area and nearby competitor/sister store information. By having a strong grasp of these factors, owners can plan future expansions and market the new location strategically based on the demand of the region. Given that Sitewise Analytics does not currently have these factors, the Restaurant Segmentation Analysis project will address this problem by using data from Smoothie King locations in the United States and Subway locations in Canada and the United States to build machine learning data pipelines for Sitewise to incorporate into their consulting service for those respective clients. At the end of the project, we expect to have human-interpretable machine learning models that cluster similar store locations, which will be helpful for Sitewise clients to identify factors that drive traffic in those similar locations.
+To plan for future expansions or market the new store strategically, restaurant franchise owners need to know the main factors that drive traffic to a location as well as the major customer group, whether it is office workers in downtown or students in a neighbourhood. This involves analyzing the surrounding population demographic, consumer behaviour in the trade area and nearby competitor/sister store information.
 
-Given that Smoothie King, Subway US, and Subway Canada are all different clients of Sitewise, it is necessary to build three separate models for each respective client. Ultimately, the factors that drive traffic to each of the three restaurants may be different as well. Thus, the three machine learning pipelines are as follows:
+With each customer's marketing dynamics slightly different, the solution will be tailored to the data gathered around each restaurant franchise. This project will take the exploratory first step in building customized solutions for three customers: Smoothie King US, Subway US and Subway Canada. At the end of the project, we expect to have the following three machine learning pipelines:
 
-1.  A supervised machine learning pipeline using data from Smoothie King locations to predict a store's category from one of five pre-labeled categories:
+1.  A supervised machine learning pipeline using data from Smoothie King US locations to predict a store's category from one of five pre-labeled categories:
 
     -   Home
     -   Shopping
@@ -36,7 +36,7 @@ Given that Smoothie King, Subway US, and Subway Canada are all different clients
     -   Travel
     -   Other
 
-The prediction will be human-interpretable in that users can identify features that determine the prediction of a store location's category.
+The prediction will be human-interpretable in that the key features that determine the label (any of the categories) for a store location will be outlined for the users.
 
 2.  An unsupervised machine learning pipeline based on data of US Subway locations that cluster locations by similar features.
 
@@ -44,11 +44,13 @@ The prediction will be human-interpretable in that users can identify features t
 
 The two unsupervised machine learning pipelines will also have human-interpretable results, including ways to identify similar features that caused different locations to be clustered together.
 
-The final product presented to Sitewise Analytics will be a GitHub repository containing the code for the machine learning data pipelines. Moreover, documentation of the scripts that can be run to reproduce the results will be included.
+These machine learning data pipelines are expected to be incorporated into our partner's consulting services for these clients.
+
+The final product will be integrated into a GitHub repository, including the scripts for the machine learning data pipelines, reproducible results and reports, and documentation.
 
 ## Data Summary
 
-We received five datasets for each of the three popular chain restaurants: Smoothie King, Subway Canada, and Subway US. The datasets consist of CSV files for demographic, point of interest, store-specific data, competition sister store data, and trade area, where each row represents a single store location and the columns represent the variables/features of that store. All features in the demographic, point of interest, competition sister store, and trade area files are numeric, whereas the store-specific data files contain categorical features such as state and market size.
+The data for this project contains three datasets for each of the customers: Smoothie King, Subway Canada, and Subway US. Each dataset consists five CSV files for demographic, point of interest, store-specific data, competition sister store data, and trade area, where each row represents a single store location and the columns represent the variables/features of that store. All features in the demographic, point of interest, competition sister store, and trade area files are numeric, whereas the store-specific data files contain categorical features such as state and market size.
 
 For Smoothie King, there are over 1000 features combined for 796 stores.
 
