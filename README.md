@@ -46,7 +46,24 @@ We received five datasets for each of the three popular chain restaurants: Smoot
 ## Usage
 To replicate the analysis, first to clone this GitHub repository along with installing the dependencies using the [environment file for Mac](/environment_mac.yml) and [environment file for Windows](/sitewise_python38_UBC2023.yaml).
 
-### Using Makefile
+### Create Conda environment
+
+```
+# For Mac
+conda env create -n <ENVNAME> --file environment_mac.yaml
+
+# For Windows
+conda env create -n <ENVNAME> --file sitewise_python38_UBC2023.yaml
+```
+
+### Activate Conda environment
+
+```
+conda activate <ENVNAME>
+```
+
+
+### Using Makefile to generate the proposal report
 
 Run the following command at the command line/terminal in the project root directory:
 
