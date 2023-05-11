@@ -44,13 +44,13 @@ We received five datasets for each of the three popular chain restaurants: Smoot
 - For Subway Canada, there are around 100 features combined for around 1,800 stores.
 
 ## Usage
-To replicate the analysis, first to clone this GitHub repository along with installing the dependencies using the [environment file for Mac](/environment_mac.yml) and [environment file for Windows](/sitewise_python38_UBC2023.yaml).
+To replicate the analysis, first to clone this GitHub repository along with installing the dependencies using the [environment file for Mac](/sitewise_python38_UBC2023_mac.yaml) and [environment file for Windows](/sitewise_python38_UBC2023.yaml).
 
 ### Create Conda environment
 
 ```
 # For Mac
-conda env create -n <ENVNAME> --file environment_mac.yaml
+conda env create -n <ENVNAME> --file sitewise_python38_UBC2023_mac.yaml
 
 # For Windows
 conda env create -n <ENVNAME> --file sitewise_python38_UBC2023.yaml
