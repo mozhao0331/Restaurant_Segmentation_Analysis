@@ -1,6 +1,7 @@
 #name: sitewise_python38_analytics
 name: capstone2023-env
 channels:
+  - conda-forge
   - defaults
 dependencies:
   - ca-certificates=2023.01.10=haa95532_0
@@ -13,16 +14,17 @@ dependencies:
   - vc=14.2=h21ff451_1
   - vs2015_runtime=14.27.29016=h5e58377_2
   - wheel=0.38.4=py38haa95532_0
+  - ipykernel
   - pip:
-    - aiobotocore==2.5.0
+#    - aiobotocore==2.5.0
     - aiohttp==3.8.4
     - aioitertools==0.11.0
     - aiosignal==1.3.1
     - async-timeout==4.0.2
     - attrs==23.1.0
     - blinker==1.6.2
-    - boto3==1.26.125
-    - botocore==1.29.125
+#    - boto3==1.26.125
+#    - botocore==1.29.125
     - certifi==2022.12.7
     - charset-normalizer==3.1.0
     - click==8.1.3
@@ -42,7 +44,9 @@ dependencies:
     - jinja2==3.1.2
     - jmespath==1.0.1
     - joblib==1.2.0
+    - lightgbm==3.3.5
     - markupsafe==2.1.2
+    - matplotlib==3.7.1
     - multidict==6.0.4
     - munch==2.5.0
     - numpy==1.23.4
