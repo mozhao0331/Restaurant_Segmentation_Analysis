@@ -20,13 +20,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Executive Summary
 
-The Restaurant Segmentation Analysis project, in collaboration with Sitewise Analytics, a SaaS company specializing in building a strategic real estate road map for restaurant owners, aims to identify key factors driving traffic to a specific store location and recognize patterns among similar locations. The project will serve as a preliminary step to help elevate site selection and marketing plans for the customers.
+The Restaurant Segmentation Analysis project, in collaboration with Sitewise Analytics, a SaaS company specializing in building a strategic real estate road map for restaurant owners, aims to use machine learning to identify key factors driving traffic to a specific store location and recognize patterns among similar locations. In the following proposal, we will first highlight the problem and fundamental goals of the project, introduce the data and discuss data science techniques that we will employ to tackle the problem, and conclude with a rough timeline of the project.
 
 ## Introduction
 
-To plan for future expansions or market the new store strategically, restaurant franchise owners need to know the main factors that drive traffic to a location as well as the major customer group, whether it is office workers in downtown or students in a neighbourhood. This involves analyzing the surrounding population demographic, consumer behaviour in the trade area and nearby competitor/sister store information.
+To plan for future expansions or market the new store strategically, restaurant franchise owners need to know the main factors that drive traffic to a location as well as the major customer group, whether it is office workers in downtown or students in a neighbourhood. This involves analyzing the surrounding population demographic, consumer behaviour in the trade area and nearby competitor/sister store information. Given that Sitewise does not currently have these factors, the Restaurant Segmentation Analysis project will address this problem by using data from Smoothie King locations in the United States and Subway locations in Canada and the United States to build machine learning data pipelines for Sitewise to incorporate into their consulting service for those respective clients.
 
-With each customer's marketing dynamics slightly different, the solution will be based on the data gathered around each restaurant franchise store locations. This project will take the exploratory first step in building customized solutions for three customers: Smoothie King US, Subway US and Subway Canada. At the end of the project, we expect to have the following three machine learning pipelines:
+Given that Smoothie King, Subway US, and Subway Canada are all different clients of Sitewise and have different marketing strategies, it is necessary to build three separate models for each respective client. Ultimately, the factors that drive traffic to each of the three restaurants may differ and depend on many things such as a difference in customer demographic between the US and Canada. Thus, the solution will be based on the data gathered for each restaurant client. At the end of the project, we expect to have the following three machine learning pipelines:
 
 1.  A supervised machine learning pipeline using data from Smoothie King US locations to predict a store's category from one of five pre-labeled categories:
 
@@ -36,7 +36,7 @@ With each customer's marketing dynamics slightly different, the solution will be
     -   Travel
     -   Other
 
-The prediction will be human-interpretable in that the key features that determine the label (any of the categories) for a store location will be outlined for the users.
+The prediction will be human-interpretable in that the key features that determine the category for a store location will be outlined for the users.
 
 2.  An unsupervised machine learning pipeline based on data of US Subway locations that cluster locations by similar features.
 
@@ -48,7 +48,7 @@ These machine learning data pipelines are expected to be incorporated into our p
 
 ## Data Summary
 
-The data for this project contains three datasets for each of the customers: Smoothie King, Subway Canada, and Subway US. Each dataset consists five CSV files for demographic, point of interest, store-specific data, competition sister store data, and trade area, where each row represents a single store location and the columns represent the variables/features of that store. All features in the demographic, point of interest, competition sister store, and trade area files are numeric, whereas the store-specific data files contain categorical features such as state and market size.
+The data for this project contains three datasets for each respective customer: Smoothie King, Subway Canada, and Subway US. Each dataset consists of five CSV files for demographic, point of interest, store-specific data, competition sister store data, and trade area, where each row represents a single store location and the columns represent the variables/features of that store. All features in the demographic, point of interest, competition sister store, and trade area files are numeric, whereas the store-specific data files contain categorical features such as state and market size.
 
 For Smoothie King, there are over 1000 features combined for 796 stores.
 
@@ -92,7 +92,7 @@ knitr::include_graphics("../img/subway_canada_market_size_bar_plot.png")
 
 ## Data Science Techniques
 
-With three distinct datasets and the challenge of building tailored solutions for each restaurant chain client, we have developed preliminary methodologies and the corresponding evaluation metrics for each dataset as followings:
+With three distinct datasets and the challenge of building tailored solutions for each restaurant chain client, we propose the following procedures to build a solution to the problem:
 
 1.  For Smoothie King, many features are highly correlated to one another. Therefore, it is important to start with feature selection and dimensionality reduction. Other than manually analyzing the data columns with correlation scores, we are planning to use Principal Component Analysis (PCA) to reduce the dimension and Recursive Feature Elimination to select the most important features.
 
@@ -104,15 +104,13 @@ With three distinct datasets and the challenge of building tailored solutions fo
 knitr::include_graphics("../img/smoothie_flow_chart.png")
 ```
 
-2.  For Subway US, the main goal is to cluster the stores into different clusters where stores share similar features are in the same cluster. We propose starting with a DBSCAN model as a baseline and evaluate the clusters empirically. Afterwards, we will perform hierarchical clustering and apply PCA for dimensionality reduction and compare the results. The rationale for using hierarchical clustering is that we do not have to pre-define the number of clusters and it also allows unbalanced cluster sizes.
+2.  For Subway US, the main goal is to cluster the stores into different clusters where stores that share similar features are in the same cluster. We propose starting with a DBSCAN model as a baseline and evaluate the clusters empirically. Afterwards, we will perform hierarchical clustering and apply PCA for dimensionality reduction and compare the results. The rationale for using hierarchical clustering is that we do not have to pre-define the number of clusters and it also allows unbalanced cluster sizes.
 
     Since both Smoothie King and Subway US are in the US and share similar features in their datasets, they could share similar segmentations to a certain extent. To perform PCA, the most driven features from the supervised model for Smoothie King can be used as a reference to evaluate this PCA step where more matched important features could indicate a more reasonable PCA result.
 
     For clustering, all possible linkage criteria will be tested to evaluate how to find similarities between clusters. Finally, since ground truth labels are not known, evaluation can be done through the Silhouette Coefficient where a Silhouette Coefficient closer to 1 suggests that a model defines well separated clusters.
 
     To interpret the results and empirically validate the clusters, we will randomly select a sample of stores in the same cluster and visualize them on Google Maps or Sitewise's internal application to check if they share similar geographic attributes (near highway exits, dense residential area, etc.).
-
-\newpage
 
 3.  For Subway Canada, we will take a similar approach to Subway US and evaluate the result.
 
