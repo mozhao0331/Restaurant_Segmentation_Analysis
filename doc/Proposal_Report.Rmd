@@ -6,7 +6,7 @@ author: |
   | MDS Students: Chen Lin, Eric Tsai, Morris Zhao, Xinru Lu
   | Capstone Partner: Sitewise Analytics
   | Mentor: Gittu George
-date: "2023-05-08"
+date: "2023-05-12"
 output:
   pdf_document:
     toc: true
@@ -26,7 +26,7 @@ The Restaurant Segmentation Analysis project, in collaboration with Sitewise Ana
 
 To plan for future expansions or market the new store strategically, restaurant franchise owners need to know the main factors that drive traffic to a location as well as the major customer group, whether it is office workers in downtown or students in a neighbourhood. This involves analyzing the surrounding population demographic, consumer behaviour in the trade area and nearby competitor/sister store information.
 
-With each customer's marketing dynamics slightly different, the solution will be tailored to the data gathered around each restaurant franchise. This project will take the exploratory first step in building customized solutions for three customers: Smoothie King US, Subway US and Subway Canada. At the end of the project, we expect to have the following three machine learning pipelines:
+With each customer's marketing dynamics slightly different, the solution will be based on the data gathered around each restaurant franchise store locations. This project will take the exploratory first step in building customized solutions for three customers: Smoothie King US, Subway US and Subway Canada. At the end of the project, we expect to have the following three machine learning pipelines:
 
 1.  A supervised machine learning pipeline using data from Smoothie King US locations to predict a store's category from one of five pre-labeled categories:
 
@@ -44,9 +44,7 @@ The prediction will be human-interpretable in that the key features that determi
 
 The two unsupervised machine learning pipelines will also have human-interpretable results, including ways to identify similar features that caused different locations to be clustered together.
 
-These machine learning data pipelines are expected to be incorporated into our partner's consulting services for these clients.
-
-The final product will be integrated into a GitHub repository, including the scripts for the machine learning data pipelines, reproducible results and reports, and documentation.
+These machine learning data pipelines are expected to be incorporated into our partner's consulting services for these clients. The final product will be integrated into a GitHub repository, including the scripts for the machine learning data pipelines, reproducible results and reports, and documentation.
 
 ## Data Summary
 
@@ -58,9 +56,9 @@ For Subway US, there are over 1000 features combined for approximately 14,000 st
 
 For Subway Canada, there are around 100 features combined for around 1,800 stores.
 
-To enhance the understanding of the behavior of the data, we select some significant features and create visualizations to depict their distribution across categories. More information can be found in the `data` directory of the repository, given that it is infeasible to describe more features here.
-
 ## Understanding the Data
+
+To help understand the data, we started with a selection of important categorical features and created some bar charts below to visually represent the distribution of these features in three datasets. The complete datasets can be accessed in the [`data`](https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/data) directory of the repository.
 
 ```{r out.width = '70%', fig.align='center', fig.cap = "Number of stores in each category for Smoothie King US locations. The distribution is unbalanced."}
 knitr::include_graphics("../img/smoothie_category_bar_plot.png")
@@ -94,7 +92,7 @@ knitr::include_graphics("../img/subway_canada_market_size_bar_plot.png")
 
 ## Data Science Techniques
 
-Based on the data described above with the important insights highlighted from some important features, along with the problems to be resolved for each restaurant chain which were mentioned in the *Introduction* section, the initial approaches and the corresponding evaluation metrics to be used are as followings:
+With three distinct datasets and the challenge of building tailored solutions for each restaurant chain client, we have developed preliminary methodologies and the corresponding evaluation metrics for each dataset as followings:
 
 1.  For Smoothie King, many features are highly correlated to one another. Therefore, it is important to start with feature selection and dimensionality reduction. Other than manually analyzing the data columns with correlation scores, we are planning to use Principal Component Analysis (PCA) to reduce the dimension and Recursive Feature Elimination to select the most important features.
 
@@ -106,9 +104,9 @@ Based on the data described above with the important insights highlighted from s
 knitr::include_graphics("../img/smoothie_flow_chart.png")
 ```
 
-2.  For Subway US, the main goal is to cluster the stores into different clusters where stores share similar features within the same cluster. We propose starting with a DBSCAN model as a baseline and evaluate the clusters empirically. Afterwards, we will perform hierarchical clustering and apply PCA for dimensionality reduction and compare the results. The rationale for using hierarchical clustering is that we do not have to pre-define the number of clusters and it also allows unbalanced cluster sizes.
+2.  For Subway US, the main goal is to cluster the stores into different clusters where stores share similar features are in the same cluster. We propose starting with a DBSCAN model as a baseline and evaluate the clusters empirically. Afterwards, we will perform hierarchical clustering and apply PCA for dimensionality reduction and compare the results. The rationale for using hierarchical clustering is that we do not have to pre-define the number of clusters and it also allows unbalanced cluster sizes.
 
-    Since both Smoothie King and Subway US are both in the US and share similar features in the dataset, they could share similar segmentations to a certain extent. To perform PCA, the most driven features from the supervised model for Smoothie King can be used as a reference to evaluate this PCA step where more matched important features could indicate a more reasonable PCA result.
+    Since both Smoothie King and Subway US are in the US and share similar features in their datasets, they could share similar segmentations to a certain extent. To perform PCA, the most driven features from the supervised model for Smoothie King can be used as a reference to evaluate this PCA step where more matched important features could indicate a more reasonable PCA result.
 
     For clustering, all possible linkage criteria will be tested to evaluate how to find similarities between clusters. Finally, since ground truth labels are not known, evaluation can be done through the Silhouette Coefficient where a Silhouette Coefficient closer to 1 suggests that a model defines well separated clusters.
 
