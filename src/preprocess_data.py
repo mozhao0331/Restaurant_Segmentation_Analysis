@@ -18,11 +18,35 @@ def process_percent_non_percent_df(df, out_dir):
     reduced_df = df[reduced_feats]
     reduced_df.to_csv(DIR + out_dir, index=False)
 
+def process_store_df(df, out_dir):
+    all_cols = df.columns.tolist()
+    cols_to_remove = []
+    for col in all_cols:
+        if "centerxy" in col:
+            if "full" not in col and "effective" not in col:
+                cols_to_remove.append(col)
+        elif is_climate_feat(col):
+            cols_to_remove.append(col)
+        elif is_sport_venue(col):
+            cols_to_remove.append(col)
+    reduced_feats = list(set(all_cols) - set(cols_to_remove))
+    reduced_feats.sort()
+    reduced_df = df[reduced_feats]
+    reduced_df.to_csv(DIR + out_dir, index=False)
+
+def is_climate_feat(feat):
+    return "avgmax" in feat or "temp" in feat or feat == "precip" or feat == "snowfall"
+
+def is_sport_venue(feat):
+    return "sports_venues" in feat
+
 def main():
     demographic = pd.read_csv(DIR + "Smoothie King/smoothie_king_demographic_variables.csv")
     trade_area = pd.read_csv(DIR + "Smoothie King/smoothie_king_trade_area_variables.csv")
+    poi = pd.read_csv(DIR + "Smoothie King/smoothie_king_poi_variables.csv")
     process_percent_non_percent_df(demographic, "Smoothie King/processed_demographic.csv")
     process_percent_non_percent_df(trade_area, "Smoothie King/processed_trade_area.csv")
+    process_store_df(poi, "Smoothie King/processed_poi.csv")
 
 if __name__ == "__main__":
     main()
