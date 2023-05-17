@@ -47,6 +47,13 @@ def main():
     process_percent_non_percent_df(demographic, "Smoothie King/processed_demographic.csv")
     process_percent_non_percent_df(trade_area, "Smoothie King/processed_trade_area.csv")
     process_store_df(poi, "Smoothie King/processed_poi.csv")
+    
+    demographic1 = pd.read_csv(DIR + "Subway USA/subway_usa_demographic_variables_update.csv")
+    poi1 = pd.read_csv(DIR + "Subway USA/subway_usa_poi_variables.csv")
+    trade_area1 = pd.read_csv(DIR + "Subway USA/subway_usa_trade_area_variables.csv")
+    process_percent_non_percent_df(demographic1, "Subway USA/processed_demographic.csv")
+    process_percent_non_percent_df(trade_area1, "Subway USA/processed_trade_area.csv")
+    process_store_df(poi1, "Subway USA/processed_poi.csv")
 
 if __name__ == "__main__":
     main()
