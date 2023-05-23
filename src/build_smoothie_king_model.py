@@ -21,7 +21,6 @@ from xgboost import XGBClassifier
 DIR = 'data/Smoothie King/'
 ALL_FEATURES = None
 
-
 def read_data():
     poi = pd.read_csv(DIR + "processed_poi.csv")
     stores = pd.read_csv(DIR + "smoothie_king_stores.csv")
@@ -33,6 +32,7 @@ def read_data():
 def drop_unused_cols(df):
     drop_cols = ["store_num", "country_code", "store", "longitude", "latitude", "state_name", "cbsa_name", "dma_name"]
     df = df.drop(columns=drop_cols)
+    df = df.dropna()
     return df
 
 
@@ -66,6 +66,83 @@ def define_preprocessor(X_train):
     return preprocessor
 
 
+def build_random_forest_model(X_train, y_train, preprocessor, class_weight):
+    pipe_rf = make_pipeline(
+        preprocessor,
+        RandomForestClassifier(
+            n_estimators=100, 
+            max_depth=30, 
+            max_leaf_nodes=30, 
+            class_weight=class_weight, 
+            min_samples_leaf=10, 
+            min_samples_split=30, 
+            n_jobs=-1, 
+            random_state=42
+        )
+    )
+    pipe_rf.fit(X_train, y_train)
+    return pipe_rf
+
+def build_l1_reg_random_forest(X_train, y_train, preprocessor, class_weight):
+    pipe_lr_rf = make_pipeline(
+        preprocessor,
+        SelectFromModel(
+            LogisticRegression(
+                C=0.1, 
+                penalty="l1",
+                solver="saga", 
+                max_iter=10000, 
+                multi_class="ovr", 
+                class_weight=None,
+                n_jobs=-1, 
+                random_state=42
+            )
+        ),
+        RandomForestClassifier(
+            n_estimators=100, 
+            max_depth=20, 
+            max_leaf_nodes=70, 
+            class_weight=class_weight, 
+            min_samples_leaf=10, 
+            min_samples_split=30, 
+            n_jobs=-1, 
+            random_state=42
+        )
+    )
+    pipe_lr_rf.fit(X_train, y_train)
+    return pipe_lr_rf
+
+def build_l1_reg_random_forest_ovr(X_train, y_train, preprocessor):
+    pipe_lr_rf_ovr = make_pipeline(
+        preprocessor,
+        SelectFromModel(
+            LogisticRegression(
+                C=0.15, 
+                penalty="l1",
+                solver="saga", 
+                max_iter=10000, 
+                multi_class="multinomial", 
+                class_weight=None,
+                n_jobs=-1,
+                random_state=42
+            )
+        ),
+        OneVsRestClassifier(
+            RandomForestClassifier(
+                n_estimators=100, 
+                max_depth=30, 
+                max_leaf_nodes=30, 
+                class_weight=None, 
+                min_samples_leaf=10, 
+                min_samples_split=30, 
+                n_jobs=-1, 
+                random_state=42
+            )
+        )
+    )
+    pipe_lr_rf_ovr.fit(X_train, y_train)
+    return pipe_lr_rf_ovr
+
 def main():
     sk_df = read_data()
     sk_df = drop_unused_cols(sk_df)
@@ -86,6 +163,15 @@ def main():
     }
     class_weight = {i: class_weight[label] for i, label in enumerate(le.classes_)}
     preprocessor = define_preprocessor(X_train)
+    rf_model = build_random_forest_model(X_train, y_train, preprocessor, class_weight)
+    print(f"Random Forest model train score: {rf_model.score(X_train, y_train)}")
+    print(f"Random Forest model test score: {rf_model.score(X_test, y_test)}")
+    l1_reg_rf_model = build_l1_reg_random_forest(X_train, y_train, preprocessor, class_weight)
+    print(f"L1 regularization Random Forest train score: {l1_reg_rf_model.score(X_train, y_train)}")
+    print(f"L1 regularization Random Forest test score: {l1_reg_rf_model.score(X_test, y_test)}")
+    l1_reg_rf_ovr_model = build_l1_reg_random_forest_ovr(X_train, y_train, preprocessor)
+    print(f"L1 regularization Random Forest OVR train score: {l1_reg_rf_ovr_model.score(X_train, y_train)}")
+    print(f"L1 regularization Random Forest OVR train score: {l1_reg_rf_ovr_model.score(X_test, y_test)}")
 
 
 if __name__ == "__main__":
