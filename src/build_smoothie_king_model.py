@@ -1,7 +1,6 @@
 import os
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 from joblib import dump, load
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
@@ -12,19 +11,19 @@ from sklearn.multiclass import OneVsRestClassifier
 from sklearn.ensemble import RandomForestClassifier, VotingClassifier
 from sklearn.feature_selection import SelectFromModel
 
-
 DIR = 'data/Smoothie King/'
-ALL_FEATURES = None
 
 def read_data():
+    # read in the POI, stores, and trade area files, merge them, and set the index to the store ID
     poi = pd.read_csv(DIR + "processed_poi.csv")
     stores = pd.read_csv(DIR + "smoothie_king_stores.csv")
     trade_area = pd.read_csv(DIR + "processed_trade_area.csv")
     merged = stores.merge(trade_area, left_on="store", right_on="store_num").merge(poi)
+    merged = merged.set_index("store")
     return merged
 
 def drop_unused_cols(df):
-    drop_cols = ["store_num", "country_code", "store", "longitude", "latitude", "state_name", "cbsa_name", "dma_name"]
+    drop_cols = ["store_num", "country_code", "longitude", "latitude", "state_name", "cbsa_name", "dma_name"]
     df = df.drop(columns=drop_cols)
     df = df.dropna()
     return df
@@ -52,7 +51,7 @@ def define_preprocessor(X_train):
     ordinal_transformer = OrdinalEncoder(categories=[market_levels, density_levels], dtype=int)
     preprocessor = make_column_transformer(
         (StandardScaler(), numeric_features),
-        (ordinal_transformer, ordinal_features),
+        (ordinal_transformer, ordinal_features)
     )
     return preprocessor
 
@@ -145,18 +144,11 @@ def print_train_test_scores(classifiers, X_train, y_train, X_test, y_test):
         print(f"{classifier_name} train score: {model.score(X_train, y_train)}")
         print(f"{classifier_name} test score: {model.score(X_test, y_test)}")
 
-
 def main():
     sk_df = read_data()
     sk_df = drop_unused_cols(sk_df)
     le = LabelEncoder()
     sk_df["category"] = le.fit_transform(sk_df["category"])
-    train_df, test_df = train_test_split(sk_df, test_size=0.1, random_state=42)
-    X_train = train_df.drop(columns=["category"])
-    y_train = train_df["category"]
-    X_test = test_df.drop(columns=["category"])
-    y_test = test_df["category"]
-
     class_weight = {
         "HOME": 0.24,
         "OTHER": 0.16,
@@ -165,6 +157,11 @@ def main():
         "WORK": 0.23
     }
     class_weight = {i: class_weight[label] for i, label in enumerate(le.classes_)}
+    train_df, test_df = train_test_split(sk_df, test_size=0.1, random_state=42)
+    X_train = train_df.drop(columns=["category"])
+    y_train = train_df["category"]
+    X_test = test_df.drop(columns=["category"])
+    y_test = test_df["category"]
     preprocessor = define_preprocessor(X_train)
     rf_model = build_random_forest_model(X_train, y_train, preprocessor, class_weight)
     l1_reg_rf_model = build_l1_reg_random_forest(X_train, y_train, preprocessor, class_weight)
@@ -177,17 +174,21 @@ def main():
     hard_voting_model = build_ensemble_model(classifiers, X_train, y_train)
     classifiers["Ensemble"] = hard_voting_model
     print_train_test_scores(classifiers, X_train, y_train, X_test, y_test)
-    # try:
-    #     dump(rf_model, "model_joblib/rf_model.joblib")
-    #     dump(l1_reg_rf_model, "model_joblib/l1_reg_rf_model.joblib")
-    #     dump(l1_reg_rf_ovr_model, "model_joblib/l1_reg_rf_ovr_model.joblib")
-    #     dump(hard_voting_model, "model_joblib/hard_voting_model.joblib")
-    # except:
-    #     os.mkdir("model_joblib/")
-    #     dump(rf_model, "rf_model.joblib")
-    #     dump(l1_reg_rf_model, "l1_reg_rf_model.joblib")
-    #     dump(l1_reg_rf_ovr_model, "l1_reg_rf_ovr_model.joblib")
-    #     dump(hard_voting_model, "model_joblib/hard_voting_model.joblib")
+    try:
+        dump(rf_model, "model_joblib/rf_model.joblib")
+        dump(l1_reg_rf_model, "model_joblib/l1_reg_rf_model.joblib")
+        dump(l1_reg_rf_ovr_model, "model_joblib/l1_reg_rf_ovr_model.joblib")
+        dump(hard_voting_model, "model_joblib/hard_voting_model.joblib")
+    except:
+        os.mkdir("model_joblib/")
+        dump(rf_model, "model_joblib/rf_model.joblib")
+        dump(l1_reg_rf_model, "model_joblib/l1_reg_rf_model.joblib")
+        dump(l1_reg_rf_ovr_model, "model_joblib/l1_reg_rf_ovr_model.joblib")
+        dump(hard_voting_model, "model_joblib/hard_voting_model.joblib")
+    train_df["category"] = le.inverse_transform(train_df["category"])
+    test_df["category"] = le.inverse_transform(test_df["category"])
+    train_df.to_csv(DIR + "train_df.csv")
+    test_df.to_csv(DIR + "test_df.csv")
 
 if __name__ == "__main__":
     main()
