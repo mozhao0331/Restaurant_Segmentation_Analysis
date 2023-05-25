@@ -22,11 +22,16 @@ def main():
         'key': 'AIzaSyDSIEnpgGi6s6cCMrLNSTCglznpu-9g7co'  # Replace with your Google Maps API key
     })
 
-    map_file = urllib.request.urlopen(map_url)
-    map_img = map_file.read()
+    # Download the chrome driver file from https://chromedriver.storage.googleapis.com/index.html
+    # Ensure the driver version matches the chrome browser version
+    driver = webdriver.Chrome('/usr/local/bin/chromedriver') # Path to chrome driver Unix Executable File
+    driver.get("https://www.google.com/maps")
 
-    with open('map.png', 'wb') as f:
-        f.write(map_img)
+    search_box = driver.find_element_by_xpath('//*[@id="searchboxinput"]')
+    search_box.send_keys('New York, NY')
+    search_box.submit()
+
+    driver.execute_script('map.setZoom(14);')
 
 if __name__ == "__main__":
     main()
