@@ -60,10 +60,10 @@ def get_all_feature_names(df):
     all_features = numeric_features + ordinal_features
     return all_features
 
-def shap_summary_plot(shap_values, X_enc, model_name, out_dir):
+def shap_summary_plot(shap_values, X_test_enc, model_name, out_dir):
     plt.clf()
     for i in range(len(shap_values)):
-        shap.summary_plot(shap_values[i], X_enc, max_display=10, plot_type="bar", show=False)
+        shap.summary_plot(shap_values[i], X_test_enc, max_display=10, plot_type="bar", show=False)
         plt.title(f"{model_name}\nSHAP Feature Importance for {TARGET_MAP[i]}")
         plt.xlabel("Mean absolute SHAP value")
         try:
@@ -73,9 +73,27 @@ def shap_summary_plot(shap_values, X_enc, model_name, out_dir):
             os.makedirs(out_dir)
             plt.savefig(out_dir + f"{TARGET_MAP[i]}_shap_summary_plot", bbox_inches="tight")
 
+def shap_force_plot(explainer, shap_values, X_test_enc, class_indices, idx_to_explain, target_class):
+    # TODO
+    plt.clf()
+    shap.force_plot(
+        explainer.expected_value[target_class], 
+        shap_values[0][class_indices[idx_to_explain], :], 
+        X_test_enc.iloc[class_indices[idx_to_explain], :], 
+        matplotlib=True,
+    )
+    plt.title("SHAP Force Plot")
+
+
+def get_most_confident_and_correct(model, X_test, class_indices, target_class):
+    # TODO
+    model_pred_prob = model.predict_proba(X_test.iloc[class_indices])
+    return np.argmax(model_pred_prob[:, target_class])
+
 def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
+    preprocessor = rf_model.named_steps["columntransformer"]
     X_test_enc = pd.DataFrame(
-        data=rf_model.named_steps["columntransformer"].transform(X_test),
+        data=preprocessor.transform(X_test),
         columns=feature_names,
         index=X_test.index,
     )
@@ -90,6 +108,16 @@ def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
     # get top most confident correct and incorrect predictions for all classes
     shap_summary_plot(test_rf_shap_values, X_test_enc, "Random Forest", "img/smoothie_king/random_forest/")
 
+
+def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, feature_names):
+    preprocessor = l1_reg_rf_model.named_steps["column_transformer"]
+    selected_features_mask = l1_reg_rf_model.named_steps['selectfrommodel'].get_support()
+    selected_features = [feat for (feat, is_selected) in zip(feature_names, selected_features_mask) if is_selected]
+    X_test_enc = pd.DataFrame(
+        data=l1_reg_rf_model.named_steps["selectfrommodel"].transform(preprocessor.transform(X_test)),
+        columns=selected_features,
+        index=X_test.index,
+    )
 
 def main():
     train_df, test_df = read_data()
@@ -121,6 +149,7 @@ def main():
     print(get_prediction_mismatch(prediction_result, "voting", 2, 0))
     all_feature_names = get_all_feature_names(X_train)
     shap_interpretation_for_rf_model(rf_model, X_test, y_test, all_feature_names)
+    shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, all_feature_names)
 
 
 
