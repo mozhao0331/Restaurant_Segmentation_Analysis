@@ -1,12 +1,7 @@
-import os
-import string
-import sys
-
 import numpy as np
 import pandas as pd
 
 from sklearn.compose import make_column_transformer
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler
@@ -118,19 +113,19 @@ def main():
     process_percent_non_percent_df(smoothie_king_trade_area, "Smoothie King/processed_trade_area.csv")
     process_store_df(smoothie_king_poi, "Smoothie King/processed_poi.csv")
     
-    subway_usa_demographic = pd.read_csv(DIR + "Subway USA/subway_usa_demographic_variables.csv")
-    subway_usa_poi = pd.read_csv(DIR + "Subway USA/subway_usa_poi_variables.csv")
-    subway_usa_trade_area = pd.read_csv(DIR + "Subway USA/subway_usa_trade_area_variables.csv")
-    process_percent_non_percent_df(subway_usa_demographic, "Subway USA/processed_demographic.csv")
-    process_percent_non_percent_df(subway_usa_trade_area, "Subway USA/processed_trade_area.csv")
-    process_store_df(subway_usa_poi, "Subway USA/processed_poi.csv")
+    # subway_usa_demographic = pd.read_csv(DIR + "Subway USA/subway_usa_demographic_variables.csv")
+    # subway_usa_poi = pd.read_csv(DIR + "Subway USA/subway_usa_poi_variables.csv")
+    # subway_usa_trade_area = pd.read_csv(DIR + "Subway USA/subway_usa_trade_area_variables.csv")
+    # process_percent_non_percent_df(subway_usa_demographic, "Subway USA/processed_demographic.csv")
+    # process_percent_non_percent_df(subway_usa_trade_area, "Subway USA/processed_trade_area.csv")
+    # process_store_df(subway_usa_poi, "Subway USA/processed_poi.csv")
     
-    subway_can_demographic = pd.read_csv(DIR + "Subway CAN/subway_can_demographic_variables.csv")
-    subway_can_poi = pd.read_csv(DIR + "Subway CAN/subway_can_poi_variables.csv")
-    subway_can_trade_area = pd.read_csv(DIR + "Subway CAN/subway_can_trade_area_variables.csv")
-    process_percent_non_percent_df(subway_can_demographic, "Subway CAN/processed_demographic.csv")
-    process_percent_non_percent_df(subway_can_trade_area, "Subway CAN/processed_trade_area.csv")
-    process_store_df(subway_can_poi, "Subway CAN/processed_poi.csv")
+    # subway_can_demographic = pd.read_csv(DIR + "Subway CAN/subway_can_demographic_variables.csv")
+    # subway_can_poi = pd.read_csv(DIR + "Subway CAN/subway_can_poi_variables.csv")
+    # subway_can_trade_area = pd.read_csv(DIR + "Subway CAN/subway_can_trade_area_variables.csv")
+    # process_percent_non_percent_df(subway_can_demographic, "Subway CAN/processed_demographic.csv")
+    # process_percent_non_percent_df(subway_can_trade_area, "Subway CAN/processed_trade_area.csv")
+    # process_store_df(subway_can_poi, "Subway CAN/processed_poi.csv")
 
 
 if __name__ == "__main__":
