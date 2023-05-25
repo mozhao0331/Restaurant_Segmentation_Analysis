@@ -1,6 +1,19 @@
+import os
+import string
+import sys
+
+import numpy as np
 import pandas as pd
 
+from sklearn.compose import make_column_transformer
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.impute import SimpleImputer
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler
+
+
 DIR = "data/"
+
 
 def process_percent_non_percent_df(df, out_dir):
     all_cols = df.columns.tolist()
@@ -18,6 +31,7 @@ def process_percent_non_percent_df(df, out_dir):
     reduced_df = df[reduced_feats]
     reduced_df.to_csv(DIR + out_dir, index=False)
 
+
 def process_store_df(df, out_dir):
     all_cols = df.columns.tolist()
     cols_to_remove = []
@@ -34,11 +48,67 @@ def process_store_df(df, out_dir):
     reduced_df = df[reduced_feats]
     reduced_df.to_csv(DIR + out_dir, index=False)
 
+
 def is_climate_feat(feat):
     return "avgmax" in feat or "temp" in feat or feat == "precip" or feat == "snowfall"
 
+
 def is_sport_venue(feat):
     return "sports_venues" in feat
+
+
+def data_transform_pipeline(
+    train, 
+    test, 
+    train_index,
+    test_index,
+    drop_features, 
+    ordinal_features_oth, 
+    ordering_ordinal_oth, 
+    categorical_features, 
+    numeric_features
+):
+    numeric_transformer = make_pipeline(
+        SimpleImputer(strategy="median"), 
+        StandardScaler()
+    )
+
+    ordinal_transformer_oth = make_pipeline(
+        SimpleImputer(strategy="most_frequent"),
+        OrdinalEncoder(categories=ordering_ordinal_oth),
+    )
+    if len(categorical_features) > 0:
+        categorical_transformer = make_pipeline(
+            SimpleImputer(strategy="constant", fill_value="missing"),
+            OneHotEncoder(handle_unknown="ignore", sparse=False),
+        )
+
+        preprocessor = make_column_transformer(
+            ("drop", drop_features),
+            (numeric_transformer, numeric_features),
+            (ordinal_transformer_oth, ordinal_features_oth),
+            (categorical_transformer, categorical_features),
+        )
+        column_names = (
+            numeric_features
+            + ordinal_features_oth
+            + preprocessor.named_transformers_['pipeline-3']['onehotencoder'].get_feature_names_out().tolist()
+        )
+    else:
+        preprocessor = make_column_transformer(
+            ("drop", drop_features),
+            (numeric_transformer, numeric_features),
+            (ordinal_transformer_oth, ordinal_features_oth),
+        )
+        column_names = (
+            numeric_features
+            + ordinal_features_oth
+        )
+    preprocessor.fit(train)
+    transformed_train = pd.DataFrame(preprocessor.transform(train), columns=column_names, index=train_index)
+    transformed_test = pd.DataFrame(preprocessor.transform(test), columns=column_names, index=test_index)
+    return transformed_train, transformed_test
+
 
 def main():
     demographic = pd.read_csv(DIR + "Smoothie King/smoothie_king_demographic_variables.csv")
@@ -47,6 +117,7 @@ def main():
     process_percent_non_percent_df(demographic, "Smoothie King/processed_demographic.csv")
     process_percent_non_percent_df(trade_area, "Smoothie King/processed_trade_area.csv")
     process_store_df(poi, "Smoothie King/processed_poi.csv")
+
 
 if __name__ == "__main__":
     main()
