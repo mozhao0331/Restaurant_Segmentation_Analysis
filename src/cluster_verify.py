@@ -5,6 +5,9 @@ import urllib.request
 
 # install selenium to interact with Chrome browser ('pip install selenium')
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait 
+from selenium.webdriver.support import expected_conditions as EC
 
 
 def main():
@@ -26,12 +29,18 @@ def main():
     # Ensure the driver version matches the chrome browser version
     driver = webdriver.Chrome('/usr/local/bin/chromedriver') # Path to chrome driver Unix Executable File
     driver.get("https://www.google.com/maps")
+    driver.set_page_load_timeout(10) # Wait up to 10 seconds for pages to load 
 
-    search_box = driver.find_element_by_xpath('//*[@id="searchboxinput"]')
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "searchboxinput")))
+
+    # search_box = driver.find_element('//*[@id="searchboxinput"]')
+    search_box = driver.find_element('//*[@id="searchboxinput"]')
     search_box.send_keys('New York, NY')
     search_box.submit()
 
     driver.execute_script('map.setZoom(14);')
+
+    input("Press enter to quit")
 
 if __name__ == "__main__":
     main()
