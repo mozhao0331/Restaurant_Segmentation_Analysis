@@ -31,6 +31,18 @@ def main():
     # Ensure the driver version matches the chrome browser version
     driver = webdriver.Chrome('/usr/local/bin/chromedriver') # Path to chrome driver Unix Executable File
     driver.get(place_url)
+
+    # Load Google Maps API to define the map object
+    driver.execute_script("""
+    var script = document.createElement('script');  
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDSIEnpgGi6s6cCMrLNSTCglznpu-9g7co'; 
+    document.head.appendChild(script);  
+    script.onload = function() {
+        map.setMapTypeId(google.maps.MapTypeId.SATELLITE); 
+        map.setZoom(14);
+    }    
+    """)
+                          
     driver.set_page_load_timeout(10) # Wait up to 10 seconds for pages to load 
 
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "searchboxinput")))
@@ -39,8 +51,6 @@ def main():
     # search_box = driver.find_element(By.ID, "searchboxinput")
     # search_box.send_keys('New York, NY')
     # search_box.submit()
-
-    # driver.execute_script('map.setZoom(14);')
 
     input("Press enter to quit")
 
