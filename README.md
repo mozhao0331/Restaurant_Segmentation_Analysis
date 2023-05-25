@@ -90,8 +90,11 @@ In order to make this Python script work, users need to install **Selenium** to 
 pip install selenium
 ```
 
-Also need to download **chromedriver** from [here](https://chromedriver.storage.googleapis.com/index.html). Ensure the driver version matches the Chrome browser version.
+Also need to download **chromedriver** from [here](https://chromedriver.storage.googleapis.com/index.html). Ensure the driver version matches the Chrome browser version and save it under this path for Mac users.
 
+```
+'/usr/local/bin/chromedriver'
+```
 ## Licenses
 
 The Restaurant Segmentation Analysis project here is licensed under the MIT License.  Please provide attribution and a link to this webpage if re-using/re-mixing any of these materials.
