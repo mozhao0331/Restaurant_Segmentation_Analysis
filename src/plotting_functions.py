@@ -132,10 +132,10 @@ def plot_original_clustered(X, model, labels):
             model.cluster_centers_[:, 0], model.cluster_centers_[:, 1], y=np.arange(0,k), s=15, 
             markers='*', markeredgewidth=1.0, ax=ax[1])
 
-def pca_100_plot(train_data):
-    pca_100 = PCA(n_components=100, whiten=True, random_state=42)
-    pca_100.fit(train_data)
-    cum_variance = np.cumsum(pca_100.explained_variance_ratio_)
+def pca_plot(train_data, n_components=100):
+    pca = PCA(n_components=n_components, whiten=True, random_state=42)
+    pca.fit(train_data)
+    cum_variance = np.cumsum(pca.explained_variance_ratio_)
     for i in range(0, len(cum_variance)):
         if cum_variance[i] > 0.9:
             num_comp = i + 1
@@ -143,14 +143,14 @@ def pca_100_plot(train_data):
     explained_var_df = pd.DataFrame(
         data=cum_variance,
         columns=["cummulative variance_explained (%)"],
-        index=range(1, 101),
+        index=range(1, n_components+1),
     )
     explained_var_df.index.name = "n_components"
     plt.figure(figsize=(8, 6))
-    plt.xticks(range(1, 101, 5))
+    plt.xticks(range(1, n_components+1, 5))
     plt.xlabel("number of components")
     plt.ylabel("cumulative explained variance ratio")
-    plt.plot(range(1, 101), cum_variance)
+    plt.plot(range(1, n_components+1), cum_variance)
     plt.grid()
     plt.show()
     return num_comp
