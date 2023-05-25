@@ -111,12 +111,26 @@ def data_transform_pipeline(
 
 
 def main():
-    demographic = pd.read_csv(DIR + "Smoothie King/smoothie_king_demographic_variables.csv")
-    trade_area = pd.read_csv(DIR + "Smoothie King/smoothie_king_trade_area_variables.csv")
-    poi = pd.read_csv(DIR + "Smoothie King/smoothie_king_poi_variables.csv")
-    process_percent_non_percent_df(demographic, "Smoothie King/processed_demographic.csv")
-    process_percent_non_percent_df(trade_area, "Smoothie King/processed_trade_area.csv")
-    process_store_df(poi, "Smoothie King/processed_poi.csv")
+    smoothie_king_demographic = pd.read_csv(DIR + "Smoothie King/smoothie_king_demographic_variables.csv")
+    smoothie_king_trade_area = pd.read_csv(DIR + "Smoothie King/smoothie_king_trade_area_variables.csv")
+    smoothie_king_poi = pd.read_csv(DIR + "Smoothie King/smoothie_king_poi_variables.csv")
+    process_percent_non_percent_df(smoothie_king_demographic, "Smoothie King/processed_demographic.csv")
+    process_percent_non_percent_df(smoothie_king_trade_area, "Smoothie King/processed_trade_area.csv")
+    process_store_df(smoothie_king_poi, "Smoothie King/processed_poi.csv")
+    
+    subway_usa_demographic = pd.read_csv(DIR + "Subway USA/subway_usa_demographic_variables.csv")
+    subway_usa_poi = pd.read_csv(DIR + "Subway USA/subway_usa_poi_variables.csv")
+    subway_usa_trade_area = pd.read_csv(DIR + "Subway USA/subway_usa_trade_area_variables.csv")
+    process_percent_non_percent_df(subway_usa_demographic, "Subway USA/processed_demographic.csv")
+    process_percent_non_percent_df(subway_usa_trade_area, "Subway USA/processed_trade_area.csv")
+    process_store_df(subway_usa_poi, "Subway USA/processed_poi.csv")
+    
+    subway_can_demographic = pd.read_csv(DIR + "Subway CAN/subway_can_demographic_variables.csv")
+    subway_can_poi = pd.read_csv(DIR + "Subway CAN/subway_can_poi_variables.csv")
+    subway_can_trade_area = pd.read_csv(DIR + "Subway CAN/subway_can_trade_area_variables.csv")
+    process_percent_non_percent_df(subway_can_demographic, "Subway CAN/processed_demographic.csv")
+    process_percent_non_percent_df(subway_can_trade_area, "Subway CAN/processed_trade_area.csv")
+    process_store_df(subway_can_poi, "Subway CAN/processed_poi.csv")
 
 
 if __name__ == "__main__":
