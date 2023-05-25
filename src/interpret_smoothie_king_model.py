@@ -63,15 +63,17 @@ def get_all_feature_names(df):
 def shap_summary_plot(shap_values, X_test_enc, model_name, out_dir):
     plt.clf()
     for i in range(len(shap_values)):
-        shap.summary_plot(shap_values[i], X_test_enc, max_display=10, plot_type="bar", show=False)
+        # shap.summary_plot(shap_values[i], X_test_enc, max_display=10, plot_type="bar", show=False)
+        shap.summary_plot(shap_values[i], X_test_enc, show=False)
         plt.title(f"{model_name}\nSHAP Feature Importance for {TARGET_MAP[i]}")
-        plt.xlabel("Mean absolute SHAP value")
+        # plt.xlabel("Mean absolute SHAP value")
         try:
             plt.savefig(out_dir + f"{TARGET_MAP[i]}_shap_summary_plot", bbox_inches="tight")
         except:
             # print("========Creating new directory=========")
             os.makedirs(out_dir)
             plt.savefig(out_dir + f"{TARGET_MAP[i]}_shap_summary_plot", bbox_inches="tight")
+        plt.clf()
 
 def shap_force_plot(explainer, shap_values, X_test_enc, class_indices, idx_to_explain, target_class):
     # TODO
@@ -97,27 +99,30 @@ def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
         columns=feature_names,
         index=X_test.index,
     )
-    rf_explainer = shap.TreeExplainer(rf_model.named_steps["randomforestclassifier"])
-    test_rf_shap_values = rf_explainer.shap_values(X_test_enc)
+    explainer = shap.TreeExplainer(rf_model.named_steps["randomforestclassifier"])
+    shap_values = explainer.shap_values(X_test_enc)
     y_test_index_reset = y_test.reset_index(drop=True)
     class_0_indices = y_test_index_reset[y_test_index_reset == 0].index.tolist()
     class_1_indices = y_test_index_reset[y_test_index_reset == 1].index.tolist()
     class_2_indices = y_test_index_reset[y_test_index_reset == 2].index.tolist()
     class_3_indices = y_test_index_reset[y_test_index_reset == 3].index.tolist()
     class_4_indices = y_test_index_reset[y_test_index_reset == 4].index.tolist()
-    # get top most confident correct and incorrect predictions for all classes
-    shap_summary_plot(test_rf_shap_values, X_test_enc, "Random Forest", "img/smoothie_king/random_forest/")
+    # TODO: get top most confident correct and incorrect predictions for all classes
+    shap_summary_plot(shap_values, X_test_enc, "Random Forest", "img/smoothie_king/random_forest/")
 
 
 def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, feature_names):
-    preprocessor = l1_reg_rf_model.named_steps["column_transformer"]
+    preprocessor = l1_reg_rf_model.named_steps["columntransformer"]
     selected_features_mask = l1_reg_rf_model.named_steps['selectfrommodel'].get_support()
     selected_features = [feat for (feat, is_selected) in zip(feature_names, selected_features_mask) if is_selected]
     X_test_enc = pd.DataFrame(
         data=l1_reg_rf_model.named_steps["selectfrommodel"].transform(preprocessor.transform(X_test)),
         columns=selected_features,
-        index=X_test.index,
+        index=X_test.index
     )
+    explainer = shap.TreeExplainer(l1_reg_rf_model.named_steps["randomforestclassifier"])
+    shap_values = explainer.shap_values(X_test_enc)
+    shap_summary_plot(shap_values, X_test_enc, "L1 Regularized Random Forest", "img/smoothie_king/l1_reg_random_forest/")
 
 def main():
     train_df, test_df = read_data()
