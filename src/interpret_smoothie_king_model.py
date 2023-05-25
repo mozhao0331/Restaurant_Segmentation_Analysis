@@ -1,27 +1,16 @@
 import warnings
 from numba.core.errors import NumbaDeprecationWarning
 warnings.simplefilter('ignore', category=NumbaDeprecationWarning)
-
 import os
 import shap
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from joblib import dump, load
-from sklearn.impute import SimpleImputer
-from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import make_pipeline
-from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler, LabelEncoder
+from sklearn.preprocessing import LabelEncoder
 from sklearn.compose import make_column_transformer
-from sklearn.multiclass import OneVsOneClassifier, OneVsRestClassifier
-from lightgbm.sklearn import LGBMClassifier
-from xgboost import XGBClassifier
-from sklearn.model_selection import RandomizedSearchCV, GridSearchCV
-from sklearn.ensemble import RandomForestClassifier, VotingClassifier, StackingClassifier
-from sklearn.svm import SVC
-from catboost import CatBoostClassifier
-from sklearn.feature_selection import SelectFromModel
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
 
@@ -44,15 +33,19 @@ def generate_confuson_matrix(model, X, y, labels, title, out_file):
     cm = confusion_matrix(y, model.predict(X))
     disp = ConfusionMatrixDisplay(cm, display_labels=labels)
     disp.plot()
-    # plt.show()
     plt.title(title)
-    plt.savefig(out_file)
+    try:
+        plt.savefig("img/smoothie_king/" + out_file)
+    except:
+        os.makedirs("img/smoothie_king/")
+        plt.savefig("img/smoothie_king/" + out_file)
+
 
 def get_prediction_mismatch(prediction_result, model, true_label, predicted_label):
+    # Helper function to get mismatched predictions
     # model: one of {"rf", "l1_reg_rf", "l1_reg_rf_ovr", "voting"}
     mismatch = prediction_result[(prediction_result["true_label"] == true_label) & (prediction_result[model] == predicted_label)]
     return mismatch.index.tolist()
-    # print(mismatch.index)
 
 def get_all_feature_names(df):
     ordinal_features = ["market_size", "store_density"]
@@ -60,20 +53,33 @@ def get_all_feature_names(df):
     all_features = numeric_features + ordinal_features
     return all_features
 
-def shap_summary_plot(shap_values, X_test_enc, model_name, out_dir):
+def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_test_enc=None, estimators=None):
     plt.clf()
-    for i in range(len(shap_values)):
-        # shap.summary_plot(shap_values[i], X_test_enc, max_display=10, plot_type="bar", show=False)
-        shap.summary_plot(shap_values[i], X_test_enc, show=False)
-        plt.title(f"{model_name}\nSHAP Feature Importance for {TARGET_MAP[i]}")
-        # plt.xlabel("Mean absolute SHAP value")
-        try:
-            plt.savefig(out_dir + f"{TARGET_MAP[i]}_shap_summary_plot", bbox_inches="tight")
-        except:
-            # print("========Creating new directory=========")
-            os.makedirs(out_dir)
-            plt.savefig(out_dir + f"{TARGET_MAP[i]}_shap_summary_plot", bbox_inches="tight")
-        plt.clf()
+    if strategy_ovr:
+        for i in range(len(estimators)):
+            explainer = shap.TreeExplainer(estimators[i])
+            shap_values = explainer.shap_values(X_test_enc)
+            shap.summary_plot(shap_values[1], X_test_enc, show=False)
+            plt.title(f"{model_name}\nSHAP Feature Importance for {TARGET_MAP[i]}")
+            try:
+                plt.savefig(out_dir + f"{TARGET_MAP[i]}_shap_summary_plot", bbox_inches="tight")
+            except:
+                os.makedirs(out_dir)
+                plt.savefig(out_dir + f"{TARGET_MAP[i]}_shap_summary_plot", bbox_inches="tight")
+            plt.clf()
+    else:
+        for i in range(len(shap_values)):
+            # shap.summary_plot(shap_values[i], X_test_enc, max_display=10, plot_type="bar", show=False)
+            shap.summary_plot(shap_values[i], X_test_enc, show=False)
+            plt.title(f"{model_name}\nSHAP Feature Importance for {TARGET_MAP[i]}")
+            try:
+                plt.savefig(out_dir + f"{TARGET_MAP[i]}_shap_summary_plot", bbox_inches="tight")
+            except:
+                os.makedirs(out_dir)
+                plt.savefig(out_dir + f"{TARGET_MAP[i]}_shap_summary_plot", bbox_inches="tight")
+            plt.clf()
+
+
 
 def shap_force_plot(explainer, shap_values, X_test_enc, class_indices, idx_to_explain, target_class):
     # TODO
@@ -108,7 +114,13 @@ def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
     class_3_indices = y_test_index_reset[y_test_index_reset == 3].index.tolist()
     class_4_indices = y_test_index_reset[y_test_index_reset == 4].index.tolist()
     # TODO: get top most confident correct and incorrect predictions for all classes
-    shap_summary_plot(shap_values, X_test_enc, "Random Forest", "img/smoothie_king/random_forest/")
+    shap_summary_plot( 
+        strategy_ovr=False,
+        model_name="Random Forest", 
+        out_dir="img/smoothie_king/random_forest/",
+        shap_values=shap_values, 
+        X_test_enc=X_test_enc
+    )
 
 
 def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, feature_names):
@@ -122,7 +134,31 @@ def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, fea
     )
     explainer = shap.TreeExplainer(l1_reg_rf_model.named_steps["randomforestclassifier"])
     shap_values = explainer.shap_values(X_test_enc)
-    shap_summary_plot(shap_values, X_test_enc, "L1 Regularized Random Forest", "img/smoothie_king/l1_reg_random_forest/")
+    shap_summary_plot(
+        strategy_ovr=False,
+        model_name="L1 Regularized Random Forest", 
+        out_dir="img/smoothie_king/l1_reg_random_forest/",
+        shap_values=shap_values, 
+        X_test_enc=X_test_enc
+    )
+
+def shap_interpretation_for_l1_reg_rf_ovr_model(l1_reg_rf_ovr_model, X_test, y_test, feature_names):
+    preprocessor = l1_reg_rf_ovr_model.named_steps["columntransformer"]
+    selected_features_mask = l1_reg_rf_ovr_model.named_steps['selectfrommodel'].get_support()
+    selected_features = [feat for (feat, is_selected) in zip(feature_names, selected_features_mask) if is_selected]
+    X_test_enc = pd.DataFrame(
+        data=l1_reg_rf_ovr_model.named_steps["selectfrommodel"].transform(preprocessor.transform(X_test)),
+        columns=selected_features,
+        index=X_test.index,
+    )
+    estimators = l1_reg_rf_ovr_model.named_steps["onevsrestclassifier"].estimators_
+    shap_summary_plot(
+        strategy_ovr=True,
+        model_name="L1 Regularized Random Forest OVR", 
+        out_dir="img/smoothie_king/l1_reg_random_forest_ovr/",
+        X_test_enc=X_test_enc,
+        estimators=estimators
+    )
 
 def main():
     train_df, test_df = read_data()
@@ -138,7 +174,7 @@ def main():
     l1_reg_rf_ovr_model = load(MODEL_DIR + "l1_reg_rf_ovr_model.joblib")
     hard_voting_model = load(MODEL_DIR + "hard_voting_model.joblib")
     generate_confuson_matrix(
-        hard_voting_model, X_train, y_train, le.classes_, "Confusion matrix for prediction on train set","train_cm.png"
+        hard_voting_model, X_train, y_train, le.classes_, "Confusion matrix for prediction on train set", "train_cm.png"
     )
     generate_confuson_matrix(
         hard_voting_model, X_test, y_test, le.classes_, "Confusion matrix for prediction on test set", "test_cm.png"
@@ -150,11 +186,12 @@ def main():
         "l1_reg_rf_ovr": l1_reg_rf_ovr_model.predict(X_test),
         "voting": hard_voting_model.predict(X_test)
     })
-    print(get_prediction_mismatch(prediction_result, "voting", 0, 2))
-    print(get_prediction_mismatch(prediction_result, "voting", 2, 0))
+    # print(get_prediction_mismatch(prediction_result, "voting", 0, 2))
+    # print(get_prediction_mismatch(prediction_result, "voting", 2, 0))
     all_feature_names = get_all_feature_names(X_train)
     shap_interpretation_for_rf_model(rf_model, X_test, y_test, all_feature_names)
     shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, all_feature_names)
+    shap_interpretation_for_l1_reg_rf_ovr_model(l1_reg_rf_ovr_model, X_test, y_test, all_feature_names)
 
 
 
