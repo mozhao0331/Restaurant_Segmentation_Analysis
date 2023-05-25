@@ -34,11 +34,11 @@ def main():
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "searchboxinput")))
 
     # search_box = driver.find_element('//*[@id="searchboxinput"]')
-    search_box = driver.find_element('//*[@id="searchboxinput"]')
+    search_box = driver.find_element(By.ID, "searchboxinput")
     search_box.send_keys('New York, NY')
     search_box.submit()
 
-    driver.execute_script('map.setZoom(14);')
+    # driver.execute_script('map.setZoom(14);')
 
     input("Press enter to quit")
 
