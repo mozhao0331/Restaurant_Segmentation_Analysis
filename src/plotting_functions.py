@@ -132,10 +132,12 @@ def plot_original_clustered(X, model, labels):
             model.cluster_centers_[:, 0], model.cluster_centers_[:, 1], y=np.arange(0,k), s=15, 
             markers='*', markeredgewidth=1.0, ax=ax[1])
 
+
 def pca_plot(train_data, n_components=100):
     pca = PCA(n_components=n_components, whiten=True, random_state=42)
     pca.fit(train_data)
     cum_variance = np.cumsum(pca.explained_variance_ratio_)
+    num_comp = 0
     for i in range(0, len(cum_variance)):
         if cum_variance[i] > 0.9:
             num_comp = i + 1

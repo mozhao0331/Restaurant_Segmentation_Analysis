@@ -3,3 +3,6 @@
 .ipynb_checkpoints
 sitewise_python38_UBC2023.yaml
 data/*
+.idea/*
+.pyc
+*/__pycache__/*
