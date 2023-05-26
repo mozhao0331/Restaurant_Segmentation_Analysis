@@ -81,16 +81,23 @@ def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_tes
 
 
 
-def shap_force_plot(explainer, shap_values, X_test_enc, class_indices, idx_to_explain, target_class):
+def shap_force_plot(explainer, shap_values, X_test_enc, class_indices, idx_to_explain, target_class, out_dir, pred_type):
     # TODO
     plt.clf()
     shap.force_plot(
         explainer.expected_value[target_class], 
-        shap_values[0][class_indices[idx_to_explain], :], 
+        shap_values[target_class][class_indices[idx_to_explain], :], 
         X_test_enc.iloc[class_indices[idx_to_explain], :], 
         matplotlib=True,
+        show=False
     )
     plt.title("SHAP Force Plot")
+    out_file = out_dir + pred_type + f"{TARGET_MAP[target_class]}_shap_force_plot"
+    try:
+        plt.savefig(out_file, bbox_inches="tight")
+    except:
+        os.makedirs(out_dir)
+        plt.savefig(out_file, bbox_inches="tight")
 
 
 def get_most_confident_and_correct(model, X_test, class_indices, target_class):
@@ -107,13 +114,6 @@ def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
     )
     explainer = shap.TreeExplainer(rf_model.named_steps["randomforestclassifier"])
     shap_values = explainer.shap_values(X_test_enc)
-    y_test_index_reset = y_test.reset_index(drop=True)
-    class_0_indices = y_test_index_reset[y_test_index_reset == 0].index.tolist()
-    class_1_indices = y_test_index_reset[y_test_index_reset == 1].index.tolist()
-    class_2_indices = y_test_index_reset[y_test_index_reset == 2].index.tolist()
-    class_3_indices = y_test_index_reset[y_test_index_reset == 3].index.tolist()
-    class_4_indices = y_test_index_reset[y_test_index_reset == 4].index.tolist()
-    # TODO: get top most confident correct and incorrect predictions for all classes
     shap_summary_plot( 
         strategy_ovr=False,
         model_name="Random Forest", 
@@ -121,6 +121,26 @@ def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
         shap_values=shap_values, 
         X_test_enc=X_test_enc
     )
+    y_test_index_reset = y_test.reset_index(drop=True)
+    for i in TARGET_MAP.keys():
+        print(i)
+        indices = y_test_index_reset[y_test_index_reset == i].index.tolist()
+        pred_probs = rf_model.predict_proba(X_test.iloc[indices])
+        most_confident_pred_idx = np.argmax(pred_probs[:, i])
+        least_confident_prd_idx = np.argmin(pred_probs[:, i])
+        # most_confident_pred_row = X_test.iloc[indices[most_confident_pred_idx]]
+        # least_confident_pred_row = X_test.iloc[indices[least_confident_prd_idx]]
+        shap_force_plot(explainer, shap_values, X_test_enc, indices, most_confident_pred_idx, i, 
+                        "img/smoothie_king/random_forest/", "most_confident_predict_")
+        shap_force_plot(explainer, shap_values, X_test_enc, indices, least_confident_prd_idx, i, 
+                        "img/smoothie_king/random_forest/", "least_confident_predict_")
+    # y_test_index_reset = y_test.reset_index(drop=True)
+    # class_0_indices = y_test_index_reset[y_test_index_reset == 0].index.tolist()
+    # class_1_indices = y_test_index_reset[y_test_index_reset == 1].index.tolist()
+    # class_2_indices = y_test_index_reset[y_test_index_reset == 2].index.tolist()
+    # class_3_indices = y_test_index_reset[y_test_index_reset == 3].index.tolist()
+    # class_4_indices = y_test_index_reset[y_test_index_reset == 4].index.tolist()
+    # TODO: get top most confident correct and incorrect predictions for all classes
 
 
 def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, feature_names):
