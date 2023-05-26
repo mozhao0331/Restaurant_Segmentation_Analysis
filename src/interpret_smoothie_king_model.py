@@ -83,8 +83,7 @@ def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_tes
 def shap_force_plot(strategy_ovr, explainer, shap_values, X_test_enc, class_indices, idx_to_explain, target_class, out_dir, title):
     # TODO
     plt.clf()
-    # out_file = out_dir + pred_type + f"{TARGET_MAP[target_class]}_shap_force_plot"
-    out_file = out_dir + title.lower().replace(" ", "_") + f"{TARGET_MAP[target_class]}_shap_force_plot"
+    out_file = out_dir + title.lower().replace(" ", "_") + f"_{TARGET_MAP[target_class]}_shap_force_plot"
     X_test_enc = X_test_enc.round(4)
     if strategy_ovr:
         shap.force_plot(
@@ -151,17 +150,32 @@ def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
     )
     y_test_index_reset = y_test.reset_index(drop=True)
     for i in TARGET_MAP.keys():
-        # print(i)
         indices = y_test_index_reset[y_test_index_reset == i].index.tolist()
         pred_probs = rf_model.predict_proba(X_test.iloc[indices])
         most_confident_pred_idx = np.argmax(pred_probs[:, i])
         least_confident_prd_idx = np.argmin(pred_probs[:, i])
-        # most_confident_pred_row = X_test.iloc[indices[most_confident_pred_idx]]
-        # least_confident_pred_row = X_test.iloc[indices[least_confident_prd_idx]]
-        shap_force_plot(False,explainer, shap_values, X_test_enc, indices, most_confident_pred_idx, i, 
-                        "img/smoothie_king/random_forest/", "Most Confident Prediction")
-        shap_force_plot(False, explainer, shap_values, X_test_enc, indices, least_confident_prd_idx, i, 
-                        "img/smoothie_king/random_forest/", "Least Confident Prediction")
+        shap_force_plot(
+            strategy_ovr=False,
+            explainer=explainer, 
+            shap_values=shap_values, 
+            X_test_enc=X_test_enc, 
+            class_indices=indices, 
+            idx_to_explain=most_confident_pred_idx, 
+            target_class=i, 
+            out_dir="img/smoothie_king/random_forest/", 
+            title="Most Confident Prediction"
+        )
+        shap_force_plot(
+            strategy_ovr=False, 
+            explainer=explainer, 
+            shap_values=shap_values, 
+            X_test_enc=X_test_enc, 
+            class_indices=indices, 
+            idx_to_explain=least_confident_prd_idx, 
+            target_class=i, 
+            out_dir="img/smoothie_king/random_forest/", 
+            title="Least Confident Prediction"
+        )
 
 def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, feature_names):
     X_test_enc = encode_X_test(l1_reg_rf_model, X_test, feature_names)
@@ -180,10 +194,28 @@ def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, fea
         pred_probs = l1_reg_rf_model.predict_proba(X_test.iloc[indices])
         most_confident_pred_idx = np.argmax(pred_probs[:, i])
         least_confident_prd_idx = np.argmin(pred_probs[:, i])
-        shap_force_plot(False, explainer, shap_values, X_test_enc, indices, most_confident_pred_idx, i, 
-                        "img/smoothie_king/l1_reg_random_forest/", "most_confident_predict_")
-        shap_force_plot(False, explainer, shap_values, X_test_enc, indices, least_confident_prd_idx, i, 
-                        "img/smoothie_king/l1_reg_random_forest/", "least_confident_predict_")
+        shap_force_plot(
+            strategy_ovr=False, 
+            explainer=explainer, 
+            shap_values=shap_values, 
+            X_test_enc=X_test_enc, 
+            class_indices=indices, 
+            idx_to_explain=most_confident_pred_idx, 
+            target_class=i, 
+            out_dir="img/smoothie_king/l1_reg_random_forest/", 
+            title="Most Confident Prediction"
+        )
+        shap_force_plot(
+            strategy_ovr=False, 
+            explainer=explainer, 
+            shap_values=shap_values, 
+            X_test_enc=X_test_enc, 
+            class_indices=indices, 
+            idx_to_explain=least_confident_prd_idx, 
+            target_class=i, 
+            out_dir="img/smoothie_king/l1_reg_random_forest/", 
+            title="Least Confident Prediction"
+        )
         
 
 def shap_interpretation_for_l1_reg_rf_ovr_model(l1_reg_rf_ovr_model, X_test, y_test, feature_names):
@@ -202,13 +234,31 @@ def shap_interpretation_for_l1_reg_rf_ovr_model(l1_reg_rf_ovr_model, X_test, y_t
         explainer = shap.TreeExplainer(estimators[i])
         shap_values = explainer.shap_values(X_test_enc)
         indices = y_test_index_reset[y_test_index_reset == i].index.tolist()
-        pred_probs = l1_reg_rf_ovr_model.predict_proba(X_test.iloc[indices])
+        pred_probs = estimators[i].predict_proba(X_test_enc.iloc[indices])
         most_confident_pred_idx = np.argmax(pred_probs[:, 1])
         least_confident_prd_idx = np.argmin(pred_probs[:, 1])
-        shap_force_plot(True, explainer, shap_values, X_test_enc, indices, most_confident_pred_idx, i, 
-                        "img/smoothie_king/l1_reg_random_forest_ovr/", "most_confident_predict_")
-        shap_force_plot(True, explainer, shap_values, X_test_enc, indices, least_confident_prd_idx, i, 
-                        "img/smoothie_king/l1_reg_random_forest_ovr/", "least_confident_predict_")
+        shap_force_plot(
+            strategy_ovr=True, 
+            explainer=explainer, 
+            shap_values=shap_values, 
+            X_test_enc=X_test_enc, 
+            class_indices=indices, 
+            idx_to_explain=most_confident_pred_idx, 
+            target_class=i, 
+            out_dir="img/smoothie_king/l1_reg_random_forest_ovr/", 
+            title="Most Confident Prediction"
+        )
+        shap_force_plot(
+            strategy_ovr=True, 
+            explainer=explainer, 
+            shap_values=shap_values, 
+            X_test_enc=X_test_enc, 
+            class_indices=indices, 
+            idx_to_explain=least_confident_prd_idx, 
+            target_class=i, 
+            out_dir="img/smoothie_king/l1_reg_random_forest_ovr/", 
+            title="Least Confident Prediction"
+        )
 
 
 def main():
