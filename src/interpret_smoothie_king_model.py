@@ -6,11 +6,8 @@ import shap
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from joblib import dump, load
-from sklearn.model_selection import train_test_split
-from sklearn.pipeline import make_pipeline
+from joblib import load
 from sklearn.preprocessing import LabelEncoder
-from sklearn.compose import make_column_transformer
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
 
@@ -42,8 +39,9 @@ def generate_confuson_matrix(model, X, y, labels, title, out_file):
     # plt.close(fig="all")
 
 def get_prediction_mismatch(prediction_result, model, true_label, predicted_label):
-    # Helper function to get mismatched predictions
-    # model: one of {"rf", "l1_reg_rf", "l1_reg_rf_ovr", "voting"}
+    ''' Helper function to get mismatched predictions
+        model: one of {"rf", "l1_reg_rf", "l1_reg_rf_ovr", "voting"}
+    '''
     mismatch = prediction_result[(prediction_result["true_label"] == true_label) & (prediction_result[model] == predicted_label)]
     return mismatch.index.tolist()
 
@@ -54,6 +52,8 @@ def get_all_feature_names(df):
     return all_features
 
 def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_test_enc=None, estimators=None):
+    ''' Draw SHAP beeswarm plot for explaining feature importance
+    ''' 
     plt.clf()
     if strategy_ovr:
         for i in range(len(estimators)):
@@ -81,7 +81,8 @@ def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_tes
     plt.close(fig="all")
 
 def shap_force_plot(strategy_ovr, explainer, shap_values, X_test_enc, class_indices, idx_to_explain, target_class, out_dir, title):
-    # TODO
+    ''' Draw SHAP force plot for a prediction point
+    '''
     plt.clf()
     out_file = out_dir + title.lower().replace(" ", "_") + f"_{TARGET_MAP[target_class]}_shap_force_plot"
     X_test_enc = X_test_enc.round(4)
@@ -105,7 +106,6 @@ def shap_force_plot(strategy_ovr, explainer, shap_values, X_test_enc, class_indi
         )
     title = title + f" SHAP Force Plot for {TARGET_MAP[target_class]} Class"
     plt.title(title, y=1.75)
-    # plt.suptitle("SHAP Force Plot", y=1.75)
     try:
         plt.savefig(out_file, bbox_inches="tight")
     except:
@@ -138,13 +138,14 @@ def encode_X_test(model, X_test, feature_names):
     return X_test_enc
 
 def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
+    out_dir = "img/smoothie_king/random_forest/"
     X_test_enc = encode_X_test(rf_model, X_test, feature_names)
     explainer = shap.TreeExplainer(rf_model.named_steps["randomforestclassifier"])
     shap_values = explainer.shap_values(X_test_enc)
     shap_summary_plot( 
         strategy_ovr=False,
         model_name="Random Forest", 
-        out_dir="img/smoothie_king/random_forest/",
+        out_dir=out_dir,
         shap_values=shap_values, 
         X_test_enc=X_test_enc
     )
@@ -162,7 +163,7 @@ def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
             class_indices=indices, 
             idx_to_explain=most_confident_pred_idx, 
             target_class=i, 
-            out_dir="img/smoothie_king/random_forest/", 
+            out_dir=out_dir, 
             title="Most Confident Prediction"
         )
         shap_force_plot(
@@ -173,18 +174,19 @@ def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
             class_indices=indices, 
             idx_to_explain=least_confident_prd_idx, 
             target_class=i, 
-            out_dir="img/smoothie_king/random_forest/", 
+            out_dir=out_dir, 
             title="Least Confident Prediction"
         )
 
 def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, feature_names):
+    out_dir = "img/smoothie_king/l1_reg_random_forest/"
     X_test_enc = encode_X_test(l1_reg_rf_model, X_test, feature_names)
     explainer = shap.TreeExplainer(l1_reg_rf_model.named_steps["randomforestclassifier"])
     shap_values = explainer.shap_values(X_test_enc)
     shap_summary_plot(
         strategy_ovr=False,
         model_name="L1 Regularized Random Forest", 
-        out_dir="img/smoothie_king/l1_reg_random_forest/",
+        out_dir=out_dir,
         shap_values=shap_values, 
         X_test_enc=X_test_enc
     )
@@ -202,7 +204,7 @@ def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, fea
             class_indices=indices, 
             idx_to_explain=most_confident_pred_idx, 
             target_class=i, 
-            out_dir="img/smoothie_king/l1_reg_random_forest/", 
+            out_dir=out_dir, 
             title="Most Confident Prediction"
         )
         shap_force_plot(
@@ -213,19 +215,20 @@ def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, fea
             class_indices=indices, 
             idx_to_explain=least_confident_prd_idx, 
             target_class=i, 
-            out_dir="img/smoothie_king/l1_reg_random_forest/", 
+            out_dir=out_dir, 
             title="Least Confident Prediction"
         )
         
 
 def shap_interpretation_for_l1_reg_rf_ovr_model(l1_reg_rf_ovr_model, X_test, y_test, feature_names):
+    out_dir = "img/smoothie_king/l1_reg_random_forest_ovr/"
     X_test_enc = encode_X_test(l1_reg_rf_ovr_model, X_test, feature_names)
     estimators = l1_reg_rf_ovr_model.named_steps["onevsrestclassifier"].estimators_
     for i in range(len(estimators)):
         shap_summary_plot(
             strategy_ovr=True,
             model_name="L1 Regularized Random Forest OVR", 
-            out_dir="img/smoothie_king/l1_reg_random_forest_ovr/",
+            out_dir= out_dir,
             X_test_enc=X_test_enc,
             estimators=estimators
         )
@@ -245,7 +248,7 @@ def shap_interpretation_for_l1_reg_rf_ovr_model(l1_reg_rf_ovr_model, X_test, y_t
             class_indices=indices, 
             idx_to_explain=most_confident_pred_idx, 
             target_class=i, 
-            out_dir="img/smoothie_king/l1_reg_random_forest_ovr/", 
+            out_dir=out_dir, 
             title="Most Confident Prediction"
         )
         shap_force_plot(
@@ -256,7 +259,7 @@ def shap_interpretation_for_l1_reg_rf_ovr_model(l1_reg_rf_ovr_model, X_test, y_t
             class_indices=indices, 
             idx_to_explain=least_confident_prd_idx, 
             target_class=i, 
-            out_dir="img/smoothie_king/l1_reg_random_forest_ovr/", 
+            out_dir=out_dir, 
             title="Least Confident Prediction"
         )
 
