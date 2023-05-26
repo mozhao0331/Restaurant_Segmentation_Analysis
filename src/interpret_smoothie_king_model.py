@@ -91,7 +91,7 @@ def shap_force_plot(explainer, shap_values, X_test_enc, class_indices, idx_to_ex
         matplotlib=True,
         show=False
     )
-    plt.title("SHAP Force Plot")
+    plt.suptitle("SHAP Force Plot")
     out_file = out_dir + pred_type + f"{TARGET_MAP[target_class]}_shap_force_plot"
     try:
         plt.savefig(out_file, bbox_inches="tight")
@@ -105,13 +105,26 @@ def get_most_confident_and_correct(model, X_test, class_indices, target_class):
     model_pred_prob = model.predict_proba(X_test.iloc[class_indices])
     return np.argmax(model_pred_prob[:, target_class])
 
+def encode_X_test(model, X_test, feature_names):
+    preprocessor = model.named_steps["columntransformer"]
+    try:
+        selected_features_mask = model.named_steps['selectfrommodel'].get_support()
+        selected_features = [feat for (feat, is_selected) in zip(feature_names, selected_features_mask) if is_selected]
+        X_test_enc = pd.DataFrame(
+            data=model.named_steps["selectfrommodel"].transform(preprocessor.transform(X_test)),
+            columns=selected_features,
+            index=X_test.index
+        )
+    except:
+        X_test_enc = pd.DataFrame(
+            data=preprocessor.transform(X_test),
+            columns=feature_names,
+            index=X_test.index,
+        )
+    return X_test_enc
+
 def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
-    preprocessor = rf_model.named_steps["columntransformer"]
-    X_test_enc = pd.DataFrame(
-        data=preprocessor.transform(X_test),
-        columns=feature_names,
-        index=X_test.index,
-    )
+    X_test_enc = encode_X_test(rf_model, X_test, feature_names)
     explainer = shap.TreeExplainer(rf_model.named_steps["randomforestclassifier"])
     shap_values = explainer.shap_values(X_test_enc)
     shap_summary_plot( 
@@ -144,14 +157,7 @@ def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
 
 
 def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, feature_names):
-    preprocessor = l1_reg_rf_model.named_steps["columntransformer"]
-    selected_features_mask = l1_reg_rf_model.named_steps['selectfrommodel'].get_support()
-    selected_features = [feat for (feat, is_selected) in zip(feature_names, selected_features_mask) if is_selected]
-    X_test_enc = pd.DataFrame(
-        data=l1_reg_rf_model.named_steps["selectfrommodel"].transform(preprocessor.transform(X_test)),
-        columns=selected_features,
-        index=X_test.index
-    )
+    X_test_enc = encode_X_test(l1_reg_rf_model, X_test, feature_names)
     explainer = shap.TreeExplainer(l1_reg_rf_model.named_steps["randomforestclassifier"])
     shap_values = explainer.shap_values(X_test_enc)
     shap_summary_plot(
@@ -163,14 +169,7 @@ def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, fea
     )
 
 def shap_interpretation_for_l1_reg_rf_ovr_model(l1_reg_rf_ovr_model, X_test, y_test, feature_names):
-    preprocessor = l1_reg_rf_ovr_model.named_steps["columntransformer"]
-    selected_features_mask = l1_reg_rf_ovr_model.named_steps['selectfrommodel'].get_support()
-    selected_features = [feat for (feat, is_selected) in zip(feature_names, selected_features_mask) if is_selected]
-    X_test_enc = pd.DataFrame(
-        data=l1_reg_rf_ovr_model.named_steps["selectfrommodel"].transform(preprocessor.transform(X_test)),
-        columns=selected_features,
-        index=X_test.index,
-    )
+    X_test_enc = encode_X_test(l1_reg_rf_ovr_model, X_test, feature_names)
     estimators = l1_reg_rf_ovr_model.named_steps["onevsrestclassifier"].estimators_
     shap_summary_plot(
         strategy_ovr=True,
