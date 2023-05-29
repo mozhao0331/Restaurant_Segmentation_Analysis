@@ -36,3 +36,7 @@ clean:
 	rm -rf img/subway_us_market_size_bar_plot.png 
 	rm -rf img/subway_canada_store_density_bar_plot.png 
 	rm -rf img/subway_canada_market_size_bar_plot.png
+
+clean_sk:
+	rm -rf model_joblib/
+	rm -rf img/smoothie_king/
