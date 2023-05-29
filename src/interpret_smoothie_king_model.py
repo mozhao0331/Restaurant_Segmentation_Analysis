@@ -6,11 +6,8 @@ import shap
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from joblib import dump, load
-from sklearn.model_selection import train_test_split
-from sklearn.pipeline import make_pipeline
+from joblib import load
 from sklearn.preprocessing import LabelEncoder
-from sklearn.compose import make_column_transformer
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
 
@@ -39,11 +36,12 @@ def generate_confuson_matrix(model, X, y, labels, title, out_file):
     except:
         os.makedirs("img/smoothie_king/")
         plt.savefig("img/smoothie_king/" + out_file)
-
+    # plt.close(fig="all")
 
 def get_prediction_mismatch(prediction_result, model, true_label, predicted_label):
-    # Helper function to get mismatched predictions
-    # model: one of {"rf", "l1_reg_rf", "l1_reg_rf_ovr", "voting"}
+    ''' Helper function to get mismatched predictions
+        model: one of {"rf", "l1_reg_rf", "l1_reg_rf_ovr", "voting"}
+    '''
     mismatch = prediction_result[(prediction_result["true_label"] == true_label) & (prediction_result[model] == predicted_label)]
     return mismatch.index.tolist()
 
@@ -54,6 +52,8 @@ def get_all_feature_names(df):
     return all_features
 
 def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_test_enc=None, estimators=None):
+    ''' Draw SHAP beeswarm plot for explaining feature importance
+    ''' 
     plt.clf()
     if strategy_ovr:
         for i in range(len(estimators)):
@@ -78,19 +78,40 @@ def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_tes
                 os.makedirs(out_dir)
                 plt.savefig(out_dir + f"{TARGET_MAP[i]}_shap_summary_plot", bbox_inches="tight")
             plt.clf()
+    plt.close(fig="all")
 
-
-
-def shap_force_plot(explainer, shap_values, X_test_enc, class_indices, idx_to_explain, target_class):
-    # TODO
+def shap_force_plot(strategy_ovr, explainer, shap_values, X_test_enc, class_indices, idx_to_explain, target_class, out_dir, title):
+    ''' Draw SHAP force plot for a prediction point
+    '''
     plt.clf()
-    shap.force_plot(
-        explainer.expected_value[target_class], 
-        shap_values[0][class_indices[idx_to_explain], :], 
-        X_test_enc.iloc[class_indices[idx_to_explain], :], 
-        matplotlib=True,
-    )
-    plt.title("SHAP Force Plot")
+    out_file = out_dir + title.lower().replace(" ", "_") + f"_{TARGET_MAP[target_class]}_shap_force_plot"
+    X_test_enc = X_test_enc.round(4)
+    if strategy_ovr:
+        shap.force_plot(
+            explainer.expected_value[1], 
+            shap_values[1][class_indices[idx_to_explain], :], 
+            X_test_enc.iloc[class_indices[idx_to_explain], :], 
+            matplotlib=True,
+            show=False,
+            text_rotation=20
+        )
+    else:
+        shap.force_plot(
+            explainer.expected_value[target_class], 
+            shap_values[target_class][class_indices[idx_to_explain], :], 
+            X_test_enc.iloc[class_indices[idx_to_explain], :], 
+            matplotlib=True,
+            show=False,
+            text_rotation=20
+        )
+    title = title + f" SHAP Force Plot for {TARGET_MAP[target_class]} Class"
+    plt.title(title, y=1.75)
+    try:
+        plt.savefig(out_file, bbox_inches="tight")
+    except:
+        os.makedirs(out_dir)
+        plt.savefig(out_file, bbox_inches="tight")
+    plt.close(fig="all")
 
 
 def get_most_confident_and_correct(model, X_test, class_indices, target_class):
@@ -98,67 +119,150 @@ def get_most_confident_and_correct(model, X_test, class_indices, target_class):
     model_pred_prob = model.predict_proba(X_test.iloc[class_indices])
     return np.argmax(model_pred_prob[:, target_class])
 
+def encode_X_test(model, X_test, feature_names):
+    preprocessor = model.named_steps["columntransformer"]
+    try:
+        selected_features_mask = model.named_steps['selectfrommodel'].get_support()
+        selected_features = [feat for (feat, is_selected) in zip(feature_names, selected_features_mask) if is_selected]
+        X_test_enc = pd.DataFrame(
+            data=model.named_steps["selectfrommodel"].transform(preprocessor.transform(X_test)),
+            columns=selected_features,
+            index=X_test.index
+        )
+    except:
+        X_test_enc = pd.DataFrame(
+            data=preprocessor.transform(X_test),
+            columns=feature_names,
+            index=X_test.index,
+        )
+    return X_test_enc
+
 def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
-    preprocessor = rf_model.named_steps["columntransformer"]
-    X_test_enc = pd.DataFrame(
-        data=preprocessor.transform(X_test),
-        columns=feature_names,
-        index=X_test.index,
-    )
+    out_dir = "img/smoothie_king/random_forest/"
+    X_test_enc = encode_X_test(rf_model, X_test, feature_names)
     explainer = shap.TreeExplainer(rf_model.named_steps["randomforestclassifier"])
     shap_values = explainer.shap_values(X_test_enc)
-    y_test_index_reset = y_test.reset_index(drop=True)
-    class_0_indices = y_test_index_reset[y_test_index_reset == 0].index.tolist()
-    class_1_indices = y_test_index_reset[y_test_index_reset == 1].index.tolist()
-    class_2_indices = y_test_index_reset[y_test_index_reset == 2].index.tolist()
-    class_3_indices = y_test_index_reset[y_test_index_reset == 3].index.tolist()
-    class_4_indices = y_test_index_reset[y_test_index_reset == 4].index.tolist()
-    # TODO: get top most confident correct and incorrect predictions for all classes
     shap_summary_plot( 
         strategy_ovr=False,
         model_name="Random Forest", 
-        out_dir="img/smoothie_king/random_forest/",
+        out_dir=out_dir,
         shap_values=shap_values, 
         X_test_enc=X_test_enc
     )
-
+    y_test_index_reset = y_test.reset_index(drop=True)
+    for i in TARGET_MAP.keys():
+        indices = y_test_index_reset[y_test_index_reset == i].index.tolist()
+        pred_probs = rf_model.predict_proba(X_test.iloc[indices])
+        most_confident_pred_idx = np.argmax(pred_probs[:, i])
+        least_confident_prd_idx = np.argmin(pred_probs[:, i])
+        shap_force_plot(
+            strategy_ovr=False,
+            explainer=explainer, 
+            shap_values=shap_values, 
+            X_test_enc=X_test_enc, 
+            class_indices=indices, 
+            idx_to_explain=most_confident_pred_idx, 
+            target_class=i, 
+            out_dir=out_dir, 
+            title="Most Confident Prediction"
+        )
+        shap_force_plot(
+            strategy_ovr=False, 
+            explainer=explainer, 
+            shap_values=shap_values, 
+            X_test_enc=X_test_enc, 
+            class_indices=indices, 
+            idx_to_explain=least_confident_prd_idx, 
+            target_class=i, 
+            out_dir=out_dir, 
+            title="Least Confident Prediction"
+        )
 
 def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, feature_names):
-    preprocessor = l1_reg_rf_model.named_steps["columntransformer"]
-    selected_features_mask = l1_reg_rf_model.named_steps['selectfrommodel'].get_support()
-    selected_features = [feat for (feat, is_selected) in zip(feature_names, selected_features_mask) if is_selected]
-    X_test_enc = pd.DataFrame(
-        data=l1_reg_rf_model.named_steps["selectfrommodel"].transform(preprocessor.transform(X_test)),
-        columns=selected_features,
-        index=X_test.index
-    )
+    out_dir = "img/smoothie_king/l1_reg_random_forest/"
+    X_test_enc = encode_X_test(l1_reg_rf_model, X_test, feature_names)
     explainer = shap.TreeExplainer(l1_reg_rf_model.named_steps["randomforestclassifier"])
     shap_values = explainer.shap_values(X_test_enc)
     shap_summary_plot(
         strategy_ovr=False,
         model_name="L1 Regularized Random Forest", 
-        out_dir="img/smoothie_king/l1_reg_random_forest/",
+        out_dir=out_dir,
         shap_values=shap_values, 
         X_test_enc=X_test_enc
     )
+    y_test_index_reset = y_test.reset_index(drop=True)
+    for i in TARGET_MAP.keys():
+        indices = y_test_index_reset[y_test_index_reset == i].index.tolist()
+        pred_probs = l1_reg_rf_model.predict_proba(X_test.iloc[indices])
+        most_confident_pred_idx = np.argmax(pred_probs[:, i])
+        least_confident_prd_idx = np.argmin(pred_probs[:, i])
+        shap_force_plot(
+            strategy_ovr=False, 
+            explainer=explainer, 
+            shap_values=shap_values, 
+            X_test_enc=X_test_enc, 
+            class_indices=indices, 
+            idx_to_explain=most_confident_pred_idx, 
+            target_class=i, 
+            out_dir=out_dir, 
+            title="Most Confident Prediction"
+        )
+        shap_force_plot(
+            strategy_ovr=False, 
+            explainer=explainer, 
+            shap_values=shap_values, 
+            X_test_enc=X_test_enc, 
+            class_indices=indices, 
+            idx_to_explain=least_confident_prd_idx, 
+            target_class=i, 
+            out_dir=out_dir, 
+            title="Least Confident Prediction"
+        )
+        
 
 def shap_interpretation_for_l1_reg_rf_ovr_model(l1_reg_rf_ovr_model, X_test, y_test, feature_names):
-    preprocessor = l1_reg_rf_ovr_model.named_steps["columntransformer"]
-    selected_features_mask = l1_reg_rf_ovr_model.named_steps['selectfrommodel'].get_support()
-    selected_features = [feat for (feat, is_selected) in zip(feature_names, selected_features_mask) if is_selected]
-    X_test_enc = pd.DataFrame(
-        data=l1_reg_rf_ovr_model.named_steps["selectfrommodel"].transform(preprocessor.transform(X_test)),
-        columns=selected_features,
-        index=X_test.index,
-    )
+    out_dir = "img/smoothie_king/l1_reg_random_forest_ovr/"
+    X_test_enc = encode_X_test(l1_reg_rf_ovr_model, X_test, feature_names)
     estimators = l1_reg_rf_ovr_model.named_steps["onevsrestclassifier"].estimators_
-    shap_summary_plot(
-        strategy_ovr=True,
-        model_name="L1 Regularized Random Forest OVR", 
-        out_dir="img/smoothie_king/l1_reg_random_forest_ovr/",
-        X_test_enc=X_test_enc,
-        estimators=estimators
-    )
+    for i in range(len(estimators)):
+        shap_summary_plot(
+            strategy_ovr=True,
+            model_name="L1 Regularized Random Forest OVR", 
+            out_dir= out_dir,
+            X_test_enc=X_test_enc,
+            estimators=estimators
+        )
+    y_test_index_reset = y_test.reset_index(drop=True)
+    for i in TARGET_MAP.keys():
+        explainer = shap.TreeExplainer(estimators[i])
+        shap_values = explainer.shap_values(X_test_enc)
+        indices = y_test_index_reset[y_test_index_reset == i].index.tolist()
+        pred_probs = estimators[i].predict_proba(X_test_enc.iloc[indices])
+        most_confident_pred_idx = np.argmax(pred_probs[:, 1])
+        least_confident_prd_idx = np.argmin(pred_probs[:, 1])
+        shap_force_plot(
+            strategy_ovr=True, 
+            explainer=explainer, 
+            shap_values=shap_values, 
+            X_test_enc=X_test_enc, 
+            class_indices=indices, 
+            idx_to_explain=most_confident_pred_idx, 
+            target_class=i, 
+            out_dir=out_dir, 
+            title="Most Confident Prediction"
+        )
+        shap_force_plot(
+            strategy_ovr=True, 
+            explainer=explainer, 
+            shap_values=shap_values, 
+            X_test_enc=X_test_enc, 
+            class_indices=indices, 
+            idx_to_explain=least_confident_prd_idx, 
+            target_class=i, 
+            out_dir=out_dir, 
+            title="Least Confident Prediction"
+        )
+
 
 def main():
     train_df, test_df = read_data()
