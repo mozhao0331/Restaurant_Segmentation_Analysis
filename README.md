@@ -76,6 +76,18 @@ To reset the project with cleaning file path/directory, without any intermeidate
 ```
 make clean
 ```
+
+To train the Smoothie King classification model and get the interpretation outputs, run the following command:
+
+```
+make smoothie_king
+```
+
+To reset the Smoothie King model outputs, run the following command:
+
+```
+make clean_sk
+```
 ## Licenses
 
 The Restaurant Segmentation Analysis project here is licensed under the MIT License.  Please provide attribution and a link to this webpage if re-using/re-mixing any of these materials.
