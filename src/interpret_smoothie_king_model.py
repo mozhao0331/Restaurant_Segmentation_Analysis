@@ -1,3 +1,8 @@
+''' 
+Script that performs model interpretation on the fitted Smoothie King models using SHAP.
+Saves the SHAP output plots for human interpretation.
+'''
+
 import warnings
 from numba.core.errors import NumbaDeprecationWarning
 warnings.simplefilter('ignore', category=NumbaDeprecationWarning)
@@ -9,7 +14,6 @@ import matplotlib.pyplot as plt
 from joblib import load
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-
 
 DIR = 'data/Smoothie King/'
 MODEL_DIR = "model_joblib/"
@@ -36,11 +40,18 @@ def generate_confuson_matrix(model, X, y, labels, title, out_file):
     except:
         os.makedirs("img/smoothie_king/")
         plt.savefig("img/smoothie_king/" + out_file)
-    # plt.close(fig="all")
 
 def get_prediction_mismatch(prediction_result, model, true_label, predicted_label):
-    ''' Helper function to get mismatched predictions
-        model: one of {"rf", "l1_reg_rf", "l1_reg_rf_ovr", "voting"}
+    ''' 
+    Helper function to get mismatched predictions
+
+    Parameters
+    ----------
+    prediction_result : pandas DataFrame
+    model : str
+        one of {"rf", "l1_reg_rf", "l1_reg_rf_ovr", "voting"}
+    true_label : int
+    predicted_label : int
     '''
     mismatch = prediction_result[(prediction_result["true_label"] == true_label) & (prediction_result[model] == predicted_label)]
     return mismatch.index.tolist()
@@ -52,7 +63,22 @@ def get_all_feature_names(df):
     return all_features
 
 def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_test_enc=None, estimators=None):
-    ''' Draw SHAP beeswarm plot for explaining feature importance
+    ''' 
+    Draw and save SHAP beeswarm plot for explaining feature importance
+    
+    Parameters
+    ----------
+    strategy_ovr : bool
+        True if model is OVR, False otherwise
+    model_name : str
+    out_dir : str
+        Directory to save output figures
+    shap_values : array
+        Matrix of SHAP values from SHAP Explainer shap_values() method
+    X_test_enc : pandas DataFrame
+        Transformed X_test
+    estimators : list
+        List of estimators for each OVR case; used only if strategy_ovr=True
     ''' 
     plt.clf()
     if strategy_ovr:
@@ -81,7 +107,26 @@ def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_tes
     plt.close(fig="all")
 
 def shap_force_plot(strategy_ovr, explainer, shap_values, X_test_enc, class_indices, idx_to_explain, target_class, out_dir, title):
-    ''' Draw SHAP force plot for a prediction point
+    ''' 
+    Draw SHAP force plot for a prediction point
+
+    Parameters
+    ----------
+    strategy_ovr : bool
+        True if model is OVR, False otherwise
+    explainer : shap.TreeExplainer
+    shap_values : array
+        Matrix of SHAP values from SHAP Explainer shap_values() method
+    X_test_enc : pandas DataFrame
+        Transformed X_test
+    class_indices : list
+    idx_to_explain : int
+        Index of example to explain
+    target_class : int
+        True target class
+    out_dir : str
+        Directory to save output figures
+    title : str
     '''
     plt.clf()
     out_file = out_dir + title.lower().replace(" ", "_") + f"_{TARGET_MAP[target_class]}_shap_force_plot"
@@ -112,12 +157,6 @@ def shap_force_plot(strategy_ovr, explainer, shap_values, X_test_enc, class_indi
         os.makedirs(out_dir)
         plt.savefig(out_file, bbox_inches="tight")
     plt.close(fig="all")
-
-
-def get_most_confident_and_correct(model, X_test, class_indices, target_class):
-    # TODO
-    model_pred_prob = model.predict_proba(X_test.iloc[class_indices])
-    return np.argmax(model_pred_prob[:, target_class])
 
 def encode_X_test(model, X_test, feature_names):
     preprocessor = model.named_steps["columntransformer"]
@@ -218,7 +257,6 @@ def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, fea
             out_dir=out_dir, 
             title="Least Confident Prediction"
         )
-        
 
 def shap_interpretation_for_l1_reg_rf_ovr_model(l1_reg_rf_ovr_model, X_test, y_test, feature_names):
     out_dir = "img/smoothie_king/l1_reg_random_forest_ovr/"
@@ -263,7 +301,6 @@ def shap_interpretation_for_l1_reg_rf_ovr_model(l1_reg_rf_ovr_model, X_test, y_t
             title="Least Confident Prediction"
         )
 
-
 def main():
     train_df, test_df = read_data()
     le = LabelEncoder()
@@ -296,8 +333,6 @@ def main():
     shap_interpretation_for_rf_model(rf_model, X_test, y_test, all_feature_names)
     shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, all_feature_names)
     shap_interpretation_for_l1_reg_rf_ovr_model(l1_reg_rf_ovr_model, X_test, y_test, all_feature_names)
-
-
 
 if __name__ == "__main__":
     main()

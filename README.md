@@ -77,6 +77,20 @@ To reset the project by cleaning the file path/directory, without any intermedia
 make clean
 ```
 
+### Using Makefile to train the Smoothie King classification model
+
+To train the Smoothie King classification model and get the interpretation outputs, run the following command:
+
+```
+make smoothie_king
+```
+
+To reset the Smoothie King model outputs, run the following command:
+
+```
+make clean_sk
+```
+
 ### Run 'cluster_verify.py' file
 
 ```
@@ -95,6 +109,7 @@ Also need to download **chromedriver** from [here](https://chromedriver.storage.
 ```
 '/usr/local/bin/chromedriver'
 ```
+
 ## Licenses
 
 The Restaurant Segmentation Analysis project here is licensed under the MIT License.  Please provide attribution and a link to this webpage if re-using/re-mixing any of these materials.
