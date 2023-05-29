@@ -1,3 +1,8 @@
+''' 
+Script that fits three models that are then passed into a voting classifier ensemble model.
+Saves the model into joblib files that can be loaded for later use.
+'''
+
 import os
 import pandas as pd
 import numpy as np
@@ -21,6 +26,10 @@ def read_data():
     merged = stores.merge(trade_area, left_on="store", right_on="store_num").merge(poi)
     merged = merged.set_index("store")
     return merged
+
+def save_train_test_df(train_df, test_df):
+    train_df.to_csv(DIR + "train_df.csv")
+    test_df.to_csv(DIR + "test_df.csv")
 
 def drop_unused_cols(df):
     drop_cols = ["store_num", "country_code", "longitude", "latitude", "state_name", "cbsa_name", "dma_name"]
@@ -72,7 +81,7 @@ def build_random_forest_model(X_train, y_train, preprocessor, class_weight):
     pipe_rf.fit(X_train, y_train)
     return pipe_rf
 
-def build_l1_reg_random_forest(X_train, y_train, preprocessor, class_weight):
+def build_l1_reg_random_forest_model(X_train, y_train, preprocessor, class_weight):
     pipe_lr_rf = make_pipeline(
         preprocessor,
         SelectFromModel(
@@ -101,7 +110,7 @@ def build_l1_reg_random_forest(X_train, y_train, preprocessor, class_weight):
     pipe_lr_rf.fit(X_train, y_train)
     return pipe_lr_rf
 
-def build_l1_reg_random_forest_ovr(X_train, y_train, preprocessor):
+def build_l1_reg_random_forest_ovr_model(X_train, y_train, preprocessor):
     pipe_lr_rf_ovr = make_pipeline(
         preprocessor,
         SelectFromModel(
@@ -158,14 +167,15 @@ def main():
     }
     class_weight = {i: class_weight[label] for i, label in enumerate(le.classes_)}
     train_df, test_df = train_test_split(sk_df, test_size=0.1, random_state=42)
+    save_train_test_df(train_df, test_df)
     X_train = train_df.drop(columns=["category"])
     y_train = train_df["category"]
     X_test = test_df.drop(columns=["category"])
     y_test = test_df["category"]
     preprocessor = define_preprocessor(X_train)
     rf_model = build_random_forest_model(X_train, y_train, preprocessor, class_weight)
-    l1_reg_rf_model = build_l1_reg_random_forest(X_train, y_train, preprocessor, class_weight)
-    l1_reg_rf_ovr_model = build_l1_reg_random_forest_ovr(X_train, y_train, preprocessor)
+    l1_reg_rf_model = build_l1_reg_random_forest_model(X_train, y_train, preprocessor, class_weight)
+    l1_reg_rf_ovr_model = build_l1_reg_random_forest_ovr_model(X_train, y_train, preprocessor)
     classifiers = {
         "Random Forest": rf_model,
         "L1 Regularization Random Forest": l1_reg_rf_model,
@@ -185,10 +195,6 @@ def main():
         dump(l1_reg_rf_model, "model_joblib/l1_reg_rf_model.joblib")
         dump(l1_reg_rf_ovr_model, "model_joblib/l1_reg_rf_ovr_model.joblib")
         dump(hard_voting_model, "model_joblib/hard_voting_model.joblib")
-    train_df["category"] = le.inverse_transform(train_df["category"])
-    test_df["category"] = le.inverse_transform(test_df["category"])
-    train_df.to_csv(DIR + "train_df.csv")
-    test_df.to_csv(DIR + "test_df.csv")
 
 if __name__ == "__main__":
     main()
