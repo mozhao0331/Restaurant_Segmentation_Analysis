@@ -12,12 +12,10 @@
                 //icon: props.iconImage
             });
             
-            //Check for costom icon
             if(props.iconImage){
                 marker.setIcon(props.iconImage);
             }
             
-            //Check for content
             if(props.content){
                 var infoWindow = new google.maps.InfoWindow({
                     content: props.content
@@ -28,25 +26,34 @@
             }
         } 
 
+        function textTo2DArray(input) {
+            input = input.substring(1, input.length - 1);
+            const rows = input.split("], [");
+            
+            const array2D = rows.map(row => {
+                const columns = row.replace("[", "").replace("]", "").split(",");
+                return columns.map(Number);  
+            });  
+            
+            return array2D; 
+            }
+
         function processCoords() {
             const coords = document.getElementById("coords").value; 
-            const coordList = coords.split(",").map(coord => coord.trim());
+            const coordList = textTo2DArray(coords)
             console.log(coordList)
             coordList.forEach( coord => {
-                const coordTuple = coord.substring(1,coord.length -1).split(",").map(c => parseFloat(c.trim()));
-                const long = coordTuple[0];
-                const lat = coordTuple[1];
+                // const coordTuple = coord.substring(1,coord.length -1).split(",").map(c => parseFloat(c.trim()));
+                const long = coord[0];
+                const lat = coord[1];
                 console.log(long + '--' + lat)
                 
-                // Create map div
                 const mapDiv = document.createElement("div");
                 mapDiv.style.width = "400px";
                 mapDiv.style.height = "400px";
                 
-                // Append to container
                 document.getElementById("mapContainer").appendChild(mapDiv);  
             
-                // Initialize map  
                 initMap(long, lat, mapDiv);  
             });
         } 
@@ -73,7 +80,7 @@
         }     
         </script>
 
-    <input type="text" id="coords" placeholder="(long,lat), (long,lat), ...">
+    <input type="text" id="coords" placeholder="[[long,lat], [long,lat], ...]">
     <button onclick="processCoords()">Show Maps</button>
 
     <div id="mapContainer">
