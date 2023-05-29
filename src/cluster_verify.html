@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSIEnpgGi6s6cCMrLNSTCglznpu-9g7co"></script> 
+</head>
+<body>
+    <script>
+        function addMarker(props, map){
+            var marker = new google.maps.Marker({
+                position: props.coords,
+                map: map,
+            });
+            
+            if(props.iconImage){
+                marker.setIcon(props.iconImage);
+            }
+            
+            if(props.content){
+                var infoWindow = new google.maps.InfoWindow({
+                    content: props.content
+                });
+                marker.addListener('click', function(){
+                    infoWindow.open(mymap, marker);
+                });
+            }
+        } 
+
+        function textTo2DArray(input) {
+            input = input.substring(1, input.length - 1);
+            const rows = input.split("],[");
+
+            const array2D = rows.map(row => {
+                console.log(typeof(row) + '  ' + row)
+                const columns = row.replace("[", "").replace("]", "").split(",");
+                return columns.map(Number);  
+            });  
+            
+            return array2D; 
+            }
+
+        function processCoords() {
+            mapContainer = document.getElementById("mapContainer")
+            mapContainer.innerHTML = "";
+
+            const coords = document.getElementById("coords").value; 
+            const coordList = textTo2DArray(coords)
+            // console.log(coordList)
+            coordList.forEach( coord => {
+                const long = coord[0];
+                const lat = coord[1];
+                // console.log(long + '--' + lat)
+                
+                const mapDiv = document.createElement("div");
+                mapDiv.style.width = "100%";
+                mapDiv.style.height = "500px";
+
+                const mapDivGap = document.createElement("div");
+                mapDivGap.style.height = "50px";
+                mapDivGap.innerHTML = " ";
+
+                mapContainer.appendChild(mapDiv); 
+                mapContainer.appendChild(mapDivGap); 
+            
+                initMap(long, lat, mapDiv);  
+            });
+        } 
+
+        function initMap(long, lat, mapDiv) {
+            var coords = {lat: lat, lng: long};
+            console.log(coords)
+        
+            var options = {
+                zoom: 16,
+                center: coords,
+                mapTypeId: 'satellite'
+            };
+        
+            var map = new google.maps.Map(mapDiv, options);
+        
+            var marker = {
+                coords:coords,
+                iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                content: '<h1>Subway CAN</h1>'
+            }
+            
+            addMarker(marker, map);
+        }     
+        </script>
+
+    <input type="text" id="coords" placeholder="[[long,lat], [long,lat], ...]">
+    <!--Example: [[-79.18506, 43.77183],[-79.390732, 43.708531],[-79.403146, 43.73019]]-->
+    <button onclick="processCoords()">Show Maps</button>
+
+    <div id="mapContainer">
+    </div>
+
+</body> 
+</html>
