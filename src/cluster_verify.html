@@ -44,11 +44,11 @@
 
             const coords = document.getElementById("coords").value; 
             const coordList = textTo2DArray(coords)
-            console.log(coordList)
+            // console.log(coordList)
             coordList.forEach( coord => {
                 const long = coord[0];
                 const lat = coord[1];
-                console.log(long + '--' + lat)
+                // console.log(long + '--' + lat)
                 
                 const mapDiv = document.createElement("div");
                 mapDiv.style.width = "100%";
@@ -56,8 +56,10 @@
 
                 const mapDivGap = document.createElement("div");
                 mapDivGap.style.height = "50px";
+                mapDivGap.innerHTML = " ";
 
-                mapContainer.appendChild(mapDiv).appendChild(mapDivGap);  
+                mapContainer.appendChild(mapDiv); 
+                mapContainer.appendChild(mapDivGap); 
             
                 initMap(long, lat, mapDiv);  
             });
