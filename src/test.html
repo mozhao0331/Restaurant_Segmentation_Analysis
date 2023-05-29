@@ -4,58 +4,88 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSIEnpgGi6s6cCMrLNSTCglznpu-9g7co"></script> 
 </head>
 <body>
+    <script>
+        function addMarker(props, map){
+            var marker = new google.maps.Marker({
+                position: props.coords,
+                map: map,
+                //icon: props.iconImage
+            });
+            
+            //Check for costom icon
+            if(props.iconImage){
+                marker.setIcon(props.iconImage);
+            }
+            
+            //Check for content
+            if(props.content){
+                var infoWindow = new google.maps.InfoWindow({
+                    content: props.content
+                });
+                marker.addListener('click', function(){
+                    infoWindow.open(mymap, marker);
+                });
+            }
+        } 
+
+        function processCoords() {
+            const coords = document.getElementById("coords").value; 
+            const coordList = coords.split(",").map(coord => coord.trim());
+            console.log(coordList)
+            coordList.forEach( coord => {
+                const coordTuple = coord.substring(1,coord.length -1).split(",").map(c => parseFloat(c.trim()));
+                const long = coordTuple[0];
+                const lat = coordTuple[1];
+                console.log(long + '--' + lat)
+                
+                // Create map div
+                const mapDiv = document.createElement("div");
+                mapDiv.style.width = "400px";
+                mapDiv.style.height = "400px";
+                
+                // Append to container
+                document.getElementById("mapContainer").appendChild(mapDiv);  
+            
+                // Initialize map  
+                initMap(long, lat, mapDiv);  
+            });
+        } 
+
+        function initMap(long, lat, mapDiv) {
+            var coords = {lat: lat, lng: long};
+            console.log(coords)
+        
+            var options = {
+                zoom: 16,
+                center: coords,
+                mapTypeId: 'satellite'
+            };
+        
+            var map = new google.maps.Map(mapDiv, options);
+        
+            var marker = {
+                coords:coords,
+                iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                content: '<h1>Subway CAN</h1>'
+            }
+            
+            addMarker(marker, map);
+        }     
+        </script>
+
+    <input type="text" id="coords" placeholder="(long,lat), (long,lat), ...">
+    <button onclick="processCoords()">Show Maps</button>
+
+    <div id="mapContainer">
+    <!-- Maps will be appended here -->  
+    </div>
 
     <input type="text" id="long1" placeholder="Longitude.."> 
     <input type="text" id="lat1" placeholder="Latitude.."><br>
     
-    <button onclick="initMap1()">Show Map 1</button>
+    <button onclick="initMap()">Show Map 1</button>
     
     <div id="map1" style="width:80%;height:500px;"></div>
-    
-    <input type="text" id="long2" placeholder="Longitude..">  
-    <input type="text" id="lat2" placeholder="Latitude.."><br> 
-    
-    <button onclick="initMap2()">Show Map 2</button>
-    
-    <div id="map2" style="width:400px;height:400px;"></div>
-
-<script>
-function initMap1() {
-    var coords = {lat: parseFloat(document.getElementById("lat1").value), 
-                lng: parseFloat(document.getElementById("long1").value)};
-    // console.log(coords)
-
-    var options = {
-        zoom: 16,
-        center: coords,
-        mapTypeId: 'satellite'
-    };
-
-    var map = new google.maps.Map(document.getElementById('map1'), options);
-
-    var marker = new google.maps.Marker({
-        center: coords, 
-        map: map
-    });
-}
-
-function initMap2() {
-var coords = {lat: parseFloat(document.getElementById("lat2").value), 
-              lng: parseFloat(document.getElementById("long2").value)};  
-var map = new google.maps.Map(document.getElementById('map2'), {
-zoom: 8,  
-center: coords,
-mapTypeId: 'satellite'
-});
-var marker = new google.maps.Marker({
-center: coords,  
-map: map
-});
-}
-
-// initMap1();
-// initMap2(); 
-</script>
 
 </body> 
 </html>
