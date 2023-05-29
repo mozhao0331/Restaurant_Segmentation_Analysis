@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSIEnpgGi6s6cCMrLNSTCglznpu-9g7co"></script> 
@@ -9,7 +10,7 @@
     
     <button onclick="initMap1()">Show Map 1</button>
     
-    <div id="map1" style="width:400px;height:400px;"></div>
+    <div id="map1" style="width:80%;height:500px;"></div>
     
     <input type="text" id="long2" placeholder="Longitude..">  
     <input type="text" id="lat2" placeholder="Latitude.."><br> 
@@ -20,24 +21,31 @@
 
 <script>
 function initMap1() {
-var coords = {lat: parseFloat(document.getElementById("lat1").value), 
-              lng: parseFloat(document.getElementById("long1").value)};
-var map = new google.maps.Map(document.getElementById('map1'), {
-// zoom: 8,
-center: coords
-});
-var marker = new google.maps.Marker({
-center: coords, 
-map: map
-});
+    var coords = {lat: parseFloat(document.getElementById("lat1").value), 
+                lng: parseFloat(document.getElementById("long1").value)};
+    // console.log(coords)
+
+    var options = {
+        zoom: 16,
+        center: coords,
+        mapTypeId: 'satellite'
+    };
+
+    var map = new google.maps.Map(document.getElementById('map1'), options);
+
+    var marker = new google.maps.Marker({
+        center: coords, 
+        map: map
+    });
 }
 
 function initMap2() {
 var coords = {lat: parseFloat(document.getElementById("lat2").value), 
               lng: parseFloat(document.getElementById("long2").value)};  
 var map = new google.maps.Map(document.getElementById('map2'), {
-// zoom: 8,  
-center: coords
+zoom: 8,  
+center: coords,
+mapTypeId: 'satellite'
 });
 var marker = new google.maps.Marker({
 center: coords,  
