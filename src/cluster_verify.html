@@ -1,94 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-    
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Google Maps API</title>
-  <style>
-    #mymap{
-        height: 400px;
-        width: 100%;
-    }
-  </style>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSIEnpgGi6s6cCMrLNSTCglznpu-9g7co"></script> 
 </head>
-    
 <body>
-    <h1>My Google Map</h1>
-    <div id="mymap"></div>
-
-    <!-- The initMap function was called in the next script tab with "callback=initMap" -->
     <script>
-      function initMap(){
-    	//Map options
-        var options = {
-          zoom:10,
-          center:{lat: 30.40, lng: -97.70},
-          mapTypeId: 'satellite'
-        };
-        
-        //Create a new map with 2 parameters
-        var mymap = new google.maps.Map(document.getElementById('mymap'),options);
-        
-        //Listen to click on map
-        google.maps.event.addListener(mymap, 'click', function(event){
-        	addMarker({
-        		coords: event.latLng
-        	});
-        })
-        
-        //List of markers
-        var markers = [
-        	{
-        	   coords:{lat: 30.519353, lng: -97.650392},
-     	       iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-     	       content: '<h1>SK 1504(SHOPPING)</h1>'
-        	},
-        	{
-        	   coords:{lat: 30.28796, lng: -97.742711},
-             iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-     	       content: '<h1>SK 0193(TRAVEL)</h1>'
-        	},
-        	{
-        	   coords:{lat: 30.466512, lng: -97.596178},
-     	       iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-             content: '<h1>SK 1332(HOME)</h1>'
-          }
-        ];
-        
-        //loop through Array markers
-        for(var i=0; i<markers.length; i++){
-        	addMarker(markers[i]);
-        }
-        
-        function addMarker(props){
-        	var marker = new google.maps.Marker({
+        function addMarker(props, map){
+            var marker = new google.maps.Marker({
                 position: props.coords,
-                map: mymap,
+                map: map,
                 //icon: props.iconImage
             });
-        	
-        	//Check for costom icon
-        	if(props.iconImage){
-        		marker.setIcon(props.iconImage);
-        	}
-        	
-        	//Check for content
-        	if(props.content){
-        		var infoWindow = new google.maps.InfoWindow({
-                	content: props.content
+            
+            if(props.iconImage){
+                marker.setIcon(props.iconImage);
+            }
+            
+            if(props.content){
+                var infoWindow = new google.maps.InfoWindow({
+                    content: props.content
                 });
                 marker.addListener('click', function(){
-                	infoWindow.open(mymap, marker);
+                    infoWindow.open(mymap, marker);
                 });
-        	}
-        }     	       
-    }
-    </script>
+            }
+        } 
+
+        function textTo2DArray(input) {
+            input = input.substring(1, input.length - 1);
+            const rows = input.split("],[");
+            // console.log(rows)
+
+            const array2D = rows.map(row => {
+                console.log(typeof(row) + '  ' + row)
+                const columns = row.replace("[", "").replace("]", "").split(",");
+                // const columns = row.split(",");
+                return columns.map(Number);  
+            });  
+            
+            return array2D; 
+            }
+
+        function processCoords() {
+            const coords = document.getElementById("coords").value; 
+            const coordList = textTo2DArray(coords)
+            console.log(coordList)
+            coordList.forEach( coord => {
+                // const coordTuple = coord.substring(1,coord.length -1).split(",").map(c => parseFloat(c.trim()));
+                const long = coord[0];
+                const lat = coord[1];
+                console.log(long + '--' + lat)
+                
+                const mapDiv = document.createElement("div");
+                mapDiv.style.width = "400px";
+                mapDiv.style.height = "400px";
+                
+                document.getElementById("mapContainer").appendChild(mapDiv);  
+            
+                initMap(long, lat, mapDiv);  
+            });
+        } 
+
+        function initMap(long, lat, mapDiv) {
+            var coords = {lat: lat, lng: long};
+            console.log(coords)
+        
+            var options = {
+                zoom: 16,
+                center: coords,
+                mapTypeId: 'satellite'
+            };
+        
+            var map = new google.maps.Map(mapDiv, options);
+        
+            var marker = {
+                coords:coords,
+                iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                content: '<h1>Subway CAN</h1>'
+            }
+            
+            addMarker(marker, map);
+        }     
+        </script>
+
+    <input type="text" id="coords" placeholder="[[long,lat], [long,lat], ...]">
+    <button onclick="processCoords()">Show Maps</button>
+
+    <div id="mapContainer">
+    </div>
+
+    <input type="text" id="long1" placeholder="Longitude.."> 
+    <input type="text" id="lat1" placeholder="Latitude.."><br>
     
-    <script async defer 
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSIEnpgGi6s6cCMrLNSTCglznpu-9g7co&callback=initMap">
-    </script>
-</body>
+    <button onclick="initMap()">Show Map 1</button>
+    
+    <div id="map1" style="width:80%;height:500px;"></div>
+
+</body> 
 </html>
