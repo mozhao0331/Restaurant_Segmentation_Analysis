@@ -7,6 +7,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler
 
+
 DIR = "data/"
 SUBWAYUS = "Subway USA/subway_usa_"
 
@@ -155,30 +156,45 @@ def data_transform_pipeline(
     return transformed_train, transformed_test
 
 
-def merge_split_data(stores, poi, trade_area, demographic):
-    merged = stores.merge(
-        poi, on="store"
-    ).merge(
-        trade_area, on="store"
-    )
+def merge_split_data(stores, poi, trade_area, demographic=None):
+    if demographic:
+        merged = stores.merge(
+            poi, on="store"
+        ).merge(
+            trade_area, on="store"
+        ).merge(
+            demographic, on="store"
+        )
+    else:
+        merged = stores.merge(
+            poi, on="store"
+        ).merge(
+            trade_area, on="store"
+        )
     merged = drop_specific_columns(merged)
     train_df, test_df = train_test_split(merged, test_size=0.1, random_state=42)
     return train_df, test_df
 
 
-def main():
-    subway_usa_demographic = pd.read_csv(DIR + SUBWAYUS + "demographic_variables.csv")
+def process_subway_usa(include_demographic=False):
     subway_usa_poi = pd.read_csv(DIR + SUBWAYUS + "poi_variables.csv")
     subway_usa_trade_area = pd.read_csv(DIR + SUBWAYUS + "trade_area_variables.csv")
     subway_usa_stores = pd.read_csv(DIR + "Subway USA/subway_usa_stores.csv", encoding='latin-1')
-    
-    train_df, test_df = merge_split_data(
-        stores=subway_usa_stores,
-        poi=subway_usa_poi,
-        trade_area=subway_usa_trade_area,
-        demographic=subway_usa_demographic
-    )
-    
+    if include_demographic:
+        subway_usa_demographic = pd.read_csv(DIR + SUBWAYUS + "demographic_variables.csv")
+        train_df, test_df = merge_split_data(
+            stores=subway_usa_stores,
+            poi=subway_usa_poi,
+            trade_area=subway_usa_trade_area,
+            demographic=subway_usa_demographic
+        )
+    else:
+        train_df, test_df = merge_split_data(
+            stores=subway_usa_stores,
+            poi=subway_usa_poi,
+            trade_area=subway_usa_trade_area,
+        )
+
     drop_features = [
         "store",
         "longitude",
@@ -208,6 +224,11 @@ def main():
     )
     processed_train.to_csv(DIR + SUBWAYUS + "processed_train.csv")
     processed_test.to_csv(DIR + SUBWAYUS + "processed_test.csv")
+    
+
+def main():
+    print('============= Starting to preprocess Subway USA =============')
+    process_subway_usa(include_demographic=False)
 
 
 if __name__ == "__main__":
