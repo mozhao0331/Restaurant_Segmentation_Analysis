@@ -17,7 +17,7 @@ doc/Proposal_Report.pdf: doc/Proposal_Report.Rmd img/smoothie_category_bar_plot.
 
 # Preprocess data for Smoothie King
 data/Smoothie\ King/processed_demographic.csv data/Smoothie\ King/processed_poi.csv data/Smoothie\ King/processed_trade_area.csv:
-	python src/preprocess_data.py
+	python src/preprocess_smoothie_king_data.py
 
 # Fit and save the Smoothie King model
 data/Smoothie\ King/train_df.csv data/Smoothie\ King/test_df.csv model_joblib/rf_model.joblib model_joblib/l1_reg_rf_model.joblib model_joblib/l1_reg_rf_ovr_model.joblib model_joblib/hard_voting_model.joblib: data/Smoothie\ King/processed_poi.csv data/Smoothie\ King/processed_trade_area.csv
@@ -38,5 +38,10 @@ clean:
 	rm -rf img/subway_canada_market_size_bar_plot.png
 
 clean_sk:
+	rm -f data/Smoothie\ King/processed_demographic.csv
+	rm -f data/Smoothie\ King/processed_poi.csv
+	rm -f data/Smoothie\ King/processed_trade_area.csv
+	rm -f data/Smoothie\ King/train_df.csv
+	rm -f data/Smoothie\ King/test_df.csv
 	rm -rf model_joblib/
 	rm -rf img/smoothie_king/
