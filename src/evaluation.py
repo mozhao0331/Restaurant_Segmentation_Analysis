@@ -1,6 +1,7 @@
 import pandas as pd
 
 from sklearn.metrics import silhouette_score, calinski_harabasz_score, davies_bouldin_score
+from sklearn.model_selection import train_test_split
 
 
 def get_cluster_scores(df, labels):
@@ -39,4 +40,26 @@ def get_random_samples(df, labels, size=5):
         print([f'Store {i}' for i in sample_stores], "\n")
     return samples
 
-    
+
+def get_top_features_by_variance(df, labels):
+    """
+    Get the top features based on homogeneity within the cluster.
+
+    :param df: Original dataframe passed to the model
+    :param labels: Model clustering results (same dimension as input size)
+    :return: Result dict with clustering result label as key and a list of top features
+    """
+    df['label'] = labels
+    label_groups = df.groupby(by="label")
+    label_features = {}
+    for label, group in label_groups:
+        group_std = group.std()
+        group_min = group.min()
+        group_max = group.max()
+        group_metric = 1 - (group_std / (group_max - group_min))
+        group_metric = group_metric.sort_values(ascending=False)
+        label_features[label] = group_metric[:10]
+    return label_features
+
+
+
