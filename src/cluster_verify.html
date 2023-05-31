@@ -27,11 +27,11 @@
 
         function textTo2DArray(input) {
             input = input.substring(1, input.length - 1);
-            const rows = input.split("],   [");
+            const rows = input.split("], [");
 
             const array2D = rows.map(row => {
                 console.log(typeof(row) + '  ' + row)
-                const columns = row.replace("[", "").replace("]", "").split(",");
+                const columns = row.replace("[", "").replace("]", "").split(", ");
                 return columns.map(Number);  
             });  
             
@@ -80,7 +80,7 @@
             var marker = {
                 coords:coords,
                 iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-                content: '<h1>Subway CAN</h1>'
+                content: '<h1>Subway USAa</h1>'
             }
             
             addMarker(marker, map);
@@ -89,7 +89,7 @@
 
     <input type="text" id="coords" placeholder="[[long,lat], [long,lat], ...]">
     <!--Example: [[-79.18506, 43.77183],[-79.390732, 43.708531],[-79.403146, 43.73019]]-->
-    <button onclick="processCoords()">Show Maps</button>
+    <button id='btn-show-map' onclick="processCoords()">Show Maps</button>
 
     <div id="mapContainer">
     </div>
