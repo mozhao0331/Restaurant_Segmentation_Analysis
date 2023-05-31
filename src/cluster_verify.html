@@ -27,11 +27,11 @@
 
         function textTo2DArray(input) {
             input = input.substring(1, input.length - 1);
-            const rows = input.split("],   [");
+            const rows = input.split("], [");
 
             const array2D = rows.map(row => {
                 console.log(typeof(row) + '  ' + row)
-                const columns = row.replace("[", "").replace("]", "").split(",");
+                const columns = row.replace("[", "").replace("]", "").split(", ");
                 return columns.map(Number);  
             });  
             
