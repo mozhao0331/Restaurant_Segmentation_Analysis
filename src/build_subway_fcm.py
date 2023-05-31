@@ -2,9 +2,12 @@
 This script primarily:
 1. Creates and saves Fuzzy C-means models into Joblib file.
 2. Labels stores and exports these labels to a CSV files.
+3. Print clusters perentages
+4. Random samples stores
 '''
 
 import pandas as pd
+import numpy as np
 import joblib
 import os
 import skfda
@@ -18,7 +21,8 @@ def read_data():
     """
     train_df = pd.read_csv(DIR + "subway_usa_processed_train.csv", index_col="store")
     test_df = pd.read_csv(DIR + "subway_usa_processed_test.csv", index_col="store")
-    return train_df, test_df
+    stores = pd.read_csv(DIR + "subway_usa_stores.csv", index_col="store")
+    return train_df, test_df, stores
 
 def save_df(train_df, test_df):
     """
@@ -197,18 +201,138 @@ def add_labels(train_df, test_df, fcm):
     test_df['labels'] = cluster_membership_test
     return train_df, test_df
 
+def print_cluster_percentages(n_clusters, test_df, fcm):
+    """
+    Funtion to print cluster_percentages
+    """
+    # Convert the data to an FDataGrid object
+    fdata = skfda.FDataGrid(test_df.values)
+    # Get labels
+    cluster_membership_train = fcm.labels_
+    cluster_membership_test = fcm.predict(fdata)
+
+    # Train
+    cluster_percentages = []
+    for cluster in range(n_clusters):
+        percentage = np.sum(cluster_membership_train == cluster) / len(cluster_membership_train) * 100
+        cluster_percentages.append(percentage)
+    # Print the cluster percentages
+    print("train data")
+    for cluster, percentage in enumerate(cluster_percentages):
+        print(f"Cluster {cluster} Percentage: {percentage:.2f}%")
+    
+    # Test
+    cluster_percentages = []
+    for cluster in range(n_clusters):
+        percentage = np.sum(cluster_membership_test == cluster) / len(cluster_membership_test) * 100
+        cluster_percentages.append(percentage)
+    # Print the cluster percentages
+    print("test data")
+    for cluster, percentage in enumerate(cluster_percentages):
+        print(f"Cluster {cluster} Percentage: {percentage:.2f}%")
+
+def get_random_sample(n_clusters, train_df, test_df, stores, fcm, size=30):
+    """
+    Function to randomly generate samples with longitude and lattitude
+    """
+    # Convert the data to an FDataGrid object
+    fdata = skfda.FDataGrid(test_df.values)
+    # Get labels
+    cluster_membership_train = fcm.labels_
+    cluster_membership_test = fcm.predict(fdata)
+    
+    # Train
+    # Get sample stores
+    cluster_samples_dict_train = {}
+    # Select random samples from each cluster
+    for cluster in range(n_clusters):
+        cluster_indices = np.where(cluster_membership_train == cluster)[0]
+        if len(cluster_indices) >= size:
+            np.random.seed(42)
+            cluster_samples = np.random.choice(cluster_indices, size=size, replace=False)
+        else:
+            cluster_samples = cluster_indices
+        
+        # Store the samples in different cluster list
+        cluster_samples_dict_train[cluster] = train_df.index[cluster_samples].tolist()
+    
+    # Get sample stores' longitude and lattitude
+    cluster_coordinates_train = {}
+
+    for cluster, samples in cluster_samples_dict_train.items():
+        cluster_coordinates_train[cluster] = []
+        for sample in samples:
+            # Get the longitude and latitude
+            longitude = stores.loc[sample, "longitude"]
+            latitude = stores.loc[sample, "latitude"]
+            
+            # Append the [longitude, latitude] pair to the corresponding cluster list
+            cluster_coordinates_train[cluster].append([longitude, latitude])
+    
+    # Print
+    # for cluster, coordinates_list in cluster_coordinates_train.items():
+    #     print(f"Cluster {cluster} Coordinates:")
+    #     for coordinates in coordinates_list:
+    #         print("Coordinates:", coordinates)
+    #     print()
+    
+    # Test
+    # Get sample stores
+    cluster_samples_dict_test = {}
+    # Select random samples from each cluster
+    for cluster in range(n_clusters):
+        cluster_indices = np.where(cluster_membership_test == cluster)[0]
+        if len(cluster_indices) >= size:
+            np.random.seed(42)
+            cluster_samples = np.random.choice(cluster_indices, size=size, replace=False)
+        else:
+            cluster_samples = cluster_indices
+        
+        # Store the samples in different cluster list (train)
+        cluster_samples_dict_test[cluster] = train_df.index[cluster_samples].tolist()
+    
+    # Get sample stores' longitude and lattitude
+    cluster_coordinates_test = {}
+
+    for cluster, samples in cluster_samples_dict_test.items():
+        cluster_coordinates_test[cluster] = []
+        for sample in samples:
+            # Get the longitude and latitude
+            longitude = stores.loc[sample, "longitude"]
+            latitude = stores.loc[sample, "latitude"]
+            
+            # Append the [longitude, latitude] pair to the corresponding cluster list
+            cluster_coordinates_test[cluster].append([longitude, latitude])
+    
+    # print(cluster_coordinates_train, cluster_coordinates_test)
+    
+    # Print
+    # for cluster, coordinates_list in cluster_coordinates.items():
+    #     print(f"Cluster {cluster} Coordinates:")
+    #     for coordinates in coordinates_list:
+    #         print("Coordinates:", coordinates)
+    #     print()
+    return cluster_coordinates_train, cluster_coordinates_test
+
 def main():
     # Load data
-    train_df, test_df = read_data()
+    train_df, test_df, stores = read_data()
     
     # Select features
     train_df, test_df = select_features(train_df, test_df)
     
     # Create model
+    n_clusters = 5
     fcm = build_fcm_model(train_df, 
-                          n_clusters=5, 
+                          n_clusters=n_clusters, 
                           fuzzifier = 1.1, 
                           max_iter = 1000,)
+    
+    # Print cluster percentages
+    print_cluster_percentages(n_clusters, test_df, fcm)
+    
+    # Get samples
+    get_random_sample(n_clusters, train_df, test_df, stores, fcm)
     
     # Label data ploints
     train_df, test_df = add_labels(train_df, test_df, fcm)
