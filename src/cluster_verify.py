@@ -11,19 +11,25 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-def main():
+def cluster_verify(cluster_coords_dict):
     cwd = os.getcwd()
-    html_file = os.path.join(cwd, 'src/cluster_verify.html')
- 
+    html_file = os.path.join(cwd, 'cluster_verify.html')
+   
     # Download the chrome driver file from https://chromedriver.storage.googleapis.com/index.html
     # Ensure the driver version matches the chrome browser version
     driver = webdriver.Chrome('/usr/local/bin/chromedriver') # Path to chrome driver Unix Executable File
-    driver.set_window_size(1540,1240)
-    driver.get('file://' + html_file)
 
-    driver.set_page_load_timeout(10) # Wait up to 10 seconds for pages to load 
+    for key in cluster_coords_dict:
+        coord_list = cluster_coords_dict[key]
+
+        driver.set_window_size(1540,1240)
+        driver.get('file://' + html_file)
+        driver.set_page_load_timeout(10) # Wait up to 10 seconds for pages to load 
+
+        input_field = driver.find_element_by_id("coords")        
+        input_field.send_keys(f"{coord_list}")
+
+        button = driver.find_element_by_id("btn-show-map")
+        button.click()
 
     input("Press enter to quit")
-
-if __name__ == "__main__":
-    main()
