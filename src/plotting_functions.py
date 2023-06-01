@@ -156,3 +156,7 @@ def pca_plot(train_data, n_components=100):
     plt.grid()
     plt.show()
     return num_comp
+
+def plot_boxplot(df, col_name, grouping_col):
+    ax = df.boxplot(column=[col_name], by=grouping_col).get_figure()
+    return ax
