@@ -29,12 +29,16 @@ def save_figure(out_dir, file_name):
         plt.savefig(out_dir + file_name, bbox_inches="tight")
         
 def plot_shap_feature_importance(shap_values, X_enc, target_class):
+    ''' Helper function to plot shap beeswarm plot
+    '''
     shap.summary_plot(shap_values, X_enc, show=False)
     plt.title(f"SHAP Feature Importance for cluster {target_class}")
     save_figure(FIG_DIR, f"cluster_{target_class}_summary_plot.png")
     plt.close()
 
 def plot_shap_force_plot(explainer, shap_values, X_enc, target_class, idx_to_explain):
+    ''' Helper function to plot SHAP force plot for the most confident prediction
+    '''
     shap.force_plot(
         explainer.expected_value[target_class], 
         shap_values[idx_to_explain, :], 
@@ -48,6 +52,8 @@ def plot_shap_force_plot(explainer, shap_values, X_enc, target_class, idx_to_exp
     plt.close()
 
 def shap_interpretation(model, X_enc, y_test):
+    ''' Interpret features for each target class from the classifier model by using SHAP
+    '''
     explainer = shap.TreeExplainer(model)
     shap_values = explainer.shap_values(X_enc)
     y_test_index_reset = y_test.reset_index(drop=True)
