@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
+from plotting_functions import plot_boxplot
+
 
 DIR = "data/Subway USA/"
 FIG_DIR = "img/subway_usa/"
@@ -54,6 +56,9 @@ def plot_shap_force_plot(explainer, shap_values, X_enc, target_class, idx_to_exp
 def shap_interpretation(model, X_enc, y_test):
     ''' Interpret features for each target class from the classifier model by using SHAP
     '''
+    plotted_cols = set()
+    full_df = X_enc.copy(deep=True)
+    full_df["labels"] = y_test
     explainer = shap.TreeExplainer(model)
     shap_values = explainer.shap_values(X_enc)
     y_test_index_reset = y_test.reset_index(drop=True)
@@ -63,6 +68,18 @@ def shap_interpretation(model, X_enc, y_test):
         pred_probs = model.predict_proba(X_enc.iloc[indices])
         most_confident_pred_idx = np.argmax(pred_probs[:, i])
         plot_shap_force_plot(explainer, shap_values[i], X_enc, i, indices[most_confident_pred_idx])
+        mean_shap_vals_by_cluster = pd.DataFrame(
+            np.abs(shap_values[i].mean(0)),
+            columns=["mean SHAP value"],
+            index=X_enc.columns.tolist()
+        ).sort_values(by="mean SHAP value", ascending=False)
+        for col in mean_shap_vals_by_cluster.index[:6]:
+            if col not in plotted_cols:
+                ax = plot_boxplot(full_df, col, "labels")
+                ax.suptitle(f"Boxplot distribution of {col}")
+                save_figure(FIG_DIR, f"{col}_boxplot.png")
+                plotted_cols.add(col)
+                plt.clf()
 
 def main():
     train_df, test_df = read_data()
