@@ -26,11 +26,39 @@ TARGET_MAP = {
 }
 
 def read_data():
+    '''Read in the train and test files.
+
+    Returns
+    -------
+    train_df : pandas DataFrame
+        The train dataset
+    test_df : pandas DataFrame
+        The test dataset
+    '''
     train_df = pd.read_csv(DIR + "train_df.csv", index_col="store")
     test_df = pd.read_csv(DIR + "test_df.csv", index_col="store")
     return train_df, test_df
 
 def generate_confuson_matrix(model, X, y, labels, title, out_file):
+    '''Plots a confusion matrix.
+
+    Parameters
+    ----------
+    model : sklearn classifier model
+    X : pandas DataFrame
+        Dataset with features used for classification
+    y : pandas Series
+        Target column of dataset
+    labels : array
+        Array of target class labels
+    title : str
+    out_file : str
+        File name to save confusion matrix image as
+    
+    Returns
+    -------
+    None
+    '''
     cm = confusion_matrix(y, model.predict(X))
     disp = ConfusionMatrixDisplay(cm, display_labels=labels)
     disp.plot()
@@ -42,8 +70,7 @@ def generate_confuson_matrix(model, X, y, labels, title, out_file):
         plt.savefig("img/smoothie_king/" + out_file)
 
 def get_prediction_mismatch(prediction_result, model, true_label, predicted_label):
-    ''' 
-    Helper function to get mismatched predictions
+    '''Helper function to get mismatched predictions
 
     Parameters
     ----------
@@ -52,19 +79,34 @@ def get_prediction_mismatch(prediction_result, model, true_label, predicted_labe
         one of {"rf", "l1_reg_rf", "l1_reg_rf_ovr", "voting"}
     true_label : int
     predicted_label : int
+
+    Returns
+    -------
+    list
+        List of indices where the predicted label is not equal to the true label
     '''
     mismatch = prediction_result[(prediction_result["true_label"] == true_label) & (prediction_result[model] == predicted_label)]
     return mismatch.index.tolist()
 
 def get_all_feature_names(df):
+    '''Get all column names of a DataFrame in order of numeric features first.
+
+    Parameters
+    ----------
+    df : pandas DataFrame
+
+    Returns
+    -------
+    list
+        List of column names
+    '''
     ordinal_features = ["market_size", "store_density"]
     numeric_features = df.select_dtypes(include=[np.number]).columns.tolist()
     all_features = numeric_features + ordinal_features
     return all_features
 
 def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_test_enc=None, estimators=None):
-    ''' 
-    Draw and save SHAP beeswarm plot for explaining feature importance
+    '''Draw and save SHAP beeswarm plot for explaining feature importance
     
     Parameters
     ----------
@@ -79,6 +121,10 @@ def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_tes
         Transformed X_test
     estimators : list
         List of estimators for each OVR case; used only if strategy_ovr=True
+    
+    Returns
+    -------
+    None
     ''' 
     plt.clf()
     if strategy_ovr:
@@ -107,8 +153,7 @@ def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_tes
     plt.close(fig="all")
 
 def shap_force_plot(strategy_ovr, explainer, shap_values, X_test_enc, class_indices, idx_to_explain, target_class, out_dir, title):
-    ''' 
-    Draw SHAP force plot for a prediction point
+    '''Draw SHAP force plot for a prediction point
 
     Parameters
     ----------
@@ -127,6 +172,10 @@ def shap_force_plot(strategy_ovr, explainer, shap_values, X_test_enc, class_indi
     out_dir : str
         Directory to save output figures
     title : str
+
+    Returns
+    -------
+    None
     '''
     plt.clf()
     out_file = out_dir + title.lower().replace(" ", "_") + f"_{TARGET_MAP[target_class]}_shap_force_plot"
@@ -159,6 +208,20 @@ def shap_force_plot(strategy_ovr, explainer, shap_values, X_test_enc, class_indi
     plt.close(fig="all")
 
 def encode_X_test(model, X_test, feature_names):
+    '''Transform the test set using the pipeline's ColumnTransformer.
+
+    model : sklearn Pipeline
+        Pipeline containing, at a minimum, a ColumnTransformer and a classifier
+    X_test : pandas DataFrame
+        Test dataset without the target column
+    feature_names : list
+        List of all column names with numeric features first
+    
+    Returns
+    -------
+    pandas DataFrame
+        Transformed X_test
+    '''
     preprocessor = model.named_steps["columntransformer"]
     try:
         selected_features_mask = model.named_steps['selectfrommodel'].get_support()
@@ -177,6 +240,23 @@ def encode_X_test(model, X_test, feature_names):
     return X_test_enc
 
 def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
+    '''Perform interpretation on the random forest classifier model using SHAP
+
+    Parameters
+    ----------
+    rf_model : sklearn Pipeline
+        Pipeline containing the random forest classifier
+    X_test : pandas DataFrame
+        The testing dataset without the target column
+    y_test : pandas Series
+        The target column of the test set to predict
+    feature_names : list
+        All column names with numeric features first
+    
+    Returns
+    -------
+    None
+    '''
     out_dir = "img/smoothie_king/random_forest/"
     X_test_enc = encode_X_test(rf_model, X_test, feature_names)
     explainer = shap.TreeExplainer(rf_model.named_steps["randomforestclassifier"])
@@ -218,6 +298,23 @@ def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
         )
 
 def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, feature_names):
+    '''Perform interpretation on the L1 regularized random forest classifier model using SHAP
+
+    Parameters
+    ----------
+    l1_reg_rf_model : sklearn Pipeline
+        Pipeline containing the L1 regularized random forest classifier
+    X_test : pandas DataFrame
+        The testing dataset without the target column
+    y_test : pandas Series
+        The target column of the test set to predict
+    feature_names : list
+        All column names with numeric features first
+    
+    Returns
+    -------
+    None
+    '''
     out_dir = "img/smoothie_king/l1_reg_random_forest/"
     X_test_enc = encode_X_test(l1_reg_rf_model, X_test, feature_names)
     explainer = shap.TreeExplainer(l1_reg_rf_model.named_steps["randomforestclassifier"])
@@ -259,6 +356,23 @@ def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, fea
         )
 
 def shap_interpretation_for_l1_reg_rf_ovr_model(l1_reg_rf_ovr_model, X_test, y_test, feature_names):
+    '''Perform interpretation on the L1 regularized one vs rest random forest classifier model using SHAP
+
+    Parameters
+    ----------
+    l1_reg_rf_ovr_model : sklearn Pipeline
+        Pipeline containing the L1 regularized one vs rest random forest classifier
+    X_test : pandas DataFrame
+        The testing dataset without the target column
+    y_test : pandas Series
+        The target column of the test set to predict
+    feature_names : list
+        All column names with numeric features first
+    
+    Returns
+    -------
+    None
+    '''
     out_dir = "img/smoothie_king/l1_reg_random_forest_ovr/"
     X_test_enc = encode_X_test(l1_reg_rf_ovr_model, X_test, feature_names)
     estimators = l1_reg_rf_ovr_model.named_steps["onevsrestclassifier"].estimators_

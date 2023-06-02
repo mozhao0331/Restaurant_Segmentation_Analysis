@@ -256,6 +256,10 @@ def print_train_test_scores(classifiers, X_train, y_train, X_test, y_test):
         The testing dataset without the target column
     y_test : pandas Series
         The target column of the test set to predict
+    
+    Returns
+    -------
+    None
     '''
     for classifier_name, model in classifiers.items():
         print(f"{classifier_name} train score: {model.score(X_train, y_train)}")
