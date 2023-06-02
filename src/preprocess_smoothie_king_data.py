@@ -1,8 +1,25 @@
+'''
+Script to preprocess the files going into the Smoothie King classification model.
+Saves the processed DataFrames into csv's.
+'''
+
 import pandas as pd
 
 DIR = "data/"
 
 def process_percent_non_percent_df(df, out_dir):
+    '''Preprocess DataFrame to remove all "non-percentage" features that share "percentage" counterparts.
+
+    Parameters
+    ----------
+    df : pandas DataFrame
+    out_dir : str
+        Directory to save processed DataFrame
+    
+    Returns
+    -------
+    None
+    '''
     all_cols = df.columns.tolist()
     percent_feats = [col for col in all_cols if "_p_" in col]
     non_percent_feats = list(set(all_cols) - set(percent_feats))
@@ -19,6 +36,18 @@ def process_percent_non_percent_df(df, out_dir):
     reduced_df.to_csv(DIR + out_dir, index=False)
 
 def process_store_df(df, out_dir):
+    '''Preprocess the store csv file to remove unused columns.
+
+    Parameters
+    ----------
+    df : pandas DataFrame
+    out_dir : str
+        Directory to save processed DataFrame
+
+    Returns
+    -------
+    None
+    '''
     all_cols = df.columns.tolist()
     cols_to_remove = []
     for col in all_cols:

@@ -19,7 +19,12 @@ from sklearn.feature_selection import SelectFromModel
 DIR = 'data/Smoothie King/'
 
 def read_data():
-    # read in the POI, stores, and trade area files, merge them, and set the index to the store ID
+    '''Read in the POI, stores, and trade area files, merge them, and set the index to the store ID.
+
+    Returns
+    -------
+    pandas DataFrame
+    '''
     poi = pd.read_csv(DIR + "processed_poi.csv")
     stores = pd.read_csv(DIR + "smoothie_king_stores.csv")
     trade_area = pd.read_csv(DIR + "processed_trade_area.csv")
@@ -32,12 +37,33 @@ def save_train_test_df(train_df, test_df):
     test_df.to_csv(DIR + "test_df.csv")
 
 def drop_unused_cols(df):
+    '''Drops any unused columns and rows with missing entries.
+
+    Parameters
+    ----------
+    df : pandas DataFrame
+
+    Returns
+    -------
+    pandas DataFrame
+    '''
     drop_cols = ["store_num", "country_code", "longitude", "latitude", "state_name", "cbsa_name", "dma_name"]
     df = df.drop(columns=drop_cols)
     df = df.dropna()
     return df
 
 def define_preprocessor(X_train):
+    '''Create the preprocessor for the classification model by applying scaling and ordinal encoding.
+
+    Parameters
+    ----------
+    X_train : pandas DataFrame
+        The training dataset without the target column
+    
+    Returns
+    -------
+    sklearn ColumnTransformer
+    '''
     market_levels = [
         "Small Town (6)",
         "Small City (5)",
@@ -65,6 +91,24 @@ def define_preprocessor(X_train):
     return preprocessor
 
 def build_random_forest_model(X_train, y_train, preprocessor, class_weight):
+    '''Train a random forest classifier on the dataset.
+
+    Parameters
+    ----------
+    X_train : pandas DataFrame
+        The training dataset without the target column
+    y_train : pandas Series
+        The target column of the train set to predict
+    preprocessor : sklearn ColumnTransformer
+        Preprocessor to apply before fitting the classifier
+    class_weight : dict
+        Weight to scale each target class
+    
+    Returns
+    -------
+    sklearn Pipeline
+        Pipeline containing the fitted classifier
+    '''
     pipe_rf = make_pipeline(
         preprocessor,
         RandomForestClassifier(
@@ -82,6 +126,24 @@ def build_random_forest_model(X_train, y_train, preprocessor, class_weight):
     return pipe_rf
 
 def build_l1_reg_random_forest_model(X_train, y_train, preprocessor, class_weight):
+    '''Perform feature selection using L1 regularization and train a random forest classifier on the dataset.
+
+    Parameters
+    ----------
+    X_train : pandas DataFrame
+        The training dataset without the target column
+    y_train : pandas Series
+        The target column of the train set to predict
+    preprocessor : sklearn ColumnTransformer
+        Preprocessor to apply before fitting the classifier
+    class_weight : dict
+        Weight to scale each target class
+    
+    Returns
+    -------
+    sklearn Pipeline
+        Pipeline containing the fitted classifier
+    '''
     pipe_lr_rf = make_pipeline(
         preprocessor,
         SelectFromModel(
@@ -111,6 +173,22 @@ def build_l1_reg_random_forest_model(X_train, y_train, preprocessor, class_weigh
     return pipe_lr_rf
 
 def build_l1_reg_random_forest_ovr_model(X_train, y_train, preprocessor):
+    '''Perform feature selection using L1 regularization and train a one vs rest random forest classifier on the dataset.
+
+    Parameters
+    ----------
+    X_train : pandas DataFrame
+        The training dataset without the target column
+    y_train : pandas Series
+        The target column of the train set to predict
+    preprocessor : sklearn ColumnTransformer
+        Preprocessor to apply before fitting the classifier
+    
+    Returns
+    -------
+    sklearn Pipeline
+        Pipeline containing the fitted classifier
+    '''
     pipe_lr_rf_ovr = make_pipeline(
         preprocessor,
         SelectFromModel(
@@ -142,6 +220,21 @@ def build_l1_reg_random_forest_ovr_model(X_train, y_train, preprocessor):
     return pipe_lr_rf_ovr
 
 def build_ensemble_model(classifiers, X_train, y_train):
+    '''Trains a voting classifier ensemble of classifiers.
+
+    Parameters
+    ----------
+    classifier : dict
+        Dictionary with classifier name as key and classifiers as the dictionary value
+    X_train : pandas DataFrame
+        The training dataset without the target column
+    y_train : pandas Series
+        The target column of the train set to predict
+    
+    Returns
+    -------
+    sklearn VotingClassifier
+    '''
     hard_voting_model = VotingClassifier(
         list(classifiers.items()), voting="hard"
     )
@@ -149,6 +242,21 @@ def build_ensemble_model(classifiers, X_train, y_train):
     return hard_voting_model
 
 def print_train_test_scores(classifiers, X_train, y_train, X_test, y_test):
+    '''Print the train and test scores for each classifier.
+
+    Parameters
+    ----------
+    classifiers : dict
+        Dictionary with classifier name as key and classifiers as the dictionary value
+    X_train : pandas DataFrame
+        The training dataset without the target column
+    y_train : pandas Series
+        The target column of the train set to predict
+    X_test : pandas DataFrame
+        The testing dataset without the target column
+    y_test : pandas Series
+        The target column of the test set to predict
+    '''
     for classifier_name, model in classifiers.items():
         print(f"{classifier_name} train score: {model.score(X_train, y_train)}")
         print(f"{classifier_name} test score: {model.score(X_test, y_test)}")
@@ -184,6 +292,7 @@ def main():
     hard_voting_model = build_ensemble_model(classifiers, X_train, y_train)
     classifiers["Ensemble"] = hard_voting_model
     print_train_test_scores(classifiers, X_train, y_train, X_test, y_test)
+    # Save the models into joblib files
     try:
         dump(rf_model, "model_joblib/rf_model.joblib")
         dump(l1_reg_rf_model, "model_joblib/l1_reg_rf_model.joblib")
