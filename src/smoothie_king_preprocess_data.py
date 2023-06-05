@@ -36,8 +36,8 @@ def process_percent_non_percent_df(df, out_dir):
     reduced_df = df[reduced_feats]
     reduced_df.to_csv(DIR + out_dir, index=False)
 
-def process_store_df(df, out_dir):
-    '''Preprocess the store csv file to remove unused columns.
+def process_poi_df(df, out_dir):
+    '''Preprocess the POI csv file to remove unused columns.
 
     Parameters
     ----------
@@ -74,16 +74,15 @@ def main():
     smoothie_king_demographic = pd.read_csv(DIR + "Smoothie King/smoothie_king_demographic_variables.csv")
     smoothie_king_trade_area = pd.read_csv(DIR + "Smoothie King/smoothie_king_trade_area_variables.csv")
     smoothie_king_poi = pd.read_csv(DIR + "Smoothie King/smoothie_king_poi_variables.csv")
-    
     try:
         process_percent_non_percent_df(smoothie_king_demographic, "Smoothie_King_Preprocessed/processed_demographic.csv")
         process_percent_non_percent_df(smoothie_king_trade_area, "Smoothie_King_Preprocessed/processed_trade_area.csv")
-        process_store_df(smoothie_king_poi, "Smoothie_King_Preprocessed/processed_poi.csv")
+        process_poi_df(smoothie_king_poi, "Smoothie_King_Preprocessed/processed_poi.csv")
     except:
         os.makedirs(DIR + "Smoothie_King_Preprocessed/")
         process_percent_non_percent_df(smoothie_king_demographic, "Smoothie_King_Preprocessed/processed_demographic.csv")
         process_percent_non_percent_df(smoothie_king_trade_area, "Smoothie_King_Preprocessed/processed_trade_area.csv")
-        process_store_df(smoothie_king_poi, "Smoothie_King_Preprocessed/processed_poi.csv")
+        process_poi_df(smoothie_king_poi, "Smoothie_King_Preprocessed/processed_poi.csv")
 
 if __name__ == "__main__":
     main()
