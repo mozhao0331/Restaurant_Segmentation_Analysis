@@ -303,12 +303,13 @@ def get_random_sample(n_clusters, train_df, test_df, stores, fcm, size=30):
     for cluster, samples in cluster_samples_dict_test.items():
         cluster_coordinates_test[cluster] = []
         for sample in samples:
-            # Get the longitude and latitude
+            # Get the longitude and latitude, and store_id
+            store_id = sample
             longitude = stores.loc[sample, "longitude"]
             latitude = stores.loc[sample, "latitude"]
             
             # Append the [longitude, latitude] pair to the corresponding cluster list
-            cluster_coordinates_test[cluster].append([longitude, latitude])
+            cluster_coordinates_test[cluster].append([longitude, latitude, store_id])
     
     # print(cluster_coordinates_train, cluster_coordinates_test)
     
@@ -339,6 +340,12 @@ def main():
     
     # Get samples
     cluster_coordinates_train, cluster_coordinates_test = get_random_sample(n_clusters, train_df, test_df, stores, fcm)
+        
+    #Verify cluster result for train split
+    # cluster_verify(cluster_coordinates_train)
+
+    #Verify cluster result for test split
+    # cluster_verify(cluster_coordinates_test)
 
     # Label data ploints
     train_df, test_df = add_labels(train_df, test_df, fcm)
