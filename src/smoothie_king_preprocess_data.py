@@ -73,9 +73,9 @@ def main():
     smoothie_king_demographic = pd.read_csv(DIR + "Smoothie King/smoothie_king_demographic_variables.csv")
     smoothie_king_trade_area = pd.read_csv(DIR + "Smoothie King/smoothie_king_trade_area_variables.csv")
     smoothie_king_poi = pd.read_csv(DIR + "Smoothie King/smoothie_king_poi_variables.csv")
-    process_percent_non_percent_df(smoothie_king_demographic, "Smoothie King/processed_demographic.csv")
-    process_percent_non_percent_df(smoothie_king_trade_area, "Smoothie King/processed_trade_area.csv")
-    process_store_df(smoothie_king_poi, "Smoothie King/processed_poi.csv")
+    process_percent_non_percent_df(smoothie_king_demographic, "Smoothie_King_Preprocessed/processed_demographic.csv")
+    process_percent_non_percent_df(smoothie_king_trade_area, "Smoothie_King_Preprocessed/processed_trade_area.csv")
+    process_store_df(smoothie_king_poi, "Smoothie_King_Preprocessed/processed_poi.csv")
 
 if __name__ == "__main__":
     main()

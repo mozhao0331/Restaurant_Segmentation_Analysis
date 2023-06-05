@@ -17,15 +17,15 @@ doc/Proposal_Report.pdf: doc/Proposal_Report.Rmd img/eda/smoothie_category_bar_p
 	Rscript -e "rmarkdown::render('doc/Proposal_Report.Rmd')"
 
 # Preprocess data for Smoothie King
-data/Smoothie\ King/processed_demographic.csv data/Smoothie\ King/processed_poi.csv data/Smoothie\ King/processed_trade_area.csv:
+data/Smoothie_King_Preprocessed/processed_demographic.csv data/Smoothie_King_Preprocessed/processed_poi.csv data/Smoothie_King_Preprocessed/processed_trade_area.csv:
 	python src/smoothie_king_preprocess_data.py
 
 # Fit and save the Smoothie King model
-data/Smoothie\ King/train_df.csv data/Smoothie\ King/test_df.csv model_joblib/smoothie_king/rf_model.joblib model_joblib/smoothie_king/l1_reg_rf_model.joblib model_joblib/smoothie_king/l1_reg_rf_ovr_model.joblib model_joblib/smoothie_king/hard_voting_model.joblib: data/Smoothie\ King/processed_poi.csv data/Smoothie\ King/processed_trade_area.csv
+data/Smoothie_King_Preprocessed/train_df.csv data/Smoothie_King_Preprocessed/test_df.csv model_joblib/smoothie_king/rf_model.joblib model_joblib/smoothie_king/l1_reg_rf_model.joblib model_joblib/smoothie_king/l1_reg_rf_ovr_model.joblib model_joblib/smoothie_king/hard_voting_model.joblib: data/Smoothie_King_Preprocessed/processed_poi.csv data/Smoothie_King_Preprocessed/processed_trade_area.csv
 	python src/smoothie_king_build_model.py
 
 # SHAP interpretation Smoothie King model
-img/smoothie_king/%.png: data/Smoothie\ King/train_df.csv data/Smoothie\ King/test_df.csv model_joblib/smoothie_king/rf_model.joblib model_joblib/smoothie_king/l1_reg_rf_model.joblib model_joblib/smoothie_king/l1_reg_rf_ovr_model.joblib model_joblib/smoothie_king/hard_voting_model.joblib
+img/smoothie_king/%.png: data/Smoothie_King_Preprocessed/train_df.csv data/Smoothie_King_Preprocessed/test_df.csv model_joblib/smoothie_king/rf_model.joblib model_joblib/smoothie_king/l1_reg_rf_model.joblib model_joblib/smoothie_king/l1_reg_rf_ovr_model.joblib model_joblib/smoothie_king/hard_voting_model.joblib
 	python src/smoothie_king_model_interpret.py
 
 clean: 
@@ -39,10 +39,10 @@ clean:
 	rm -rf img/eda/subway_canada_market_size_bar_plot.png
 
 clean_sk:
-	rm -f data/Smoothie\ King/processed_demographic.csv
-	rm -f data/Smoothie\ King/processed_poi.csv
-	rm -f data/Smoothie\ King/processed_trade_area.csv
-	rm -f data/Smoothie\ King/train_df.csv
-	rm -f data/Smoothie\ King/test_df.csv
+	rm -f data/Smoothie_King_Preprocessed/processed_demographic.csv
+	rm -f data/Smoothie_King_Preprocessed/processed_poi.csv
+	rm -f data/Smoothie_King_Preprocessed/processed_trade_area.csv
+	rm -f data/Smoothie_King_Preprocessed/train_df.csv
+	rm -f data/Smoothie_King_Preprocessed/test_df.csv
 	rm -rf model_joblib/smoothie_king/
 	rm -rf img/smoothie_king/
