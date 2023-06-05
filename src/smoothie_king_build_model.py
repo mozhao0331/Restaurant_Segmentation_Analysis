@@ -17,6 +17,7 @@ from sklearn.ensemble import RandomForestClassifier, VotingClassifier
 from sklearn.feature_selection import SelectFromModel
 
 DIR = 'data/Smoothie King/'
+DIR_PREPROCESS = 'data/Smoothie_King_Preprocessed/'
 
 def read_data():
     '''Read in the POI, stores, and trade area files, merge them, and set the index to the store ID.
@@ -25,16 +26,16 @@ def read_data():
     -------
     pandas DataFrame
     '''
-    poi = pd.read_csv(DIR + "processed_poi.csv")
+    poi = pd.read_csv(DIR_PREPROCESS + "processed_poi.csv")
     stores = pd.read_csv(DIR + "smoothie_king_stores.csv")
-    trade_area = pd.read_csv(DIR + "processed_trade_area.csv")
+    trade_area = pd.read_csv(DIR_PREPROCESS + "processed_trade_area.csv")
     merged = stores.merge(trade_area, left_on="store", right_on="store_num").merge(poi)
     merged = merged.set_index("store")
     return merged
 
 def save_train_test_df(train_df, test_df):
-    train_df.to_csv(DIR + "train_df.csv")
-    test_df.to_csv(DIR + "test_df.csv")
+    train_df.to_csv(DIR_PREPROCESS + "train_df.csv")
+    test_df.to_csv(DIR_PREPROCESS + "test_df.csv")
 
 def drop_unused_cols(df):
     '''Drops any unused columns and rows with missing entries.
