@@ -342,7 +342,7 @@ def main():
     cluster_coordinates_train, cluster_coordinates_test = get_random_sample(n_clusters, train_df, test_df, stores, fcm)
         
     #Verify cluster result for train split
-    # cluster_verify(cluster_coordinates_train)
+    cluster_verify(cluster_coordinates_train)
 
     #Verify cluster result for test split
     # cluster_verify(cluster_coordinates_test)
