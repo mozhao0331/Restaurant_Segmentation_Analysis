@@ -17,15 +17,15 @@ Test smoothie_king_preprocess_data.py
 def test_process_percent_non_percent_df():
     in_file = "data/Smoothie King/smoothie_king_trade_area_variables.csv"
     trade_area_df = pd.read_csv(in_file)
-    process_percent_non_percent_df(trade_area_df, "Smoothie King/processed_trade_area.csv")
-    out_file = "data/Smoothie King/processed_trade_area.csv"
+    process_percent_non_percent_df(trade_area_df, "Smoothie_King_Preprocessed/processed_trade_area.csv")
+    out_file = "data/Smoothie_King_Preprocessed/processed_trade_area.csv"
     assert os.path.isfile(out_file)
 
 def test_process_poi_df():
     in_file = "data/Smoothie King/smoothie_king_poi_variables.csv"
     poi_df = pd.read_csv(in_file)
-    process_poi_df(poi_df, "Smoothie King/processed_poi.csv")
-    out_file = "data/Smoothie King/processed_poi.csv"
+    process_poi_df(poi_df, "Smoothie_King_Preprocessed/processed_poi.csv")
+    out_file = "data/Smoothie_King_Preprocessed/processed_poi.csv"
     assert os.path.isfile(out_file)
 
 '''
