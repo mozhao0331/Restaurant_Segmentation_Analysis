@@ -15,7 +15,7 @@ import skfda
 import sys
 cwd = os.getcwd()
 sys.path.append(cwd)
-from cluster_verify import *
+from subway_usa_cluster_verify import *
 
 # Define dirctory
 DIR = 'data/Subway USA/'
