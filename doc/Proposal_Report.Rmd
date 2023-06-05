@@ -61,31 +61,31 @@ For Subway Canada, there are around 100 features combined for around 1,800 store
 To help understand the data, we started with a selection of important categorical features and created some bar charts below to visually represent the distribution of these features in three datasets. The complete datasets can be accessed in the [`data`](https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/data) directory of the repository.
 
 ```{r out.width = '70%', fig.align='center', fig.cap = "Number of stores in each category for Smoothie King US locations. The distribution is unbalanced."}
-knitr::include_graphics("../img/smoothie_category_bar_plot.png")
+knitr::include_graphics("../img/eda/smoothie_category_bar_plot.png")
 ```
 
 ```{r out.width = '80%', fig.align='center', fig.cap = "The highest portion among categories are “Very Large Metro”. “Home” has a high percentage of “Very Large Metro”. “Travel” has a high percentage of “Small City”."}
-knitr::include_graphics("../img/market_size_stackstacked_bar_plot.png")
+knitr::include_graphics("../img/eda/market_size_stackstacked_bar_plot.png")
 ```
 
 ```{r out.width = '80%', fig.align='center', fig.cap = "Most of the stores are located in “Exurban” and “Light Suburban”."}
-knitr::include_graphics("../img/store_density_stackstacked_bar_plot.png")
+knitr::include_graphics("../img/eda/store_density_stackstacked_bar_plot.png")
 ```
 
 ```{r out.width = '70%', fig.align='center', fig.cap = "Rural has the highest count."}
-knitr::include_graphics("../img/subway_us_store_density_bar_plot.png")
+knitr::include_graphics("../img/eda/subway_us_store_density_bar_plot.png")
 ```
 
 ```{r out.width = '70%', fig.align='center', fig.cap = "Very Large Metro has the highest count with 5190 stores, and other categories have similar counts."}
-knitr::include_graphics("../img/subway_us_market_size_bar_plot.png")
+knitr::include_graphics("../img/eda/subway_us_market_size_bar_plot.png")
 ```
 
 ```{r out.width = '65%', fig.align='center', fig.cap = "The most common market size is Very Large Metro with 577 stores."}
-knitr::include_graphics("../img/subway_canada_store_density_bar_plot.png")
+knitr::include_graphics("../img/eda/subway_canada_store_density_bar_plot.png")
 ```
 
 ```{r out.width = '65%', fig.align='center', fig.cap = "Very Large Metro has the highest count with 577 stores, and the other categories have similar counts."}
-knitr::include_graphics("../img/subway_canada_market_size_bar_plot.png")
+knitr::include_graphics("../img/eda/subway_canada_market_size_bar_plot.png")
 ```
 
 \newpage
@@ -101,7 +101,7 @@ With three distinct datasets and the challenge of building tailored solutions fo
     With the labeled data, the models will be evaluated by its accuracy score, with the target being 80% accuracy as outlined by Sitewise. The score would indicate if the model is capable of detecting the most important traffic driving factor to a store. The result can be interpreted with SHAP (SHapley Additive exPlanations) plots where we can visualize which features drive the decision of a particular category assignment for a certain store.
 
 ```{r out.width = '90%', fig.align='center', fig.cap = "Flow chart of Smoothie King"}
-knitr::include_graphics("../img/smoothie_flow_chart.png")
+knitr::include_graphics("../img/info/smoothie_flow_chart.png")
 ```
 
 2.  For Subway US, the main goal is to cluster the stores into different clusters where stores that share similar features are in the same cluster. We propose starting with a DBSCAN model as a baseline and evaluate the clusters empirically. Afterwards, we will perform hierarchical clustering and apply PCA for dimensionality reduction and compare the results. The rationale for using hierarchical clustering is that we do not have to pre-define the number of clusters and it also allows unbalanced cluster sizes.
@@ -117,11 +117,11 @@ knitr::include_graphics("../img/smoothie_flow_chart.png")
     If the performance is not ideal, consider removing the PCA step and run clustering again to evaluate the result again with the same procedure performed on the Subway US model.
 
 ```{r out.width = '90%', fig.align='center', fig.cap = "Flow chart of Subway US and Canada"}
-knitr::include_graphics("../img/subway_flow_chart.png")
+knitr::include_graphics("../img/info/subway_flow_chart.png")
 ```
 
 ## Timeline
 
 ```{r out.width = '90%', fig.align='center'}
-knitr::include_graphics("../img/timeline.png")
+knitr::include_graphics("../img/info/timeline.png")
 ```
