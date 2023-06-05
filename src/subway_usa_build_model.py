@@ -352,10 +352,10 @@ def main():
     
     # Save the model
     try:
-        joblib.dump(fcm, "sub_usa_model_joblib/fcm_model.joblib")
+        joblib.dump(fcm, "model_joblib/subway_usa/fcm_model.joblib")
     except:
-        os.mkdir("sub_usa_model_joblib/")
-        joblib.dump(fcm, "sub_usa_model_joblib/fcm_model.joblib")
+        os.makedirs("model_joblib/subway_usa/")
+        joblib.dump(fcm, "model_joblib/subway_usa/fcm_model.joblib")
         
     # Save the labelled data
     save_df(train_df, test_df)

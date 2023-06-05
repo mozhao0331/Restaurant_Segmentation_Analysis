@@ -298,16 +298,16 @@ def main():
     print_train_test_scores(classifiers, X_train, y_train, X_test, y_test)
     # Save the models into joblib files
     try:
-        dump(rf_model, "model_joblib/rf_model.joblib")
-        dump(l1_reg_rf_model, "model_joblib/l1_reg_rf_model.joblib")
-        dump(l1_reg_rf_ovr_model, "model_joblib/l1_reg_rf_ovr_model.joblib")
-        dump(hard_voting_model, "model_joblib/hard_voting_model.joblib")
+        dump(rf_model, "model_joblib/smoothie_king/rf_model.joblib")
+        dump(l1_reg_rf_model, "model_joblib/smoothie_king/l1_reg_rf_model.joblib")
+        dump(l1_reg_rf_ovr_model, "model_joblib/smoothie_king/l1_reg_rf_ovr_model.joblib")
+        dump(hard_voting_model, "model_joblib/smoothie_king/hard_voting_model.joblib")
     except:
-        os.mkdir("model_joblib/")
-        dump(rf_model, "model_joblib/rf_model.joblib")
-        dump(l1_reg_rf_model, "model_joblib/l1_reg_rf_model.joblib")
-        dump(l1_reg_rf_ovr_model, "model_joblib/l1_reg_rf_ovr_model.joblib")
-        dump(hard_voting_model, "model_joblib/hard_voting_model.joblib")
+        os.makedirs("model_joblib/smoothie_king/")
+        dump(rf_model, "model_joblib/smoothie_king/rf_model.joblib")
+        dump(l1_reg_rf_model, "model_joblib/smoothie_king/l1_reg_rf_model.joblib")
+        dump(l1_reg_rf_ovr_model, "model_joblib/smoothie_king/l1_reg_rf_ovr_model.joblib")
+        dump(hard_voting_model, "model_joblib/smoothie_king/hard_voting_model.joblib")
 
 if __name__ == "__main__":
     main()

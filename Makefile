@@ -9,7 +9,7 @@ smoothie_king: img/smoothie_king/%.png
 # Use Create EDA plots
 # Save generated images in img folder (no dependency)
 img/smoothie_category_bar_plot.png img/market_size_stackstacked_bar_plot.png img/store_density_stackstacked_bar_plot.png img/subway_us_store_density_bar_plot.png img/subway_us_market_size_bar_plot.png img/subway_canada_store_density_bar_plot.png img/subway_canada_market_size_bar_plot.png:
-	python src/create_eda_figure.py
+	python src/helper_create_eda_figure.py
 
 # Render final report
 doc/Proposal_Report.pdf: doc/Proposal_Report.Rmd img/smoothie_category_bar_plot.png img/market_size_stackstacked_bar_plot.png img/store_density_stackstacked_bar_plot.png img/subway_us_store_density_bar_plot.png img/subway_us_market_size_bar_plot.png img/subway_canada_store_density_bar_plot.png img/subway_canada_market_size_bar_plot.png img/smoothie_flow_chart.png img/subway_flow_chart.png img/timeline.png
@@ -17,15 +17,15 @@ doc/Proposal_Report.pdf: doc/Proposal_Report.Rmd img/smoothie_category_bar_plot.
 
 # Preprocess data for Smoothie King
 data/Smoothie\ King/processed_demographic.csv data/Smoothie\ King/processed_poi.csv data/Smoothie\ King/processed_trade_area.csv:
-	python src/preprocess_smoothie_king_data.py
+	python src/smoothie_king_preprocess_data.py
 
 # Fit and save the Smoothie King model
-data/Smoothie\ King/train_df.csv data/Smoothie\ King/test_df.csv model_joblib/rf_model.joblib model_joblib/l1_reg_rf_model.joblib model_joblib/l1_reg_rf_ovr_model.joblib model_joblib/hard_voting_model.joblib: data/Smoothie\ King/processed_poi.csv data/Smoothie\ King/processed_trade_area.csv
-	python src/build_smoothie_king_model.py
+data/Smoothie\ King/train_df.csv data/Smoothie\ King/test_df.csv model_joblib/smoothie_king/rf_model.joblib model_joblib/smoothie_king/l1_reg_rf_model.joblib model_joblib/smoothie_king/l1_reg_rf_ovr_model.joblib model_joblib/smoothie_king/hard_voting_model.joblib: data/Smoothie\ King/processed_poi.csv data/Smoothie\ King/processed_trade_area.csv
+	python src/smoothie_king_build_model.py
 
 # SHAP interpretation Smoothie King model
-img/smoothie_king/%.png: data/Smoothie\ King/train_df.csv data/Smoothie\ King/test_df.csv model_joblib/rf_model.joblib model_joblib/l1_reg_rf_model.joblib model_joblib/l1_reg_rf_ovr_model.joblib model_joblib/hard_voting_model.joblib
-	python src/interpret_smoothie_king_model.py
+img/smoothie_king/%.png: data/Smoothie\ King/train_df.csv data/Smoothie\ King/test_df.csv model_joblib/smoothie_king/rf_model.joblib model_joblib/smoothie_king/l1_reg_rf_model.joblib model_joblib/smoothie_king/l1_reg_rf_ovr_model.joblib model_joblib/smoothie_king/hard_voting_model.joblib
+	python src/smoothie_king_model_interpret.py
 
 clean: 
 	rm -rf doc/Proposal_Report.pdf
@@ -43,5 +43,5 @@ clean_sk:
 	rm -f data/Smoothie\ King/processed_trade_area.csv
 	rm -f data/Smoothie\ King/train_df.csv
 	rm -f data/Smoothie\ King/test_df.csv
-	rm -rf model_joblib/
+	rm -rf model_joblib/smoothie_king/
 	rm -rf img/smoothie_king/
