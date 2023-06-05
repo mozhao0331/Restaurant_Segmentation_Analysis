@@ -16,11 +16,12 @@
             }
             
             if(props.content){
+                console.log(props.content)
                 var infoWindow = new google.maps.InfoWindow({
                     content: props.content
                 });
                 marker.addListener('click', function(){
-                    infoWindow.open(mymap, marker);
+                    infoWindow.open(map, marker);
                 });
             }
         } 
@@ -30,7 +31,7 @@
             const rows = input.split("], [");
 
             const array2D = rows.map(row => {
-                console.log(typeof(row) + '  ' + row)
+                // console.log(typeof(row) + '  ' + row)
                 const columns = row.replace("[", "").replace("]", "").split(", ");
                 return columns.map(Number);  
             });  
@@ -48,6 +49,7 @@
             coordList.forEach( coord => {
                 const long = coord[0];
                 const lat = coord[1];
+                const store_id = coord[2];
                 // console.log(long + '--' + lat)
                 
                 const mapDiv = document.createElement("div");
@@ -61,13 +63,13 @@
                 mapContainer.appendChild(mapDiv); 
                 mapContainer.appendChild(mapDivGap); 
             
-                initMap(long, lat, mapDiv);  
+                initMap(long, lat, mapDiv, store_id);  
             });
         } 
 
-        function initMap(long, lat, mapDiv) {
+        function initMap(long, lat, mapDiv, store_id) {
             var coords = {lat: lat, lng: long};
-            console.log(coords)
+            // console.log(coords)
         
             var options = {
                 zoom: 16,
@@ -80,7 +82,7 @@
             var marker = {
                 coords:coords,
                 iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-                content: '<h1>Subway USAa</h1>'
+                content: store_id.toString()
             }
             
             addMarker(marker, map);
