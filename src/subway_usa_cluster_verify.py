@@ -42,7 +42,13 @@ def cluster_verify(cluster_coords_dict):
 
         wait = WebDriverWait(driver, 100) 
         input_field = wait.until(EC.presence_of_element_located((By.ID, "coords"))) 
+        page_title = wait.until(EC.presence_of_element_located((By.ID, "cluster_id"))) 
         
+        page_title = driver.find_element(By.ID, 'cluster_id')
+        page_title_txt = f'Cluster {key}'
+        # page_title.clear()
+        driver.execute_script("arguments[0].innerHTML = arguments[1];", page_title, page_title_txt)
+
         input_field = driver.find_element(By.ID, 'coords')
         input_field.send_keys(f"{coord_list}")
 
