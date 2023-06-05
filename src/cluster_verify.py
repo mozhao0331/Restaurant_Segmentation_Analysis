@@ -10,19 +10,30 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
+import pyautogui
 
 
 def cluster_verify(cluster_coords_dict):
     cwd = os.getcwd()
     html_file = os.path.join(cwd, 'cluster_verify.html')
     driver_list = []
+
+    # Get display resolution using PyAutoGUI
+    width, height = pyautogui.size()
+    # Calculate 1/3 width
+    one_third_width = width // 3
+
+    # Set Chrome options
+    chrome_options = Options()  
+    chrome_options.add_argument('--window-size=%d,%d' %(one_third_width, height))
    
     for key in cluster_coords_dict:
         coord_list = cluster_coords_dict[key]
 
         # Download the chrome driver file from https://chromedriver.storage.googleapis.com/index.html
         # Ensure the driver version matches the chrome browser version
-        driver = webdriver.Chrome('/usr/local/bin/chromedriver') # Path to chrome driver Unix Executable File
+        driver = webdriver.Chrome('/usr/local/bin/chromedriver', options=chrome_options) # Path to chrome driver Unix Executable File
         driver_list.append(driver)
 
         driver.set_window_size(1540,1240)
