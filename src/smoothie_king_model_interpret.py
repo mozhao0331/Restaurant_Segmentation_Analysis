@@ -16,7 +16,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
 DIR = 'data/Smoothie King/'
-MODEL_DIR = "model_joblib/"
+MODEL_DIR = "model_joblib/smoothie_king/"
 TARGET_MAP = {
     0: "HOME",
     1: "OTHER",
