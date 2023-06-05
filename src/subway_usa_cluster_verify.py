@@ -12,10 +12,17 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 import pyautogui
 
+html_path = 'src/subway_usa_cluster_verify.html'
+chrome_driver_path = '/usr/local/bin/chromedriver'
+page_title_id = "cluster_id"
+input_id = "coords"
+button_id = 'btn-show-map'
+
+CLUSTER = 'Cluster'
 
 def cluster_verify(cluster_coords_dict):
     cwd = os.getcwd()
-    html_file = os.path.join(cwd, 'src/cluster_verify.html')
+    html_file = os.path.join(cwd, html_path)
     driver_list = []
    
     for key in cluster_coords_dict:
@@ -33,26 +40,24 @@ def cluster_verify(cluster_coords_dict):
 
         # Download the chrome driver file from https://chromedriver.storage.googleapis.com/index.html
         # Ensure the driver version matches the chrome browser version
-        driver = webdriver.Chrome('/usr/local/bin/chromedriver', options=chrome_options) # Path to chrome driver Unix Executable File
+        driver = webdriver.Chrome(chrome_driver_path, options=chrome_options) # Path to chrome driver Unix Executable File
         driver_list.append(driver)
 
         # driver.set_window_size(1540,1240)
         driver.get('file://' + html_file)
-        # driver.set_page_load_timeout(10) # Wait up to 10 seconds for pages to load 
 
         wait = WebDriverWait(driver, 100) 
-        input_field = wait.until(EC.presence_of_element_located((By.ID, "coords"))) 
-        page_title = wait.until(EC.presence_of_element_located((By.ID, "cluster_id"))) 
+        page_title = wait.until(EC.presence_of_element_located((By.ID, page_title_id))) 
+        input_field = wait.until(EC.presence_of_element_located((By.ID, input_id))) 
         
-        page_title = driver.find_element(By.ID, 'cluster_id')
-        page_title_txt = f'Cluster {key}'
-        # page_title.clear()
+        page_title = driver.find_element(By.ID, page_title_id)
+        page_title_txt = f'{CLUSTER} {key}'
         driver.execute_script("arguments[0].innerHTML = arguments[1];", page_title, page_title_txt)
 
-        input_field = driver.find_element(By.ID, 'coords')
+        input_field = driver.find_element(By.ID, input_id)
         input_field.send_keys(f"{coord_list}")
 
-        button = driver.find_element(By.ID, 'btn-show-map')
+        button = driver.find_element(By.ID, button_id)
         button.click()
 
     # for driver in driver_list:
