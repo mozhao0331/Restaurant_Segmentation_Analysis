@@ -15,7 +15,7 @@ import skfda
 import sys
 cwd = os.getcwd()
 sys.path.append(cwd)
-from cluster_verify import *
+from subway_usa_cluster_verify import *
 
 # Define dirctory
 DIR = 'data/Subway USA/'
@@ -352,10 +352,10 @@ def main():
     
     # Save the model
     try:
-        joblib.dump(fcm, "sub_usa_model_joblib/fcm_model.joblib")
+        joblib.dump(fcm, "model_joblib/subway_usa/fcm_model.joblib")
     except:
-        os.mkdir("sub_usa_model_joblib/")
-        joblib.dump(fcm, "sub_usa_model_joblib/fcm_model.joblib")
+        os.makedirs("model_joblib/subway_usa/")
+        joblib.dump(fcm, "model_joblib/subway_usa/fcm_model.joblib")
         
     # Save the labelled data
     save_df(train_df, test_df)
