@@ -9,3 +9,4 @@ data/*
 img/smoothie_king/*/*_shap_force_plot.png
 .joblib
 sub_usa_model_joblib/*
+img/*
