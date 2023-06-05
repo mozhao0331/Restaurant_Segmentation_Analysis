@@ -12,6 +12,11 @@ import joblib
 import os
 import skfda
 
+import sys
+cwd = os.getcwd()
+sys.path.append(cwd)
+from cluster_verify import *
+
 # Define dirctory
 DIR = 'data/Subway USA/'
 
@@ -233,7 +238,7 @@ def print_cluster_percentages(n_clusters, test_df, fcm):
 
 def get_random_sample(n_clusters, train_df, test_df, stores, fcm, size=30):
     """
-    Function to randomly generate samples with longitude and lattitude
+    Function to randomly generate samples with longitude and lattitude, along with store id
     """
     # Convert the data to an FDataGrid object
     fdata = skfda.FDataGrid(test_df.values)
@@ -262,12 +267,13 @@ def get_random_sample(n_clusters, train_df, test_df, stores, fcm, size=30):
     for cluster, samples in cluster_samples_dict_train.items():
         cluster_coordinates_train[cluster] = []
         for sample in samples:
-            # Get the longitude and latitude
+            # Get the longitude and latitude, and store_id
+            store_id = sample
             longitude = stores.loc[sample, "longitude"]
             latitude = stores.loc[sample, "latitude"]
             
             # Append the [longitude, latitude] pair to the corresponding cluster list
-            cluster_coordinates_train[cluster].append([longitude, latitude])
+            cluster_coordinates_train[cluster].append([longitude, latitude, store_id])
     
     # Print
     # for cluster, coordinates_list in cluster_coordinates_train.items():
@@ -332,8 +338,8 @@ def main():
     print_cluster_percentages(n_clusters, test_df, fcm)
     
     # Get samples
-    get_random_sample(n_clusters, train_df, test_df, stores, fcm)
-    
+    cluster_coordinates_train, cluster_coordinates_test = get_random_sample(n_clusters, train_df, test_df, stores, fcm)
+
     # Label data ploints
     train_df, test_df = add_labels(train_df, test_df, fcm)
     
