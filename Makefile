@@ -39,10 +39,11 @@ clean:
 	rm -rf img/eda/subway_canada_market_size_bar_plot.png
 
 clean_sk:
-	rm -f data/Smoothie_King_Preprocessed/processed_demographic.csv
-	rm -f data/Smoothie_King_Preprocessed/processed_poi.csv
-	rm -f data/Smoothie_King_Preprocessed/processed_trade_area.csv
-	rm -f data/Smoothie_King_Preprocessed/train_df.csv
-	rm -f data/Smoothie_King_Preprocessed/test_df.csv
+	# rm -f data/Smoothie_King_Preprocessed/processed_demographic.csv
+	# rm -f data/Smoothie_King_Preprocessed/processed_poi.csv
+	# rm -f data/Smoothie_King_Preprocessed/processed_trade_area.csv
+	# rm -f data/Smoothie_King_Preprocessed/train_df.csv
+	# rm -f data/Smoothie_King_Preprocessed/test_df.csv
+	rm -rf data/Smoothie_King_Preprocessed/
 	rm -rf model_joblib/smoothie_king/
 	rm -rf img/smoothie_king/
