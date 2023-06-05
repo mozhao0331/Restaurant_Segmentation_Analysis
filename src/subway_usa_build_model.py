@@ -21,24 +21,45 @@ from subway_usa_cluster_verify import *
 DIR = 'data/Subway USA/'
 
 def read_data():
-    """
-    Function to load train and test data
-    """
+    '''Function to load train and test data
+
+    Returns
+    -------
+    pandas DataFrame
+    '''
     train_df = pd.read_csv(DIR + "subway_usa_processed_train.csv", index_col="store")
     test_df = pd.read_csv(DIR + "subway_usa_processed_test.csv", index_col="store")
     stores = pd.read_csv(DIR + "subway_usa_stores.csv", index_col="store")
     return train_df, test_df, stores
 
 def save_df(train_df, test_df):
-    """
-    Function to save the dataframe with the new 'labels' column to a csv files
+    """Function to save the dataframe with the new 'labels' column to a csv files
+    Parameters
+    ----------
+    train_df : pandas DataFrame
+        The training dataset
+    test_df : pandas DataFrame
+        The training dataset
+    
+    Returns
+    -------
+    None
     """
     train_df.to_csv(DIR + "train_df_with_labels.csv")
     test_df.to_csv(DIR + "test_df_with_labels.csv")
 
 def select_features(train_df, test_df):
-    """
-    Function to select useful features
+    """Function to select useful features
+    Parameters
+    ----------
+    train_df : pandas DataFrame
+        The training dataset
+    test_df : pandas DataFrame
+        The training dataset
+    
+    Returns
+    -------
+    pandas DataFrame
     """
     selected_features = ['age0018_p_ta',
     'age65pl_p_ta',
@@ -174,9 +195,24 @@ def select_features(train_df, test_df):
     test_df = test_df[selected_features]
     return train_df, test_df
     
-def build_fcm_model(train_df, n_clusters=5, fuzzifier = 1.1, max_iter = 1000,random_state = 42):
-    """
-    Function to fit fcm model
+def build_fcm_model(train_df, n_clusters=5, fuzzifier=1.1, max_iter=1000,random_state=42):
+    """Function to fit fcm model
+    Parameters
+    ----------
+    train_df : pandas DataFrame
+        The training dataset
+    n_clusters=5 : num
+        number of clusters
+    fuzzifier=1.1 : num
+        fuzziness of each cluster
+    max_iter=1000 : num
+        max iteration
+    random_state=42 : num
+        random state
+    
+    Returns
+    -------
+    FuzzyCMeans object
     """
     # Convert the data to an FDataGrid object
     fdata = skfda.FDataGrid(train_df.values)
@@ -207,8 +243,19 @@ def add_labels(train_df, test_df, fcm):
     return train_df, test_df
 
 def print_cluster_percentages(n_clusters, test_df, fcm):
-    """
-    Funtion to print cluster_percentages
+    """Funtion to print cluster_percentages
+    Parameters
+    ----------
+    n_clusters : num
+        number of clusters
+    test_df : pandas DataFrame
+        The testing dataset
+    fcm : FuzzyCMeans object
+        The FuzzyCMeans model
+    
+    Returns
+    -------
+    None
     """
     # Convert the data to an FDataGrid object
     fdata = skfda.FDataGrid(test_df.values)
@@ -237,8 +284,25 @@ def print_cluster_percentages(n_clusters, test_df, fcm):
         print(f"Cluster {cluster} Percentage: {percentage:.2f}%")
 
 def get_random_sample(n_clusters, train_df, test_df, stores, fcm, size=30):
-    """
-    Function to randomly generate samples with longitude and lattitude, along with store id
+    """Function to randomly generate samples with longitude and lattitude, along with store id
+    Parameters
+    ----------
+    n_clusters : num
+        number of clusters
+    train_df : pandas DataFrame
+        The training dataset
+    test_df : pandas DataFrame
+        The testing dataset
+    store : pandas DataFrame
+        The stores information
+    fcm : FuzzyCMeans object
+        The FuzzyCMeans model
+    size=20 : num
+        number of sample size
+    
+    Returns
+    -------
+    dict
     """
     # Convert the data to an FDataGrid object
     fdata = skfda.FDataGrid(test_df.values)
