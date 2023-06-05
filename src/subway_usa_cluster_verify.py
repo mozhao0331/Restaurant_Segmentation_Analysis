@@ -21,6 +21,16 @@ button_id = 'btn-show-map'
 CLUSTER = 'Cluster'
 
 def cluster_verify(cluster_coords_dict):
+    """Function to use Selenium to open Chrome windows to verify clustering result
+    Parameters
+    ----------
+    cluster_coords_dict : dict
+        The dictionary with stores' locations and stores' ID
+
+    Returns
+    -------
+    None
+    """
     cwd = os.getcwd()
     html_file = os.path.join(cwd, html_path)
     driver_list = []
