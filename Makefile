@@ -2,17 +2,18 @@
 # author: UBC MDS Cohort7 DSCI591 Sitewise Analytics Restaurant Segmentation Group
 # date: 2023-05-12
 
+# PandaDoc install: https://github.com/jgm/pandoc/releases to render the report pdf
 all: doc/Proposal_Report.pdf
 .PHONY: smoothie_king
 smoothie_king: img/smoothie_king/%.png
 
 # Use Create EDA plots
 # Save generated images in img folder (no dependency)
-img/smoothie_category_bar_plot.png img/market_size_stackstacked_bar_plot.png img/store_density_stackstacked_bar_plot.png img/subway_us_store_density_bar_plot.png img/subway_us_market_size_bar_plot.png img/subway_canada_store_density_bar_plot.png img/subway_canada_market_size_bar_plot.png:
+img/eda/smoothie_category_bar_plot.png img/eda/market_size_stackstacked_bar_plot.png img/eda/store_density_stackstacked_bar_plot.png img/eda/subway_us_store_density_bar_plot.png img/eda/subway_us_market_size_bar_plot.png img/eda/subway_canada_store_density_bar_plot.png img/eda/subway_canada_market_size_bar_plot.png:
 	python src/helper_create_eda_figure.py
 
 # Render final report
-doc/Proposal_Report.pdf: doc/Proposal_Report.Rmd img/smoothie_category_bar_plot.png img/market_size_stackstacked_bar_plot.png img/store_density_stackstacked_bar_plot.png img/subway_us_store_density_bar_plot.png img/subway_us_market_size_bar_plot.png img/subway_canada_store_density_bar_plot.png img/subway_canada_market_size_bar_plot.png img/smoothie_flow_chart.png img/subway_flow_chart.png img/timeline.png
+doc/Proposal_Report.pdf: doc/Proposal_Report.Rmd img/eda/smoothie_category_bar_plot.png img/eda/market_size_stackstacked_bar_plot.png img/eda/store_density_stackstacked_bar_plot.png img/eda/subway_us_store_density_bar_plot.png img/eda/subway_us_market_size_bar_plot.png img/eda/subway_canada_store_density_bar_plot.png img/eda/subway_canada_market_size_bar_plot.png img/info/smoothie_flow_chart.png img/info/subway_flow_chart.png img/info/timeline.png
 	Rscript -e "rmarkdown::render('doc/Proposal_Report.Rmd')"
 
 # Preprocess data for Smoothie King
@@ -29,13 +30,13 @@ img/smoothie_king/%.png: data/Smoothie\ King/train_df.csv data/Smoothie\ King/te
 
 clean: 
 	rm -rf doc/Proposal_Report.pdf
-	rm -rf img/smoothie_category_bar_plot.png 
-	rm -rf img/market_size_stackstacked_bar_plot.png 
-	rm -rf img/store_density_stackstacked_bar_plot.png
-	rm -rf img/subway_us_store_density_bar_plot.png 
-	rm -rf img/subway_us_market_size_bar_plot.png 
-	rm -rf img/subway_canada_store_density_bar_plot.png 
-	rm -rf img/subway_canada_market_size_bar_plot.png
+	rm -rf img/eda/smoothie_category_bar_plot.png 
+	rm -rf img/eda/market_size_stackstacked_bar_plot.png 
+	rm -rf img/eda/store_density_stackstacked_bar_plot.png
+	rm -rf img/eda/subway_us_store_density_bar_plot.png 
+	rm -rf img/eda/subway_us_market_size_bar_plot.png 
+	rm -rf img/eda/subway_canada_store_density_bar_plot.png 
+	rm -rf img/eda/subway_canada_market_size_bar_plot.png
 
 clean_sk:
 	rm -f data/Smoothie\ King/processed_demographic.csv
