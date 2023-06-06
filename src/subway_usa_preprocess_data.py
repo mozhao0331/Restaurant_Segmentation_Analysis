@@ -14,14 +14,53 @@ SUBWAYUS = "Subway USA/subway_usa_"
 
 
 def is_climate_feat(feat):
+    """
+    Check whether a given feature is a climate-related feature.
+    
+    Parameters
+    ----------
+    feat : str
+        Feature to be checked.
+
+    Returns
+    -------
+    bool
+        True if the feature is climate-related, False otherwise.
+    """
     return "avgmax" in feat or "temp" in feat or feat == "precip" or feat == "snowfall"
 
 
 def is_sport_venue(feat):
+    """
+    Check whether a given feature is related to sports venues.
+    
+    Parameters
+    ----------
+    feat : str
+        Feature to be checked.
+
+    Returns
+    -------
+    bool
+        True if the feature is related to sports venues, False otherwise.
+    """
     return "sports_venues" in feat
 
 
 def agg_inrix(df):
+    """
+    Aggregate 'inrix_' prefixed columns in a DataFrame and remove the original 'inrix_' columns.
+    
+    Parameters
+    ----------
+    df : pandas.DataFrame
+        DataFrame to be processed.
+
+    Returns
+    -------
+    pandas.DataFrame
+        Processed DataFrame with a new column 'inrix_total_ta' and without the original 'inrix_' columns.
+    """
     inrix_columns = []
     for col in df.columns.tolist():
         if 'inrix_' in col:
@@ -32,6 +71,22 @@ def agg_inrix(df):
 
 
 def agg_veh(df, columns=None):
+    """
+    Aggregate specified vehicle-related columns in a DataFrame, removes the original columns and adds a new 
+    column that is the sum of the products of the column values and their corresponding weights (from 1 to 5).
+    
+    Parameters
+    ----------
+    df : pandas.DataFrame
+        DataFrame to be processed.
+    columns : list, optional
+        List of column names to be aggregated. Defaults to a specific list of column names related to vehicle count.
+
+    Returns
+    -------
+    pandas.DataFrame
+        Processed DataFrame with a new column 'hh_expected_vehicle_ta' and without the original columns related to vehicle count.
+    """
     if not columns:
         columns = [
             'hh_0vehicle_p_ta', 'hh_1vehicle_p_ta', 'hh_2vehicle_p_ta',
@@ -45,6 +100,22 @@ def agg_veh(df, columns=None):
 
 
 def agg_hh_pers(df, columns=None):
+    """
+    Aggregate specified household-person-related columns in a DataFrame, removes the original columns and adds a new 
+    column that is the sum of the products of the column values and their corresponding weights (from 1 to 7).
+    
+    Parameters
+    ----------
+    df : pandas.DataFrame
+        DataFrame to be processed.
+    columns : list, optional
+        List of column names to be aggregated. Defaults to a specific list of column names related to household person count.
+
+    Returns
+    -------
+    pandas.DataFrame
+        Processed DataFrame with a new column 'hh_expected_pers_ta' and without the original columns related to household person count.
+    """
     if not columns:
         columns = [
             'hh_1pers_p_ta', 'hh_2pers_p_ta', 'hh_3pers_p_ta',
@@ -60,6 +131,23 @@ def agg_hh_pers(df, columns=None):
 
 
 def drop_specific_columns(df):
+    """
+    Process a DataFrame by removing specific columns based on certain conditions, and then applying a series of aggregation functions.
+
+    This function excludes columns which contain certain substrings, are flagged by other helper functions, or match certain patterns. 
+    The function also retains all other columns. It then applies the `agg_inrix`, `agg_veh`, and `agg_hh_pers` functions to 
+    aggregate certain groups of columns in the DataFrame.
+
+    Parameters
+    ----------
+    df : pandas.DataFrame
+        DataFrame to be processed.
+
+    Returns
+    -------
+    pandas.DataFrame
+        Processed DataFrame with certain columns removed and others aggregated into new columns.
+    """
     all_cols = df.columns.tolist()
     keep_columns = []
     
@@ -113,6 +201,33 @@ def data_transform_pipeline(
         categorical_features,
         numeric_features
 ):
+    """
+    Perform a transformation pipeline on train and test datasets, which includes dropping specified features, imputing missing values, 
+    applying standard scaling on numeric features, encoding ordinal and categorical features, and handling unknown categories in 
+    categorical features.
+
+    Parameters
+    ----------
+    train : pandas.DataFrame
+        The training dataset.
+    test : pandas.DataFrame
+        The test dataset.
+    drop_features : list
+        List of features to be dropped from the datasets.
+    ordinal_features_oth : list
+        List of ordinal features in the datasets.
+    ordering_ordinal_oth : list
+        List of ordering for the ordinal features.
+    categorical_features : list
+        List of categorical features in the datasets.
+    numeric_features : list
+        List of numerical features in the datasets.
+
+    Returns
+    -------
+    tuple
+        Transformed training and test datasets as pandas.DataFrame objects. The returned tuple contains two items: (transformed_train, transformed_test).
+    """
     train_index = train['store']
     test_index = test['store']
     numeric_transformer = make_pipeline(
@@ -158,6 +273,26 @@ def data_transform_pipeline(
 
 
 def merge_split_data(stores, poi, trade_area, demographic=None):
+    """
+    Merge datasets related to stores, points of interest (POI), and trade areas, optionally including demographic data. 
+    The merged dataset is then split into training and testing sets.
+
+    Parameters
+    ----------
+    stores : pandas.DataFrame
+        DataFrame containing store data. Each row represents a store, and 'store' is expected as a column and used as the merge key.
+    poi : pandas.DataFrame
+        DataFrame containing points of interest data. 'store' is expected as a column and used as the merge key.
+    trade_area : pandas.DataFrame
+        DataFrame containing trade area data. 'store' is expected as a column and used as the merge key.
+    demographic : pandas.DataFrame, optional
+        DataFrame containing demographic data. If provided, 'store' is expected as a column and used as the merge key.
+
+    Returns
+    -------
+    tuple
+        A tuple of two pandas.DataFrame objects: (train_df, test_df), representing the training and testing datasets respectively.
+    """
     if demographic:
         merged = stores.merge(
             poi, on="store"
@@ -178,6 +313,20 @@ def merge_split_data(stores, poi, trade_area, demographic=None):
 
 
 def process_subway_usa(include_demographic=False):
+    """
+    Load, merge, process, and split the Subway USA data. This includes loading the points of interest (poi), trade area, 
+    and store data, optionally loading demographic data, merging these datasets, dropping specific features, transforming 
+    the data, and saving the resulting processed training and test datasets as CSV files.
+
+    Parameters
+    ----------
+    include_demographic : bool, optional
+        If True, includes demographic data in the processing. Default is False.
+
+    Returns
+    -------
+    None
+    """
     subway_usa_poi = pd.read_csv(DIR + SUBWAYUS + "poi_variables.csv")
     subway_usa_trade_area = pd.read_csv(DIR + SUBWAYUS + "trade_area_variables.csv")
     subway_usa_stores = pd.read_csv(DIR + "Subway USA/subway_usa_stores.csv", encoding='latin-1')
@@ -235,7 +384,5 @@ def main():
         os.makedirs(DIR + "Subway_USA_Preprocessed/")
         process_subway_usa(include_demographic=False)
     
-
-
 if __name__ == "__main__":
     main()
