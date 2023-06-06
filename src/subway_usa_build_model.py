@@ -19,6 +19,7 @@ from subway_usa_cluster_verify import *
 
 # Define dirctory
 DIR = 'data/Subway USA/'
+processed = "../Subway_USA_Preprocessed/"
 
 def read_data():
     '''Function to load train and test data
@@ -27,8 +28,8 @@ def read_data():
     -------
     pandas DataFrame
     '''
-    train_df = pd.read_csv(DIR + "subway_usa_processed_train.csv", index_col="store")
-    test_df = pd.read_csv(DIR + "subway_usa_processed_test.csv", index_col="store")
+    train_df = pd.read_csv(DIR + processed + "subway_usa_processed_train.csv", index_col="store")
+    test_df = pd.read_csv(DIR + processed + "subway_usa_processed_test.csv", index_col="store")
     stores = pd.read_csv(DIR + "subway_usa_stores.csv", index_col="store")
     return train_df, test_df, stores
 
@@ -45,8 +46,8 @@ def save_df(train_df, test_df):
     -------
     None
     """
-    train_df.to_csv(DIR + "train_df_with_labels.csv")
-    test_df.to_csv(DIR + "test_df_with_labels.csv")
+    train_df.to_csv(DIR + processed + "train_df_with_labels.csv")
+    test_df.to_csv(DIR + processed + "test_df_with_labels.csv")
 
 def select_features(train_df, test_df):
     """Function to select useful features
