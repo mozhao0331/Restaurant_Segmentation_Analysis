@@ -2,6 +2,7 @@ import os
 import pytest
 import numpy as np
 import pandas as pd
+import skfda
 import sys
 cwd = os.getcwd()
 sys.path.append(cwd)
@@ -94,16 +95,18 @@ def test_data_transform_pipeline():
 
 def test_process_subway_usa():
     process_subway_usa()
-    out_dir = "data/Subway USA/"
+    out_dir = "data/Subway_USA_Preprocessed/"
     assert os.path.isfile(out_dir + "subway_usa_processed_train.csv")
     assert os.path.isfile(out_dir + "subway_usa_processed_test.csv")
 
 '''
 Test subway_usa_build_model.py
 '''
-# @pytest.fixture
-# def read_processed_data():
-#     pass
+@pytest.fixture
+def read_processed_data():
+    train_df, test_df, stores = read_data()
+    train_df, test_df = select_features(train_df, test_df)
+    return train_df, test_df, stores
 
 def test_read_data():
     assert len(read_data()) == 3
@@ -114,3 +117,24 @@ def test_select_features():
     reduced_train, reduced_test = select_features(train_df, test_df)
     reduced_cols = reduced_train.columns
     assert len(reduced_cols) < len(original_cols)
+
+def test_build_fcm_model(read_processed_data):
+    train_df, test_df = read_processed_data[0], read_processed_data[1]
+    fcm = build_fcm_model(train_df)
+    assert isinstance(fcm, skfda.ml.clustering.FuzzyCMeans)
+
+def test_add_labels(read_processed_data):
+    train_df, test_df = read_processed_data[0], read_processed_data[1]
+    fcm = build_fcm_model(train_df)
+    labeled_train, labeled_test = add_labels(train_df, test_df, fcm)
+    assert "labels" in labeled_train.columns
+    assert "labels" in labeled_test.columns
+
+def test_get_random_sample(read_processed_data):
+    train_df, test_df, stores = read_processed_data[0], read_processed_data[1], read_processed_data[2]
+    fcm = build_fcm_model(train_df)
+    train_random_samples, test_random_samples = get_random_sample(5, train_df, test_df, stores, fcm)
+    assert len(train_random_samples.keys()) == 5
+    assert len(train_random_samples[0]) == 30
+    assert len(test_random_samples.keys()) == 5
+    assert len(test_random_samples[0]) == 30
