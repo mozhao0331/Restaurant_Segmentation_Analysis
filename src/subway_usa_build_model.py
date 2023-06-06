@@ -230,7 +230,29 @@ def build_fcm_model(train_df, n_clusters=5, fuzzifier=1.1, max_iter=1000,random_
 
 def add_labels(train_df, test_df, fcm):
     """
-    Function to get the cluster labels
+    Assign cluster labels to the training and test datasets based on a trained Fuzzy C-Means model.
+
+    Parameters
+    ----------
+    train_df : pandas.DataFrame
+        The training dataset.
+    test_df : pandas.DataFrame
+        The test dataset.
+    fcm : skfuzzy.cluster.cmeans.CMeans
+        The trained Fuzzy C-Means model.
+
+    Returns
+    -------
+    train_df : pandas.DataFrame
+        The training dataset with cluster labels.
+    test_df : pandas.DataFrame
+        The test dataset with cluster labels.
+
+    Notes
+    ------
+    The function assigns the cluster labels to each observation in the training and test datasets using
+    the labels and prediction method of the Fuzzy C-Means model. The labels are added as a new column in
+    both datasets.
     """
     # Convert the data to an FDataGrid object
     fdata = skfda.FDataGrid(test_df.values)
