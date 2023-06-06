@@ -14,16 +14,53 @@ DIR = "data/Subway_USA_Preprocessed/"
 FIG_DIR = "img/subway_usa/"
 
 def read_data():
+    """
+    Read train and test data from CSV files.
+
+    Returns
+    -------
+    tuple
+        Returns a tuple with two pandas DataFrames (train_df, test_df).
+    """
     train_df = pd.read_csv(DIR + "train_df_with_labels.csv", index_col="store")
     test_df = pd.read_csv(DIR + "test_df_with_labels.csv", index_col="store")
     return train_df, test_df
 
 def fit_random_forest_classifier(X_train, y_train):
+    """
+    Fit a Random Forest Classifier model.
+
+    Parameters
+    ----------
+    X_train : pandas.DataFrame
+        The input training data.
+    y_train : pandas.Series
+        The target output for the training data.
+
+    Returns
+    -------
+    RandomForestClassifier
+        The fitted Random Forest Classifier model.
+    """
     rf = RandomForestClassifier(random_state=42)
     rf.fit(X_train, y_train)
     return rf
 
 def save_figure(out_dir, file_name):
+    """
+    Save a figure to a specified directory.
+
+    Parameters
+    ----------
+    out_dir : str
+        The output directory to save the figure.
+    file_name : str
+        The file name for the saved figure.
+
+    Returns
+    -------
+    None
+    """
     try:
         plt.savefig(out_dir + file_name, bbox_inches="tight")
     except:
@@ -31,16 +68,48 @@ def save_figure(out_dir, file_name):
         plt.savefig(out_dir + file_name, bbox_inches="tight")
         
 def plot_shap_feature_importance(shap_values, X_enc, target_class):
-    ''' Helper function to plot shap beeswarm plot
-    '''
+    """
+    Plot SHAP feature importance using a beeswarm plot.
+
+    Parameters
+    ----------
+    shap_values : array-like
+        The SHAP values to plot.
+    X_enc : pandas.DataFrame
+        The encoded input data used to generate the SHAP values.
+    target_class : int
+        The target class for which to plot feature importance.
+
+    Returns
+    -------
+    None
+    """
     shap.summary_plot(shap_values, X_enc, show=False)
     plt.title(f"SHAP Feature Importance for cluster {target_class}")
     save_figure(FIG_DIR, f"cluster_{target_class}_summary_plot.png")
     plt.close()
 
 def plot_shap_force_plot(explainer, shap_values, X_enc, target_class, idx_to_explain):
-    ''' Helper function to plot SHAP force plot for the most confident prediction
-    '''
+    """
+    Plot SHAP force plot for the most confident prediction.
+
+    Parameters
+    ----------
+    explainer : shap.Explainer
+        The SHAP explainer object.
+    shap_values : array-like
+        The SHAP values to plot.
+    X_enc : pandas.DataFrame
+        The encoded input data used to generate the SHAP values.
+    target_class : int
+        The target class for which to plot feature importance.
+    idx_to_explain : int
+        Index of the instance in the dataset to explain.
+
+    Returns
+    -------
+    None
+    """
     shap.force_plot(
         explainer.expected_value[target_class], 
         shap_values[idx_to_explain, :], 
@@ -54,8 +123,30 @@ def plot_shap_force_plot(explainer, shap_values, X_enc, target_class, idx_to_exp
     plt.close()
 
 def shap_interpretation(model, X_enc, y_test):
-    ''' Interpret features for each target class from the classifier model by using SHAP
-    '''
+    """
+    Interpret features for each target class from the classifier model using SHAP.
+
+    Parameters
+    ----------
+    model : sklearn.ensemble.RandomForestClassifier
+        The trained random forest classifier model.
+    X_enc : pandas.DataFrame
+        The encoded input features.
+    y_test : pandas.Series
+        The target variable corresponding to X_enc.
+
+    Returns
+    -------
+    None
+    
+    Notes
+    ------
+    The function does the following for each class:
+    1. Plots the SHAP feature importance plot and saves it.
+    2. Finds the most confident prediction and plots the SHAP force plot.
+    3. Creates a boxplot for the top 6 features with the highest mean SHAP value.
+    All the plots are saved as PNG files.
+    """
     plotted_cols = set()
     full_df = X_enc.copy(deep=True)
     full_df["labels"] = y_test

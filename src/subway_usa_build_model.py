@@ -26,7 +26,7 @@ def read_data():
 
     Returns
     -------
-    pandas DataFrame
+    pandas.DataFrame
     '''
     train_df = pd.read_csv(DIR + processed + "subway_usa_processed_train.csv", index_col="store")
     test_df = pd.read_csv(DIR + processed + "subway_usa_processed_test.csv", index_col="store")
@@ -37,9 +37,9 @@ def save_df(train_df, test_df):
     """Function to save the dataframe with the new 'labels' column to a csv files
     Parameters
     ----------
-    train_df : pandas DataFrame
+    train_df : pandas.DataFrame
         The training dataset
-    test_df : pandas DataFrame
+    test_df : pandas.DataFrame
         The training dataset
     
     Returns
@@ -53,14 +53,14 @@ def select_features(train_df, test_df):
     """Function to select useful features
     Parameters
     ----------
-    train_df : pandas DataFrame
+    train_df : pandas.DataFrame
         The training dataset
-    test_df : pandas DataFrame
+    test_df : pandas.DataFrame
         The training dataset
     
     Returns
     -------
-    pandas DataFrame
+    pandas.DataFrame
     """
     selected_features = ['age0018_p_ta',
     'age65pl_p_ta',
@@ -200,7 +200,7 @@ def build_fcm_model(train_df, n_clusters=5, fuzzifier=1.1, max_iter=1000,random_
     """Function to fit fcm model
     Parameters
     ----------
-    train_df : pandas DataFrame
+    train_df : pandas.DataFrame
         The training dataset
     n_clusters=5 : num
         number of clusters
@@ -230,7 +230,29 @@ def build_fcm_model(train_df, n_clusters=5, fuzzifier=1.1, max_iter=1000,random_
 
 def add_labels(train_df, test_df, fcm):
     """
-    Function to get the cluster labels
+    Assign cluster labels to the training and test datasets based on a trained Fuzzy C-Means model.
+
+    Parameters
+    ----------
+    train_df : pandas.DataFrame
+        The training dataset.
+    test_df : pandas.DataFrame
+        The test dataset.
+    fcm : skfuzzy.cluster.cmeans.CMeans
+        The trained Fuzzy C-Means model.
+
+    Returns
+    -------
+    train_df : pandas.DataFrame
+        The training dataset with cluster labels.
+    test_df : pandas.DataFrame
+        The test dataset with cluster labels.
+
+    Notes
+    ------
+    The function assigns the cluster labels to each observation in the training and test datasets using
+    the labels and prediction method of the Fuzzy C-Means model. The labels are added as a new column in
+    both datasets.
     """
     # Convert the data to an FDataGrid object
     fdata = skfda.FDataGrid(test_df.values)
@@ -249,7 +271,7 @@ def print_cluster_percentages(n_clusters, test_df, fcm):
     ----------
     n_clusters : num
         number of clusters
-    test_df : pandas DataFrame
+    test_df : pandas.DataFrame
         The testing dataset
     fcm : FuzzyCMeans object
         The FuzzyCMeans model
@@ -290,11 +312,11 @@ def get_random_sample(n_clusters, train_df, test_df, stores, fcm, size=30):
     ----------
     n_clusters : num
         number of clusters
-    train_df : pandas DataFrame
+    train_df : pandas.DataFrame
         The training dataset
-    test_df : pandas DataFrame
+    test_df : pandas.DataFrame
         The testing dataset
-    store : pandas DataFrame
+    store : pandas.DataFrame
         The stores information
     fcm : FuzzyCMeans object
         The FuzzyCMeans model

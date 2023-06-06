@@ -13,7 +13,7 @@ def process_percent_non_percent_df(df, out_dir):
 
     Parameters
     ----------
-    df : pandas DataFrame
+    df : pandas.DataFrame
     out_dir : str
         Directory to save processed DataFrame
     
@@ -41,7 +41,7 @@ def process_poi_df(df, out_dir):
 
     Parameters
     ----------
-    df : pandas DataFrame
+    df : pandas.DataFrame
     out_dir : str
         Directory to save processed DataFrame
 
@@ -65,9 +65,35 @@ def process_poi_df(df, out_dir):
     reduced_df.to_csv(DIR + out_dir, index=False)
 
 def is_climate_feat(feat):
+    """
+    Check whether a given feature is a climate-related feature.
+    
+    Parameters
+    ----------
+    feat : str
+        Feature to be checked.
+
+    Returns
+    -------
+    bool
+        True if the feature is climate-related, False otherwise.
+    """
     return "avgmax" in feat or "temp" in feat or feat == "precip" or feat == "snowfall"
 
 def is_sport_venue(feat):
+    """
+    Check whether a given feature is related to sports venues.
+    
+    Parameters
+    ----------
+    feat : str
+        Feature to be checked.
+
+    Returns
+    -------
+    bool
+        True if the feature is related to sports venues, False otherwise.
+    """
     return "sports_venues" in feat
 
 def main():
