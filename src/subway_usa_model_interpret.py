@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-from helper_plotting_functions import plot_boxplot
+from src.helper_plotting_functions import plot_boxplot
 
 
 DIR = "data/Subway_USA_Preprocessed/"
