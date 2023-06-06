@@ -3,12 +3,11 @@ import pytest
 import numpy as np
 import pandas as pd
 import skfda
-import sys
-cwd = os.getcwd()
-sys.path.append(cwd)
+import sklearn
+import shap
 from src.subway_usa_preprocess_data import *
-from src.subway_usa_cluster_verify import *
 from src.subway_usa_build_model import *
+import src.subway_usa_model_interpret as sb_inter
 
 '''
 Test subway_usa_preprocess_data.py
@@ -126,9 +125,9 @@ def test_build_fcm_model(read_processed_data):
 def test_add_labels(read_processed_data):
     train_df, test_df = read_processed_data[0], read_processed_data[1]
     fcm = build_fcm_model(train_df)
-    labeled_train, labeled_test = add_labels(train_df, test_df, fcm)
-    assert "labels" in labeled_train.columns
-    assert "labels" in labeled_test.columns
+    labelled_train, labelled_test = add_labels(train_df, test_df, fcm)
+    assert "labels" in labelled_train.columns
+    assert "labels" in labelled_test.columns
 
 def test_get_random_sample(read_processed_data):
     train_df, test_df, stores = read_processed_data[0], read_processed_data[1], read_processed_data[2]
@@ -138,3 +137,45 @@ def test_get_random_sample(read_processed_data):
     assert len(train_random_samples[0]) == 30
     assert len(test_random_samples.keys()) == 5
     assert len(test_random_samples[0]) == 30
+
+'''
+Test subway_usa_model_interpret.py
+'''
+@pytest.fixture
+def read_labelled_data():
+    train_df, test_df = sb_inter.read_data()
+    X_train = train_df.drop(columns=["labels"])
+    y_train = train_df["labels"]
+    X_test = test_df.drop(columns=["labels"])
+    y_test = test_df["labels"]
+    return X_train, y_train, X_test, y_test
+
+def test_model_interpret_read_data():
+    assert(len(sb_inter.read_data()) == 2)
+
+def test_fit_random_forest_classifier():
+    train_df, test_df = sb_inter.read_data()
+    X_train = train_df.drop(columns=["labels"])
+    y_train = train_df["labels"]
+    rf = sb_inter.fit_random_forest_classifier(X_train, y_train)
+    assert isinstance(rf, sklearn.ensemble.RandomForestClassifier)
+
+def test_plot_shap_feature_importance(read_labelled_data):
+    X_train, y_train, X_test, y_test = read_labelled_data[0], read_labelled_data[1], read_labelled_data[2], read_labelled_data[3]
+    rf = sb_inter.fit_random_forest_classifier(X_train, y_train)
+    explainer = shap.TreeExplainer(rf)
+    shap_values = explainer.shap_values(X_test)
+    sb_inter.plot_shap_feature_importance(shap_values[0], X_test, 0)
+    assert os.path.isfile("img/subway_usa/cluster_0_summary_plot.png")
+
+def test_plot_shap_force_plot(read_labelled_data):
+    X_train, y_train, X_test, y_test = read_labelled_data[0], read_labelled_data[1], read_labelled_data[2], read_labelled_data[3]
+    rf = sb_inter.fit_random_forest_classifier(X_train, y_train)
+    explainer = shap.TreeExplainer(rf)
+    shap_values = explainer.shap_values(X_test)
+    y_test_index_reset = y_test.reset_index(drop=True)
+    indices = y_test_index_reset[y_test_index_reset == 0].index.tolist()
+    pred_probs = rf.predict_proba(X_test.iloc[indices])
+    most_confident_pred_idx = np.argmax(pred_probs[:, 0])
+    sb_inter.plot_shap_force_plot(explainer, shap_values[0], X_test, 0, indices[most_confident_pred_idx])
+    assert os.path.isfile("img/subway_usa/cluster_0_force_plot.png")
