@@ -13,7 +13,7 @@ def process_percent_non_percent_df(df, out_dir):
 
     Parameters
     ----------
-    df : pandas DataFrame
+    df : pandas.DataFrame
     out_dir : str
         Directory to save processed DataFrame
     
@@ -41,7 +41,7 @@ def process_poi_df(df, out_dir):
 
     Parameters
     ----------
-    df : pandas DataFrame
+    df : pandas.DataFrame
     out_dir : str
         Directory to save processed DataFrame
 
