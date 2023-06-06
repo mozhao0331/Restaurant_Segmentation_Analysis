@@ -24,7 +24,7 @@ def read_data():
 
     Returns
     -------
-    pandas DataFrame
+    pandas.DataFrame
     '''
     poi = pd.read_csv(DIR_PREPROCESS + "processed_poi.csv")
     stores = pd.read_csv(DIR + "smoothie_king_stores.csv")
@@ -42,11 +42,11 @@ def drop_unused_cols(df):
 
     Parameters
     ----------
-    df : pandas DataFrame
+    df : pandas.DataFrame
 
     Returns
     -------
-    pandas DataFrame
+    pandas.DataFrame
     '''
     drop_cols = ["store_num", "country_code", "longitude", "latitude", "state_name", "cbsa_name", "dma_name"]
     df = df.drop(columns=drop_cols)
@@ -58,7 +58,7 @@ def define_preprocessor(X_train):
 
     Parameters
     ----------
-    X_train : pandas DataFrame
+    X_train : pandas.DataFrame
         The training dataset without the target column
     
     Returns
@@ -96,7 +96,7 @@ def build_random_forest_model(X_train, y_train, preprocessor, class_weight):
 
     Parameters
     ----------
-    X_train : pandas DataFrame
+    X_train : pandas.DataFrame
         The training dataset without the target column
     y_train : pandas Series
         The target column of the train set to predict
@@ -131,7 +131,7 @@ def build_l1_reg_random_forest_model(X_train, y_train, preprocessor, class_weigh
 
     Parameters
     ----------
-    X_train : pandas DataFrame
+    X_train : pandas.DataFrame
         The training dataset without the target column
     y_train : pandas Series
         The target column of the train set to predict
@@ -178,7 +178,7 @@ def build_l1_reg_random_forest_ovr_model(X_train, y_train, preprocessor):
 
     Parameters
     ----------
-    X_train : pandas DataFrame
+    X_train : pandas.DataFrame
         The training dataset without the target column
     y_train : pandas Series
         The target column of the train set to predict
@@ -227,7 +227,7 @@ def build_ensemble_model(classifiers, X_train, y_train):
     ----------
     classifier : dict
         Dictionary with classifier name as key and classifiers as the dictionary value
-    X_train : pandas DataFrame
+    X_train : pandas.DataFrame
         The training dataset without the target column
     y_train : pandas Series
         The target column of the train set to predict
@@ -249,11 +249,11 @@ def print_train_test_scores(classifiers, X_train, y_train, X_test, y_test):
     ----------
     classifiers : dict
         Dictionary with classifier name as key and classifiers as the dictionary value
-    X_train : pandas DataFrame
+    X_train : pandas.DataFrame
         The training dataset without the target column
     y_train : pandas Series
         The target column of the train set to predict
-    X_test : pandas DataFrame
+    X_test : pandas.DataFrame
         The testing dataset without the target column
     y_test : pandas Series
         The target column of the test set to predict

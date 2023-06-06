@@ -30,9 +30,9 @@ def read_data():
 
     Returns
     -------
-    train_df : pandas DataFrame
+    train_df : pandas.DataFrame
         The train dataset
-    test_df : pandas DataFrame
+    test_df : pandas.DataFrame
         The test dataset
     '''
     train_df = pd.read_csv(DIR + "train_df.csv", index_col="store")
@@ -45,7 +45,7 @@ def generate_confuson_matrix(model, X, y, labels, title, out_file):
     Parameters
     ----------
     model : sklearn classifier model
-    X : pandas DataFrame
+    X : pandas.DataFrame
         Dataset with features used for classification
     y : pandas Series
         Target column of dataset
@@ -74,7 +74,7 @@ def get_prediction_mismatch(prediction_result, model, true_label, predicted_labe
 
     Parameters
     ----------
-    prediction_result : pandas DataFrame
+    prediction_result : pandas.DataFrame
     model : str
         one of {"rf", "l1_reg_rf", "l1_reg_rf_ovr", "voting"}
     true_label : int
@@ -93,7 +93,7 @@ def get_all_feature_names(df):
 
     Parameters
     ----------
-    df : pandas DataFrame
+    df : pandas.DataFrame
 
     Returns
     -------
@@ -117,7 +117,7 @@ def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_tes
         Directory to save output figures
     shap_values : array
         Matrix of SHAP values from SHAP Explainer shap_values() method
-    X_test_enc : pandas DataFrame
+    X_test_enc : pandas.DataFrame
         Transformed X_test
     estimators : list
         List of estimators for each OVR case; used only if strategy_ovr=True
@@ -162,7 +162,7 @@ def shap_force_plot(strategy_ovr, explainer, shap_values, X_test_enc, class_indi
     explainer : shap.TreeExplainer
     shap_values : array
         Matrix of SHAP values from SHAP Explainer shap_values() method
-    X_test_enc : pandas DataFrame
+    X_test_enc : pandas.DataFrame
         Transformed X_test
     class_indices : list
     idx_to_explain : int
@@ -212,14 +212,14 @@ def encode_X_test(model, X_test, feature_names):
 
     model : sklearn Pipeline
         Pipeline containing, at a minimum, a ColumnTransformer and a classifier
-    X_test : pandas DataFrame
+    X_test : pandas.DataFrame
         Test dataset without the target column
     feature_names : list
         List of all column names with numeric features first
     
     Returns
     -------
-    pandas DataFrame
+    pandas.DataFrame
         Transformed X_test
     '''
     preprocessor = model.named_steps["columntransformer"]
@@ -246,7 +246,7 @@ def shap_interpretation_for_rf_model(rf_model, X_test, y_test, feature_names):
     ----------
     rf_model : sklearn Pipeline
         Pipeline containing the random forest classifier
-    X_test : pandas DataFrame
+    X_test : pandas.DataFrame
         The testing dataset without the target column
     y_test : pandas Series
         The target column of the test set to predict
@@ -304,7 +304,7 @@ def shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, fea
     ----------
     l1_reg_rf_model : sklearn Pipeline
         Pipeline containing the L1 regularized random forest classifier
-    X_test : pandas DataFrame
+    X_test : pandas.DataFrame
         The testing dataset without the target column
     y_test : pandas Series
         The target column of the test set to predict
@@ -362,7 +362,7 @@ def shap_interpretation_for_l1_reg_rf_ovr_model(l1_reg_rf_ovr_model, X_test, y_t
     ----------
     l1_reg_rf_ovr_model : sklearn Pipeline
         Pipeline containing the L1 regularized one vs rest random forest classifier
-    X_test : pandas DataFrame
+    X_test : pandas.DataFrame
         The testing dataset without the target column
     y_test : pandas Series
         The target column of the test set to predict
