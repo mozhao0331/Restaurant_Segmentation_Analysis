@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-from plotting_functions import plot_boxplot
+from helper_plotting_functions import plot_boxplot
 
 
-DIR = "data/Subway USA/"
+DIR = "data/Subway_USA_Preprocessed/"
 FIG_DIR = "img/subway_usa/"
 
 def read_data():

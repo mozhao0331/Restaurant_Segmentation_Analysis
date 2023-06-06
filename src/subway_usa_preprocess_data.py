@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import os
 
 from sklearn.compose import make_column_transformer
 from sklearn.impute import SimpleImputer
@@ -38,7 +39,7 @@ def agg_veh(df, columns=None):
         ]
     df['hh_expected_vehicle_ta'] = df['hh_1vehicle_p_ta'] * 1 + df['hh_2vehicle_p_ta'] * 2 + df['hh_3vehicle_p_ta'] * 3 \
                                    + df['hh_4vehicle_p_ta'] * 4 + df['hh_5vehicle_p_ta'] * 5
-    print(f'----- Remove vehicle columns: {columns} -----')
+    # print(f'----- Remove vehicle columns: {columns} -----')
     df = df.drop(columns=columns)
     return df
 
@@ -53,7 +54,7 @@ def agg_hh_pers(df, columns=None):
     df['hh_expected_pers_ta'] = df['hh_1pers_p_ta'] * 1 + df['hh_2pers_p_ta'] * 2 + df['hh_3pers_p_ta'] * 3 \
                                 + df['hh_4pers_p_ta'] * 4 + df['hh_5pers_p_ta'] * 5 + df['hh_6pers_p_ta'] * 6\
                                 + df['hh_7pers_p_ta'] * 7
-    print(f'----- Remove household person count columns: {columns} -----')
+    # print(f'----- Remove household person count columns: {columns} -----')
     df = df.drop(columns=columns)
     return df
 
@@ -89,9 +90,9 @@ def drop_specific_columns(df):
             edu_cols.append(col)
             continue
         keep_columns.append(col)
-    print(f'----- Remove employment columns: {emp_cols} -----')
-    print(f'----- Remove education columns: {edu_cols} -----')
-    print(f'----- Removing {len(all_cols) - len(keep_columns)} columns -----')
+    # print(f'----- Remove employment columns: {emp_cols} -----')
+    # print(f'----- Remove education columns: {edu_cols} -----')
+    # print(f'----- Removing {len(all_cols) - len(keep_columns)} columns -----')
     reduced_df = df[keep_columns]
     
     # aggregate intrix columns
@@ -222,13 +223,18 @@ def process_subway_usa(include_demographic=False):
         [],
         numeric_features
     )
-    processed_train.to_csv(DIR + SUBWAYUS + "processed_train.csv")
-    processed_test.to_csv(DIR + SUBWAYUS + "processed_test.csv")
+    processed_train.to_csv(DIR + "Subway_USA_Preprocessed/" + "subway_usa_processed_train.csv")
+    processed_test.to_csv(DIR + "Subway_USA_Preprocessed/" + "subway_usa_processed_test.csv")
     
 
 def main():
     print('============= Starting to preprocess Subway USA =============')
-    process_subway_usa(include_demographic=False)
+    try:
+        process_subway_usa(include_demographic=False)
+    except:
+        os.makedirs(DIR + "Subway_USA_Preprocessed/")
+        process_subway_usa(include_demographic=False)
+    
 
 
 if __name__ == "__main__":
