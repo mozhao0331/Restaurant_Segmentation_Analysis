@@ -2,14 +2,14 @@
 
 ## Contributors and Maintainers
 
-- Chen Lin
-- Eric Tsai
-- Morris Zhao
-- Xinru Lu
+-   Chen Lin
+-   Eric Tsai
+-   Morris Zhao
+-   Xinru Lu
 
 ## Motivation
 
-The Restaurant Segmentation Analysis project is a collaboration between Sitewise Analytics and MDS students Chen Lin, Eric Tsai, Morris Zhao, and Xinru Lu. This project aims to use machine learning methods to determine factors that drive traffic to a particular location and identify clusters of similar store locations. 
+The Restaurant Segmentation Analysis project is a collaboration between Sitewise Analytics and MDS students Chen Lin, Eric Tsai, Morris Zhao, and Xinru Lu. This project aims to use machine learning methods to determine factors that drive traffic to a particular location and identify clusters of similar store locations.
 
 Restaurants seeking to open new stores in a region need to make marketing plans according to the major customer group. Therefore, restaurant franchise owners need to know the factors that drive traffic to a location, such as the surrounding population demographic and consumer behavior in the region, as well as trade area and nearby competitor/sister store information. By having a strong grasp of these factors, owners can plan future expansions and market the new location strategically based on the demand of the region. The Restaurant Segmentation Analysis project will address this problem by using data from Smoothie King locations in the United States and Subway locations in Canada and the United States to build machine learning data pipelines for Sitewise Analytics to incorporate into their consulting service. At the end of the project, we expect to have human-interpretable machine learning models that cluster similar store locations, which will be helpful for Sitewise Analytics clients to identify factors that drive traffic in those similar locations.
 
@@ -39,16 +39,17 @@ The two unsupervised machine learning pipelines will also have human-interpretab
 
 We received five datasets for each of the three popular chain restaurants: Smoothie King, Subway Canada, and Subway US. The datasets consist of CSV files for demographic, point of interest, store-specific data, competition sister store data, and trade area, where each row represents a single store location and the columns represent the variables/features of that store. All features in the demographic, point of interest, competitor/sister store, and trade area files are numeric, whereas the store-specific data files contain categorical features such as state and market size.
 
-- For Smoothie King, there are over 1000 features combined for 796 stores.
-- For Subway US, there are over 1000 features combined for approximately 14,000 stores.
-- For Subway Canada, there are around 100 features combined for around 1,800 stores.
+-   For Smoothie King, there are over 1000 features combined for 796 stores.
+-   For Subway US, there are over 1000 features combined for approximately 14,000 stores.
+-   For Subway Canada, there are around 100 features combined for around 1,800 stores.
 
 ## Usage
+
 To replicate the analysis, clone this GitHub repository along with installing the dependencies using the [environment file for Mac](/sitewise_python38_UBC2023_mac.yaml) and the [environment file for Windows](/sitewise_python38_UBC2023.yaml).
 
 ### Create Conda environment
 
-```
+```         
 # For Mac
 conda env create -n <ENVNAME> --file sitewise_python38_UBC2023_mac.yaml
 
@@ -58,22 +59,21 @@ conda env create -n <ENVNAME> --file sitewise_python38_UBC2023.yaml
 
 ### Activate Conda environment
 
-```
+```         
 conda activate <ENVNAME>
 ```
-
 
 ### Using Makefile to generate the proposal report
 
 Run the following command at the command line/terminal in the project root directory:
 
-```
+```         
 make all
 ```
 
 To reset the project by cleaning the file path/directory, without any intermediate plot images or results .csv files, run the following command at the command line/terminal in the project root directory:
 
-```
+```         
 make clean
 ```
 
@@ -81,35 +81,48 @@ make clean
 
 To train the Smoothie King classification model and get the interpretation outputs, run the following command:
 
-```
+```         
 make smoothie_king
 ```
 
 To reset the Smoothie King model outputs, run the following command:
 
-```
+```         
 make clean_sk
+```
+
+### Using Makefile to train the Subway USA classification model
+
+To train the Subway USA classification model and get the interpretation outputs, run the following command:
+
+```         
+make subway_usa
+```
+
+To reset the Subway USA model outputs, run the following command:
+
+```         
+make clean_sb
 ```
 
 ### Run 'cluster_verify.py' file
 
-```
+```         
 python src/cluster_verify.py
 ```
 
-**NOTE:**<br>
-In order to make this Python script work, users need to install **Selenium** to interact with Chrome browser. 
+**NOTE:**<br> In order to make this Python script work, users need to install **Selenium** to interact with Chrome browser.
 
-```
+```         
 pip install selenium
 ```
 
 Also need to download **chromedriver** from [here](https://chromedriver.storage.googleapis.com/index.html). Ensure the driver version matches the Chrome browser version and save it under this path for Mac users.
 
-```
+```         
 '/usr/local/bin/chromedriver'
 ```
 
 ## Licenses
 
-The Restaurant Segmentation Analysis project here is licensed under the MIT License.  Please provide attribution and a link to this webpage if re-using/re-mixing any of these materials.
+The Restaurant Segmentation Analysis project here is licensed under the MIT License. Please provide attribution and a link to this webpage if re-using/re-mixing any of these materials.
