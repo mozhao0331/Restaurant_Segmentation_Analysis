@@ -5,9 +5,13 @@ import pandas as pd
 import skfda
 import sklearn
 import shap
-from src.subway_usa_preprocess_data import *
-from src.subway_usa_build_model import *
-import src.subway_usa_model_interpret as sb_inter
+
+import sys
+cwd = os.getcwd()
+sys.path.append(cwd + '/src/')
+from subway_usa_preprocess_data import *
+from subway_usa_build_model import *
+import subway_usa_model_interpret as sb_inter
 
 '''
 Test subway_usa_preprocess_data.py
