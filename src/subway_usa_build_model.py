@@ -12,12 +12,12 @@ import joblib
 import os
 import skfda
 
-# import sys
-# cwd = os.getcwd()
-# sys.path.append(cwd)
-from src.subway_usa_cluster_verify import *
+import sys
+cwd = os.getcwd()
+sys.path.append(cwd)
+from subway_usa_cluster_verify import *
 
-# Define dirctory
+# Define dirctory 
 DIR = 'data/Subway USA/'
 processed = "../Subway_USA_Preprocessed/"
 

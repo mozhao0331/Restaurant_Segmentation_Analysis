@@ -7,7 +7,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-from src.helper_plotting_functions import plot_boxplot
+
+import sys
+cwd = os.getcwd() 
+sys.path.append(cwd)
+from helper_plotting_functions import plot_boxplot
 
 
 DIR = "data/Subway_USA_Preprocessed/"
@@ -48,7 +52,7 @@ def fit_random_forest_classifier(X_train, y_train):
 
 def save_figure(out_dir, file_name):
     """
-    Save a figure to a specified directory.
+    Save a figure to a specified directory. 
 
     Parameters
     ----------
