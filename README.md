@@ -91,9 +91,9 @@ To reset the Smoothie King model outputs, run the following command:
 make clean_sk
 ```
 
-### Using Makefile to train the Subway USA classification model
+### Using Makefile to train the Subway USA clustering model
 
-To train the Subway USA classification model and get the interpretation outputs, run the following command:
+To train the Subway USA clustering model, get the interpretation outputs, run the following command:
 
 ```         
 make subway_usa
