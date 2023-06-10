@@ -68,6 +68,7 @@ def generate_confuson_matrix(model, X, y, labels, title, out_file):
     except:
         os.makedirs("img/smoothie_king/")
         plt.savefig("img/smoothie_king/" + out_file)
+    plt.close()
 
 def get_prediction_mismatch(prediction_result, model, true_label, predicted_label):
     '''Helper function to get mismatched predictions
@@ -126,7 +127,6 @@ def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_tes
     -------
     None
     ''' 
-    plt.clf()
     if strategy_ovr:
         for i in range(len(estimators)):
             explainer = shap.TreeExplainer(estimators[i])
@@ -138,7 +138,8 @@ def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_tes
             except:
                 os.makedirs(out_dir)
                 plt.savefig(out_dir + f"{TARGET_MAP[i]}_shap_summary_plot", bbox_inches="tight")
-            plt.clf()
+            # plt.clf()
+            plt.close()
     else:
         for i in range(len(shap_values)):
             # shap.summary_plot(shap_values[i], X_test_enc, max_display=10, plot_type="bar", show=False)
@@ -149,8 +150,7 @@ def shap_summary_plot(strategy_ovr, model_name, out_dir, shap_values=None, X_tes
             except:
                 os.makedirs(out_dir)
                 plt.savefig(out_dir + f"{TARGET_MAP[i]}_shap_summary_plot", bbox_inches="tight")
-            plt.clf()
-    plt.close(fig="all")
+            plt.close()
 
 def shap_force_plot(strategy_ovr, explainer, shap_values, X_test_enc, class_indices, idx_to_explain, target_class, out_dir, title):
     '''Draw SHAP force plot for a prediction point
@@ -177,7 +177,6 @@ def shap_force_plot(strategy_ovr, explainer, shap_values, X_test_enc, class_indi
     -------
     None
     '''
-    plt.clf()
     out_file = out_dir + title.lower().replace(" ", "_") + f"_{TARGET_MAP[target_class]}_shap_force_plot"
     X_test_enc = X_test_enc.round(4)
     if strategy_ovr:
@@ -205,7 +204,7 @@ def shap_force_plot(strategy_ovr, explainer, shap_values, X_test_enc, class_indi
     except:
         os.makedirs(out_dir)
         plt.savefig(out_file, bbox_inches="tight")
-    plt.close(fig="all")
+    plt.close()
 
 def encode_X_test(model, X_test, feature_names):
     '''Transform the test set using the pipeline's ColumnTransformer.
