@@ -170,7 +170,7 @@ def drop_specific_columns(df):
             continue
         if "military" in col:  # remove military related columns
             continue
-        if "_2mi" in col or "_3mi" in col or "_4mi" in col or "_10mi" in col:
+        if "_2mi" in col or "_4mi" in col or "_5mi" in col or "_10mi" in col:
             continue
         if "sports_venues" in col:  # remove sports venues columns (seems to be all zeros)
             continue
