@@ -6,7 +6,7 @@ from sklearn.compose import make_column_transformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler
+from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler, MinMaxScaler, MaxAbsScaler
 
 
 DIR = "data/"
@@ -232,7 +232,9 @@ def data_transform_pipeline(
     test_index = test['store']
     numeric_transformer = make_pipeline(
         SimpleImputer(strategy="median"),
-        StandardScaler()
+        # StandardScaler()
+        # MinMaxScaler((1, 7))
+        MaxAbsScaler()
     )
     
     ordinal_transformer_oth = make_pipeline(
