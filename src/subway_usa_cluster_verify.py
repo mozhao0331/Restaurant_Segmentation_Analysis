@@ -12,7 +12,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 import pyautogui
 
-html_path = 'src/subway_usa_cluster_verify.html'
+# html_path = 'src/subway_usa_cluster_verify.html'
+html_path = 'subway_usa_cluster_verify.html'
 chrome_driver_path = '/usr/local/bin/chromedriver'
 page_title_id = "cluster_id"
 input_id = "coords"
