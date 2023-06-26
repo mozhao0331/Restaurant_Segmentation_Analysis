@@ -124,7 +124,7 @@ conda env create -n <ENVNAME> --file sitewise_python38_UBC2023.yaml
 conda activate <ENVNAME>
 ```
 
-### 1. Using Makefile to generate the proposal report
+### 1. Using Makefile to generate the final report
 
 Run the following command at the command line/terminal in the project root directory:
 
@@ -138,7 +138,7 @@ To reset the project by cleaning the file path/directory, without any intermedia
 make clean
 ```
 
-### 2. Using Makefile to train the **Smoothie King** classification model
+### 2. Using Makefile to train the Smoothie King classification model
 
 To train the Smoothie King classification model and get the interpretation outputs, run the following command:
 
@@ -152,7 +152,7 @@ To reset the Smoothie King model outputs, run the following command:
 make clean_sk
 ```
 
-### 3. Using Makefile to train the **Subway USA** clustering model
+### 3. Using Makefile to train the Subway USA clustering model
 
 To train the Subway USA clustering model, get the interpretation outputs, run the following command:
 
