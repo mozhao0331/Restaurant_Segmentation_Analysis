@@ -2,7 +2,53 @@
 
 ## Repo Structure
 
-
+<pre>
+📦Restaurant_Segmentation_Analysis
+ ┣ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/data">data</a>
+ ┃ ┣ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/data/Smoothie%20King">Smoothie King</a>: Contains raw data
+ ┃ ┣ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/data/Smoothie_King_Preprocessed">Smoothie_King_Preprocessed</a>: Contains processed data
+ ┃ ┣ 📂Subway CAN
+ ┃ ┣ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/data/Subway%20USA">Subway USA</a>: Contains raw data
+ ┃ ┗ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/data/Subway_USA_Preprocessed">Subway_USA_Preprocessed</a>: Contains processed data
+ ┣ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/doc">doc</a>
+ ┃ ┣ 📜EDA.ipynb
+ ┃ ┣ 📜Final_Presentation.pptx
+ ┃ ┣ 📜Final_Report.Rmd
+ ┃ ┣ 📜Final_Report.pdf
+ ┃ ┣ 📜Proposal_Presentation.pptx
+ ┃ ┣ 📜Proposal_Report.Rmd
+ ┃ ┗ 📜Proposal_Report.pdf
+ ┣ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/img">img</a>
+ ┃ ┣ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/img/eda">eda</a>
+ ┃ ┣ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/img/info">info</a>
+ ┃ ┣ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/img/smoothie_king">smoothie_king</a>: Generated image for Smoothie King model feature interpretation
+ ┃ ┃ ┣ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/img/smoothie_king/l1_reg_random_forest">l1_reg_random_forest</a>
+ ┃ ┃ ┣ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/img/smoothie_king/l1_reg_random_forest_ovr">l1_reg_random_forest_ovr</a>
+ ┃ ┃ ┣ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/img/smoothie_king/random_forest">random_forest</a>
+ ┃ ┗ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/img/subway_usa">subway_usa</a>: Generated image for Subway US model feature interpretation
+ ┣ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/src">src</a>
+ ┃ ┣ 📜helper_create_eda_figure.py
+ ┃ ┣ 📜helper_evaluation.py
+ ┃ ┣ 📜helper_plotting_functions.py
+ ┃ ┣ 📜smoothie_king_build_model.py
+ ┃ ┣ 📜smoothie_king_model_interpret.py
+ ┃ ┣ 📜smoothie_king_preprocess_data.py
+ ┃ ┣ 📜subway_usa_build_model.py
+ ┃ ┣ 📜subway_usa_cluster_verify.html
+ ┃ ┣ 📜subway_usa_cluster_verify.ipynb
+ ┃ ┣ 📜subway_usa_cluster_verify.py
+ ┃ ┣ 📜subway_usa_model_interpret.py
+ ┃ ┗ 📜subway_usa_preprocess_data.py
+ ┣ 📂<a href="https://github.com/mozhao0331/Restaurant_Segmentation_Analysis/tree/main/test">test</a>
+ ┃ ┣ 📜test_smoothie_king.py
+ ┃ ┗ 📜test_subway_usa.py
+ ┣ 📜.gitignore
+ ┣ 📜LICENSE
+ ┣ 📜Makefile
+ ┣ 📜README.md
+ ┣ 📜sitewise_python38_UBC2023.yaml
+ ┗ 📜sitewise_python38_UBC2023_mac.yaml
+</pre>
 
 ## Contributors and Maintainers
 
