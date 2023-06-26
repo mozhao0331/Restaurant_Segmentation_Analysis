@@ -49,15 +49,20 @@ doc/Final_Report.pdf: doc/Final_Report.Rmd img/info/smoothie_king_pipeline.png i
 	Rscript -e "rmarkdown::render('doc/Final_Report.Rmd')"
 
 clean: 
-	rm -f doc/Proposal_Report.pdf
 	rm -f doc/Final_Report.pdf
-	rm -rf img/eda/smoothie_category_bar_plot.png 
-	rm -rf img/eda/market_size_stackstacked_bar_plot.png 
-	rm -rf img/eda/store_density_stackstacked_bar_plot.png
-	rm -rf img/eda/subway_us_store_density_bar_plot.png 
-	rm -rf img/eda/subway_us_market_size_bar_plot.png 
-	rm -rf img/eda/subway_canada_store_density_bar_plot.png 
-	rm -rf img/eda/subway_canada_market_size_bar_plot.png
+	rm -rf data/Smoothie_King_Preprocessed/
+	rm -rf model_joblib/smoothie_king/
+	rm -rf img/smoothie_king/
+	rm -rf data/Subway_USA_Preprocessed/
+	rm -rf model_joblib/subway_usa/
+	rm -rf img/subway_usa/
+	# rm -rf img/eda/smoothie_category_bar_plot.png 
+	# rm -rf img/eda/market_size_stackstacked_bar_plot.png 
+	# rm -rf img/eda/store_density_stackstacked_bar_plot.png
+	# rm -rf img/eda/subway_us_store_density_bar_plot.png 
+	# rm -rf img/eda/subway_us_market_size_bar_plot.png 
+	# rm -rf img/eda/subway_canada_store_density_bar_plot.png 
+	# rm -rf img/eda/subway_canada_market_size_bar_plot.png
 
 clean_sk:
 	rm -rf data/Smoothie_King_Preprocessed/
