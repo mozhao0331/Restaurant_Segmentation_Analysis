@@ -65,28 +65,19 @@ def select_features(train_df, test_df):
     selected_features = ['age0018_p_ta',
     'age65pl_p_ta',
     'age85pl_p_ta',
-    #  'asian_p_ta',
-    #  'avg_faminc_ta',
-    #  'avghhinc_ta',
     'banks_1mi',
     'banks_3mi',
-    #  'black_p_ta',
-    #  'boomer_p_ta',
     'centerxy_gla_effective_1mi',
     'centerxy_gla_effective_3mi',
     'com0002_p_ta',
-    #  'com0205_p_ta',
     'com0508_p_ta',
-    #  'com0811_p_ta',
     'com12pl_p_ta',
     'crime_total_index_ta',
     'daypop_dens_ta',
-    # 'disposable_inc_avg_ta',
     'dmm_count_1mi',
     'dmm_count_3mi',
     'dmm_gla_1mi',
     'dmm_gla_3mi',
-    #  'dmm_nearest_dist',
     'dtpop_children_at_home_p_ta',
     'dtpop_homemakers_p_ta',
     'dtpop_retired_disabled_p_ta',
@@ -101,73 +92,35 @@ def select_features(train_df, test_df):
     'emp_p_ta',
     'empcy_ta',
     'gdp_ta',
-    #  'genx_p_ta',
-    #  'genz_p_ta',
-    #  'gq_college_p_ta',
-    #  'gq_other_p_ta',
     'hh_dens_ta',
     'hh_expected_pers_ta',
     'hh_expected_vehicle_ta',
-    #  'hh_inc_gt_500k_p_ta',
-    #  'hh_inc_gt_75k_p_ta',
-    #  'hh_inc_lt_75k_p_ta',
     'hh_type_1pers_p_ta',
     'hh_type_fam_p_ta',
-    #  'hh_type_female_child_p_ta',
-    #  'hh_type_female_nochild_p_ta',
-    #  'hh_type_female_p_ta',
-    #  'hh_type_male_child_p_ta',
-    #  'hh_type_male_nochild_p_ta',
-    #  'hh_type_male_p_ta',
-    #  'hh_type_married_child_p_ta',
-    #  'hh_type_married_nochild_p_ta',
-    #  'hh_type_married_p_ta',
-    #  'hh_type_nonfam_p_ta',
     'hhcy_ta',
-    #  'hhgrfypy_ta',
-    #  'hhgrpycy_ta',
-    # 'hhinc100pl_p_ta',
-    # 'hhinc150pl_p_ta',
-    # 'hhinc30lt_p_ta',
-    #  'hispanic_p_ta',
-    #  'hrsa_hospitals_1mi',
-    #  'hrsa_hospitals_3mi',
-    #  'hrsa_hospitals_nearest_dist',
     'hrsa_number_of_certified_beds_1mi',
     'hrsa_number_of_certified_beds_3mi',
     'hu_ownerocc_ta',
     'hu_renterocc_ta',
     'hu_vacant_ta',
     'inrix_total_ta',
-    #  'ipeds_postsecondary_nearest_dist',
-    #  'ipeds_postsecondary_schools_1mi',
-    #  'ipeds_postsecondary_schools_3mi',
     'ipeds_postsecondary_schools_total_enrollment_1mi',
     'ipeds_postsecondary_schools_total_enrollment_3mi',
-    # 'market_size',
-    # 'medhhinc_ta',
-    # 'medsalcy_ta',
     'millenial_p_ta',
-    #  'mortgage_avgrisk_ta',
     'nces_private_schools_1mi',
     'nces_private_schools_3mi',
-    #  'nces_private_schools_nearest_dist',
     'nces_private_schools_total_enrollment_1mi',
     'nces_private_schools_total_enrollment_3mi',
     'nces_public_schools_1mi',
     'nces_public_schools_3mi',
-    #  'nces_public_schools_nearest_dist',
     'nces_public_schools_total_enrollment_1mi',
     'nces_public_schools_total_enrollment_3mi',
     'occ_bc_p_ta',
-    #  'occ_unclassified_p_ta',
     'occ_wc_p_ta',
     'occhu_ta',
     'osm_highway_exits_count_1mi',
     'osm_highway_exits_count_3mi',
     'osm_nearest_exit_dist',
-    #  'other_p_ta',
-    # 'percapita_inc_ta',
     'places_of_worship_1mi',
     'places_of_worship_3mi',
     'pop5y_cagr_ta',
@@ -179,17 +132,9 @@ def select_features(train_df, test_df):
     'popgr10cn_ta',
     'popgrfy_ta',
     'popgrpy_ta',
-    # 'poverty_inpoverty_p_ta',
-    #  'spend_breakfastbrunch_ta',
-    #  'spend_dinner_ta',
     'spend_foodbev_ta',
-    #  'spend_lunch_ta',
-    # 'store_density',
     'transitstop_nearest_dist',
     'transitstops',
-    # 'wealth_hhavg_ta',
-    #  'wealth_hhtotal_ta',
-    #  'white_p_ta'
     ]
 
     train_df = train_df[selected_features]
@@ -362,13 +307,6 @@ def get_random_sample(n_clusters, train_df, test_df, stores, fcm, size=30):
             # Append the [longitude, latitude] pair to the corresponding cluster list
             cluster_coordinates_train[cluster].append([longitude, latitude, store_id])
     
-    # Print
-    # for cluster, coordinates_list in cluster_coordinates_train.items():
-    #     print(f"Cluster {cluster} Coordinates:")
-    #     for coordinates in coordinates_list:
-    #         print("Coordinates:", coordinates)
-    #     print()
-    
     # Test
     # Get sample stores
     cluster_samples_dict_test = {}
@@ -398,14 +336,6 @@ def get_random_sample(n_clusters, train_df, test_df, stores, fcm, size=30):
             # Append the [longitude, latitude] pair to the corresponding cluster list
             cluster_coordinates_test[cluster].append([longitude, latitude, store_id])
     
-    # print(cluster_coordinates_train, cluster_coordinates_test)
-    
-    # Print
-    # for cluster, coordinates_list in cluster_coordinates.items():
-    #     print(f"Cluster {cluster} Coordinates:")
-    #     for coordinates in coordinates_list:
-    #         print("Coordinates:", coordinates)
-    #     print()
     return cluster_coordinates_train, cluster_coordinates_test
 
 def main():

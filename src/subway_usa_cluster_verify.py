@@ -54,7 +54,6 @@ def cluster_verify(cluster_coords_dict):
         driver = webdriver.Chrome(chrome_driver_path, options=chrome_options) # Path to chrome driver Unix Executable File
         driver_list.append(driver)
 
-        # driver.set_window_size(1540,1240)
         driver.get('file://' + html_file)
 
         wait = WebDriverWait(driver, 100) 
@@ -71,6 +70,4 @@ def cluster_verify(cluster_coords_dict):
         button = driver.find_element(By.ID, button_id)
         button.click()
 
-    # for driver in driver_list:
-    #     driver.quit()
     input("Press enter to quit")
