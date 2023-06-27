@@ -440,8 +440,6 @@ def main():
         "l1_reg_rf_ovr": l1_reg_rf_ovr_model.predict(X_test),
         "voting": hard_voting_model.predict(X_test)
     })
-    # print(get_prediction_mismatch(prediction_result, "voting", 0, 2))
-    # print(get_prediction_mismatch(prediction_result, "voting", 2, 0))
     all_feature_names = get_all_feature_names(X_train)
     shap_interpretation_for_rf_model(rf_model, X_test, y_test, all_feature_names)
     shap_interpretation_for_l1_reg_rf_model(l1_reg_rf_model, X_test, y_test, all_feature_names)

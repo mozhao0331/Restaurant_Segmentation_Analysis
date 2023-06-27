@@ -4,7 +4,7 @@ import pandas as pd
 import seaborn as sns
 
 from sklearn.decomposition import PCA
-from matplotlib.colors import ListedColormap, colorConverter, LinearSegmentedColormap
+from matplotlib.colors import colorConverter
 from scipy.cluster.hierarchy import dendrogram
 
 colors = ['xkcd:azure', 'yellowgreen', 'tomato', 'teal', 'indigo', 'aqua', 'orangered', 'orchid', 'black', 'xkcd:turquoise', 'xkcd:violet', 'aquamarine', 'chocolate', 'darkgreen', 'sienna', 'pink', 'lightblue', 'yellow', 'lavender', 'wheat', 'linen']
@@ -65,10 +65,8 @@ def discrete_scatter(x1, x2, y=None, markers=None, s=8, ax=None,
     
     for (i, (yy, color_ind)) in enumerate(zip(unique_y, cr)):
         mask = y == yy
-        # print(f'color_ind= {color_ind} and i = {i}')
         # if c is none, use color cycle
         color = colors[color_ind]
-        # print('color: ', color)
         # use light edge for dark markers
         if np.mean(colorConverter.to_rgb(color)) < .2:
             markeredgecolor = "grey"

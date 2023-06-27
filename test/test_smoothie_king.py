@@ -8,7 +8,6 @@ from joblib import load
 from sklearn.preprocessing import LabelEncoder
 from src.smoothie_king_preprocess_data import *
 from src.smoothie_king_build_model import *
-# from src.smoothie_king_model_interpret import 
 import src.smoothie_king_model_interpret as sk_inter
 
 '''

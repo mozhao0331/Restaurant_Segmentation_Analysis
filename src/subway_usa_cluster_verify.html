@@ -31,7 +31,6 @@
             const rows = input.split("], [");
 
             const array2D = rows.map(row => {
-                // console.log(typeof(row) + '  ' + row)
                 const columns = row.replace("[", "").replace("]", "").split(", ");
                 return columns.map(Number);  
             });  
@@ -45,12 +44,10 @@
 
             const coords = document.getElementById("coords").value; 
             const coordList = textTo2DArray(coords)
-            // console.log(coordList)
             coordList.forEach( coord => {
                 const long = coord[0];
                 const lat = coord[1];
                 const store_id = coord[2];
-                // console.log(long + '--' + lat)
                 
                 const mapDiv = document.createElement("div");
                 mapDiv.style.width = "100%";
@@ -69,12 +66,10 @@
 
         function initMap(long, lat, mapDiv, store_id) {
             var coords = {lat: lat, lng: long};
-            // console.log(coords)
         
             var options = {
                 zoom: 16,
                 center: coords,
-                // mapTypeId: 'satellite',
                 mapTypeId: google.maps.MapTypeId.HYBRID,
             };
         
